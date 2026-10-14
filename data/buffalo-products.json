@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-14T13:30:00+09:00",
+ "updatedAt": "2026-10-14T06:42:04.876Z",
  "source": "バッファロー公式サイト（buffalo.jp）商品ページの仕様表",
  "products": [
   {
@@ -15,7 +15,7 @@
    "bays": 2,
    "cpu": "Annapurna Labs Alpine AL524 2.0GHz/4コア 64bit",
    "memory": "DDR4 2GB",
-   "lanText": "2.5GBASE-T×1、1000BASE-T×1（背面）",
+   "lanText": "2.5GBASE-T×1、1000BASE-T×1",
    "lanSpeedMax": "2.5G",
    "lanMaxPorts": 1,
    "usb": "USB 3.2(Gen 1)×2（背面、PC接続不可）",
@@ -29,71 +29,75 @@
    "warrantyText": "3年間(本体およびハードディスク)",
    "features": {
     "クラウドストレージ連携": {
-     "value": "対応",
+     "value": "○ 対応しているクラウドストレージサービスは、こちらをご覧ください。",
      "supported": true
-    },
-    "Active Directory連携": {
-     "value": "対応",
-     "supported": true
-    },
-    "SSDキャッシュ": {
-     "value": "非対応",
-     "supported": false
     },
     "Time Machine": {
-     "value": "対応",
-     "supported": true
-    },
-    "iSCSIターゲット": {
-     "value": "対応",
-     "supported": true
-    },
-    "ウイルスチェック": {
-     "value": "対応（拡張パック OP-EVシリーズ別売）",
+     "value": "○",
      "supported": true
     },
     "リモート監視（キキNavi）": {
-     "value": "対応",
+     "value": "○",
      "supported": true
     },
-    "ホットスワップ": {
-     "value": "対応",
+    "クラウドバックアップ（キキNavi）": {
+     "value": "○",
      "supported": true
     },
-    "ホットスペア": {
-     "value": "非対応",
-     "supported": false
-    },
-    "ドライブ暗号化": {
-     "value": "対応",
+    "Active Directory連携": {
+     "value": "○",
      "supported": true
     },
-    "Webアクセス": {
-     "value": "対応",
+    "iSCSIターゲット": {
+     "value": "○",
      "supported": true
     },
     "スナップショット": {
-     "value": "非対応",
+     "value": "－",
      "supported": false
     },
     "不変スナップショット": {
-     "value": "非対応",
+     "value": "－",
      "supported": false
     },
-    "メタデータ二重化": {
-     "value": "対応",
+    "ドライブ暗号化": {
+     "value": "○",
      "supported": true
     },
+    "ホットスワップ": {
+     "value": "○",
+     "supported": true
+    },
+    "ホットスペア": {
+     "value": "－",
+     "supported": false
+    },
+    "SSDキャッシュ": {
+     "value": "－",
+     "supported": false
+    },
     "レプリケーション": {
-     "value": "対応",
+     "value": "○",
      "supported": true
     },
     "フェイルオーバー": {
-     "value": "非対応",
+     "value": "－",
      "supported": false
     },
+    "Webアクセス": {
+     "value": "○",
+     "supported": true
+    },
+    "ウイルスチェック": {
+     "value": "○（拡張パック OP-EVシリーズ別売)",
+     "supported": true
+    },
     "異常ファイル操作検知": {
-     "value": "対応（Ver.2.10以降、拡張子監視のみ）",
+     "value": "○ Ver.2.10以降 ※ファイル拡張子の監視のみ",
+     "supported": true
+    },
+    "メタデータ二重化": {
+     "value": "○",
      "supported": true
     }
    },
@@ -127,8 +131,20 @@
     }
    ],
    "sourceUrl": "https://www.buffalo.jp/product/detail/ts3230dn0402.html",
-   "collectedBy": "research",
-   "imageUrl": "https://www.buffalo.jp/webpim/product/image/T/TS3230DN/TS3230DN0402/TS3230DN0402__0100.jpg"
+   "collectedBy": "scraper",
+   "imageUrl": "https://www.buffalo.jp/webpim/product/image/T/TS3230DN/TS3230DN0402/TS3230DN0402__0100.jpg?small_light(dw=1200,dh=630,cw=1200,ch=630,da=l,cc=ffffff,q=80)",
+   "raw": {
+    "os": "Linuxベース独自",
+    "install": "デスクトップ",
+    "bays": "2",
+    "cpu": "Annapurna Labs Alpine AL524 ／ 2.0GHz/4コア 64bit",
+    "memory": "DDR4 2GB",
+    "lan": "インターフェース（LAN端子） LAN端子（10GBASE-T）：－ ／ インターフェース（LAN端子） LAN端子（2.5GBASE-T）：背面×1 ／ インターフェース（LAN端子） LAN端子（1000BASE-T）：背面×1 ／ インターフェース（LAN端子） 準拠規格：Serial ATA III ／ インターフェース（LAN端子） 伝送速度：LAN端子(1000BASE-T)： 1000Mbps 全二重 100Mbps 半二重/全二重 10Mbps 半二重/全二重 LAN端子(2.5GBASE-T)： 2.5Gbps 全二重 1000Mbps 全二重 100Mbps 半二重/全二重 ／ インターフェース（LAN端子） 端子形状：RJ-45型 8極 ／ インターフェース（LAN端子） 対応プロトコル：TCP/IP ／ インターフェース（LAN端子） 対応ネットワークファイル プロトコル：SMB/CIFS AFP FTP SFTP NFS HTTP/HTTPS SNMP iSCSI rsync ／ Wake on LAN：○",
+    "raid": "1/0（出荷時 RAID1）",
+    "warranty": "3年間(本体およびハードディスク)"
+   },
+   "lastCheckedAt": "2026-10-14T06:41:01.999Z",
+   "fallbackFields": []
   },
   {
    "id": "ts3430dn",
@@ -143,7 +159,7 @@
    "bays": 4,
    "cpu": "Annapurna Labs Alpine AL524 2.0GHz/4コア 64bit",
    "memory": "DDR4 2GB",
-   "lanText": "2.5GBASE-T×1、1000BASE-T×1（背面）",
+   "lanText": "2.5GBASE-T×1、1000BASE-T×1",
    "lanSpeedMax": "2.5G",
    "lanMaxPorts": 1,
    "usb": "USB 3.2(Gen 1)×2（背面、PC接続不可）",
@@ -160,71 +176,75 @@
    "warrantyText": "3年間(本体およびハードディスク)",
    "features": {
     "クラウドストレージ連携": {
-     "value": "対応",
+     "value": "○ 対応しているクラウドストレージサービスは、こちらをご覧ください。",
      "supported": true
-    },
-    "Active Directory連携": {
-     "value": "対応",
-     "supported": true
-    },
-    "SSDキャッシュ": {
-     "value": "非対応",
-     "supported": false
     },
     "Time Machine": {
-     "value": "対応",
-     "supported": true
-    },
-    "iSCSIターゲット": {
-     "value": "対応",
-     "supported": true
-    },
-    "ウイルスチェック": {
-     "value": "対応（拡張パック OP-EVシリーズ別売）",
+     "value": "○",
      "supported": true
     },
     "リモート監視（キキNavi）": {
-     "value": "対応",
+     "value": "○",
      "supported": true
     },
-    "ホットスワップ": {
-     "value": "対応",
+    "クラウドバックアップ（キキNavi）": {
+     "value": "○",
      "supported": true
     },
-    "ホットスペア": {
-     "value": "対応",
+    "Active Directory連携": {
+     "value": "○",
      "supported": true
     },
-    "ドライブ暗号化": {
-     "value": "対応",
-     "supported": true
-    },
-    "Webアクセス": {
-     "value": "対応",
+    "iSCSIターゲット": {
+     "value": "○",
      "supported": true
     },
     "スナップショット": {
-     "value": "非対応",
+     "value": "－",
      "supported": false
     },
     "不変スナップショット": {
-     "value": "非対応",
+     "value": "－",
      "supported": false
     },
-    "メタデータ二重化": {
-     "value": "対応",
+    "ドライブ暗号化": {
+     "value": "○",
      "supported": true
     },
+    "ホットスワップ": {
+     "value": "○",
+     "supported": true
+    },
+    "ホットスペア": {
+     "value": "○",
+     "supported": true
+    },
+    "SSDキャッシュ": {
+     "value": "－",
+     "supported": false
+    },
     "レプリケーション": {
-     "value": "対応",
+     "value": "○",
      "supported": true
     },
     "フェイルオーバー": {
-     "value": "非対応",
+     "value": "－",
      "supported": false
     },
+    "Webアクセス": {
+     "value": "○",
+     "supported": true
+    },
+    "ウイルスチェック": {
+     "value": "○（拡張パック OP-EVシリーズ別売)",
+     "supported": true
+    },
     "異常ファイル操作検知": {
-     "value": "対応（Ver.2.10以降、拡張子監視のみ）",
+     "value": "○ Ver.2.10以降 ※ファイル拡張子の監視のみ",
+     "supported": true
+    },
+    "メタデータ二重化": {
+     "value": "○",
      "supported": true
     }
    },
@@ -269,9 +289,21 @@
      "jan": "4981254072653"
     }
    ],
-   "sourceUrl": "https://www.buffalo.jp/product/detail/print/ts3430dn0804.html",
-   "collectedBy": "research",
-   "imageUrl": "https://www.buffalo.jp/webpim/product/image/T/TS3430DN/TS3430DN0804/TS3430DN0804__0100.jpg"
+   "sourceUrl": "https://www.buffalo.jp/product/detail/ts3430dn0804.html",
+   "collectedBy": "scraper",
+   "imageUrl": "https://www.buffalo.jp/webpim/product/image/T/TS3430DN/TS3430DN0804/TS3430DN0804__0100.jpg?small_light(dw=1200,dh=630,cw=1200,ch=630,da=l,cc=ffffff,q=80)",
+   "raw": {
+    "os": "Linuxベース独自",
+    "install": "デスクトップ",
+    "bays": "4",
+    "cpu": "Annapurna Labs Alpine AL524 ／ 2.0GHz/4コア 64bit",
+    "memory": "DDR4 2GB",
+    "lan": "インターフェース（LAN端子） LAN端子（10GBASE-T）：－ ／ インターフェース（LAN端子） LAN端子（2.5GBASE-T）：背面×1 ／ インターフェース（LAN端子） LAN端子（1000BASE-T）：背面×1 ／ インターフェース（LAN端子） 準拠規格：LAN端子(1000BASE-T)：IEEE802.3ab / IEEE802.3u / IEEE802.3 準拠（1000BASE-T / 100BASE-TX / 10BASE-T） LAN端子(2.5GBASE-T)：IEEE802.3bz / IEEE802.3ab / IEEE802.3u 準拠（2.5GBASE-T / 1000BASE-T / 100BASE-TX） ／ インターフェース（LAN端子） 伝送速度：LAN端子(1000BASE-T)： 1000Mbps 全二重 100Mbps 半二重/全二重 10Mbps 半二重/全二重 LAN端子(2.5GBASE-T)： 2.5Gbps 全二重 1000Mbps 全二重 100Mbps 半二重/全二重 ／ インターフェース（LAN端子） 端子形状：RJ-45型 8極 ／ インターフェース（LAN端子） 対応プロトコル：TCP/IP ／ インターフェース（LAN端子） 対応ネットワークファイル プロトコル：SMB/CIFS AFP FTP SFTP NFS HTTP/HTTPS SNMP iSCSI rsync ／ Wake on LAN：○",
+    "raid": "6/5/10/1/0（出荷時 RAID6）",
+    "warranty": "3年間(本体およびハードディスク)"
+   },
+   "lastCheckedAt": "2026-10-14T06:41:03.899Z",
+   "fallbackFields": []
   },
   {
    "id": "ts3430rn",
@@ -286,7 +318,7 @@
    "bays": 4,
    "cpu": "Annapurna Labs Alpine AL524 2.0GHz/4コア 64bit",
    "memory": "DDR4 2GB",
-   "lanText": "2.5GBASE-T×1、1000BASE-T×1（背面）",
+   "lanText": "2.5GBASE-T×1、1000BASE-T×1",
    "lanSpeedMax": "2.5G",
    "lanMaxPorts": 1,
    "usb": "USB 3.2(Gen 1)×2（背面、PC接続不可）、USB 2.0×1（前面）",
@@ -303,79 +335,75 @@
    "warrantyText": "3年間(本体およびハードディスク)",
    "features": {
     "クラウドストレージ連携": {
-     "value": "対応",
+     "value": "○ 対応しているクラウドストレージサービスは、こちらをご覧ください。",
      "supported": true
-    },
-    "Active Directory連携": {
-     "value": "対応",
-     "supported": true
-    },
-    "2段階認証": {
-     "value": "対応",
-     "supported": true
-    },
-    "SSDキャッシュ": {
-     "value": "非対応",
-     "supported": false
     },
     "Time Machine": {
-     "value": "対応",
-     "supported": true
-    },
-    "iSCSIターゲット": {
-     "value": "対応",
-     "supported": true
-    },
-    "ウイルスチェック": {
-     "value": "対応（拡張パック OP-EVシリーズ別売）",
+     "value": "○",
      "supported": true
     },
     "リモート監視（キキNavi）": {
-     "value": "対応（リモート設定はVer.1.74以降）",
+     "value": "○",
      "supported": true
     },
     "クラウドバックアップ（キキNavi）": {
-     "value": "対応",
+     "value": "○",
      "supported": true
     },
-    "ホットスワップ": {
-     "value": "対応",
+    "Active Directory連携": {
+     "value": "○",
      "supported": true
     },
-    "ホットスペア": {
-     "value": "対応",
-     "supported": true
-    },
-    "ドライブ暗号化": {
-     "value": "対応",
-     "supported": true
-    },
-    "Webアクセス": {
-     "value": "対応",
+    "iSCSIターゲット": {
+     "value": "○",
      "supported": true
     },
     "スナップショット": {
-     "value": "非対応",
+     "value": "－",
      "supported": false
     },
     "不変スナップショット": {
-     "value": "非対応",
+     "value": "－",
      "supported": false
     },
-    "メタデータ二重化": {
-     "value": "対応",
+    "ドライブ暗号化": {
+     "value": "○",
      "supported": true
     },
+    "ホットスワップ": {
+     "value": "○",
+     "supported": true
+    },
+    "ホットスペア": {
+     "value": "○",
+     "supported": true
+    },
+    "SSDキャッシュ": {
+     "value": "－",
+     "supported": false
+    },
     "レプリケーション": {
-     "value": "対応",
+     "value": "○",
      "supported": true
     },
     "フェイルオーバー": {
-     "value": "非対応",
+     "value": "－",
      "supported": false
     },
+    "Webアクセス": {
+     "value": "○",
+     "supported": true
+    },
+    "ウイルスチェック": {
+     "value": "○（拡張パック OP-EVシリーズ別売)",
+     "supported": true
+    },
     "異常ファイル操作検知": {
-     "value": "対応（Ver.2.10以降、拡張子監視のみ）",
+     "value": "○ Ver.2.10以降 ※ファイル拡張子の監視のみ",
+     "supported": true
+    },
+    "メタデータ二重化": {
+     "value": "○",
      "supported": true
     }
    },
@@ -420,9 +448,21 @@
      "jan": "4981254072561"
     }
    ],
-   "sourceUrl": "https://www.buffalo.jp/product/detail/print/ts3430rn0804.html",
-   "collectedBy": "research",
-   "imageUrl": "https://www.buffalo.jp/webpim/product/image/T/TS3430RN/TS3430RN0804/TS3430RN0804__0100.jpg"
+   "sourceUrl": "https://www.buffalo.jp/product/detail/ts3430rn0804.html",
+   "collectedBy": "scraper",
+   "imageUrl": "https://www.buffalo.jp/webpim/product/image/T/TS3430RN/TS3430RN0804/TS3430RN0804__0100.jpg?small_light(dw=1200,dh=630,cw=1200,ch=630,da=l,cc=ffffff,q=80)",
+   "raw": {
+    "os": "Linuxベース独自",
+    "install": "ラックマウント",
+    "bays": "4",
+    "cpu": "Annapurna Labs Alpine AL524 ／ 2.0GHz/4コア 64bit",
+    "memory": "DDR4 2GB",
+    "lan": "インターフェース（LAN端子） LAN端子（10GBASE-T）：－ ／ インターフェース（LAN端子） LAN端子（2.5GBASE-T）：背面×1 ／ インターフェース（LAN端子） LAN端子（1000BASE-T）：背面×1 ／ インターフェース（LAN端子） 準拠規格：LAN端子(1000BASE-T)：IEEE802.3ab / IEEE802.3u / IEEE802.3 準拠（1000BASE-T / 100BASE-TX / 10BASE-T） LAN端子(2.5GBASE-T)：IEEE802.3bz / IEEE802.3ab / IEEE802.3u 準拠（2.5GBASE-T / 1000BASE-T / 100BASE-TX） ／ インターフェース（LAN端子） 伝送速度：LAN端子(1000BASE-T)： 1000Mbps 全二重 100Mbps 半二重/全二重 10Mbps 半二重/全二重 LAN端子(2.5GBASE-T)： 2.5Gbps 全二重 1000Mbps 全二重 100Mbps 半二重/全二重 ／ インターフェース（LAN端子） 端子形状：RJ-45型 8極 ／ インターフェース（LAN端子） 対応プロトコル：TCP/IP ／ インターフェース（LAN端子） 対応ネットワークファイル プロトコル：SMB/CIFS AFP FTP SFTP NFS HTTP/HTTPS SNMP iSCSI rsync ／ Wake on LAN：○",
+    "raid": "6/5/10/1/0（出荷時 RAID6）",
+    "warranty": "3年間(本体およびハードディスク)"
+   },
+   "lastCheckedAt": "2026-10-14T06:41:05.897Z",
+   "fallbackFields": []
   },
   {
    "id": "ts5220dn",
@@ -437,7 +477,7 @@
    "bays": 2,
    "cpu": "Annapurna Labs Alpine AL524 2.0GHz/4コア 64bit",
    "memory": "DDR4 ECC 8GB",
-   "lanText": "10GBASE-T×1、1000BASE-T×2（背面）",
+   "lanText": "10GBASE-T×1、1000BASE-T×2",
    "lanSpeedMax": "10G",
    "lanMaxPorts": 1,
    "usb": "USB 3.2(Gen 1)×2（背面、PC接続不可）",
@@ -451,71 +491,75 @@
    "warrantyText": "3年間(本体およびハードディスク)",
    "features": {
     "クラウドストレージ連携": {
-     "value": "対応",
+     "value": "○ 対応しているクラウドストレージサービスは、こちらをご覧ください。",
      "supported": true
-    },
-    "Active Directory連携": {
-     "value": "対応",
-     "supported": true
-    },
-    "SSDキャッシュ": {
-     "value": "非対応",
-     "supported": false
     },
     "Time Machine": {
-     "value": "対応",
-     "supported": true
-    },
-    "iSCSIターゲット": {
-     "value": "対応",
-     "supported": true
-    },
-    "ウイルスチェック": {
-     "value": "対応（OP-EVシリーズ別売）",
+     "value": "○",
      "supported": true
     },
     "リモート監視（キキNavi）": {
-     "value": "対応",
+     "value": "○",
      "supported": true
     },
-    "ホットスワップ": {
-     "value": "対応",
+    "クラウドバックアップ（キキNavi）": {
+     "value": "○",
      "supported": true
     },
-    "ホットスペア": {
-     "value": "非対応",
-     "supported": false
-    },
-    "ドライブ暗号化": {
-     "value": "対応",
+    "Active Directory連携": {
+     "value": "○",
      "supported": true
     },
-    "Webアクセス": {
-     "value": "対応",
+    "iSCSIターゲット": {
+     "value": "○",
      "supported": true
     },
     "スナップショット": {
-     "value": "対応",
+     "value": "○",
      "supported": true
     },
     "不変スナップショット": {
-     "value": "対応（Ver.2.20以降）",
+     "value": "○ Ver.2.20以降",
      "supported": true
     },
-    "メタデータ二重化": {
-     "value": "対応",
+    "ドライブ暗号化": {
+     "value": "○",
      "supported": true
+    },
+    "ホットスワップ": {
+     "value": "○",
+     "supported": true
+    },
+    "ホットスペア": {
+     "value": "－",
+     "supported": false
+    },
+    "SSDキャッシュ": {
+     "value": "ー",
+     "supported": null
     },
     "レプリケーション": {
-     "value": "対応",
+     "value": "○",
      "supported": true
     },
     "フェイルオーバー": {
-     "value": "対応",
+     "value": "○",
+     "supported": true
+    },
+    "Webアクセス": {
+     "value": "○",
+     "supported": true
+    },
+    "ウイルスチェック": {
+     "value": "ウイルスチェック機能拡張・延長パックについては、 対応情報ページ からご確認いただけます。",
      "supported": true
     },
     "異常ファイル操作検知": {
-     "value": "対応（Ver.2.10以降）",
+     "value": "○ Ver.2.10以降",
+     "supported": true
+    },
+    "メタデータ二重化": {
+     "value": "○",
      "supported": true
     }
    },
@@ -549,8 +593,20 @@
     }
    ],
    "sourceUrl": "https://www.buffalo.jp/product/detail/ts5220dn0402.html",
-   "collectedBy": "research",
-   "imageUrl": "https://www.buffalo.jp/webpim/product/image/T/TS5220DN/TS5220DN0402/TS5220DN0402__0100.jpg"
+   "collectedBy": "scraper",
+   "imageUrl": "https://www.buffalo.jp/webpim/product/image/T/TS5220DN/TS5220DN0402/TS5220DN0402__0100.jpg?small_light(dw=1200,dh=630,cw=1200,ch=630,da=l,cc=ffffff,q=80)",
+   "raw": {
+    "os": "Linuxベース独自",
+    "install": "デスクトップ",
+    "bays": "2",
+    "cpu": "Annapurna Labs Alpine AL524 ／ 2.0GHz/4コア 64bit",
+    "memory": "DDR4 ECC 8GB",
+    "lan": "インターフェース（LAN端子） LAN端子（10GBASE-T）：背面×1 ／ インターフェース（LAN端子） LAN端子（2.5GBASE-T）：－ ／ インターフェース（LAN端子） LAN端子（1000BASE-T）：背面×2 ／ インターフェース（LAN端子） 準拠規格：IEEE802.3an IEEE802.3ab IEEE802.3u IEEE802.3準拠(10GBASE-T/1000BASE-T/100BASE-TX/10BASE-T) IEEE802.3bz(5GBASE-T/2.5GBASE-T) ／ インターフェース（LAN端子） 伝送速度：LAN端子(1000BASE-T)： 1000Mbps 全二重 100Mbps 半二重/全二重 10Mbps 半二重/全二重 LAN端子(10GBASE-T)： 10Gbps 全二重 5Gbps 全二重 2.5Gbps 全二重 1000Mbps 全二重 100Mbps 半二重/全二重 ／ インターフェース（LAN端子） 端子形状：RJ-45型 8極 ／ インターフェース（LAN端子） 対応プロトコル：TCP/IP ／ インターフェース（LAN端子） 対応ネットワークファイル プロトコル：SMB/CIFS AFP FTP SFTP NFS HTTP/HTTPS SNMP iSCSI rsync ／ Wake on LAN：○(1GbEのみ)",
+    "raid": "1/0（出荷時 RAID1）",
+    "warranty": "3年間(本体およびハードディスク)"
+   },
+   "lastCheckedAt": "2026-10-14T06:41:07.971Z",
+   "fallbackFields": []
   },
   {
    "id": "ts5220df",
@@ -565,7 +621,7 @@
    "bays": 2,
    "cpu": "Annapurna Labs Alpine AL524 2.0GHz/4コア 64bit",
    "memory": "DDR4 ECC 8GB",
-   "lanText": "10GBASE-T×1、1000BASE-T×2（背面）",
+   "lanText": "10GBASE-T×1、1000BASE-T×2",
    "lanSpeedMax": "10G",
    "lanMaxPorts": 1,
    "usb": "USB 3.2(Gen 1)×2（背面、PC接続不可）",
@@ -576,84 +632,88 @@
    "raidType": "ソフトウェアRAID",
    "redundantPower": false,
    "warrantyYears": 3,
-   "warrantyText": "3年間(本体およびSSD)",
+   "warrantyText": "3年間(本体およびSSD) ※SSDが保証総書込み容量(TBW)に達した場合は、書き込み保証対象外となります",
    "features": {
     "クラウドストレージ連携": {
-     "value": "対応",
+     "value": "○ 対応しているクラウドストレージサービスは、こちらをご覧ください。",
      "supported": true
-    },
-    "Active Directory連携": {
-     "value": "対応",
-     "supported": true
-    },
-    "SSDキャッシュ": {
-     "value": "非対応",
-     "supported": false
     },
     "Time Machine": {
-     "value": "対応",
-     "supported": true
-    },
-    "iSCSIターゲット": {
-     "value": "対応",
-     "supported": true
-    },
-    "ウイルスチェック": {
-     "value": "対応（OP-EVシリーズ別売）",
+     "value": "○",
      "supported": true
     },
     "リモート監視（キキNavi）": {
-     "value": "対応",
+     "value": "○",
      "supported": true
     },
-    "ホットスワップ": {
-     "value": "対応",
+    "クラウドバックアップ（キキNavi）": {
+     "value": "○",
      "supported": true
     },
-    "ホットスペア": {
-     "value": "非対応",
-     "supported": false
-    },
-    "ドライブ暗号化": {
-     "value": "対応",
+    "Active Directory連携": {
+     "value": "○",
      "supported": true
     },
-    "Webアクセス": {
-     "value": "対応",
+    "iSCSIターゲット": {
+     "value": "○",
      "supported": true
     },
     "スナップショット": {
-     "value": "対応",
+     "value": "○",
      "supported": true
     },
     "不変スナップショット": {
-     "value": "対応（Ver.2.20以降）",
+     "value": "○ Ver.2.20以降",
      "supported": true
     },
-    "メタデータ二重化": {
-     "value": "対応",
+    "ドライブ暗号化": {
+     "value": "○",
      "supported": true
+    },
+    "ホットスワップ": {
+     "value": "○",
+     "supported": true
+    },
+    "ホットスペア": {
+     "value": "－",
+     "supported": false
+    },
+    "SSDキャッシュ": {
+     "value": "－",
+     "supported": false
     },
     "レプリケーション": {
-     "value": "対応",
+     "value": "○",
      "supported": true
     },
     "フェイルオーバー": {
-     "value": "対応",
+     "value": "○",
+     "supported": true
+    },
+    "Webアクセス": {
+     "value": "○",
+     "supported": true
+    },
+    "ウイルスチェック": {
+     "value": "ウイルスチェック機能拡張・延長パックについては、 対応情報ページ からご確認いただけます。",
      "supported": true
     },
     "異常ファイル操作検知": {
-     "value": "対応（Ver.2.10以降）",
+     "value": "○ Ver.2.10以降",
+     "supported": true
+    },
+    "メタデータ二重化": {
+     "value": "○",
      "supported": true
     }
    },
    "releaseDate": "2023年5月",
-   "status": "在庫限り",
-   "statusNote": "在庫限り（ページに「この商品は現在、在庫を限定しております」、対応検索一覧ではTS5220DF0202に在庫限り表記）",
+   "status": "現行",
+   "statusNote": null,
    "variants": [
     {
      "sku": "TS5220DF00502",
-     "capacityTB": 0.512,
+     "capacityTB": 0.5,
      "url": "https://www.buffalo.jp/product/detail/ts5220df00502.html",
      "jan": "4981254067703"
     },
@@ -665,8 +725,20 @@
     }
    ],
    "sourceUrl": "https://www.buffalo.jp/product/detail/ts5220df00502.html",
-   "collectedBy": "research",
-   "imageUrl": "https://www.buffalo.jp/webpim/product/image/T/TS5220DF/TS5220DF00502/TS5220DF00502__0100.jpg"
+   "collectedBy": "scraper",
+   "imageUrl": "https://www.buffalo.jp/webpim/product/image/T/TS5220DF/TS5220DF00502/TS5220DF00502__0100.jpg?small_light(dw=1200,dh=630,cw=1200,ch=630,da=l,cc=ffffff,q=80)",
+   "raw": {
+    "os": "Linuxベース独自",
+    "install": "デスクトップ",
+    "bays": "2",
+    "cpu": "Annapurna Labs Alpine AL524 ／ 2.0GHz/4コア 64bit",
+    "memory": "DDR4 ECC 8GB",
+    "lan": "インターフェース（LAN端子） LAN端子（10GBASE-T）：背面×1 ／ インターフェース（LAN端子） LAN端子（2.5GBASE-T）：－ ／ インターフェース（LAN端子） LAN端子（1000BASE-T）：背面×2 ／ インターフェース（LAN端子） 準拠規格：IEEE802.3an IEEE802.3ab IEEE802.3u IEEE802.3準拠(10GBASE-T/1000BASE-T/100BASE-TX/10BASE-T) IEEE802.3bz(5GBASE-T/2.5GBASE-T) ／ インターフェース（LAN端子） 伝送速度：LAN端子(1000BASE-T)： 1000Mbps 全二重 100Mbps 半二重/全二重 10Mbps 半二重/全二重 LAN端子(10GBASE-T)： 10Gbps 全二重 5Gbps 全二重 2.5Gbps 全二重 1000Mbps 全二重 100Mbps 半二重/全二重 ／ インターフェース（LAN端子） 端子形状：RJ-45型 8極 ／ インターフェース（LAN端子） 対応プロトコル：TCP/IP ／ インターフェース（LAN端子） 対応ネットワークファイル プロトコル：SMB/CIFS AFP FTP SFTP NFS HTTP/HTTPS SNMP iSCSI rsync ／ Wake on LAN：○(1GbEのみ)",
+    "raid": "1/0（出荷時 RAID1）",
+    "warranty": "3年間(本体およびSSD) ※SSDが保証総書込み容量(TBW)に達した場合は、書き込み保証対象外となります"
+   },
+   "lastCheckedAt": "2026-10-14T06:41:09.897Z",
+   "fallbackFields": []
   },
   {
    "id": "ts5420dn",
@@ -681,7 +753,7 @@
    "bays": 4,
    "cpu": "Annapurna Labs Alpine AL524 2.0GHz/4コア 64bit",
    "memory": "DDR4 ECC 8GB",
-   "lanText": "10GBASE-T×1、1000BASE-T×2（背面）",
+   "lanText": "10GBASE-T×1、1000BASE-T×2",
    "lanSpeedMax": "10G",
    "lanMaxPorts": 1,
    "usb": "USB 3.2(Gen 1)×2（背面、PC接続不可）",
@@ -698,77 +770,81 @@
    "warrantyText": "3年間(本体およびハードディスク)",
    "features": {
     "クラウドストレージ連携": {
-     "value": "対応",
+     "value": "○ 対応しているクラウドストレージサービスは、こちらをご覧ください。",
      "supported": true
-    },
-    "Active Directory連携": {
-     "value": "対応",
-     "supported": true
-    },
-    "SSDキャッシュ": {
-     "value": "非対応",
-     "supported": false
     },
     "Time Machine": {
-     "value": "対応",
-     "supported": true
-    },
-    "iSCSIターゲット": {
-     "value": "対応",
-     "supported": true
-    },
-    "ウイルスチェック": {
-     "value": "別売オプション（OP-EVシリーズ）で対応",
+     "value": "○",
      "supported": true
     },
     "リモート監視（キキNavi）": {
-     "value": "対応",
+     "value": "○",
      "supported": true
     },
-    "ホットスワップ": {
-     "value": "対応",
+    "クラウドバックアップ（キキNavi）": {
+     "value": "○",
      "supported": true
     },
-    "ホットスペア": {
-     "value": "対応",
+    "Active Directory連携": {
+     "value": "○",
      "supported": true
     },
-    "ドライブ暗号化": {
-     "value": "対応",
-     "supported": true
-    },
-    "Webアクセス": {
-     "value": "対応",
+    "iSCSIターゲット": {
+     "value": "○",
      "supported": true
     },
     "スナップショット": {
-     "value": "対応",
+     "value": "○",
      "supported": true
     },
     "不変スナップショット": {
-     "value": "対応（Ver.2.20以降）",
+     "value": "○ Ver.2.20以降",
      "supported": true
     },
-    "メタデータ二重化": {
-     "value": "対応",
+    "ドライブ暗号化": {
+     "value": "○",
      "supported": true
+    },
+    "ホットスワップ": {
+     "value": "○",
+     "supported": true
+    },
+    "ホットスペア": {
+     "value": "○",
+     "supported": true
+    },
+    "SSDキャッシュ": {
+     "value": "－",
+     "supported": false
     },
     "レプリケーション": {
-     "value": "対応",
+     "value": "○",
      "supported": true
     },
     "フェイルオーバー": {
-     "value": "対応",
+     "value": "○",
+     "supported": true
+    },
+    "Webアクセス": {
+     "value": "○",
+     "supported": true
+    },
+    "ウイルスチェック": {
+     "value": "ウイルスチェック機能拡張・延長パックについては、 対応情報ページ からご確認いただけます。",
      "supported": true
     },
     "異常ファイル操作検知": {
-     "value": "対応（Ver.2.10以降）",
+     "value": "○ Ver.2.10以降",
+     "supported": true
+    },
+    "メタデータ二重化": {
+     "value": "○",
      "supported": true
     }
    },
    "releaseDate": "2023年4月",
    "status": "現行",
-   "statusNote": "現行（TS5420DN8004は受注生産）",
+   "statusNote": null,
    "variants": [
     {
      "sku": "TS5420DN0404",
@@ -825,9 +901,21 @@
      "jan": "4981254067710"
     }
    ],
-   "sourceUrl": "https://www.buffalo.jp/product/detail/print/ts5420dn0804.html",
-   "collectedBy": "research",
-   "imageUrl": "https://www.buffalo.jp/webpim/product/image/T/TS5420DN/TS5420DN0804/TS5420DN0804__0100.jpg"
+   "sourceUrl": "https://www.buffalo.jp/product/detail/ts5420dn0804.html",
+   "collectedBy": "scraper",
+   "imageUrl": "https://www.buffalo.jp/webpim/product/image/T/TS5420DN/TS5420DN0804/TS5420DN0804__0100.jpg?small_light(dw=1200,dh=630,cw=1200,ch=630,da=l,cc=ffffff,q=80)",
+   "raw": {
+    "os": "Linuxベース独自",
+    "install": "デスクトップ",
+    "bays": "4",
+    "cpu": "Annapurna Labs Alpine AL524 ／ 2.0GHz/4コア 64bit",
+    "memory": "DDR4 ECC 8GB",
+    "lan": "インターフェース（LAN端子） LAN端子（10GBASE-T）：背面×1 ／ インターフェース（LAN端子） LAN端子（2.5GBASE-T）：－ ／ インターフェース（LAN端子） LAN端子（1000BASE-T）：背面×2 ／ インターフェース（LAN端子） 準拠規格：IEEE802.3an IEEE802.3ab IEEE802.3u IEEE802.3準拠(10GBASE-T/1000BASE-T/100BASE-TX/10BASE-T) IEEE802.3bz(5GBASE-T/2.5GBASE-T) ／ インターフェース（LAN端子） 伝送速度：LAN端子(1000BASE-T)： 1000Mbps 全二重 100Mbps 半二重/全二重 10Mbps 半二重/全二重 LAN端子(10GBASE-T)： 10Gbps 全二重 5Gbps 全二重 2.5Gbps 全二重 1000Mbps 全二重 100Mbps 半二重/全二重 ／ インターフェース（LAN端子） 端子形状：RJ-45型 8極 ／ インターフェース（LAN端子） 対応プロトコル：TCP/IP ／ インターフェース（LAN端子） 対応ネットワークファイル プロトコル：SMB/CIFS AFP FTP SFTP NFS HTTP/HTTPS SNMP iSCSI rsync ／ Wake on LAN：○(1GbEのみ)",
+    "raid": "6/5/10/1/0（出荷時 RAID6）",
+    "warranty": "3年間(本体およびハードディスク)"
+   },
+   "lastCheckedAt": "2026-10-14T06:41:11.710Z",
+   "fallbackFields": []
   },
   {
    "id": "ts5420rn",
@@ -842,7 +930,7 @@
    "bays": 4,
    "cpu": "Annapurna Labs Alpine AL524 2.0GHz/4コア 64bit",
    "memory": "DDR4 ECC 8GB",
-   "lanText": "10GBASE-T×1、1000BASE-T×2（背面）",
+   "lanText": "10GBASE-T×1、1000BASE-T×2",
    "lanSpeedMax": "10G",
    "lanMaxPorts": 1,
    "usb": "USB 3.2(Gen 1)×3（前面×1、背面×2、PC接続不可）",
@@ -859,77 +947,81 @@
    "warrantyText": "3年間(本体およびハードディスク)",
    "features": {
     "クラウドストレージ連携": {
-     "value": "対応",
+     "value": "○ 対応しているクラウドストレージサービスは、こちらをご覧ください。",
      "supported": true
-    },
-    "Active Directory連携": {
-     "value": "対応",
-     "supported": true
-    },
-    "SSDキャッシュ": {
-     "value": "非対応",
-     "supported": false
     },
     "Time Machine": {
-     "value": "対応",
-     "supported": true
-    },
-    "iSCSIターゲット": {
-     "value": "対応",
-     "supported": true
-    },
-    "ウイルスチェック": {
-     "value": "別売オプション（OP-EVシリーズ）で対応",
+     "value": "○",
      "supported": true
     },
     "リモート監視（キキNavi）": {
-     "value": "対応",
+     "value": "○",
      "supported": true
     },
-    "ホットスワップ": {
-     "value": "対応",
+    "クラウドバックアップ（キキNavi）": {
+     "value": "○",
      "supported": true
     },
-    "ホットスペア": {
-     "value": "対応",
+    "Active Directory連携": {
+     "value": "○",
      "supported": true
     },
-    "ドライブ暗号化": {
-     "value": "対応",
-     "supported": true
-    },
-    "Webアクセス": {
-     "value": "対応",
+    "iSCSIターゲット": {
+     "value": "○",
      "supported": true
     },
     "スナップショット": {
-     "value": "対応",
+     "value": "○",
      "supported": true
     },
     "不変スナップショット": {
-     "value": "対応（Ver.2.20以降）",
+     "value": "○ Ver.2.20以降",
      "supported": true
     },
-    "メタデータ二重化": {
-     "value": "対応",
+    "ドライブ暗号化": {
+     "value": "○",
      "supported": true
+    },
+    "ホットスワップ": {
+     "value": "○",
+     "supported": true
+    },
+    "ホットスペア": {
+     "value": "○",
+     "supported": true
+    },
+    "SSDキャッシュ": {
+     "value": "－",
+     "supported": false
     },
     "レプリケーション": {
-     "value": "対応",
+     "value": "○",
      "supported": true
     },
     "フェイルオーバー": {
-     "value": "対応",
+     "value": "○",
+     "supported": true
+    },
+    "Webアクセス": {
+     "value": "○",
+     "supported": true
+    },
+    "ウイルスチェック": {
+     "value": "ウイルスチェック機能拡張・延長パックについては、 対応情報ページ からご確認いただけます。",
      "supported": true
     },
     "異常ファイル操作検知": {
-     "value": "対応（Ver.2.10以降）",
+     "value": "○ Ver.2.10以降",
+     "supported": true
+    },
+    "メタデータ二重化": {
+     "value": "○",
      "supported": true
     }
    },
    "releaseDate": "2023年4月",
    "status": "現行",
-   "statusNote": "現行（TS5420RN8004は受注生産）",
+   "statusNote": null,
    "variants": [
     {
      "sku": "TS5420RN0404",
@@ -987,8 +1079,20 @@
     }
    ],
    "sourceUrl": "https://www.buffalo.jp/product/detail/ts5420rn0804.html",
-   "collectedBy": "research",
-   "imageUrl": "https://www.buffalo.jp/webpim/product/image/T/TS5420RN/TS5420RN0804/TS5420RN0804__0100.jpg"
+   "collectedBy": "scraper",
+   "imageUrl": "https://www.buffalo.jp/webpim/product/image/T/TS5420RN/TS5420RN0804/TS5420RN0804__0100.jpg?small_light(dw=1200,dh=630,cw=1200,ch=630,da=l,cc=ffffff,q=80)",
+   "raw": {
+    "os": "Linuxベース独自",
+    "install": "ラックマウント",
+    "bays": "4",
+    "cpu": "Annapurna Labs Alpine AL524 ／ 2.0GHz/4コア 64bit",
+    "memory": "DDR4 ECC 8GB",
+    "lan": "インターフェース（LAN端子） LAN端子（10GBASE-T）：背面×1 ／ インターフェース（LAN端子） LAN端子（2.5GBASE-T）：－ ／ インターフェース（LAN端子） LAN端子（1000BASE-T）：背面×2 ／ インターフェース（LAN端子） 準拠規格：IEEE802.3an IEEE802.3ab IEEE802.3u IEEE802.3準拠(10GBASE-T/1000BASE-T/100BASE-TX/10BASE-T) IEEE802.3bz(5GBASE-T/2.5GBASE-T) ／ インターフェース（LAN端子） 伝送速度：LAN端子(1000BASE-T)： 1000Mbps 全二重 100Mbps 半二重/全二重 10Mbps 半二重/全二重 LAN端子(10GBASE-T)： 10Gbps 全二重 5Gbps 全二重 2.5Gbps 全二重 1000Mbps 全二重 100Mbps 半二重/全二重 ／ インターフェース（LAN端子） 端子形状：RJ-45型 8極 ／ インターフェース（LAN端子） 対応プロトコル：TCP/IP ／ インターフェース（LAN端子） 対応ネットワークファイル プロトコル：SMB/CIFS AFP FTP SFTP NFS HTTP/HTTPS SNMP iSCSI rsync ／ Wake on LAN：○(1GbEのみ)",
+    "raid": "6/5/10/1/0（出荷時 RAID6）",
+    "warranty": "3年間(本体およびハードディスク)"
+   },
+   "lastCheckedAt": "2026-10-14T06:41:13.998Z",
+   "fallbackFields": []
   },
   {
    "id": "ts5620dn",
@@ -1003,7 +1107,7 @@
    "bays": 6,
    "cpu": "Annapurna Labs Alpine AL524 2.0GHz/4コア 64bit",
    "memory": "DDR4 ECC 8GB",
-   "lanText": "10GBASE-T×1、1000BASE-T×2（背面）",
+   "lanText": "10GBASE-T×1、1000BASE-T×2",
    "lanSpeedMax": "10G",
    "lanMaxPorts": 1,
    "usb": "USB 3.2(Gen 1)×3（前面×1、背面×2、PC接続不可）",
@@ -1020,77 +1124,81 @@
    "warrantyText": "3年間(本体およびハードディスク)",
    "features": {
     "クラウドストレージ連携": {
-     "value": "対応",
+     "value": "○ 対応しているクラウドストレージサービスは、こちらをご覧ください。",
      "supported": true
-    },
-    "Active Directory連携": {
-     "value": "対応",
-     "supported": true
-    },
-    "SSDキャッシュ": {
-     "value": "非対応",
-     "supported": false
     },
     "Time Machine": {
-     "value": "対応",
-     "supported": true
-    },
-    "iSCSIターゲット": {
-     "value": "対応",
-     "supported": true
-    },
-    "ウイルスチェック": {
-     "value": "別売オプション（OP-EVシリーズ）で対応",
+     "value": "○",
      "supported": true
     },
     "リモート監視（キキNavi）": {
-     "value": "対応",
+     "value": "○",
      "supported": true
     },
-    "ホットスワップ": {
-     "value": "対応",
+    "クラウドバックアップ（キキNavi）": {
+     "value": "○",
      "supported": true
     },
-    "ホットスペア": {
-     "value": "対応",
+    "Active Directory連携": {
+     "value": "○",
      "supported": true
     },
-    "ドライブ暗号化": {
-     "value": "対応",
-     "supported": true
-    },
-    "Webアクセス": {
-     "value": "対応",
+    "iSCSIターゲット": {
+     "value": "○",
      "supported": true
     },
     "スナップショット": {
-     "value": "対応",
+     "value": "○",
      "supported": true
     },
     "不変スナップショット": {
-     "value": "対応（Ver.2.20以降）",
+     "value": "○ Ver.2.20以降",
      "supported": true
     },
-    "メタデータ二重化": {
-     "value": "対応",
+    "ドライブ暗号化": {
+     "value": "○",
      "supported": true
+    },
+    "ホットスワップ": {
+     "value": "○",
+     "supported": true
+    },
+    "ホットスペア": {
+     "value": "○",
+     "supported": true
+    },
+    "SSDキャッシュ": {
+     "value": "－",
+     "supported": false
     },
     "レプリケーション": {
-     "value": "対応",
+     "value": "○",
      "supported": true
     },
     "フェイルオーバー": {
-     "value": "対応",
+     "value": "○",
+     "supported": true
+    },
+    "Webアクセス": {
+     "value": "○",
+     "supported": true
+    },
+    "ウイルスチェック": {
+     "value": "ウイルスチェック機能拡張・延長パックについては、 対応情報ページ からご確認いただけます。",
      "supported": true
     },
     "異常ファイル操作検知": {
-     "value": "対応（Ver.2.10以降）",
+     "value": "○ Ver.2.10以降",
+     "supported": true
+    },
+    "メタデータ二重化": {
+     "value": "○",
      "supported": true
     }
    },
    "releaseDate": "2023年4月",
    "status": "現行",
-   "statusNote": "現行（TS5620DN12006は受注生産）",
+   "statusNote": null,
    "variants": [
     {
      "sku": "TS5620DN1806",
@@ -1130,8 +1238,20 @@
     }
    ],
    "sourceUrl": "https://www.buffalo.jp/product/detail/ts5620dn2406.html",
-   "collectedBy": "research",
-   "imageUrl": "https://www.buffalo.jp/webpim/product/image/T/TS5620DN/TS5620DN2406/TS5620DN2406__0100.jpg"
+   "collectedBy": "scraper",
+   "imageUrl": "https://www.buffalo.jp/webpim/product/image/T/TS5620DN/TS5620DN2406/TS5620DN2406__0100.jpg?small_light(dw=1200,dh=630,cw=1200,ch=630,da=l,cc=ffffff,q=80)",
+   "raw": {
+    "os": "Linuxベース独自",
+    "install": "デスクトップ",
+    "bays": "6",
+    "cpu": "Annapurna Labs Alpine AL524 ／ 2.0GHz/4コア 64bit",
+    "memory": "DDR4 ECC 8GB",
+    "lan": "インターフェース（LAN端子） LAN端子（10GBASE-T）：背面×1 ／ インターフェース（LAN端子） LAN端子（2.5GBASE-T）：－ ／ インターフェース（LAN端子） LAN端子（1000BASE-T）：背面×2 ／ インターフェース（LAN端子） 準拠規格：IEEE802.3an IEEE802.3ab IEEE802.3u IEEE802.3準拠(10GBASE-T/1000BASE-T/100BASE-TX/10BASE-T) IEEE802.3bz(5GBASE-T/2.5GBASE-T) ／ インターフェース（LAN端子） 伝送速度：LAN端子(1000BASE-T)： 1000Mbps 全二重 100Mbps 半二重/全二重 10Mbps 半二重/全二重 LAN端子(10GBASE-T)： 10Gbps 全二重 5Gbps 全二重 2.5Gbps 全二重 1000Mbps 全二重 100Mbps 半二重/全二重 ／ インターフェース（LAN端子） 端子形状：RJ-45型 8極 ／ インターフェース（LAN端子） 対応プロトコル：TCP/IP ／ インターフェース（LAN端子） 対応ネットワークファイル プロトコル：SMB/CIFS AFP FTP SFTP NFS HTTP/HTTPS SNMP iSCSI rsync ／ Wake on LAN：○(1GbEのみ)",
+    "raid": "6/5/10/1/0（出荷時 RAID6）",
+    "warranty": "3年間(本体およびハードディスク)"
+   },
+   "lastCheckedAt": "2026-10-14T06:41:16.306Z",
+   "fallbackFields": []
   },
   {
    "id": "ts5820dn",
@@ -1146,7 +1266,7 @@
    "bays": 8,
    "cpu": "Annapurna Labs Alpine AL524 2.0GHz/4コア 64bit",
    "memory": "DDR4 ECC 8GB",
-   "lanText": "10GBASE-T×1、1000BASE-T×2（背面）",
+   "lanText": "10GBASE-T×1、1000BASE-T×2",
    "lanSpeedMax": "10G",
    "lanMaxPorts": 1,
    "usb": "USB 3.2(Gen 1)×3（前面×1、背面×2、PC接続不可）",
@@ -1163,77 +1283,81 @@
    "warrantyText": "3年間(本体およびハードディスク)",
    "features": {
     "クラウドストレージ連携": {
-     "value": "対応",
+     "value": "○ 対応しているクラウドストレージサービスは、こちらをご覧ください。",
      "supported": true
-    },
-    "Active Directory連携": {
-     "value": "対応",
-     "supported": true
-    },
-    "SSDキャッシュ": {
-     "value": "非対応",
-     "supported": false
     },
     "Time Machine": {
-     "value": "対応",
-     "supported": true
-    },
-    "iSCSIターゲット": {
-     "value": "対応",
-     "supported": true
-    },
-    "ウイルスチェック": {
-     "value": "別売オプション（OP-EVシリーズ）で対応",
+     "value": "○",
      "supported": true
     },
     "リモート監視（キキNavi）": {
-     "value": "対応",
+     "value": "○",
      "supported": true
     },
-    "ホットスワップ": {
-     "value": "対応",
+    "クラウドバックアップ（キキNavi）": {
+     "value": "○",
      "supported": true
     },
-    "ホットスペア": {
-     "value": "対応",
+    "Active Directory連携": {
+     "value": "○",
      "supported": true
     },
-    "ドライブ暗号化": {
-     "value": "対応",
-     "supported": true
-    },
-    "Webアクセス": {
-     "value": "対応",
+    "iSCSIターゲット": {
+     "value": "○",
      "supported": true
     },
     "スナップショット": {
-     "value": "対応",
+     "value": "○",
      "supported": true
     },
     "不変スナップショット": {
-     "value": "対応（Ver.2.20以降）",
+     "value": "○ Ver.2.20以降",
      "supported": true
     },
-    "メタデータ二重化": {
-     "value": "対応",
+    "ドライブ暗号化": {
+     "value": "○",
      "supported": true
+    },
+    "ホットスワップ": {
+     "value": "○",
+     "supported": true
+    },
+    "ホットスペア": {
+     "value": "○",
+     "supported": true
+    },
+    "SSDキャッシュ": {
+     "value": "－",
+     "supported": false
     },
     "レプリケーション": {
-     "value": "対応",
+     "value": "○",
      "supported": true
     },
     "フェイルオーバー": {
-     "value": "対応",
+     "value": "○",
+     "supported": true
+    },
+    "Webアクセス": {
+     "value": "○",
+     "supported": true
+    },
+    "ウイルスチェック": {
+     "value": "ウイルスチェック機能拡張・延長パックについては、 対応情報ページ からご確認いただけます。",
      "supported": true
     },
     "異常ファイル操作検知": {
-     "value": "対応（Ver.2.10以降）",
+     "value": "○ Ver.2.10以降",
+     "supported": true
+    },
+    "メタデータ二重化": {
+     "value": "○",
      "supported": true
     }
    },
    "releaseDate": "2023年6月",
    "status": "現行",
-   "statusNote": "現行（TS5820DN16008は受注生産）",
+   "statusNote": null,
    "variants": [
     {
      "sku": "TS5820DN3208",
@@ -1273,8 +1397,20 @@
     }
    ],
    "sourceUrl": "https://www.buffalo.jp/product/detail/ts5820dn4808.html",
-   "collectedBy": "research",
-   "imageUrl": "https://www.buffalo.jp/webpim/product/image/T/TS5820DN/TS5820DN4808/TS5820DN4808__0100.jpg"
+   "collectedBy": "scraper",
+   "imageUrl": "https://www.buffalo.jp/webpim/product/image/T/TS5820DN/TS5820DN4808/TS5820DN4808__0100.jpg?small_light(dw=1200,dh=630,cw=1200,ch=630,da=l,cc=ffffff,q=80)",
+   "raw": {
+    "os": "Linuxベース独自",
+    "install": "デスクトップ",
+    "bays": "8",
+    "cpu": "Annapurna Labs Alpine AL524 ／ 2.0GHz/4コア 64bit",
+    "memory": "DDR4 ECC 8GB",
+    "lan": "インターフェース（LAN端子） LAN端子（10GBASE-T）：背面×1 ／ インターフェース（LAN端子） LAN端子（2.5GBASE-T）：－ ／ インターフェース（LAN端子） LAN端子（1000BASE-T）：背面×2 ／ インターフェース（LAN端子） 準拠規格：IEEE802.3an IEEE802.3ab IEEE802.3u IEEE802.3準拠(10GBASE-T/1000BASE-T/100BASE-TX/10BASE-T) IEEE802.3bz(5GBASE-T/2.5GBASE-T) ／ インターフェース（LAN端子） 伝送速度：LAN端子(1000BASE-T)： 1000Mbps 全二重 100Mbps 半二重/全二重 10Mbps 半二重/全二重 LAN端子(10GBASE-T)： 10Gbps 全二重 5Gbps 全二重 2.5Gbps 全二重 1000Mbps 全二重 100Mbps 半二重/全二重 ／ インターフェース（LAN端子） 端子形状：RJ-45型 8極 ／ インターフェース（LAN端子） 対応プロトコル：TCP/IP ／ インターフェース（LAN端子） 対応ネットワークファイル プロトコル：SMB/CIFS AFP FTP SFTP NFS HTTP/HTTPS SNMP iSCSI rsync ／ Wake on LAN：○(1GbEのみ)",
+    "raid": "6/5/10/1/0（出荷時 RAID6）",
+    "warranty": "3年間(本体およびハードディスク)"
+   },
+   "lastCheckedAt": "2026-10-14T06:41:17.946Z",
+   "fallbackFields": []
   },
   {
    "id": "ts51220rh",
@@ -1286,10 +1422,10 @@
    "osEdition": "Linuxベース独自",
    "windowsEdition": null,
    "install": "ラックマウントタイプ",
-   "bays": 12,
+   "bays": 4,
    "cpu": "Annapurna Labs Alpine V2 AL524 2.0GHz/4コア",
    "memory": "DDR4 ECC 16GB",
-   "lanText": "10GBASE-T×2、1000BASE-T×2（背面）",
+   "lanText": "10GBASE-T×2、1000BASE-T×2",
    "lanSpeedMax": "10G",
    "lanMaxPorts": 2,
    "usb": "USB 3.2(Gen 1)×2（背面）、USB 2.0×2（前面）",
@@ -1306,77 +1442,81 @@
    "warrantyText": "3年間(本体およびハードディスク)",
    "features": {
     "クラウドストレージ連携": {
-     "value": "対応",
-     "supported": true
-    },
-    "Active Directory連携": {
-     "value": "対応",
-     "supported": true
-    },
-    "SSDキャッシュ": {
-     "value": "対応（別売OP-NVSSD必要、FW Ver.1.68以降）",
+     "value": "○ 対応しているクラウドストレージサービスは、こちらをご覧ください。",
      "supported": true
     },
     "Time Machine": {
-     "value": "対応",
-     "supported": true
-    },
-    "iSCSIターゲット": {
-     "value": "対応",
-     "supported": true
-    },
-    "ウイルスチェック": {
-     "value": "対応（OP-EVシリーズ別売）",
+     "value": "○",
      "supported": true
     },
     "リモート監視（キキNavi）": {
-     "value": "対応",
+     "value": "○",
      "supported": true
     },
-    "ホットスワップ": {
-     "value": "対応",
+    "クラウドバックアップ（キキNavi）": {
+     "value": "○",
      "supported": true
     },
-    "ホットスペア": {
-     "value": "対応",
+    "Active Directory連携": {
+     "value": "○",
      "supported": true
     },
-    "ドライブ暗号化": {
-     "value": "対応",
-     "supported": true
-    },
-    "Webアクセス": {
-     "value": "対応",
+    "iSCSIターゲット": {
+     "value": "○",
      "supported": true
     },
     "スナップショット": {
-     "value": "対応",
+     "value": "○",
      "supported": true
     },
     "不変スナップショット": {
-     "value": "対応（Ver.2.20以降）",
+     "value": "○ Ver.2.20以降",
      "supported": true
     },
-    "メタデータ二重化": {
-     "value": "対応",
+    "ドライブ暗号化": {
+     "value": "○",
      "supported": true
+    },
+    "ホットスワップ": {
+     "value": "○",
+     "supported": true
+    },
+    "ホットスペア": {
+     "value": "○",
+     "supported": true
+    },
+    "SSDキャッシュ": {
+     "value": "〇（ファイル共有/iSCSI） Ver.1.68以降 別途オプション品 OP-NVSSD（PCIeカード+SSD）が必要となります。",
+     "supported": null
     },
     "レプリケーション": {
-     "value": "対応",
+     "value": "○",
      "supported": true
     },
     "フェイルオーバー": {
-     "value": "対応",
+     "value": "○",
+     "supported": true
+    },
+    "Webアクセス": {
+     "value": "○",
+     "supported": true
+    },
+    "ウイルスチェック": {
+     "value": "ウイルスチェック機能拡張・延長パックについては、 対応情報ページ からご確認いただけます。",
      "supported": true
     },
     "異常ファイル操作検知": {
-     "value": "対応（Ver.2.10以降）",
+     "value": "○ Ver.2.10以降",
+     "supported": true
+    },
+    "メタデータ二重化": {
+     "value": "○",
      "supported": true
     }
    },
    "releaseDate": "2023年3月",
    "status": "現行",
-   "statusNote": "現行（4804/6404/8004/14412/19212/24012は受注生産。2412と0804は対応検索一覧に無く販売終了の可能性）",
+   "statusNote": null,
    "variants": [
     {
      "sku": "TS51220RH0804",
@@ -1464,8 +1604,20 @@
     }
    ],
    "sourceUrl": "https://www.buffalo.jp/product/detail/ts51220rh3204.html",
-   "collectedBy": "research",
-   "imageUrl": "https://www.buffalo.jp/webpim/product/image/T/TS51220RH/TS51220RH3204/TS51220RH3204__0100.jpg"
+   "collectedBy": "scraper",
+   "imageUrl": "https://www.buffalo.jp/webpim/product/image/T/TS51220RH/TS51220RH3204/TS51220RH3204__0100.jpg?small_light(dw=1200,dh=630,cw=1200,ch=630,da=l,cc=ffffff,q=80)",
+   "raw": {
+    "os": "Linuxベース独自",
+    "install": "ラックマウント",
+    "bays": "4※または12 ※8ベイスロット空き",
+    "cpu": "Annapurna Labs Alpine V2 AL524 ／ 2.0GHz/4コア",
+    "memory": "DDR4 ECC 16GB",
+    "lan": "インターフェース（LAN端子） LAN端子（10GBASE-T）：背面×2 ／ インターフェース（LAN端子） LAN端子（2.5GBASE-T）：－ ／ インターフェース（LAN端子） LAN端子（1000BASE-T）：背面×2 ／ インターフェース（LAN端子） 準拠規格：IEEE802.3ad Link Aggregation IEEE802.3x Flow Control IEEE802.3an 10GBASE-T IEEE802.3bz 2.5GBASE-T/5GBASE-T IEEE802.3ab 1000BASE-T IEEE802.3u 100BASE-TX IEEE802.3 10BASE-T (1GbE portのみ) ／ インターフェース（LAN端子） 伝送速度：LAN端子(1000BASE-T)： 1000Mbps 全二重 100Mbps 半二重/全二重 10Mbps 半二重/全二重 LAN端子(10GBASE-T)： 10Gbps 全二重 5Gbps 全二重 2.5Gbps 全二重 1000Mbps 全二重 100Mbps 半二重/全二重 ／ インターフェース（LAN端子） 端子形状：RJ-45型 8極 ／ インターフェース（LAN端子） 対応プロトコル：TCP/IP ／ インターフェース（LAN端子） 対応ネットワークファイル プロトコル：SMB/CIFS AFP FTP SFTP NFS HTTP/HTTPS SNMP iSCSI rsync ／ Wake on LAN：○(1GbEのみ)",
+    "raid": "6/5/10/1/0（出荷時 RAID6）",
+    "warranty": "3年間(本体およびハードディスク)"
+   },
+   "lastCheckedAt": "2026-10-14T06:41:20.134Z",
+   "fallbackFields": []
   },
   {
    "id": "ts71210rh",
@@ -1477,10 +1629,10 @@
    "osEdition": "Linuxベース独自",
    "windowsEdition": null,
    "install": "ラックマウントタイプ",
-   "bays": 12,
-   "cpu": "Intel Xeon D-1713NT 2.2GHz（最大2.9GHz）/4コア",
-   "memory": "DDR4 ECC 16GB（最大64GB、16GB×4スロット）",
-   "lanText": "10GBASE-T×4（背面）",
+   "bays": 4,
+   "cpu": "Intel Xeon D-1713NT 2.2 GHz/4コア Max 2.9 GHz (4core) or Max 3.5GHz (1core)",
+   "memory": "DDR4 ECC 16GB 最大 64 GB (16GB x 4 slot)",
+   "lanText": "10GBASE-T×4",
    "lanSpeedMax": "10G",
    "lanMaxPorts": 4,
    "usb": "USB 3.2(Gen 1)×2（背面）、USB 2.0×2（前面）",
@@ -1494,80 +1646,84 @@
    "raidType": "ソフトウェアRAID",
    "redundantPower": true,
    "warrantyYears": 3,
-   "warrantyText": "3年間(本体およびハードディスク)",
+   "warrantyText": "3年間（本体およびハードディスク）",
    "features": {
     "クラウドストレージ連携": {
-     "value": "対応",
-     "supported": true
-    },
-    "Active Directory連携": {
-     "value": "対応",
-     "supported": true
-    },
-    "SSDキャッシュ": {
-     "value": "対応（ファイル共有・iSCSI、別売OP-NVSSD必要）",
+     "value": "〇 対応しているクラウドストレージサービスは、こちらをご覧ください。",
      "supported": true
     },
     "Time Machine": {
-     "value": "対応",
-     "supported": true
-    },
-    "iSCSIターゲット": {
-     "value": "対応",
-     "supported": true
-    },
-    "ウイルスチェック": {
-     "value": "別売オプション（OP-EVシリーズ）で対応",
+     "value": "○",
      "supported": true
     },
     "リモート監視（キキNavi）": {
-     "value": "対応",
-     "supported": true
+     "value": "〇",
+     "supported": null
     },
-    "ホットスワップ": {
-     "value": "対応",
-     "supported": true
+    "クラウドバックアップ（キキNavi）": {
+     "value": "〇 Ver.1.20以降",
+     "supported": null
     },
-    "ホットスペア": {
-     "value": "対応",
-     "supported": true
+    "Active Directory連携": {
+     "value": "〇",
+     "supported": null
     },
-    "ドライブ暗号化": {
-     "value": "対応",
-     "supported": true
-    },
-    "Webアクセス": {
-     "value": "対応",
+    "iSCSIターゲット": {
+     "value": "○",
      "supported": true
     },
     "スナップショット": {
-     "value": "対応",
-     "supported": true
+     "value": "〇",
+     "supported": null
     },
     "不変スナップショット": {
-     "value": "対応（Ver.2.00以降）",
+     "value": "〇 Ver.2.00以降",
+     "supported": null
+    },
+    "ドライブ暗号化": {
+     "value": "○",
      "supported": true
     },
-    "メタデータ二重化": {
-     "value": "対応",
+    "ホットスワップ": {
+     "value": "○",
+     "supported": true
+    },
+    "ホットスペア": {
+     "value": "○",
+     "supported": true
+    },
+    "SSDキャッシュ": {
+     "value": "〇（ファイル共有） ○（iSCSI）※ファームウェアVer.1.10以降で対応 別途オプション品 OP-NVSSD（PCIeカード+SSD）が必要となります。",
      "supported": true
     },
     "レプリケーション": {
-     "value": "対応",
+     "value": "○",
      "supported": true
     },
     "フェイルオーバー": {
-     "value": "対応（Ver.1.20以降）",
+     "value": "○ Ver.1.20以降",
+     "supported": true
+    },
+    "Webアクセス": {
+     "value": "○",
+     "supported": true
+    },
+    "ウイルスチェック": {
+     "value": "ウイルスチェック機能拡張・延長パックについては、 対応情報ページ からご確認いただけます。",
      "supported": true
     },
     "異常ファイル操作検知": {
-     "value": "対応（Ver.1.42以降）",
-     "supported": true
+     "value": "〇 Ver.1.42以降",
+     "supported": null
+    },
+    "メタデータ二重化": {
+     "value": "〇",
+     "supported": null
     }
    },
    "releaseDate": "2023年7月",
    "status": "現行",
-   "statusNote": "現行（4804/6404/8004/14412/19212/24012は受注生産。4804は一覧によって新価格表記もあり）",
+   "statusNote": null,
    "variants": [
     {
      "sku": "TS71210RH1604",
@@ -1643,8 +1799,20 @@
     }
    ],
    "sourceUrl": "https://www.buffalo.jp/product/detail/ts71210rh3204.html",
-   "collectedBy": "research",
-   "imageUrl": "https://www.buffalo.jp/webpim/product/image/T/TS71210RH/TS71210RH3204/TS71210RH3204__0100.jpg"
+   "collectedBy": "scraper",
+   "imageUrl": "https://www.buffalo.jp/webpim/product/image/T/TS71210RH/TS71210RH3204/TS71210RH3204__0100.jpg?small_light(dw=1200,dh=630,cw=1200,ch=630,da=l,cc=ffffff,q=80)",
+   "raw": {
+    "os": "Linuxベース独自",
+    "install": "ラックマウント",
+    "bays": "4※または12 ※8ベイスロット空き",
+    "cpu": "Intel Xeon D-1713NT ／ 2.2 GHz/4コア Max 2.9 GHz (4core) or Max 3.5GHz (1core)",
+    "memory": "DDR4 ECC 16GB 最大 64 GB (16GB x 4 slot)",
+    "lan": "インターフェース（LAN端子） LAN端子（10GBASE-T）：背面×4 ／ インターフェース（LAN端子） LAN端子（2.5GBASE-T）：－ ／ インターフェース（LAN端子） LAN端子（1000BASE-T）：－ ／ インターフェース（LAN端子） 準拠規格：IEEE802.3ad Link Aggregation IEEE802.3x Flow Control IEEE802.3an 10GBASE-T IEEE802.3ab 1000BASE-T ／ インターフェース（LAN端子） 伝送速度：1G/10Gbps （オートセンス） ／ インターフェース（LAN端子） 端子形状：RJ-45型 8極 ／ インターフェース（LAN端子） 対応プロトコル：TCP/IP ／ インターフェース（LAN端子） 対応ネットワークファイル プロトコル：SMB/CIFS AFP FTP SFTP NFS HTTP/HTTPS SNMP iSCSI rsync ／ Wake on LAN：○",
+    "raid": "6/5/10/1/0（出荷時 RAID6）",
+    "warranty": "3年間（本体およびハードディスク）"
+   },
+   "lastCheckedAt": "2026-10-14T06:41:21.883Z",
+   "fallbackFields": []
   },
   {
    "id": "ts6200dn",
@@ -1657,9 +1825,9 @@
    "windowsEdition": null,
    "install": "BOXタイプ",
    "bays": 2,
-   "cpu": "Intel Atom C3338 1.50GHz（ターボ2.20GHz）2コア/2スレッド",
+   "cpu": "Intel Atom C3338 1.50 GHz (ターボブースト:2.20 GHz)/2コア/2スレッド",
    "memory": "DDR4 ECC 8GB",
-   "lanText": "10GBASE-T×1、1000BASE-T×2（背面）",
+   "lanText": "10GBASE-T×1、1000BASE-T×2",
    "lanSpeedMax": "10G",
    "lanMaxPorts": 1,
    "usb": "USB 3.2(Gen 1)×2（背面、PC接続不可）",
@@ -1673,72 +1841,76 @@
    "warrantyText": "3年間(本体およびハードディスク)",
    "features": {
     "クラウドストレージ連携": {
-     "value": "対応",
+     "value": "〇 対応しているクラウドストレージサービスは、こちらをご覧ください。",
      "supported": true
-    },
-    "Active Directory連携": {
-     "value": "対応",
-     "supported": true
-    },
-    "SSDキャッシュ": {
-     "value": "非対応",
-     "supported": false
     },
     "Time Machine": {
-     "value": "対応",
-     "supported": true
-    },
-    "iSCSIターゲット": {
-     "value": "対応",
-     "supported": true
-    },
-    "ウイルスチェック": {
-     "value": "別売の拡張・延長パックで対応",
+     "value": "○",
      "supported": true
     },
     "リモート監視（キキNavi）": {
-     "value": "対応",
-     "supported": true
+     "value": "〇",
+     "supported": null
     },
-    "ホットスワップ": {
-     "value": "対応",
-     "supported": true
+    "クラウドバックアップ（キキNavi）": {
+     "value": "〇",
+     "supported": null
     },
-    "ホットスペア": {
-     "value": "非対応",
-     "supported": false
+    "Active Directory連携": {
+     "value": "〇",
+     "supported": null
     },
-    "ドライブ暗号化": {
-     "value": "対応",
-     "supported": true
-    },
-    "Webアクセス": {
-     "value": "対応",
+    "iSCSIターゲット": {
+     "value": "○",
      "supported": true
     },
     "スナップショット": {
-     "value": "対応",
-     "supported": true
+     "value": "〇",
+     "supported": null
     },
     "不変スナップショット": {
-     "value": "対応（Ver.6.30以降）",
+     "value": "〇 Ver.6.30以降",
+     "supported": null
+    },
+    "ドライブ暗号化": {
+     "value": "○",
      "supported": true
     },
-    "メタデータ二重化": {
-     "value": "対応",
+    "ホットスワップ": {
+     "value": "○",
      "supported": true
+    },
+    "ホットスペア": {
+     "value": "－",
+     "supported": false
+    },
+    "SSDキャッシュ": {
+     "value": "－",
+     "supported": false
     },
     "レプリケーション": {
-     "value": "対応",
+     "value": "○",
      "supported": true
     },
     "フェイルオーバー": {
-     "value": "対応",
+     "value": "○",
+     "supported": true
+    },
+    "Webアクセス": {
+     "value": "○",
+     "supported": true
+    },
+    "ウイルスチェック": {
+     "value": "ウイルスチェック機能拡張・延長パックについては、 対応情報ページ からご確認いただけます。",
      "supported": true
     },
     "異常ファイル操作検知": {
-     "value": "対応（Ver.6.20以降）",
-     "supported": true
+     "value": "〇 Ver.6.20以降",
+     "supported": null
+    },
+    "メタデータ二重化": {
+     "value": "〇",
+     "supported": null
     }
    },
    "releaseDate": "2019年8月",
@@ -1765,8 +1937,20 @@
     }
    ],
    "sourceUrl": "https://www.buffalo.jp/product/detail/ts6200dn0402.html",
-   "collectedBy": "research",
-   "imageUrl": "https://www.buffalo.jp/webpim/product/image/T/TS6200DN/TS6200DN0402/TS6200DN0402__0100.jpg"
+   "collectedBy": "scraper",
+   "imageUrl": "https://www.buffalo.jp/webpim/product/image/T/TS6200DN/TS6200DN0402/TS6200DN0402__0100.jpg?small_light(dw=1200,dh=630,cw=1200,ch=630,da=l,cc=ffffff,q=80)",
+   "raw": {
+    "os": "Linuxベース独自",
+    "install": "デスクトップ",
+    "bays": "2",
+    "cpu": "Intel Atom C3338 ／ 1.50 GHz (ターボブースト:2.20 GHz)/2コア/2スレッド",
+    "memory": "DDR4 ECC 8GB",
+    "lan": "インターフェース（LAN端子） LAN端子（10GBASE-T）：背面×1 ／ インターフェース（LAN端子） LAN端子（2.5GBASE-T）：－ ／ インターフェース（LAN端子） LAN端子（1000BASE-T）：背面×2 ／ インターフェース（LAN端子） 準拠規格：IEEE802.3an IEEE802.3ab IEEE802.3u IEEE802.3準拠(10GBASE-T/1000BASE-T/100BASE-TX/10BASE-T) IEEE802.3bz(5GBASE-T/2.5GBASE-T) ／ インターフェース（LAN端子） 伝送速度：10Gbps 全二重 5Gbps 全二重 2.5Gbps 全二重 1000Mbps 全二重 100Mbps 全二重 10Mbps 全二重 ※10GbEポートは10Mbps非対応 ／ インターフェース（LAN端子） 端子形状：RJ-45型 8極 ／ インターフェース（LAN端子） 対応プロトコル：TCP/IP ／ インターフェース（LAN端子） 対応ネットワークファイル プロトコル：SMB/CIFS AFP FTP SFTP NFS HTTP/HTTPS SNMP iSCSI rsync ／ Wake on LAN：○(1GbEのみ)",
+    "raid": "1/0（出荷時 RAID1）",
+    "warranty": "3年間(本体およびハードディスク)"
+   },
+   "lastCheckedAt": "2026-10-14T06:41:24.825Z",
+   "fallbackFields": []
   },
   {
    "id": "ts6400dn",
@@ -1779,9 +1963,9 @@
    "windowsEdition": null,
    "install": "BOXタイプ",
    "bays": 4,
-   "cpu": "Intel Atom C3538 2.10GHz 4コア/4スレッド",
+   "cpu": "Intel Atom C3538 2.10 GHz (ターボブースト:2.10 GHz)/4コア/4スレッド",
    "memory": "DDR4 ECC 8GB",
-   "lanText": "10GBASE-T×1、1000BASE-T×2（背面）",
+   "lanText": "10GBASE-T×1、1000BASE-T×2",
    "lanSpeedMax": "10G",
    "lanMaxPorts": 1,
    "usb": "USB 3.2(Gen 1)×2（背面、PC接続不可）",
@@ -1795,80 +1979,84 @@
    "raidType": "ソフトウェアRAID",
    "redundantPower": false,
    "warrantyYears": 3,
-   "warrantyText": "標準の3年保証（HDDを含む）",
+   "warrantyText": "3年間(本体およびハードディスク)",
    "features": {
     "クラウドストレージ連携": {
-     "value": "対応",
+     "value": "〇 対応しているクラウドストレージサービスは、こちらをご覧ください。",
      "supported": true
-    },
-    "Active Directory連携": {
-     "value": "対応",
-     "supported": true
-    },
-    "SSDキャッシュ": {
-     "value": "非対応",
-     "supported": false
     },
     "Time Machine": {
-     "value": "対応",
-     "supported": true
-    },
-    "iSCSIターゲット": {
-     "value": "対応",
-     "supported": true
-    },
-    "ウイルスチェック": {
-     "value": "対応（別売拡張パック必要）",
+     "value": "○",
      "supported": true
     },
     "リモート監視（キキNavi）": {
-     "value": "対応",
-     "supported": true
+     "value": "〇",
+     "supported": null
     },
-    "ホットスワップ": {
-     "value": "対応",
-     "supported": true
+    "クラウドバックアップ（キキNavi）": {
+     "value": "〇",
+     "supported": null
     },
-    "ホットスペア": {
-     "value": "対応",
-     "supported": true
+    "Active Directory連携": {
+     "value": "〇",
+     "supported": null
     },
-    "ドライブ暗号化": {
-     "value": "対応",
-     "supported": true
-    },
-    "Webアクセス": {
-     "value": "対応",
+    "iSCSIターゲット": {
+     "value": "○",
      "supported": true
     },
     "スナップショット": {
-     "value": "対応",
-     "supported": true
+     "value": "〇",
+     "supported": null
     },
     "不変スナップショット": {
-     "value": "対応（Ver.6.30以降）",
+     "value": "〇 Ver.6.30以降",
+     "supported": null
+    },
+    "ドライブ暗号化": {
+     "value": "○",
      "supported": true
     },
-    "メタデータ二重化": {
-     "value": "対応",
+    "ホットスワップ": {
+     "value": "○",
      "supported": true
+    },
+    "ホットスペア": {
+     "value": "○",
+     "supported": true
+    },
+    "SSDキャッシュ": {
+     "value": "－",
+     "supported": false
     },
     "レプリケーション": {
-     "value": "対応",
+     "value": "○",
      "supported": true
     },
     "フェイルオーバー": {
-     "value": "対応",
+     "value": "○",
+     "supported": true
+    },
+    "Webアクセス": {
+     "value": "○",
+     "supported": true
+    },
+    "ウイルスチェック": {
+     "value": "ウイルスチェック機能拡張・延長パックについては、 対応情報ページ からご確認いただけます。",
      "supported": true
     },
     "異常ファイル操作検知": {
-     "value": "対応（Ver.6.20以降）",
-     "supported": true
+     "value": "〇 Ver.6.20以降",
+     "supported": null
+    },
+    "メタデータ二重化": {
+     "value": "〇",
+     "supported": null
     }
    },
    "releaseDate": "2019年8月",
    "status": "現行",
-   "statusNote": "現行（4804は一覧で価格表記なし）",
+   "statusNote": null,
    "variants": [
     {
      "sku": "TS6400DN0404",
@@ -1902,8 +2090,20 @@
     }
    ],
    "sourceUrl": "https://www.buffalo.jp/product/detail/ts6400dn0804.html",
-   "collectedBy": "research",
-   "imageUrl": "https://www.buffalo.jp/webpim/product/image/T/TS6400DN/TS6400DN0804/TS6400DN0804__0100.jpg"
+   "collectedBy": "scraper",
+   "imageUrl": "https://www.buffalo.jp/webpim/product/image/T/TS6400DN/TS6400DN0804/TS6400DN0804__0100.jpg?small_light(dw=1200,dh=630,cw=1200,ch=630,da=l,cc=ffffff,q=80)",
+   "raw": {
+    "os": "Linuxベース独自",
+    "install": "デスクトップ",
+    "bays": "4",
+    "cpu": "Intel Atom C3538 ／ 2.10 GHz (ターボブースト:2.10 GHz)/4コア/4スレッド",
+    "memory": "DDR4 ECC 8GB",
+    "lan": "インターフェース（LAN端子） LAN端子（10GBASE-T）：背面×1 ／ インターフェース（LAN端子） LAN端子（2.5GBASE-T）：－ ／ インターフェース（LAN端子） LAN端子（1000BASE-T）：背面×2 ／ インターフェース（LAN端子） 準拠規格：IEEE802.3an IEEE802.3ab IEEE802.3u IEEE802.3準拠(10GBASE-T/1000BASE-T/100BASE-TX/10BASE-T) IEEE802.3bz(5GBASE-T/2.5GBASE-T) ／ インターフェース（LAN端子） 伝送速度：10Gbps 全二重 5Gbps 全二重 2.5Gbps 全二重 1000Mbps 全二重 100Mbps 全二重 10Mbps 全二重 ※10GbEポートは10Mbps非対応 ／ インターフェース（LAN端子） 端子形状：RJ-45型 8極 ／ インターフェース（LAN端子） 対応プロトコル：TCP/IP ／ インターフェース（LAN端子） 対応ネットワークファイル プロトコル：SMB/CIFS AFP FTP SFTP NFS HTTP/HTTPS SNMP iSCSI rsync ／ Wake on LAN：○(1GbEのみ)",
+    "raid": "6/5/10/1/0（出荷時 RAID6）",
+    "warranty": "3年間(本体およびハードディスク)"
+   },
+   "lastCheckedAt": "2026-10-14T06:41:25.954Z",
+   "fallbackFields": []
   },
   {
    "id": "ts6400rn",
@@ -1916,9 +2116,9 @@
    "windowsEdition": null,
    "install": "ラックマウントタイプ",
    "bays": 4,
-   "cpu": "Intel Atom C3538 2.10GHz 4コア/4スレッド",
+   "cpu": "Intel Atom C3538 2.10 GHz (ターボブースト:2.10 GHz)/4コア/4スレッド",
    "memory": "DDR4 ECC 8GB",
-   "lanText": "10GBASE-T×1、1000BASE-T×2（背面）",
+   "lanText": "10GBASE-T×1、1000BASE-T×2",
    "lanSpeedMax": "10G",
    "lanMaxPorts": 1,
    "usb": "USB 3.2(Gen 1)×3（前面×1、背面×2）",
@@ -1935,77 +2135,81 @@
    "warrantyText": "3年間(本体およびハードディスク)",
    "features": {
     "クラウドストレージ連携": {
-     "value": "対応",
+     "value": "〇 対応しているクラウドストレージサービスは、こちらをご覧ください。",
      "supported": true
-    },
-    "Active Directory連携": {
-     "value": "対応",
-     "supported": true
-    },
-    "SSDキャッシュ": {
-     "value": "非対応",
-     "supported": false
     },
     "Time Machine": {
-     "value": "対応",
+     "value": "○",
      "supported": true
-    },
-    "iSCSIターゲット": {
-     "value": "対応",
-     "supported": true
-    },
-    "ウイルスチェック": {
-     "value": "別売の拡張・延長パック（OP-TSVCシリーズ）必要",
-     "supported": null
     },
     "リモート監視（キキNavi）": {
-     "value": "対応",
-     "supported": true
+     "value": "〇",
+     "supported": null
     },
-    "ホットスワップ": {
-     "value": "対応",
-     "supported": true
+    "クラウドバックアップ（キキNavi）": {
+     "value": "〇",
+     "supported": null
     },
-    "ホットスペア": {
-     "value": "対応",
-     "supported": true
+    "Active Directory連携": {
+     "value": "〇",
+     "supported": null
     },
-    "ドライブ暗号化": {
-     "value": "対応",
-     "supported": true
-    },
-    "Webアクセス": {
-     "value": "対応",
+    "iSCSIターゲット": {
+     "value": "○",
      "supported": true
     },
     "スナップショット": {
-     "value": "対応",
-     "supported": true
+     "value": "〇",
+     "supported": null
     },
     "不変スナップショット": {
-     "value": "対応（Ver.6.30以降）",
+     "value": "〇 Ver.6.30以降",
+     "supported": null
+    },
+    "ドライブ暗号化": {
+     "value": "○",
      "supported": true
     },
-    "メタデータ二重化": {
-     "value": "対応",
+    "ホットスワップ": {
+     "value": "○",
      "supported": true
+    },
+    "ホットスペア": {
+     "value": "○",
+     "supported": true
+    },
+    "SSDキャッシュ": {
+     "value": "－",
+     "supported": false
     },
     "レプリケーション": {
-     "value": "対応",
+     "value": "○",
      "supported": true
     },
     "フェイルオーバー": {
-     "value": "対応",
+     "value": "○",
+     "supported": true
+    },
+    "Webアクセス": {
+     "value": "○",
+     "supported": true
+    },
+    "ウイルスチェック": {
+     "value": "ウイルスチェック機能拡張・延長パックについては、 対応情報ページ からご確認いただけます。",
      "supported": true
     },
     "異常ファイル操作検知": {
-     "value": "対応（Ver.6.20以降）",
-     "supported": true
+     "value": "〇 Ver.6.20以降",
+     "supported": null
+    },
+    "メタデータ二重化": {
+     "value": "〇",
+     "supported": null
     }
    },
    "releaseDate": "2019年8月",
    "status": "現行",
-   "statusNote": "現行（4804は一覧で価格表記なし）",
+   "statusNote": null,
    "variants": [
     {
      "sku": "TS6400RN0404",
@@ -2051,8 +2255,20 @@
     }
    ],
    "sourceUrl": "https://www.buffalo.jp/product/detail/ts6400rn0804.html",
-   "collectedBy": "research",
-   "imageUrl": "https://www.buffalo.jp/webpim/product/image/T/TS6400RN/TS6400RN0804/TS6400RN0804__0100.jpg"
+   "collectedBy": "scraper",
+   "imageUrl": "https://www.buffalo.jp/webpim/product/image/T/TS6400RN/TS6400RN0804/TS6400RN0804__0100.jpg?small_light(dw=1200,dh=630,cw=1200,ch=630,da=l,cc=ffffff,q=80)",
+   "raw": {
+    "os": "Linuxベース独自",
+    "install": "ラックマウント",
+    "bays": "4",
+    "cpu": "Intel Atom C3538 ／ 2.10 GHz (ターボブースト:2.10 GHz)/4コア/4スレッド",
+    "memory": "DDR4 ECC 8GB",
+    "lan": "インターフェース（LAN端子） LAN端子（10GBASE-T）：背面×1 ／ インターフェース（LAN端子） LAN端子（2.5GBASE-T）：－ ／ インターフェース（LAN端子） LAN端子（1000BASE-T）：背面×2 ／ インターフェース（LAN端子） 準拠規格：IEEE802.3an IEEE802.3ab IEEE802.3u IEEE802.3準拠(10GBASE-T/1000BASE-T/100BASE-TX/10BASE-T) IEEE802.3bz(5GBASE-T/2.5GBASE-T) ／ インターフェース（LAN端子） 伝送速度：10Gbps 全二重 5Gbps 全二重 2.5Gbps 全二重 1000Mbps 全二重 100Mbps 全二重 10Mbps 全二重 ※10GbEポートは10Mbps非対応 ／ インターフェース（LAN端子） 端子形状：RJ-45型 8極 ／ インターフェース（LAN端子） 対応プロトコル：TCP/IP ／ インターフェース（LAN端子） 対応ネットワークファイル プロトコル：SMB/CIFS AFP FTP SFTP NFS HTTP/HTTPS SNMP iSCSI rsync ／ Wake on LAN：○(1GbEのみ)",
+    "raid": "6/5/10/1/0（出荷時 RAID6）",
+    "warranty": "3年間(本体およびハードディスク)"
+   },
+   "lastCheckedAt": "2026-10-14T06:41:28.005Z",
+   "fallbackFields": []
   },
   {
    "id": "ts6600dn",
@@ -2065,9 +2281,9 @@
    "windowsEdition": null,
    "install": "BOXタイプ",
    "bays": 6,
-   "cpu": "Intel Atom C3538 2.10GHz 4コア/4スレッド",
+   "cpu": "Intel Atom C3538 2.10 GHz (ターボブースト:2.10 GHz)/4コア/4スレッド",
    "memory": "DDR4 ECC 8GB",
-   "lanText": "10GBASE-T×1、1000BASE-T×2（背面）",
+   "lanText": "10GBASE-T×1、1000BASE-T×2",
    "lanSpeedMax": "10G",
    "lanMaxPorts": 1,
    "usb": "USB 3.2(Gen 1)×3（前面×1、背面×2）",
@@ -2084,72 +2300,76 @@
    "warrantyText": "3年間(本体およびハードディスク)",
    "features": {
     "クラウドストレージ連携": {
-     "value": "対応",
+     "value": "〇 対応しているクラウドストレージサービスは、こちらをご覧ください。",
      "supported": true
-    },
-    "Active Directory連携": {
-     "value": "対応",
-     "supported": true
-    },
-    "SSDキャッシュ": {
-     "value": "非対応",
-     "supported": false
     },
     "Time Machine": {
-     "value": "対応",
-     "supported": true
-    },
-    "iSCSIターゲット": {
-     "value": "対応",
-     "supported": true
-    },
-    "ウイルスチェック": {
-     "value": "対応（別売拡張パック）",
+     "value": "○",
      "supported": true
     },
     "リモート監視（キキNavi）": {
-     "value": "対応",
-     "supported": true
+     "value": "〇",
+     "supported": null
     },
-    "ホットスワップ": {
-     "value": "対応",
-     "supported": true
+    "クラウドバックアップ（キキNavi）": {
+     "value": "〇",
+     "supported": null
     },
-    "ホットスペア": {
-     "value": "対応",
-     "supported": true
+    "Active Directory連携": {
+     "value": "〇",
+     "supported": null
     },
-    "ドライブ暗号化": {
-     "value": "対応",
-     "supported": true
-    },
-    "Webアクセス": {
-     "value": "対応",
+    "iSCSIターゲット": {
+     "value": "○",
      "supported": true
     },
     "スナップショット": {
-     "value": "対応",
-     "supported": true
+     "value": "〇",
+     "supported": null
     },
     "不変スナップショット": {
-     "value": "対応（Ver.6.30以降）",
+     "value": "〇 Ver.6.30以降",
+     "supported": null
+    },
+    "ドライブ暗号化": {
+     "value": "○",
      "supported": true
     },
-    "メタデータ二重化": {
-     "value": "対応",
+    "ホットスワップ": {
+     "value": "○",
      "supported": true
+    },
+    "ホットスペア": {
+     "value": "○",
+     "supported": true
+    },
+    "SSDキャッシュ": {
+     "value": "－",
+     "supported": false
     },
     "レプリケーション": {
-     "value": "対応",
+     "value": "○",
      "supported": true
     },
     "フェイルオーバー": {
-     "value": "対応",
+     "value": "○",
+     "supported": true
+    },
+    "Webアクセス": {
+     "value": "○",
+     "supported": true
+    },
+    "ウイルスチェック": {
+     "value": "ウイルスチェック機能拡張・延長パックについては、 対応情報ページ からご確認いただけます。",
      "supported": true
     },
     "異常ファイル操作検知": {
-     "value": "対応（Ver.6.20以降）",
-     "supported": true
+     "value": "〇 Ver.6.20以降",
+     "supported": null
+    },
+    "メタデータ二重化": {
+     "value": "〇",
+     "supported": null
     }
    },
    "releaseDate": "2019年11月",
@@ -2188,8 +2408,20 @@
     }
    ],
    "sourceUrl": "https://www.buffalo.jp/product/detail/ts6600dn2406.html",
-   "collectedBy": "research",
-   "imageUrl": "https://www.buffalo.jp/webpim/product/image/T/TS6600DN/TS6600DN2406/TS6600DN2406__0100.jpg"
+   "collectedBy": "scraper",
+   "imageUrl": "https://www.buffalo.jp/webpim/product/image/T/TS6600DN/TS6600DN2406/TS6600DN2406__0100.jpg?small_light(dw=1200,dh=630,cw=1200,ch=630,da=l,cc=ffffff,q=80)",
+   "raw": {
+    "os": "Linuxベース独自",
+    "install": "デスクトップ",
+    "bays": "6",
+    "cpu": "Intel Atom C3538 ／ 2.10 GHz (ターボブースト:2.10 GHz)/4コア/4スレッド",
+    "memory": "DDR4 ECC 8GB",
+    "lan": "インターフェース（LAN端子） LAN端子（10GBASE-T）：背面×1 ／ インターフェース（LAN端子） LAN端子（2.5GBASE-T）：－ ／ インターフェース（LAN端子） LAN端子（1000BASE-T）：背面×2 ／ インターフェース（LAN端子） 準拠規格：IEEE802.3an(10GBASE-T) IEEE802.3ab(1000BASE-T) IEEE802.3u(100BASE-TX) IEEE802.3(10BASE-T) IEEE802.3bz(5GBASE-T/2.5GBASE-T) ／ インターフェース（LAN端子） 伝送速度：10Gbps 全二重 5Gbps 全二重 2.5Gbps 全二重 1000Mbps 全二重 100Mbps 全二重 10Mbps 全二重 ※10GbEポートは10Mbps非対応 ／ インターフェース（LAN端子） 端子形状：RJ-45型 8極 ／ インターフェース（LAN端子） 対応プロトコル：TCP/IP ／ インターフェース（LAN端子） 対応ネットワークファイル プロトコル：SMB/CIFS AFP FTP SFTP NFS HTTP/HTTPS SNMP iSCSI rsync ／ Wake on LAN：○(1GbEのみ)",
+    "raid": "6/5/10/1/0（出荷時 RAID6）",
+    "warranty": "3年間(本体およびハードディスク)"
+   },
+   "lastCheckedAt": "2026-10-14T06:41:30.286Z",
+   "fallbackFields": []
   },
   {
    "id": "ws5220dnw5",
@@ -2202,9 +2434,9 @@
    "windowsEdition": "Workgroup",
    "install": "BOXタイプ",
    "bays": 2,
-   "cpu": "Intel Atom C3338 1.50GHz（ターボ2.20GHz）2コア/2スレッド",
+   "cpu": "Intel Atom C3338 1.50 GHz (ターボブースト:2.20 GHz)/2コア/2スレッド",
    "memory": "DDR4 ECC 8GB",
-   "lanText": "10GBASE-T×1、1000BASE-T×2（背面）",
+   "lanText": "10GBASE-T×1、1000BASE-T×2",
    "lanSpeedMax": "10G",
    "lanMaxPorts": 1,
    "usb": "USB 3.2(Gen 1)×2（背面）",
@@ -2218,63 +2450,67 @@
    "warrantyText": "3年間(本体およびハードディスク)",
    "features": {
     "クラウドストレージ連携": {
-     "value": "対応",
-     "supported": true
-    },
-    "Active Directory連携": {
-     "value": "対応",
-     "supported": true
-    },
-    "SSDキャッシュ": {
-     "value": "非対応",
-     "supported": false
+     "value": "〇",
+     "supported": null
     },
     "Time Machine": {
-     "value": "非対応",
+     "value": "－",
      "supported": false
     },
-    "iSCSIターゲット": {
-     "value": "対応",
-     "supported": true
-    },
-    "ウイルスチェック": {
-     "value": "対応（DiXiM Security Endpoint別売）",
-     "supported": true
-    },
     "リモート監視（キキNavi）": {
-     "value": "対応",
+     "value": "〇",
+     "supported": null
+    },
+    "クラウドバックアップ（キキNavi）": {
+     "value": "〇",
+     "supported": null
+    },
+    "Active Directory連携": {
+     "value": "〇",
+     "supported": null
+    },
+    "iSCSIターゲット": {
+     "value": "〇",
+     "supported": null
+    },
+    "ドライブ暗号化": {
+     "value": "〇 ※BitLocker使用(ベーシックディスクのみ対応)",
      "supported": true
     },
     "ホットスワップ": {
-     "value": "非対応",
+     "value": "－",
      "supported": false
     },
     "ホットスペア": {
-     "value": "非対応",
+     "value": "－",
      "supported": false
     },
-    "ドライブ暗号化": {
-     "value": "対応（BitLocker、ベーシックディスクのみ）",
-     "supported": true
-    },
-    "Webアクセス": {
-     "value": "非対応",
-     "supported": false
-    },
-    "メタデータ二重化": {
-     "value": "非対応",
+    "SSDキャッシュ": {
+     "value": "－",
      "supported": false
     },
     "データ重複除去": {
-     "value": "非対応",
+     "value": "－",
      "supported": false
     },
     "レプリケーション": {
-     "value": "対応",
-     "supported": true
+     "value": "〇",
+     "supported": null
     },
     "フェイルオーバー": {
-     "value": "非対応",
+     "value": "－",
+     "supported": false
+    },
+    "Webアクセス": {
+     "value": "－",
+     "supported": false
+    },
+    "ウイルスチェック": {
+     "value": "・DiXiM Security Endpoint(ライセンスパック別売) ・Windows Defender ※対応確認済みソフトウェアは 対応情報ページ からご確認いただけます。",
+     "supported": true
+    },
+    "メタデータ二重化": {
+     "value": "－",
      "supported": false
     }
    },
@@ -2307,9 +2543,21 @@
      "jan": "4981254074947"
     }
    ],
-   "sourceUrl": "https://www.buffalo.jp/product/detail/print/ws5220dn16w5.html",
-   "collectedBy": "research",
-   "imageUrl": "https://www.buffalo.jp/webpim/product/image/W/WS5220DNW5/WS5220DN16W5/WS5220DN16W5__0100.jpg"
+   "sourceUrl": "https://www.buffalo.jp/product/detail/ws5220dn16w5.html",
+   "collectedBy": "scraper",
+   "imageUrl": "https://www.buffalo.jp/webpim/product/image/W/WS5220DNW5/WS5220DN16W5/WS5220DN16W5__0100.jpg?small_light(dw=1200,dh=630,cw=1200,ch=630,da=l,cc=ffffff,q=80)",
+   "raw": {
+    "os": "Windows Server IoT 2025 for Storage Workgroup",
+    "install": "デスクトップ",
+    "bays": "2",
+    "cpu": "Intel Atom C3338 ／ 1.50 GHz (ターボブースト:2.20 GHz)/2コア/2スレッド",
+    "memory": "DDR4 ECC 8GB",
+    "lan": "インターフェース（LAN端子） LAN端子（10GBASE-T）：背面×1 ／ インターフェース（LAN端子） LAN端子（2.5GBASE-T）：－ ／ インターフェース（LAN端子） LAN端子（1000BASE-T）：背面×2 ／ インターフェース（LAN端子） 準拠規格：IEEE 802.3an(10GBASE-T) IEEE 802.3bz(5GBASE-T/2.5GBASE-T) IEEE 802.3ab(1000BASE-T) IEEE 802.3u(100BASE-TX) IEEE 802.3(10BASE-T) ／ インターフェース（LAN端子） 伝送速度：1000Mbps 全二重 100Mbps 半二重/全二重 10Gbps 全二重 10Mbps 全二重 2.5Gbps 全二重 5Gbps 全二重 ※1GbEポートは全二重のみ対応 ※10GbEポートは10Mbps非対応 ／ インターフェース（LAN端子） 端子形状：RJ-45型 8極 ／ インターフェース（LAN端子） 対応プロトコル：TCP/IP、UDP ／ インターフェース（LAN端子） 対応ネットワークファイル プロトコル：SMB ／ Wake on LAN：〇 ※LAN3(10GbE)はWake on LAN機能有効時、シャットダウン後のLAN3リンク速度は100Mbps固定になります。 Wake on LAN機能を使用するためには、ハブが100Mbpsをサポートしている必要があります。 100Mbpsをサポートしていないハブ等に接続している場合、Wake on LAN機能を使用できません。",
+    "raid": "1/0（出荷時 RAID1）",
+    "warranty": "3年間(本体およびハードディスク)"
+   },
+   "lastCheckedAt": "2026-10-14T06:41:32.207Z",
+   "fallbackFields": []
   },
   {
    "id": "ws5220dns5",
@@ -2322,9 +2570,9 @@
    "windowsEdition": "Standard",
    "install": "BOXタイプ",
    "bays": 2,
-   "cpu": "Intel Atom C3338 1.50GHz（ターボ2.20GHz）2コア/2スレッド",
+   "cpu": "Intel Atom C3338 1.50 GHz (ターボブースト:2.20 GHz)/2コア/2スレッド",
    "memory": "DDR4 ECC 8GB",
-   "lanText": "10GBASE-T×1、1000BASE-T×2（背面）",
+   "lanText": "10GBASE-T×1、1000BASE-T×2",
    "lanSpeedMax": "10G",
    "lanMaxPorts": 1,
    "usb": "USB 3.2(Gen 1)×2（背面）",
@@ -2338,63 +2586,67 @@
    "warrantyText": "3年間(本体およびハードディスク)",
    "features": {
     "クラウドストレージ連携": {
-     "value": "対応",
-     "supported": true
-    },
-    "Active Directory連携": {
-     "value": "対応",
-     "supported": true
-    },
-    "SSDキャッシュ": {
-     "value": "非対応",
-     "supported": false
+     "value": "〇",
+     "supported": null
     },
     "Time Machine": {
-     "value": "非対応",
+     "value": "－",
      "supported": false
     },
-    "iSCSIターゲット": {
-     "value": "対応",
-     "supported": true
-    },
-    "ウイルスチェック": {
-     "value": "対応（DiXiM Security Endpoint別売、Windows Defender）",
-     "supported": true
-    },
     "リモート監視（キキNavi）": {
-     "value": "対応",
+     "value": "〇",
+     "supported": null
+    },
+    "クラウドバックアップ（キキNavi）": {
+     "value": "〇",
+     "supported": null
+    },
+    "Active Directory連携": {
+     "value": "〇",
+     "supported": null
+    },
+    "iSCSIターゲット": {
+     "value": "〇",
+     "supported": null
+    },
+    "ドライブ暗号化": {
+     "value": "〇 ※BitLocker使用(ベーシックディスクのみ対応)",
      "supported": true
     },
     "ホットスワップ": {
-     "value": "非対応",
+     "value": "－",
      "supported": false
     },
     "ホットスペア": {
-     "value": "非対応",
+     "value": "－",
      "supported": false
     },
-    "ドライブ暗号化": {
-     "value": "対応（BitLocker、ベーシックディスクのみ）",
-     "supported": true
-    },
-    "Webアクセス": {
-     "value": "非対応",
-     "supported": false
-    },
-    "メタデータ二重化": {
-     "value": "非対応",
+    "SSDキャッシュ": {
+     "value": "－",
      "supported": false
     },
     "データ重複除去": {
-     "value": "対応",
-     "supported": true
+     "value": "〇",
+     "supported": null
     },
     "レプリケーション": {
-     "value": "対応",
-     "supported": true
+     "value": "〇",
+     "supported": null
     },
     "フェイルオーバー": {
-     "value": "非対応",
+     "value": "－",
+     "supported": false
+    },
+    "Webアクセス": {
+     "value": "－",
+     "supported": false
+    },
+    "ウイルスチェック": {
+     "value": "・DiXiM Security Endpoint(ライセンスパック別売) ・Windows Defender ※対応確認済みソフトウェアは 対応情報ページ からご確認いただけます。",
+     "supported": true
+    },
+    "メタデータ二重化": {
+     "value": "－",
      "supported": false
     }
    },
@@ -2427,9 +2679,21 @@
      "jan": "4981254074909"
     }
    ],
-   "sourceUrl": "https://www.buffalo.jp/product/detail/print/ws5220dn08s5.html",
-   "collectedBy": "research",
-   "imageUrl": "https://www.buffalo.jp/webpim/product/image/W/WS5220DNS5/WS5220DN08S5/WS5220DN08S5__0100.jpg"
+   "sourceUrl": "https://www.buffalo.jp/product/detail/ws5220dn08s5.html",
+   "collectedBy": "scraper",
+   "imageUrl": "https://www.buffalo.jp/webpim/product/image/W/WS5220DNS5/WS5220DN08S5/WS5220DN08S5__0100.jpg?small_light(dw=1200,dh=630,cw=1200,ch=630,da=l,cc=ffffff,q=80)",
+   "raw": {
+    "os": "Windows Server IoT 2025 for Storage Standard",
+    "install": "デスクトップ",
+    "bays": "2",
+    "cpu": "Intel Atom C3338 ／ 1.50 GHz (ターボブースト:2.20 GHz)/2コア/2スレッド",
+    "memory": "DDR4 ECC 8GB",
+    "lan": "インターフェース（LAN端子） LAN端子（10GBASE-T）：背面×1 ／ インターフェース（LAN端子） LAN端子（2.5GBASE-T）：－ ／ インターフェース（LAN端子） LAN端子（1000BASE-T）：背面×2 ／ インターフェース（LAN端子） 準拠規格：IEEE 802.3an(10GBASE-T) IEEE 802.3bz(5GBASE-T/2.5GBASE-T) IEEE 802.3ab(1000BASE-T) IEEE 802.3u(100BASE-TX) IEEE 802.3(10BASE-T) ／ インターフェース（LAN端子） 伝送速度：1000Mbps 全二重 100Mbps 半二重/全二重 10Gbps 全二重 10Mbps 全二重 2.5Gbps 全二重 5Gbps 全二重 ※1GbEポートは全二重のみ対応 ※10GbEポートは10Mbps非対応 ／ インターフェース（LAN端子） 端子形状：RJ-45型 8極 ／ インターフェース（LAN端子） 対応プロトコル：TCP/IP、UDP ／ インターフェース（LAN端子） 対応ネットワークファイル プロトコル：SMB ／ Wake on LAN：〇 ※LAN3(10GbE)はWake on LAN機能有効時、シャットダウン後のLAN3リンク速度は100Mbps固定になります。 Wake on LAN機能を使用するためには、ハブが100Mbpsをサポートしている必要があります。 100Mbpsをサポートしていないハブ等に接続している場合、Wake on LAN機能を使用できません。",
+    "raid": "1/0（出荷時 RAID1）",
+    "warranty": "3年間(本体およびハードディスク)"
+   },
+   "lastCheckedAt": "2026-10-14T06:41:34.439Z",
+   "fallbackFields": []
   },
   {
    "id": "ws5420dnw5",
@@ -2442,9 +2706,9 @@
    "windowsEdition": "Workgroup",
    "install": "BOXタイプ",
    "bays": 4,
-   "cpu": "Intel Atom C3338 1.50GHz（ターボ2.20GHz）2コア/2スレッド",
+   "cpu": "Intel Atom C3338 1.50 GHz (ターボブースト:2.20 GHz)/2コア/2スレッド",
    "memory": "DDR4 ECC 8GB",
-   "lanText": "10GBASE-T×1、1000BASE-T×2（背面）",
+   "lanText": "10GBASE-T×1、1000BASE-T×2",
    "lanSpeedMax": "10G",
    "lanMaxPorts": 1,
    "usb": "USB 3.2(Gen 1)×2（背面）",
@@ -2459,63 +2723,67 @@
    "warrantyText": "3年間(本体およびハードディスク)",
    "features": {
     "クラウドストレージ連携": {
-     "value": "対応",
-     "supported": true
-    },
-    "Active Directory連携": {
-     "value": "対応",
-     "supported": true
-    },
-    "SSDキャッシュ": {
-     "value": "非対応",
-     "supported": false
+     "value": "〇",
+     "supported": null
     },
     "Time Machine": {
-     "value": "非対応",
+     "value": "－",
      "supported": false
     },
-    "iSCSIターゲット": {
-     "value": "対応",
-     "supported": true
-    },
-    "ウイルスチェック": {
-     "value": "対応（DiXiM Security Endpoint別売、Windows Defender）",
-     "supported": true
-    },
     "リモート監視（キキNavi）": {
-     "value": "対応",
+     "value": "〇",
+     "supported": null
+    },
+    "クラウドバックアップ（キキNavi）": {
+     "value": "〇",
+     "supported": null
+    },
+    "Active Directory連携": {
+     "value": "〇",
+     "supported": null
+    },
+    "iSCSIターゲット": {
+     "value": "〇",
+     "supported": null
+    },
+    "ドライブ暗号化": {
+     "value": "〇 ※BitLocker使用(ベーシックディスクのみ対応)",
      "supported": true
     },
     "ホットスワップ": {
-     "value": "対応（システム領域ドライブ故障時を除く）",
-     "supported": true
+     "value": "〇 ※システム領域で使用しているドライブが故障した場合を除く。",
+     "supported": null
     },
     "ホットスペア": {
-     "value": "非対応",
+     "value": "－",
      "supported": false
     },
-    "ドライブ暗号化": {
-     "value": "対応（BitLocker、ベーシックディスクのみ）",
-     "supported": true
-    },
-    "Webアクセス": {
-     "value": "非対応",
-     "supported": false
-    },
-    "メタデータ二重化": {
-     "value": "非対応",
+    "SSDキャッシュ": {
+     "value": "－",
      "supported": false
     },
     "データ重複除去": {
-     "value": "非対応",
+     "value": "－",
      "supported": false
     },
     "レプリケーション": {
-     "value": "対応",
-     "supported": true
+     "value": "〇",
+     "supported": null
     },
     "フェイルオーバー": {
-     "value": "非対応",
+     "value": "－",
+     "supported": false
+    },
+    "Webアクセス": {
+     "value": "－",
+     "supported": false
+    },
+    "ウイルスチェック": {
+     "value": "・DiXiM Security Endpoint(ライセンスパック別売) ・Windows Defender ※対応確認済みソフトウェアは 対応情報ページ からご確認いただけます。",
+     "supported": true
+    },
+    "メタデータ二重化": {
+     "value": "－",
      "supported": false
     }
    },
@@ -2548,9 +2816,21 @@
      "jan": "4981254074862"
     }
    ],
-   "sourceUrl": "https://www.buffalo.jp/product/detail/print/ws5420dn08w5.html",
-   "collectedBy": "research",
-   "imageUrl": "https://www.buffalo.jp/webpim/product/image/W/WS5420DNW5/WS5420DN08W5/WS5420DN08W5__0100.jpg"
+   "sourceUrl": "https://www.buffalo.jp/product/detail/ws5420dn08w5.html",
+   "collectedBy": "scraper",
+   "imageUrl": "https://www.buffalo.jp/webpim/product/image/W/WS5420DNW5/WS5420DN08W5/WS5420DN08W5__0100.jpg?small_light(dw=1200,dh=630,cw=1200,ch=630,da=l,cc=ffffff,q=80)",
+   "raw": {
+    "os": "Windows Server IoT 2025 for Storage Workgroup",
+    "install": "デスクトップ",
+    "bays": "4",
+    "cpu": "Intel Atom C3338 ／ 1.50 GHz (ターボブースト:2.20 GHz)/2コア/2スレッド",
+    "memory": "DDR4 ECC 8GB",
+    "lan": "インターフェース（LAN端子） LAN端子（10GBASE-T）：背面×1 ／ インターフェース（LAN端子） LAN端子（2.5GBASE-T）：－ ／ インターフェース（LAN端子） LAN端子（1000BASE-T）：背面×2 ／ インターフェース（LAN端子） 準拠規格：IEEE 802.3an(10GBASE-T) IEEE 802.3bz(5GBASE-T/2.5GBASE-T) IEEE 802.3ab(1000BASE-T) IEEE 802.3u(100BASE-TX) IEEE 802.3(10BASE-T) ／ インターフェース（LAN端子） 伝送速度：1000Mbps 全二重 100Mbps 半二重/全二重 10Gbps 全二重 10Mbps 全二重 2.5Gbps 全二重 5Gbps 全二重 ※1GbEポートは全二重のみ対応 ※10GbEポートは10Mbps非対応 ／ インターフェース（LAN端子） 端子形状：RJ-45型 8極 ／ インターフェース（LAN端子） 対応プロトコル：TCP/IP、UDP ／ インターフェース（LAN端子） 対応ネットワークファイル プロトコル：SMB ／ Wake on LAN：〇 ※LAN3(10GbE)はWake on LAN機能有効時、シャットダウン後のLAN3リンク速度は100Mbps固定になります。 Wake on LAN機能を使用するためには、ハブが100Mbpsをサポートしている必要があります。 100Mbpsをサポートしていないハブ等に接続している場合、Wake on LAN機能を使用できません。",
+    "raid": "5/1/0（出荷時RAID5）",
+    "warranty": "3年間(本体およびハードディスク)"
+   },
+   "lastCheckedAt": "2026-10-14T06:41:36.083Z",
+   "fallbackFields": []
   },
   {
    "id": "ws5420dns5",
@@ -2563,9 +2843,9 @@
    "windowsEdition": "Standard",
    "install": "BOXタイプ",
    "bays": 4,
-   "cpu": "Intel Atom C3338 1.50GHz（ターボ2.20GHz）2コア/2スレッド",
+   "cpu": "Intel Atom C3338 1.50 GHz (ターボブースト:2.20 GHz)/2コア/2スレッド",
    "memory": "DDR4 ECC 8GB",
-   "lanText": "10GBASE-T×1、1000BASE-T×2（背面）",
+   "lanText": "10GBASE-T×1、1000BASE-T×2",
    "lanSpeedMax": "10G",
    "lanMaxPorts": 1,
    "usb": "USB 3.2(Gen 1)×2（背面）",
@@ -2580,63 +2860,67 @@
    "warrantyText": "3年間(本体およびハードディスク)",
    "features": {
     "クラウドストレージ連携": {
-     "value": "対応",
-     "supported": true
-    },
-    "Active Directory連携": {
-     "value": "対応",
-     "supported": true
-    },
-    "SSDキャッシュ": {
-     "value": "非対応",
-     "supported": false
+     "value": "〇",
+     "supported": null
     },
     "Time Machine": {
-     "value": "非対応",
+     "value": "－",
      "supported": false
     },
-    "iSCSIターゲット": {
-     "value": "対応",
-     "supported": true
-    },
-    "ウイルスチェック": {
-     "value": "対応（DiXiM Security Endpoint別売、Windows Defender）",
-     "supported": true
-    },
     "リモート監視（キキNavi）": {
-     "value": "対応",
+     "value": "〇",
+     "supported": null
+    },
+    "クラウドバックアップ（キキNavi）": {
+     "value": "〇",
+     "supported": null
+    },
+    "Active Directory連携": {
+     "value": "〇",
+     "supported": null
+    },
+    "iSCSIターゲット": {
+     "value": "〇",
+     "supported": null
+    },
+    "ドライブ暗号化": {
+     "value": "〇 ※BitLocker使用(ベーシックディスクのみ対応)",
      "supported": true
     },
     "ホットスワップ": {
-     "value": "対応（システム領域ドライブ故障時を除く）",
-     "supported": true
+     "value": "〇 ※システム領域で使用しているドライブが故障した場合を除く。",
+     "supported": null
     },
     "ホットスペア": {
-     "value": "非対応",
+     "value": "－",
      "supported": false
     },
-    "ドライブ暗号化": {
-     "value": "対応（BitLocker、ベーシックディスクのみ）",
-     "supported": true
-    },
-    "Webアクセス": {
-     "value": "非対応",
-     "supported": false
-    },
-    "メタデータ二重化": {
-     "value": "非対応",
+    "SSDキャッシュ": {
+     "value": "－",
      "supported": false
     },
     "データ重複除去": {
-     "value": "対応",
-     "supported": true
+     "value": "〇",
+     "supported": null
     },
     "レプリケーション": {
-     "value": "対応",
-     "supported": true
+     "value": "〇",
+     "supported": null
     },
     "フェイルオーバー": {
-     "value": "非対応",
+     "value": "－",
+     "supported": false
+    },
+    "Webアクセス": {
+     "value": "－",
+     "supported": false
+    },
+    "ウイルスチェック": {
+     "value": "・DiXiM Security Endpoint(ライセンスパック別売) ・Windows Defender ※対応確認済みソフトウェアは 対応情報ページ からご確認いただけます。",
+     "supported": true
+    },
+    "メタデータ二重化": {
+     "value": "－",
      "supported": false
     }
    },
@@ -2669,9 +2953,21 @@
      "jan": "4981254074824"
     }
    ],
-   "sourceUrl": "https://www.buffalo.jp/product/detail/print/ws5420dn08s5.html",
-   "collectedBy": "research",
-   "imageUrl": "https://www.buffalo.jp/webpim/product/image/W/WS5420DNS5/WS5420DN08S5/WS5420DN08S5__0100.jpg"
+   "sourceUrl": "https://www.buffalo.jp/product/detail/ws5420dn08s5.html",
+   "collectedBy": "scraper",
+   "imageUrl": "https://www.buffalo.jp/webpim/product/image/W/WS5420DNS5/WS5420DN08S5/WS5420DN08S5__0100.jpg?small_light(dw=1200,dh=630,cw=1200,ch=630,da=l,cc=ffffff,q=80)",
+   "raw": {
+    "os": "Windows Server IoT 2025 for Storage Standard",
+    "install": "デスクトップ",
+    "bays": "4",
+    "cpu": "Intel Atom C3338 ／ 1.50 GHz (ターボブースト:2.20 GHz)/2コア/2スレッド",
+    "memory": "DDR4 ECC 8GB",
+    "lan": "インターフェース（LAN端子） LAN端子（10GBASE-T）：背面×1 ／ インターフェース（LAN端子） LAN端子（2.5GBASE-T）：－ ／ インターフェース（LAN端子） LAN端子（1000BASE-T）：背面×2 ／ インターフェース（LAN端子） 準拠規格：IEEE 802.3an(10GBASE-T) IEEE 802.3bz(5GBASE-T/2.5GBASE-T) IEEE 802.3ab(1000BASE-T) IEEE 802.3u(100BASE-TX) IEEE 802.3(10BASE-T) ／ インターフェース（LAN端子） 伝送速度：1000Mbps 全二重 100Mbps 半二重/全二重 10Gbps 全二重 10Mbps 全二重 2.5Gbps 全二重 5Gbps 全二重 ※1GbEポートは全二重のみ対応 ※10GbEポートは10Mbps非対応 ／ インターフェース（LAN端子） 端子形状：RJ-45型 8極 ／ インターフェース（LAN端子） 対応プロトコル：TCP/IP、UDP ／ インターフェース（LAN端子） 対応ネットワークファイル プロトコル：SMB ／ Wake on LAN：〇 ※LAN3(10GbE)はWake on LAN機能有効時、シャットダウン後のLAN3リンク速度は100Mbps固定になります。 Wake on LAN機能を使用するためには、ハブが100Mbpsをサポートしている必要があります。 100Mbpsをサポートしていないハブ等に接続している場合、Wake on LAN機能を使用できません。",
+    "raid": "5/1/0（出荷時RAID5）",
+    "warranty": "3年間(本体およびハードディスク)"
+   },
+   "lastCheckedAt": "2026-10-14T06:41:38.286Z",
+   "fallbackFields": []
   },
   {
    "id": "ws5420rnw5",
@@ -2684,9 +2980,9 @@
    "windowsEdition": "Workgroup",
    "install": "ラックマウントタイプ",
    "bays": 4,
-   "cpu": "Intel Atom C3338 1.50GHz（ターボ2.20GHz）2コア/2スレッド",
+   "cpu": "Intel Atom C3338 1.50 GHz (ターボブースト:2.20 GHz)/2コア/2スレッド",
    "memory": "DDR4 ECC 8GB",
-   "lanText": "10GBASE-T×1、1000BASE-T×2（背面）",
+   "lanText": "10GBASE-T×1、1000BASE-T×2",
    "lanSpeedMax": "10G",
    "lanMaxPorts": 1,
    "usb": "USB 3.2(Gen 1)×3（前面×1、背面×2）",
@@ -2701,63 +2997,67 @@
    "warrantyText": "3年間(本体およびハードディスク)",
    "features": {
     "クラウドストレージ連携": {
-     "value": "対応",
-     "supported": true
-    },
-    "Active Directory連携": {
-     "value": "対応",
-     "supported": true
-    },
-    "SSDキャッシュ": {
-     "value": "非対応",
-     "supported": false
+     "value": "〇",
+     "supported": null
     },
     "Time Machine": {
-     "value": "非対応",
+     "value": "－",
      "supported": false
     },
-    "iSCSIターゲット": {
-     "value": "対応",
-     "supported": true
-    },
-    "ウイルスチェック": {
-     "value": "対応（DiXiM Security Endpoint別売、Windows Defender）",
-     "supported": true
-    },
     "リモート監視（キキNavi）": {
-     "value": "対応",
+     "value": "〇",
+     "supported": null
+    },
+    "クラウドバックアップ（キキNavi）": {
+     "value": "〇",
+     "supported": null
+    },
+    "Active Directory連携": {
+     "value": "〇",
+     "supported": null
+    },
+    "iSCSIターゲット": {
+     "value": "〇",
+     "supported": null
+    },
+    "ドライブ暗号化": {
+     "value": "〇 ※BitLocker使用(ベーシックディスクのみ対応)",
      "supported": true
     },
     "ホットスワップ": {
-     "value": "対応（システム領域ドライブ故障時を除く）",
-     "supported": true
+     "value": "〇 ※システム領域で使用しているドライブが故障した場合を除く。",
+     "supported": null
     },
     "ホットスペア": {
-     "value": "非対応",
+     "value": "－",
      "supported": false
     },
-    "ドライブ暗号化": {
-     "value": "対応（BitLocker、ベーシックディスクのみ）",
-     "supported": true
-    },
-    "Webアクセス": {
-     "value": "非対応",
-     "supported": false
-    },
-    "メタデータ二重化": {
-     "value": "非対応",
+    "SSDキャッシュ": {
+     "value": "－",
      "supported": false
     },
     "データ重複除去": {
-     "value": "非対応",
-     "supported": false
+     "value": "ー",
+     "supported": null
     },
     "レプリケーション": {
-     "value": "対応",
-     "supported": true
+     "value": "〇",
+     "supported": null
     },
     "フェイルオーバー": {
-     "value": "非対応",
+     "value": "－",
+     "supported": false
+    },
+    "Webアクセス": {
+     "value": "－",
+     "supported": false
+    },
+    "ウイルスチェック": {
+     "value": "・DiXiM Security Endpoint(ライセンスパック別売) ・Windows Defender ※対応確認済みソフトウェアは 対応情報ページ からご確認いただけます。",
+     "supported": true
+    },
+    "メタデータ二重化": {
+     "value": "－",
      "supported": false
     }
    },
@@ -2790,9 +3090,21 @@
      "jan": "4981254074787"
     }
    ],
-   "sourceUrl": "https://www.buffalo.jp/product/detail/print/ws5420rn32w5.html",
-   "collectedBy": "research",
-   "imageUrl": "https://www.buffalo.jp/webpim/product/image/W/WS5420RNW5/WS5420RN32W5/WS5420RN32W5__0100.jpg"
+   "sourceUrl": "https://www.buffalo.jp/product/detail/ws5420rn32w5.html",
+   "collectedBy": "scraper",
+   "imageUrl": "https://www.buffalo.jp/webpim/product/image/W/WS5420RNW5/WS5420RN32W5/WS5420RN32W5__0100.jpg?small_light(dw=1200,dh=630,cw=1200,ch=630,da=l,cc=ffffff,q=80)",
+   "raw": {
+    "os": "Windows Server IoT 2025 for Storage Workgroup",
+    "install": "ラックマウント",
+    "bays": "4",
+    "cpu": "Intel Atom C3338 ／ 1.50 GHz (ターボブースト:2.20 GHz)/2コア/2スレッド",
+    "memory": "DDR4 ECC 8GB",
+    "lan": "インターフェース（LAN端子） LAN端子（10GBASE-T）：背面×1 ／ インターフェース（LAN端子） LAN端子（2.5GBASE-T）：－ ／ インターフェース（LAN端子） LAN端子（1000BASE-T）：背面×2 ／ インターフェース（LAN端子） 準拠規格：IEEE 802.3an(10GBASE-T) IEEE 802.3bz(5GBASE-T/2.5GBASE-T) IEEE 802.3ab(1000BASE-T) IEEE 802.3u(100BASE-TX) IEEE 802.3(10BASE-T) ／ インターフェース（LAN端子） 伝送速度：1000Mbps 全二重 100Mbps 半二重/全二重 10Gbps 全二重 10Mbps 全二重 2.5Gbps 全二重 5Gbps 全二重 ※1GbEポートは全二重のみ対応 ※10GbEポートは10Mbps非対応 ／ インターフェース（LAN端子） 端子形状：RJ-45型 8極 ／ インターフェース（LAN端子） 対応プロトコル：TCP/IP、UDP ／ インターフェース（LAN端子） 対応ネットワークファイル プロトコル：SMB ／ Wake on LAN：〇 ※LAN3(10GbE)はWake on LAN機能有効時、シャットダウン後のLAN3リンク速度は100Mbps固定になります。 Wake on LAN機能を使用するためには、ハブが100Mbpsをサポートしている必要があります。 100Mbpsをサポートしていないハブ等に接続している場合、Wake on LAN機能を使用できません。",
+    "raid": "5/1/0（出荷時RAID5）",
+    "warranty": "3年間(本体およびハードディスク)"
+   },
+   "lastCheckedAt": "2026-10-14T06:41:40.246Z",
+   "fallbackFields": []
   },
   {
    "id": "ws5420rns5",
@@ -2805,9 +3117,9 @@
    "windowsEdition": "Standard",
    "install": "ラックマウントタイプ",
    "bays": 4,
-   "cpu": "Intel Atom C3338 1.50GHz（ターボ2.20GHz）2コア/2スレッド",
+   "cpu": "Intel Atom C3338 1.50 GHz (ターボブースト:2.20 GHz)/2コア/2スレッド",
    "memory": "DDR4 ECC 8GB",
-   "lanText": "10GBASE-T×1、1000BASE-T×2（背面）",
+   "lanText": "10GBASE-T×1、1000BASE-T×2",
    "lanSpeedMax": "10G",
    "lanMaxPorts": 1,
    "usb": "USB 3.2(Gen 1)×3（前面×1、背面×2）",
@@ -2822,63 +3134,67 @@
    "warrantyText": "3年間(本体およびハードディスク)",
    "features": {
     "クラウドストレージ連携": {
-     "value": "対応",
+     "value": "〇 ※対応確認済みクラウドストレージサービスはこちらをご確認ください。",
      "supported": true
-    },
-    "Active Directory連携": {
-     "value": "対応",
-     "supported": true
-    },
-    "SSDキャッシュ": {
-     "value": "非対応",
-     "supported": false
     },
     "Time Machine": {
-     "value": "非対応",
+     "value": "－",
      "supported": false
     },
-    "iSCSIターゲット": {
-     "value": "対応",
-     "supported": true
-    },
-    "ウイルスチェック": {
-     "value": "対応（DiXiM Security Endpoint別売、Windows Defender）",
-     "supported": true
-    },
     "リモート監視（キキNavi）": {
-     "value": "対応",
+     "value": "〇",
+     "supported": null
+    },
+    "クラウドバックアップ（キキNavi）": {
+     "value": "〇",
+     "supported": null
+    },
+    "Active Directory連携": {
+     "value": "〇",
+     "supported": null
+    },
+    "iSCSIターゲット": {
+     "value": "〇",
+     "supported": null
+    },
+    "ドライブ暗号化": {
+     "value": "〇 ※BitLocker使用(ベーシックディスクのみ対応)",
      "supported": true
     },
     "ホットスワップ": {
-     "value": "対応（システム領域ドライブ故障時を除く）",
-     "supported": true
+     "value": "〇 ※システム領域で使用しているドライブが故障した場合を除く。",
+     "supported": null
     },
     "ホットスペア": {
-     "value": "非対応",
+     "value": "－",
      "supported": false
     },
-    "ドライブ暗号化": {
-     "value": "対応（BitLocker、ベーシックディスクのみ）",
-     "supported": true
-    },
-    "Webアクセス": {
-     "value": "非対応",
-     "supported": false
-    },
-    "メタデータ二重化": {
-     "value": "非対応",
+    "SSDキャッシュ": {
+     "value": "－",
      "supported": false
     },
     "データ重複除去": {
-     "value": "対応",
-     "supported": true
+     "value": "〇",
+     "supported": null
     },
     "レプリケーション": {
-     "value": "対応",
-     "supported": true
+     "value": "〇",
+     "supported": null
     },
     "フェイルオーバー": {
-     "value": "非対応",
+     "value": "－",
+     "supported": false
+    },
+    "Webアクセス": {
+     "value": "－",
+     "supported": false
+    },
+    "ウイルスチェック": {
+     "value": "・DiXiM Security Endpoint(ライセンスパック別売) ・Windows Defender ※対応確認済みソフトウェアは 対応情報ページ からご確認いただけます。",
+     "supported": true
+    },
+    "メタデータ二重化": {
+     "value": "－",
      "supported": false
     }
    },
@@ -2905,9 +3221,21 @@
      "jan": "4981254074756"
     }
    ],
-   "sourceUrl": "https://www.buffalo.jp/product/detail/print/ws5420rn08s5.html",
-   "collectedBy": "research",
-   "imageUrl": "https://www.buffalo.jp/webpim/product/image/W/WS5420RNS5/WS5420RN08S5/WS5420RN08S5__0100.jpg"
+   "sourceUrl": "https://www.buffalo.jp/product/detail/ws5420rn08s5.html",
+   "collectedBy": "scraper",
+   "imageUrl": "https://www.buffalo.jp/webpim/product/image/W/WS5420RNS5/WS5420RN08S5/WS5420RN08S5__0100.jpg?small_light(dw=1200,dh=630,cw=1200,ch=630,da=l,cc=ffffff,q=80)",
+   "raw": {
+    "os": "Windows Server IoT 2025 for Storage Standard",
+    "install": "ラックマウント",
+    "bays": "4",
+    "cpu": "Intel Atom C3338 ／ 1.50 GHz (ターボブースト:2.20 GHz)/2コア/2スレッド",
+    "memory": "DDR4 ECC 8GB",
+    "lan": "インターフェース（LAN端子） LAN端子（10GBASE-T）：背面×1 ／ インターフェース（LAN端子） LAN端子（2.5GBASE-T）：－ ／ インターフェース（LAN端子） LAN端子（1000BASE-T）：背面×2 ／ インターフェース（LAN端子） 準拠規格：IEEE 802.3an(10GBASE-T) IEEE 802.3bz(5GBASE-T/2.5GBASE-T) IEEE 802.3ab(1000BASE-T) IEEE 802.3u(100BASE-TX) IEEE 802.3(10BASE-T) ／ インターフェース（LAN端子） 伝送速度：1000Mbps 全二重 100Mbps 半二重/全二重 10Gbps 全二重 10Mbps 全二重 2.5Gbps 全二重 5Gbps 全二重 ※1GbEポートは全二重のみ対応 ※10GbEポートは10Mbps非対応 ／ インターフェース（LAN端子） 端子形状：RJ-45型 8極 ／ インターフェース（LAN端子） 対応プロトコル：TCP/IP、UDP ／ インターフェース（LAN端子） 対応ネットワークファイル プロトコル：SMB ／ Wake on LAN：〇 ※LAN3(10GbE)はWake on LAN機能有効時、シャットダウン後のLAN3リンク速度は100Mbps固定になります。 Wake on LAN機能を使用するためには、ハブが100Mbpsをサポートしている必要があります。 100Mbpsをサポートしていないハブ等に接続している場合、Wake on LAN機能を使用できません。",
+    "raid": "5/1/0（出荷時RAID5）",
+    "warranty": "3年間(本体およびハードディスク)"
+   },
+   "lastCheckedAt": "2026-10-14T06:41:42.387Z",
+   "fallbackFields": []
   },
   {
    "id": "wsh5420dnw5",
@@ -2920,9 +3248,9 @@
    "windowsEdition": "Workgroup",
    "install": "BOXタイプ",
    "bays": 4,
-   "cpu": "Intel Atom C3338 1.50GHz（ターボ2.20GHz）2コア/2スレッド",
+   "cpu": "Intel Atom C3338 1.50 GHz (ターボブースト:2.20 GHz)/2コア/2スレッド",
    "memory": "DDR4 ECC 8GB",
-   "lanText": "10GBASE-T×1、1000BASE-T×2（背面）",
+   "lanText": "10GBASE-T×1、1000BASE-T×2",
    "lanSpeedMax": "10G",
    "lanMaxPorts": 1,
    "usb": "USB 3.2(Gen 1)×2（背面）",
@@ -2938,63 +3266,67 @@
    "warrantyText": "3年間(本体およびハードディスク)",
    "features": {
     "クラウドストレージ連携": {
-     "value": "対応",
-     "supported": true
-    },
-    "Active Directory連携": {
-     "value": "対応",
-     "supported": true
-    },
-    "SSDキャッシュ": {
-     "value": "非対応",
-     "supported": false
+     "value": "〇",
+     "supported": null
     },
     "Time Machine": {
-     "value": "非対応",
+     "value": "－",
      "supported": false
-    },
-    "iSCSIターゲット": {
-     "value": "対応",
-     "supported": true
-    },
-    "ウイルスチェック": {
-     "value": "対応（DiXiM Security Endpoint別売、Windows Defender）",
-     "supported": true
     },
     "リモート監視（キキNavi）": {
-     "value": "対応",
-     "supported": true
+     "value": "〇",
+     "supported": null
     },
-    "ホットスワップ": {
-     "value": "対応",
-     "supported": true
+    "クラウドバックアップ（キキNavi）": {
+     "value": "〇",
+     "supported": null
     },
-    "ホットスペア": {
-     "value": "非対応",
-     "supported": false
+    "Active Directory連携": {
+     "value": "〇",
+     "supported": null
+    },
+    "iSCSIターゲット": {
+     "value": "〇",
+     "supported": null
     },
     "ドライブ暗号化": {
-     "value": "対応",
-     "supported": true
+     "value": "〇",
+     "supported": null
     },
-    "Webアクセス": {
-     "value": "非対応",
+    "ホットスワップ": {
+     "value": "〇",
+     "supported": null
+    },
+    "ホットスペア": {
+     "value": "－",
      "supported": false
     },
-    "メタデータ二重化": {
-     "value": "非対応",
+    "SSDキャッシュ": {
+     "value": "－",
      "supported": false
     },
     "データ重複除去": {
-     "value": "非対応",
-     "supported": false
+     "value": "ー",
+     "supported": null
     },
     "レプリケーション": {
-     "value": "対応",
+     "value": "○",
      "supported": true
     },
     "フェイルオーバー": {
-     "value": "非対応",
+     "value": "－",
+     "supported": false
+    },
+    "Webアクセス": {
+     "value": "－",
+     "supported": false
+    },
+    "ウイルスチェック": {
+     "value": "・DiXiM Security Endpoint(ライセンスパック別売) ・Windows Defender ※対応確認済みソフトウェアは 対応情報ページ からご確認いただけます。",
+     "supported": true
+    },
+    "メタデータ二重化": {
+     "value": "－",
      "supported": false
     }
    },
@@ -3027,9 +3359,21 @@
      "jan": "4981254075890"
     }
    ],
-   "sourceUrl": "https://www.buffalo.jp/product/detail/print/wsh5420dn08w5.html",
-   "collectedBy": "research",
-   "imageUrl": "https://www.buffalo.jp/webpim/product/image/W/WSH5420DNW5/WSH5420DN08W5/WSH5420DN08W5__0100.jpg"
+   "sourceUrl": "https://www.buffalo.jp/product/detail/wsh5420dn08w5.html",
+   "collectedBy": "scraper",
+   "imageUrl": "https://www.buffalo.jp/webpim/product/image/W/WSH5420DNW5/WSH5420DN08W5/WSH5420DN08W5__0100.jpg?small_light(dw=1200,dh=630,cw=1200,ch=630,da=l,cc=ffffff,q=80)",
+   "raw": {
+    "os": "Windows Server IoT 2025 for Storage Workgroup",
+    "install": "デスクトップ",
+    "bays": "4",
+    "cpu": "Intel Atom C3338 ／ 1.50 GHz (ターボブースト:2.20 GHz)/2コア/2スレッド",
+    "memory": "DDR4 ECC 8GB",
+    "lan": "インターフェース（LAN端子） LAN端子（10GBASE-T）：背面×1 ／ インターフェース（LAN端子） LAN端子（2.5GBASE-T）：－ ／ インターフェース（LAN端子） LAN端子（1000BASE-T）：背面×2 ／ インターフェース（LAN端子） 準拠規格：IEEE 802.3an(10GBASE-T) IEEE 802.3bz(5GBASE-T/2.5GBASE-T) IEEE 802.3ab(1000BASE-T) IEEE 802.3u(100BASE-TX) IEEE 802.3i(10BASE-T) ／ インターフェース（LAN端子） 伝送速度：1000Mbps 全二重 100Mbps 半二重/全二重 10Gbps 全二重 10Mbps 全二重 2.5Gbps 全二重 5Gbps 全二重 ※1GbEポートは全二重のみ対応 ※10GbEポートは10Mbps非対応 ／ インターフェース（LAN端子） 端子形状：RJ-45型 8極 ／ インターフェース（LAN端子） 対応プロトコル：TCP/IP、UDP ／ インターフェース（LAN端子） 対応ネットワークファイル プロトコル：SMB ／ Wake on LAN：〇 ※LAN3(10GbE)はWake on LAN機能有効時、シャットダウン後のLAN3リンク速度は100Mbps固定になります。 Wake on LAN機能を使用するためには、ハブが100Mbpsをサポートしている必要があります。 100Mbpsをサポートしていないハブ等に接続している場合、Wake on LAN機能を使用できません。",
+    "raid": "6/5/10/0（出荷時RAID6）",
+    "warranty": "3年間(本体およびハードディスク)"
+   },
+   "lastCheckedAt": "2026-10-14T06:41:43.923Z",
+   "fallbackFields": []
   },
   {
    "id": "wsh5420dns5",
@@ -3042,9 +3386,9 @@
    "windowsEdition": "Standard",
    "install": "BOXタイプ",
    "bays": 4,
-   "cpu": "Intel Atom C3338 1.50GHz（ターボ2.20GHz）2コア/2スレッド",
+   "cpu": "Intel Atom C3338 1.50 GHz (ターボブースト:2.20 GHz)/2コア/2スレッド",
    "memory": "DDR4 ECC 8GB",
-   "lanText": "10GBASE-T×1、1000BASE-T×2（背面）",
+   "lanText": "10GBASE-T×1、1000BASE-T×2",
    "lanSpeedMax": "10G",
    "lanMaxPorts": 1,
    "usb": "USB 3.2(Gen 1)×2（背面）",
@@ -3060,63 +3404,67 @@
    "warrantyText": "3年間(本体およびハードディスク)",
    "features": {
     "クラウドストレージ連携": {
-     "value": "対応",
-     "supported": true
-    },
-    "Active Directory連携": {
-     "value": "対応",
-     "supported": true
-    },
-    "SSDキャッシュ": {
-     "value": "非対応",
-     "supported": false
+     "value": "〇",
+     "supported": null
     },
     "Time Machine": {
-     "value": "非対応",
+     "value": "－",
      "supported": false
-    },
-    "iSCSIターゲット": {
-     "value": "対応",
-     "supported": true
-    },
-    "ウイルスチェック": {
-     "value": "対応（DiXiM Security Endpoint別売、Windows Defender）",
-     "supported": true
     },
     "リモート監視（キキNavi）": {
-     "value": "対応",
-     "supported": true
+     "value": "〇",
+     "supported": null
     },
-    "ホットスワップ": {
-     "value": "対応",
-     "supported": true
+    "クラウドバックアップ（キキNavi）": {
+     "value": "〇",
+     "supported": null
     },
-    "ホットスペア": {
-     "value": "非対応",
-     "supported": false
+    "Active Directory連携": {
+     "value": "〇",
+     "supported": null
+    },
+    "iSCSIターゲット": {
+     "value": "〇",
+     "supported": null
     },
     "ドライブ暗号化": {
-     "value": "対応",
-     "supported": true
+     "value": "〇",
+     "supported": null
     },
-    "Webアクセス": {
-     "value": "非対応",
+    "ホットスワップ": {
+     "value": "〇",
+     "supported": null
+    },
+    "ホットスペア": {
+     "value": "－",
      "supported": false
     },
-    "メタデータ二重化": {
-     "value": "非対応",
+    "SSDキャッシュ": {
+     "value": "－",
      "supported": false
     },
     "データ重複除去": {
-     "value": "対応",
+     "value": "○",
      "supported": true
     },
     "レプリケーション": {
-     "value": "対応",
+     "value": "○",
      "supported": true
     },
     "フェイルオーバー": {
-     "value": "非対応",
+     "value": "－",
+     "supported": false
+    },
+    "Webアクセス": {
+     "value": "－",
+     "supported": false
+    },
+    "ウイルスチェック": {
+     "value": "・DiXiM Security Endpoint(ライセンスパック別売) ・Windows Defender ※対応確認済みソフトウェアは 対応情報ページ からご確認いただけます。",
+     "supported": true
+    },
+    "メタデータ二重化": {
+     "value": "－",
      "supported": false
     }
    },
@@ -3149,9 +3497,21 @@
      "jan": "4981254075852"
     }
    ],
-   "sourceUrl": "https://www.buffalo.jp/product/detail/print/wsh5420dn16s5.html",
-   "collectedBy": "research",
-   "imageUrl": "https://www.buffalo.jp/webpim/product/image/W/WSH5420DNS5/WSH5420DN16S5/WSH5420DN16S5__0100.jpg"
+   "sourceUrl": "https://www.buffalo.jp/product/detail/wsh5420dn16s5.html",
+   "collectedBy": "scraper",
+   "imageUrl": "https://www.buffalo.jp/webpim/product/image/W/WSH5420DNS5/WSH5420DN16S5/WSH5420DN16S5__0100.jpg?small_light(dw=1200,dh=630,cw=1200,ch=630,da=l,cc=ffffff,q=80)",
+   "raw": {
+    "os": "Windows Server IoT 2025 for Storage Standard",
+    "install": "デスクトップ",
+    "bays": "4",
+    "cpu": "Intel Atom C3338 ／ 1.50 GHz (ターボブースト:2.20 GHz)/2コア/2スレッド",
+    "memory": "DDR4 ECC 8GB",
+    "lan": "インターフェース（LAN端子） LAN端子（10GBASE-T）：背面×1 ／ インターフェース（LAN端子） LAN端子（2.5GBASE-T）：－ ／ インターフェース（LAN端子） LAN端子（1000BASE-T）：背面×2 ／ インターフェース（LAN端子） 準拠規格：IEEE 802.3an(10GBASE-T) IEEE 802.3bz(5GBASE-T/2.5GBASE-T) IEEE 802.3ab(1000BASE-T) IEEE 802.3u(100BASE-TX) IEEE 802.3i(10BASE-T) ／ インターフェース（LAN端子） 伝送速度：1000Mbps 全二重 100Mbps 半二重/全二重 10Gbps 全二重 10Mbps 全二重 2.5Gbps 全二重 5Gbps 全二重 ※1GbEポートは全二重のみ対応 ※10GbEポートは10Mbps非対応 ／ インターフェース（LAN端子） 端子形状：RJ-45型 8極 ／ インターフェース（LAN端子） 対応プロトコル：TCP/IP、UDP ／ インターフェース（LAN端子） 対応ネットワークファイル プロトコル：SMB ／ Wake on LAN：〇 ※LAN3(10GbE)はWake on LAN機能有効時、シャットダウン後のLAN3リンク速度は100Mbps固定になります。 Wake on LAN機能を使用するためには、ハブが100Mbpsをサポートしている必要があります。 100Mbpsをサポートしていないハブ等に接続している場合、Wake on LAN機能を使用できません。",
+    "raid": "6/5/10/0（出荷時RAID6）",
+    "warranty": "3年間(本体およびハードディスク)"
+   },
+   "lastCheckedAt": "2026-10-14T06:41:45.720Z",
+   "fallbackFields": []
   },
   {
    "id": "wsh5420rnw5",
@@ -3164,9 +3524,9 @@
    "windowsEdition": "Workgroup",
    "install": "ラックマウントタイプ",
    "bays": 4,
-   "cpu": "Intel Atom C3338 1.50GHz（ターボ2.20GHz）2コア/2スレッド",
+   "cpu": "Intel Atom C3338 1.50 GHz (ターボブースト:2.20 GHz)/2コア/2スレッド",
    "memory": "DDR4 ECC 8GB",
-   "lanText": "10GBASE-T×1、1000BASE-T×2（背面）",
+   "lanText": "10GBASE-T×1、1000BASE-T×2",
    "lanSpeedMax": "10G",
    "lanMaxPorts": 1,
    "usb": "USB 3.2(Gen 1)×3（前面×1、背面×2）",
@@ -3182,67 +3542,67 @@
    "warrantyText": "3年間(本体およびハードディスク)",
    "features": {
     "クラウドストレージ連携": {
-     "value": "対応",
-     "supported": true
-    },
-    "Active Directory連携": {
-     "value": "対応",
-     "supported": true
-    },
-    "SSDキャッシュ": {
-     "value": "非対応",
-     "supported": false
+     "value": "〇",
+     "supported": null
     },
     "Time Machine": {
-     "value": "非対応",
+     "value": "－",
      "supported": false
-    },
-    "iSCSIターゲット": {
-     "value": "対応",
-     "supported": true
-    },
-    "ウイルスチェック": {
-     "value": "対応（DiXiM Security Endpoint別売、Windows Defender）",
-     "supported": true
     },
     "リモート監視（キキNavi）": {
-     "value": "対応（リモート設定含む）",
-     "supported": true
+     "value": "〇",
+     "supported": null
     },
     "クラウドバックアップ（キキNavi）": {
-     "value": "対応",
-     "supported": true
+     "value": "〇",
+     "supported": null
     },
-    "ホットスワップ": {
-     "value": "対応",
-     "supported": true
+    "Active Directory連携": {
+     "value": "〇",
+     "supported": null
     },
-    "ホットスペア": {
-     "value": "非対応",
-     "supported": false
+    "iSCSIターゲット": {
+     "value": "〇",
+     "supported": null
     },
     "ドライブ暗号化": {
-     "value": "対応",
-     "supported": true
+     "value": "〇",
+     "supported": null
     },
-    "Webアクセス": {
-     "value": "非対応",
+    "ホットスワップ": {
+     "value": "〇",
+     "supported": null
+    },
+    "ホットスペア": {
+     "value": "－",
      "supported": false
     },
-    "メタデータ二重化": {
-     "value": "非対応",
+    "SSDキャッシュ": {
+     "value": "－",
      "supported": false
     },
     "データ重複除去": {
-     "value": "非対応",
-     "supported": false
+     "value": "ー",
+     "supported": null
     },
     "レプリケーション": {
-     "value": "対応",
+     "value": "○",
      "supported": true
     },
     "フェイルオーバー": {
-     "value": "非対応",
+     "value": "－",
+     "supported": false
+    },
+    "Webアクセス": {
+     "value": "－",
+     "supported": false
+    },
+    "ウイルスチェック": {
+     "value": "・DiXiM Security Endpoint(ライセンスパック別売) ・Windows Defender ※対応確認済みソフトウェアは 対応情報ページ からご確認いただけます。",
+     "supported": true
+    },
+    "メタデータ二重化": {
+     "value": "－",
      "supported": false
     }
    },
@@ -3276,8 +3636,20 @@
     }
    ],
    "sourceUrl": "https://www.buffalo.jp/product/detail/wsh5420rn08w5.html",
-   "collectedBy": "research",
-   "imageUrl": "https://www.buffalo.jp/webpim/product/image/W/WSH5420RNW5/WSH5420RN08W5/WSH5420RN08W5__0100.jpg"
+   "collectedBy": "scraper",
+   "imageUrl": "https://www.buffalo.jp/webpim/product/image/W/WSH5420RNW5/WSH5420RN08W5/WSH5420RN08W5__0100.jpg?small_light(dw=1200,dh=630,cw=1200,ch=630,da=l,cc=ffffff,q=80)",
+   "raw": {
+    "os": "Windows Server IoT 2025 for Storage Workgroup",
+    "install": "ラックマウント",
+    "bays": "4",
+    "cpu": "Intel Atom C3338 ／ 1.50 GHz (ターボブースト:2.20 GHz)/2コア/2スレッド",
+    "memory": "DDR4 ECC 8GB",
+    "lan": "インターフェース（LAN端子） LAN端子（10GBASE-T）：背面×1 ／ インターフェース（LAN端子） LAN端子（2.5GBASE-T）：－ ／ インターフェース（LAN端子） LAN端子（1000BASE-T）：背面×2 ／ インターフェース（LAN端子） 準拠規格：IEEE 802.3an(10GBASE-T) IEEE 802.3bz(5GBASE-T/2.5GBASE-T) IEEE 802.3ab(1000BASE-T) IEEE 802.3u(100BASE-TX) IEEE 802.3i(10BASE-T) ／ インターフェース（LAN端子） 伝送速度：1000Mbps 全二重 100Mbps 半二重/全二重 10Gbps 全二重 10Mbps 全二重 2.5Gbps 全二重 5Gbps 全二重 ※1GbEポートは全二重のみ対応 ※10GbEポートは10Mbps非対応 ／ インターフェース（LAN端子） 端子形状：RJ-45型 8極 ／ インターフェース（LAN端子） 対応プロトコル：TCP/IP、UDP ／ インターフェース（LAN端子） 対応ネットワークファイル プロトコル：SMB ／ Wake on LAN：〇 ※LAN3(10GbE)はWake on LAN機能有効時、シャットダウン後のLAN3リンク速度は100Mbps固定になります。 Wake on LAN機能を使用するためには、ハブが100Mbpsをサポートしている必要があります。 100Mbpsをサポートしていないハブ等に接続している場合、Wake on LAN機能を使用できません。",
+    "raid": "6/5/10/0（出荷時RAID6）",
+    "warranty": "3年間(本体およびハードディスク)"
+   },
+   "lastCheckedAt": "2026-10-14T06:41:47.750Z",
+   "fallbackFields": []
   },
   {
    "id": "wsh5420rns5",
@@ -3290,9 +3662,9 @@
    "windowsEdition": "Standard",
    "install": "ラックマウントタイプ",
    "bays": 4,
-   "cpu": "Intel Atom C3338 1.50GHz（ターボ2.20GHz）2コア/2スレッド",
+   "cpu": "Intel Atom C3338 1.50 GHz (ターボブースト:2.20 GHz)/2コア/2スレッド",
    "memory": "DDR4 ECC 8GB",
-   "lanText": "10GBASE-T×1、1000BASE-T×2（背面）",
+   "lanText": "10GBASE-T×1、1000BASE-T×2",
    "lanSpeedMax": "10G",
    "lanMaxPorts": 1,
    "usb": "USB 3.2(Gen 1)×3（前面×1、背面×2）",
@@ -3308,63 +3680,67 @@
    "warrantyText": "3年間(本体およびハードディスク)",
    "features": {
     "クラウドストレージ連携": {
-     "value": "対応",
-     "supported": true
-    },
-    "Active Directory連携": {
-     "value": "対応",
-     "supported": true
-    },
-    "SSDキャッシュ": {
-     "value": "非対応",
-     "supported": false
+     "value": "〇",
+     "supported": null
     },
     "Time Machine": {
-     "value": "非対応",
+     "value": "－",
      "supported": false
-    },
-    "iSCSIターゲット": {
-     "value": "対応",
-     "supported": true
-    },
-    "ウイルスチェック": {
-     "value": "対応（DiXiM Security Endpoint別売、Windows Defender）",
-     "supported": true
     },
     "リモート監視（キキNavi）": {
-     "value": "対応",
-     "supported": true
+     "value": "〇",
+     "supported": null
     },
-    "ホットスワップ": {
-     "value": "対応",
-     "supported": true
+    "クラウドバックアップ（キキNavi）": {
+     "value": "〇",
+     "supported": null
     },
-    "ホットスペア": {
-     "value": "非対応",
-     "supported": false
+    "Active Directory連携": {
+     "value": "〇",
+     "supported": null
+    },
+    "iSCSIターゲット": {
+     "value": "〇",
+     "supported": null
     },
     "ドライブ暗号化": {
-     "value": "対応",
-     "supported": true
+     "value": "〇",
+     "supported": null
     },
-    "Webアクセス": {
-     "value": "非対応",
+    "ホットスワップ": {
+     "value": "〇",
+     "supported": null
+    },
+    "ホットスペア": {
+     "value": "－",
      "supported": false
     },
-    "メタデータ二重化": {
-     "value": "非対応",
+    "SSDキャッシュ": {
+     "value": "－",
      "supported": false
     },
     "データ重複除去": {
-     "value": "対応",
-     "supported": true
+     "value": "〇",
+     "supported": null
     },
     "レプリケーション": {
-     "value": "対応",
+     "value": "○",
      "supported": true
     },
     "フェイルオーバー": {
-     "value": "非対応",
+     "value": "－",
+     "supported": false
+    },
+    "Webアクセス": {
+     "value": "－",
+     "supported": false
+    },
+    "ウイルスチェック": {
+     "value": "・DiXiM Security Endpoint(ライセンスパック別売) ・Windows Defender ※対応確認済みソフトウェアは 対応情報ページ からご確認いただけます。",
+     "supported": true
+    },
+    "メタデータ二重化": {
+     "value": "－",
      "supported": false
     }
    },
@@ -3398,8 +3774,20 @@
     }
    ],
    "sourceUrl": "https://www.buffalo.jp/product/detail/wsh5420rn40s5.html",
-   "collectedBy": "research",
-   "imageUrl": "https://www.buffalo.jp/webpim/product/image/W/WSH5420RNS5/WSH5420RN40S5/WSH5420RN40S5__0100.jpg"
+   "collectedBy": "scraper",
+   "imageUrl": "https://www.buffalo.jp/webpim/product/image/W/WSH5420RNS5/WSH5420RN40S5/WSH5420RN40S5__0100.jpg?small_light(dw=1200,dh=630,cw=1200,ch=630,da=l,cc=ffffff,q=80)",
+   "raw": {
+    "os": "Windows Server IoT 2025 for Storage Standard",
+    "install": "ラックマウント",
+    "bays": "4",
+    "cpu": "Intel Atom C3338 ／ 1.50 GHz (ターボブースト:2.20 GHz)/2コア/2スレッド",
+    "memory": "DDR4 ECC 8GB",
+    "lan": "インターフェース（LAN端子） LAN端子（10GBASE-T）：背面×1 ／ インターフェース（LAN端子） LAN端子（2.5GBASE-T）：－ ／ インターフェース（LAN端子） LAN端子（1000BASE-T）：背面×2 ／ インターフェース（LAN端子） 準拠規格：IEEE 802.3an(10GBASE-T) IEEE 802.3bz(5GBASE-T/2.5GBASE-T) IEEE 802.3ab(1000BASE-T) IEEE 802.3u(100BASE-TX) IEEE 802.3i(10BASE-T) ／ インターフェース（LAN端子） 伝送速度：1000Mbps 全二重 100Mbps 半二重/全二重 10Gbps 全二重 10Mbps 全二重 2.5Gbps 全二重 5Gbps 全二重 ※1GbEポートは全二重のみ対応 ※10GbEポートは10Mbps非対応 ／ インターフェース（LAN端子） 端子形状：RJ-45型 8極 ／ インターフェース（LAN端子） 対応プロトコル：TCP/IP、UDP ／ インターフェース（LAN端子） 対応ネットワークファイル プロトコル：SMB ／ Wake on LAN：〇 ※LAN3(10GbE)はWake on LAN機能有効時、シャットダウン後のLAN3リンク速度は100Mbps固定になります。 Wake on LAN機能を使用するためには、ハブが100Mbpsをサポートしている必要があります。 100Mbpsをサポートしていないハブ等に接続している場合、Wake on LAN機能を使用できません。",
+    "raid": "6/5/10/0（出荷時RAID6）",
+    "warranty": "3年間(本体およびハードディスク)"
+   },
+   "lastCheckedAt": "2026-10-14T06:41:49.923Z",
+   "fallbackFields": []
   },
   {
    "id": "wsh5620dns5",
@@ -3412,9 +3800,9 @@
    "windowsEdition": "Standard",
    "install": "BOXタイプ",
    "bays": 6,
-   "cpu": "Intel Atom C3338 1.50GHz（ターボ2.20GHz）2コア/2スレッド",
+   "cpu": "Intel Atom C3338 1.50 GHz (ターボブースト:2.20 GHz)/2コア/2スレッド",
    "memory": "DDR4 ECC 8GB",
-   "lanText": "10GBASE-T×1、1000BASE-T×2（背面）",
+   "lanText": "10GBASE-T×1、1000BASE-T×2",
    "lanSpeedMax": "10G",
    "lanMaxPorts": 1,
    "usb": "USB 3.2(Gen 1)×3（前面×1、背面×2）",
@@ -3427,66 +3815,70 @@
    "raidType": "ハードウェアRAID",
    "redundantPower": false,
    "warrantyYears": 3,
-   "warrantyText": "3年（本体・HDD）",
+   "warrantyText": "3年間(本体およびハードディスク)",
    "features": {
     "クラウドストレージ連携": {
-     "value": "対応",
-     "supported": true
-    },
-    "Active Directory連携": {
-     "value": "対応",
-     "supported": true
-    },
-    "SSDキャッシュ": {
-     "value": "非対応",
-     "supported": false
+     "value": "〇",
+     "supported": null
     },
     "Time Machine": {
-     "value": "非対応",
+     "value": "－",
      "supported": false
-    },
-    "iSCSIターゲット": {
-     "value": "対応",
-     "supported": true
-    },
-    "ウイルスチェック": {
-     "value": "対応（DiXiM Security Endpoint別売、Windows Defender）",
-     "supported": true
     },
     "リモート監視（キキNavi）": {
-     "value": "対応（リモート設定・クラウドバックアップ含む）",
-     "supported": true
+     "value": "〇",
+     "supported": null
     },
-    "ホットスワップ": {
-     "value": "対応",
-     "supported": true
+    "クラウドバックアップ（キキNavi）": {
+     "value": "〇",
+     "supported": null
     },
-    "ホットスペア": {
-     "value": "非対応",
-     "supported": false
+    "Active Directory連携": {
+     "value": "〇",
+     "supported": null
+    },
+    "iSCSIターゲット": {
+     "value": "〇",
+     "supported": null
     },
     "ドライブ暗号化": {
-     "value": "対応",
-     "supported": true
+     "value": "〇",
+     "supported": null
     },
-    "Webアクセス": {
-     "value": "非対応",
+    "ホットスワップ": {
+     "value": "〇",
+     "supported": null
+    },
+    "ホットスペア": {
+     "value": "－",
      "supported": false
     },
-    "メタデータ二重化": {
-     "value": "非対応",
+    "SSDキャッシュ": {
+     "value": "－",
      "supported": false
     },
     "データ重複除去": {
-     "value": "対応",
-     "supported": true
+     "value": "〇",
+     "supported": null
     },
     "レプリケーション": {
-     "value": "対応",
+     "value": "○",
      "supported": true
     },
     "フェイルオーバー": {
-     "value": "非対応",
+     "value": "－",
+     "supported": false
+    },
+    "Webアクセス": {
+     "value": "－",
+     "supported": false
+    },
+    "ウイルスチェック": {
+     "value": "・DiXiM Security Endpoint(ライセンスパック別売) ・Windows Defender ※対応確認済みソフトウェアは 対応情報ページ からご確認いただけます。",
+     "supported": true
+    },
+    "メタデータ二重化": {
+     "value": "－",
      "supported": false
     }
    },
@@ -3519,9 +3911,21 @@
      "jan": "4981254075739"
     }
    ],
-   "sourceUrl": "https://www.buffalo.jp/product/detail/print/wsh5620dn24s5.html",
-   "collectedBy": "research",
-   "imageUrl": "https://www.buffalo.jp/webpim/product/image/W/WSH5620DNS5/WSH5620DN24S5/WSH5620DN24S5__0100.jpg"
+   "sourceUrl": "https://www.buffalo.jp/product/detail/wsh5620dn24s5.html",
+   "collectedBy": "scraper",
+   "imageUrl": "https://www.buffalo.jp/webpim/product/image/W/WSH5620DNS5/WSH5620DN24S5/WSH5620DN24S5__0100.jpg?small_light(dw=1200,dh=630,cw=1200,ch=630,da=l,cc=ffffff,q=80)",
+   "raw": {
+    "os": "Windows Server IoT 2025 for Storage Standard",
+    "install": "デスクトップ",
+    "bays": "6",
+    "cpu": "Intel Atom C3338 ／ 1.50 GHz (ターボブースト:2.20 GHz)/2コア/2スレッド",
+    "memory": "DDR4 ECC 8GB",
+    "lan": "インターフェース（LAN端子） LAN端子（10GBASE-T）：背面×1 ／ インターフェース（LAN端子） LAN端子（2.5GBASE-T）：ー ／ インターフェース（LAN端子） LAN端子（1000BASE-T）：背面×2 ／ インターフェース（LAN端子） 準拠規格：IEEE 802.3an(10GBASE-T) IEEE 802.3bz(5GBASE-T/2.5GBASE-T) IEEE 802.3ab(1000BASE-T) IEEE 802.3u(100BASE-TX) IEEE 802.3i(10BASE-T) ／ インターフェース（LAN端子） 伝送速度：1000Mbps 全二重 100Mbps 半二重/全二重 10Gbps 全二重 10Mbps 全二重 2.5Gbps 全二重 5Gbps 全二重 ※1GbEポートは全二重のみ対応 ※10GbEポートは10Mbps非対応 ／ インターフェース（LAN端子） 端子形状：RJ-45型 8極 ／ インターフェース（LAN端子） 対応プロトコル：TCP/IP、UDP ／ インターフェース（LAN端子） 対応ネットワークファイル プロトコル：SMB ／ Wake on LAN：〇 ※LAN3(10GbE)はWake on LAN機能有効時、シャットダウン後のLAN3リンク速度は100Mbps固定になります。 Wake on LAN機能を使用するためには、ハブが100Mbpsをサポートしている必要があります。 100Mbpsをサポートしていないハブ等に接続している場合、Wake on LAN機能を使用できません。",
+    "raid": "6/5/10/0（出荷時RAID6）",
+    "warranty": "3年間(本体およびハードディスク)"
+   },
+   "lastCheckedAt": "2026-10-14T06:41:51.891Z",
+   "fallbackFields": []
   },
   {
    "id": "ws6410dnw5",
@@ -3534,9 +3938,9 @@
    "windowsEdition": "Workgroup",
    "install": "BOXタイプ",
    "bays": 4,
-   "cpu": "Intel Atom x7211E 1.00GHz（ターボ3.20GHz）2コア/2スレッド",
-   "memory": "DDR5 8GB（最大16GB、16GB×1スロット）",
-   "lanText": "10GBASE-T×2（背面、5G/2.5G/1000BASE-T対応）",
+   "cpu": "Intel Atom x7211E 1.00 GHz (ターボブースト:3.20 GHz)/2コア/2スレッド",
+   "memory": "DDR5 8GB 最大16GB(16GB×1 slot)",
+   "lanText": "10GBASE-T×2",
    "lanSpeedMax": "10G",
    "lanMaxPorts": 2,
    "usb": "USB 3.2(Gen 2) Type-C×1、USB 3.2(Gen 1) Type-A×1、USB 2.0 Type-A×2（いずれも背面）",
@@ -3551,69 +3955,73 @@
    "warrantyText": "3年間(本体およびハードディスク)",
    "features": {
     "クラウドストレージ連携": {
-     "value": "対応",
-     "supported": true
-    },
-    "Active Directory連携": {
-     "value": "対応",
-     "supported": true
-    },
-    "SSDキャッシュ": {
-     "value": "非対応",
-     "supported": false
+     "value": "〇",
+     "supported": null
     },
     "Time Machine": {
-     "value": "非対応",
+     "value": "－",
      "supported": false
     },
-    "iSCSIターゲット": {
-     "value": "対応",
-     "supported": true
-    },
-    "ウイルスチェック": {
-     "value": "対応（DiXiM Security Endpoint別売、Windows Defender）",
-     "supported": true
-    },
     "リモート監視（キキNavi）": {
-     "value": "対応",
+     "value": "〇",
+     "supported": null
+    },
+    "クラウドバックアップ（キキNavi）": {
+     "value": "〇",
+     "supported": null
+    },
+    "Active Directory連携": {
+     "value": "〇",
+     "supported": null
+    },
+    "iSCSIターゲット": {
+     "value": "〇",
+     "supported": null
+    },
+    "ドライブ暗号化": {
+     "value": "〇 ※BitLocker使用(ベーシックディスクのみ対応)",
      "supported": true
     },
     "ホットスワップ": {
-     "value": "対応",
-     "supported": true
+     "value": "〇",
+     "supported": null
     },
     "ホットスペア": {
-     "value": "対応（記憶域スペース利用時のみ）",
+     "value": "〇 ※記憶域スペース利用時のみ対応",
      "supported": true
     },
-    "ドライブ暗号化": {
-     "value": "対応（BitLocker、ベーシックディスクのみ）",
-     "supported": true
-    },
-    "Webアクセス": {
-     "value": "非対応",
-     "supported": false
-    },
-    "メタデータ二重化": {
-     "value": "非対応",
+    "SSDキャッシュ": {
+     "value": "－",
      "supported": false
     },
     "データ重複除去": {
-     "value": "非対応",
+     "value": "－",
      "supported": false
     },
     "レプリケーション": {
-     "value": "対応",
-     "supported": true
+     "value": "〇",
+     "supported": null
     },
     "フェイルオーバー": {
-     "value": "非対応",
+     "value": "－",
+     "supported": false
+    },
+    "Webアクセス": {
+     "value": "－",
+     "supported": false
+    },
+    "ウイルスチェック": {
+     "value": "・DiXiM Security Endpoint(ライセンスパック別売) ・Windows Defender ※対応確認済みソフトウェアは 対応情報ページ からご確認いただけます。",
+     "supported": true
+    },
+    "メタデータ二重化": {
+     "value": "－",
      "supported": false
     }
    },
    "releaseDate": "2026年10月中旬（プレスリリース、商品ページには発売時期の記載なし）",
    "status": "現行",
-   "statusNote": "現行（新製品、2026年10月中旬より順次出荷）",
+   "statusNote": null,
    "variants": [
     {
      "sku": "WS6410DN04W5",
@@ -3647,8 +4055,22 @@
     }
    ],
    "sourceUrl": "https://www.buffalo.jp/product/detail/ws6410dn48w5.html",
-   "collectedBy": "research",
-   "imageUrl": "https://www.buffalo.jp/webpim/product/image/W/WS6410DNW5/WS6410DN48W5/WS6410DN48W5__0100.jpg"
+   "collectedBy": "scraper",
+   "imageUrl": "https://www.buffalo.jp/webpim/product/image/W/WS6410DNW5/WS6410DN48W5/WS6410DN48W5__0100.jpg?small_light(dw=1200,dh=630,cw=1200,ch=630,da=l,cc=ffffff,q=80)",
+   "raw": {
+    "os": "Windows Server IoT 2025 for Storage Workgroup",
+    "install": "デスクトップ",
+    "bays": "4",
+    "cpu": "Intel Atom x7211E ／ 1.00 GHz (ターボブースト:3.20 GHz)/2コア/2スレッド",
+    "memory": "DDR5 8GB 最大16GB(16GB×1 slot)",
+    "lan": "インターフェース（LAN端子） LAN端子（10GBASE-T）：背面×2 ／ インターフェース（LAN端子） LAN端子（2.5GBASE-T）：－ ／ インターフェース（LAN端子） LAN端子（1000BASE-T）：－ ／ インターフェース（LAN端子） 準拠規格：IEEE 802.3an(10GBASE-T) IEEE 802.3bz(5GBASE-T/2.5GBASE-T) IEEE 802.3ab(1000BASE-T) IEEE 802.3u(100BASE-TX) ／ インターフェース（LAN端子） 伝送速度：1000Mbps 全二重 100Mbps 半二重/全二重 10Gbps 全二重 2.5Gbps 全二重 5Gbps 全二重 ／ インターフェース（LAN端子） 端子形状：RJ-45型 8極 ／ インターフェース（LAN端子） 対応プロトコル：TCP/IP、UDP ／ インターフェース（LAN端子） 対応ネットワークファイル プロトコル：SMB ／ Wake on LAN：〇 ※Wake on LAN機能有効時、シャットダウン後のリンク速度は100Mbps固定になります。 Wake on LAN機能を使用するためには、ハブが100Mbpsをサポートしている必要があります。 100Mbpsをサポートしていないハブ等に接続している場合、Wake on LAN機能を使用できません。",
+    "raid": "5/1/0（出荷時RAID5）",
+    "warranty": "3年間(本体およびハードディスク)"
+   },
+   "lastCheckedAt": "2026-10-14T06:41:54.929Z",
+   "fallbackFields": [
+    "releaseDate"
+   ]
   },
   {
    "id": "ws6410dns5",
@@ -3661,9 +4083,9 @@
    "windowsEdition": "Standard",
    "install": "BOXタイプ",
    "bays": 4,
-   "cpu": "Intel Atom x7211E 1.00GHz（ターボ3.20GHz）2コア/2スレッド",
-   "memory": "DDR5 8GB（最大16GB、16GB×1スロット）",
-   "lanText": "10GBASE-T×2（背面、5G/2.5G/1000BASE-T対応）",
+   "cpu": "Intel Atom x7211E 1.00 GHz (ターボブースト:3.20 GHz)/2コア/2スレッド",
+   "memory": "DDR5 8GB 最大16GB(16GB×1 slot)",
+   "lanText": "10GBASE-T×2",
    "lanSpeedMax": "10G",
    "lanMaxPorts": 2,
    "usb": "USB 3.2(Gen 2) Type-C×1、USB 3.2(Gen 1) Type-A×1、USB 2.0 Type-A×2（いずれも背面）",
@@ -3673,22 +4095,78 @@
     "RAID 0"
    ],
    "raidType": "ソフトウェアRAID",
-   "redundantPower": null,
-   "warrantyYears": null,
-   "warrantyText": null,
+   "redundantPower": false,
+   "warrantyYears": 3,
+   "warrantyText": "3年間(本体およびハードディスク)",
    "features": {
-    "ホットスペア": {
-     "value": "対応（記憶域スペース利用時のみ）",
+    "クラウドストレージ連携": {
+     "value": "〇",
+     "supported": null
+    },
+    "Time Machine": {
+     "value": "－",
+     "supported": false
+    },
+    "リモート監視（キキNavi）": {
+     "value": "〇",
+     "supported": null
+    },
+    "クラウドバックアップ（キキNavi）": {
+     "value": "〇",
+     "supported": null
+    },
+    "Active Directory連携": {
+     "value": "〇",
+     "supported": null
+    },
+    "iSCSIターゲット": {
+     "value": "〇",
+     "supported": null
+    },
+    "ドライブ暗号化": {
+     "value": "〇 ※BitLocker使用(ベーシックディスクのみ対応)",
      "supported": true
     },
-    "データ重複除去": {
-     "value": "対応",
+    "ホットスワップ": {
+     "value": "〇",
+     "supported": null
+    },
+    "ホットスペア": {
+     "value": "〇 ※記憶域スペース利用時のみ対応",
      "supported": true
+    },
+    "SSDキャッシュ": {
+     "value": "－",
+     "supported": false
+    },
+    "データ重複除去": {
+     "value": "〇",
+     "supported": null
+    },
+    "レプリケーション": {
+     "value": "〇",
+     "supported": null
+    },
+    "フェイルオーバー": {
+     "value": "－",
+     "supported": false
+    },
+    "Webアクセス": {
+     "value": "－",
+     "supported": false
+    },
+    "ウイルスチェック": {
+     "value": "・DiXiM Security Endpoint(ライセンスパック別売) ・Windows Defender ※対応確認済みソフトウェアは 対応情報ページ からご確認いただけます。",
+     "supported": true
+    },
+    "メタデータ二重化": {
+     "value": "－",
+     "supported": false
     }
    },
    "releaseDate": "2026年10月中旬（プレスリリース）",
    "status": "現行",
-   "statusNote": "現行（新製品、2026年10月中旬より順次出荷）",
+   "statusNote": null,
    "variants": [
     {
      "sku": "WS6410DN04S5",
@@ -3722,8 +4200,22 @@
     }
    ],
    "sourceUrl": "https://www.buffalo.jp/product/detail/ws6410dn48s5.html",
-   "collectedBy": "research",
-   "imageUrl": "https://www.buffalo.jp/webpim/product/image/W/WS6410DNS5/WS6410DN48S5/WS6410DN48S5__0100.jpg"
+   "collectedBy": "scraper",
+   "imageUrl": "https://www.buffalo.jp/webpim/product/image/W/WS6410DNS5/WS6410DN48S5/WS6410DN48S5__0100.jpg?small_light(dw=1200,dh=630,cw=1200,ch=630,da=l,cc=ffffff,q=80)",
+   "raw": {
+    "os": "Windows Server IoT 2025 for Storage Standard",
+    "install": "デスクトップ",
+    "bays": "4",
+    "cpu": "Intel Atom x7211E ／ 1.00 GHz (ターボブースト:3.20 GHz)/2コア/2スレッド",
+    "memory": "DDR5 8GB 最大16GB(16GB×1 slot)",
+    "lan": "インターフェース（LAN端子） LAN端子（10GBASE-T）：背面×2 ／ インターフェース（LAN端子） LAN端子（2.5GBASE-T）：－ ／ インターフェース（LAN端子） LAN端子（1000BASE-T）：－ ／ インターフェース（LAN端子） 準拠規格：IEEE 802.3an(10GBASE-T) IEEE 802.3bz(5GBASE-T/2.5GBASE-T) IEEE 802.3ab(1000BASE-T) IEEE 802.3u(100BASE-TX) ／ インターフェース（LAN端子） 伝送速度：1000Mbps 全二重 100Mbps 半二重/全二重 10Gbps 全二重 2.5Gbps 全二重 5Gbps 全二重 ／ インターフェース（LAN端子） 端子形状：RJ-45型 8極 ／ インターフェース（LAN端子） 対応プロトコル：TCP/IP、UDP ／ インターフェース（LAN端子） 対応ネットワークファイル プロトコル：SMB ／ Wake on LAN：〇 ※Wake on LAN機能有効時、シャットダウン後のリンク速度は100Mbps固定になります。 Wake on LAN機能を使用するためには、ハブが100Mbpsをサポートしている必要があります。 100Mbpsをサポートしていないハブ等に接続している場合、Wake on LAN機能を使用できません。",
+    "raid": "5/1/0（出荷時RAID5）",
+    "warranty": "3年間(本体およびハードディスク)"
+   },
+   "lastCheckedAt": "2026-10-14T06:41:56.744Z",
+   "fallbackFields": [
+    "releaseDate"
+   ]
   },
   {
    "id": "ws6210dnw5",
@@ -3736,9 +4228,9 @@
    "windowsEdition": "Workgroup",
    "install": "BOXタイプ",
    "bays": 2,
-   "cpu": "Intel Atom x7211E 1.00GHz（ターボ3.20GHz）2コア/2スレッド",
-   "memory": "DDR5 8GB（最大16GB、16GB×1スロット）",
-   "lanText": "10GBASE-T×2（背面）",
+   "cpu": "Intel Atom x7211E 1.00 GHz (ターボブースト:3.20 GHz)/2コア/2スレッド",
+   "memory": "DDR5 8GB 最大16GB(16GB×1 slot)",
+   "lanText": "10GBASE-T×2",
    "lanSpeedMax": "10G",
    "lanMaxPorts": 2,
    "usb": "USB 3.2(Gen 2) Type-C×1、USB 3.2(Gen 1) Type-A×1、USB 2.0 Type-A×2（いずれも背面）",
@@ -3747,26 +4239,78 @@
     "RAID 0"
    ],
    "raidType": "ソフトウェアRAID",
-   "redundantPower": null,
-   "warrantyYears": null,
-   "warrantyText": null,
+   "redundantPower": false,
+   "warrantyYears": 3,
+   "warrantyText": "3年間(本体およびハードディスク)",
    "features": {
-    "ホットスワップ": {
-     "value": "対応",
+    "クラウドストレージ連携": {
+     "value": "〇",
+     "supported": null
+    },
+    "Time Machine": {
+     "value": "－",
+     "supported": false
+    },
+    "リモート監視（キキNavi）": {
+     "value": "〇",
+     "supported": null
+    },
+    "クラウドバックアップ（キキNavi）": {
+     "value": "〇",
+     "supported": null
+    },
+    "Active Directory連携": {
+     "value": "〇",
+     "supported": null
+    },
+    "iSCSIターゲット": {
+     "value": "〇",
+     "supported": null
+    },
+    "ドライブ暗号化": {
+     "value": "〇 ※BitLocker使用(ベーシックディスクのみ対応)",
      "supported": true
     },
+    "ホットスワップ": {
+     "value": "〇",
+     "supported": null
+    },
     "ホットスペア": {
-     "value": "非対応",
+     "value": "－",
+     "supported": false
+    },
+    "SSDキャッシュ": {
+     "value": "－",
      "supported": false
     },
     "データ重複除去": {
-     "value": "非対応",
+     "value": "－",
+     "supported": false
+    },
+    "レプリケーション": {
+     "value": "〇",
+     "supported": null
+    },
+    "フェイルオーバー": {
+     "value": "－",
+     "supported": false
+    },
+    "Webアクセス": {
+     "value": "－",
+     "supported": false
+    },
+    "ウイルスチェック": {
+     "value": "・DiXiM Security Endpoint(ライセンスパック別売) ・Windows Defender ※対応確認済みソフトウェアは 対応情報ページ からご確認いただけます。",
+     "supported": true
+    },
+    "メタデータ二重化": {
+     "value": "－",
      "supported": false
     }
    },
    "releaseDate": "2026年10月中旬（プレスリリース）",
    "status": "現行",
-   "statusNote": "現行（新製品、2026年10月中旬より順次出荷）",
+   "statusNote": null,
    "variants": [
     {
      "sku": "WS6210DN02W5",
@@ -3794,8 +4338,22 @@
     }
    ],
    "sourceUrl": "https://www.buffalo.jp/product/detail/ws6210dn16w5.html",
-   "collectedBy": "research",
-   "imageUrl": "https://www.buffalo.jp/webpim/product/image/W/WS6210DNW5/WS6210DN16W5/WS6210DN16W5__0100.jpg"
+   "collectedBy": "scraper",
+   "imageUrl": "https://www.buffalo.jp/webpim/product/image/W/WS6210DNW5/WS6210DN16W5/WS6210DN16W5__0100.jpg?small_light(dw=1200,dh=630,cw=1200,ch=630,da=l,cc=ffffff,q=80)",
+   "raw": {
+    "os": "Windows Server IoT 2025 for Storage Workgroup",
+    "install": "デスクトップ",
+    "bays": "2",
+    "cpu": "Intel Atom x7211E ／ 1.00 GHz (ターボブースト:3.20 GHz)/2コア/2スレッド",
+    "memory": "DDR5 8GB 最大16GB(16GB×1 slot)",
+    "lan": "インターフェース（LAN端子） LAN端子（10GBASE-T）：背面×2 ／ インターフェース（LAN端子） LAN端子（2.5GBASE-T）：－ ／ インターフェース（LAN端子） LAN端子（1000BASE-T）：－ ／ インターフェース（LAN端子） 準拠規格：IEEE 802.3an(10GBASE-T) IEEE 802.3bz(5GBASE-T/2.5GBASE-T) IEEE 802.3ab(1000BASE-T) IEEE 802.3u(100BASE-TX) ／ インターフェース（LAN端子） 伝送速度：1000Mbps 全二重 100Mbps 半二重/全二重 10Gbps 全二重 2.5Gbps 全二重 5Gbps 全二重 ／ インターフェース（LAN端子） 端子形状：RJ-45型 8極 ／ インターフェース（LAN端子） 対応プロトコル：TCP/IP、UDP ／ インターフェース（LAN端子） 対応ネットワークファイル プロトコル：SMB ／ Wake on LAN：〇 ※Wake on LAN機能有効時、シャットダウン後のリンク速度は100Mbps固定になります。 Wake on LAN機能を使用するためには、ハブが100Mbpsをサポートしている必要があります。 100Mbpsをサポートしていないハブ等に接続している場合、Wake on LAN機能を使用できません。",
+    "raid": "1/0（出荷時 RAID1）",
+    "warranty": "3年間(本体およびハードディスク)"
+   },
+   "lastCheckedAt": "2026-10-14T06:41:58.475Z",
+   "fallbackFields": [
+    "releaseDate"
+   ]
   },
   {
    "id": "ws6210dns5",
@@ -3808,9 +4366,9 @@
    "windowsEdition": "Standard",
    "install": "BOXタイプ",
    "bays": 2,
-   "cpu": "Intel Atom x7211E 1.00GHz（ターボ3.20GHz）2コア/2スレッド",
-   "memory": "DDR5 8GB（最大16GB、16GB×1スロット）",
-   "lanText": "10GBASE-T×2（背面）",
+   "cpu": "Intel Atom x7211E 1.00 GHz (ターボブースト:3.20 GHz)/2コア/2スレッド",
+   "memory": "DDR5 8GB 最大16GB(16GB×1 slot)",
+   "lanText": "10GBASE-T×2",
    "lanSpeedMax": "10G",
    "lanMaxPorts": 2,
    "usb": "USB 3.2(Gen 2) Type-C×1、USB 3.2(Gen 1) Type-A×1、USB 2.0 Type-A×2（いずれも背面）",
@@ -3824,69 +4382,73 @@
    "warrantyText": "3年間(本体およびハードディスク)",
    "features": {
     "クラウドストレージ連携": {
-     "value": "対応",
-     "supported": true
-    },
-    "Active Directory連携": {
-     "value": "対応",
-     "supported": true
-    },
-    "SSDキャッシュ": {
-     "value": "非対応",
-     "supported": false
+     "value": "〇",
+     "supported": null
     },
     "Time Machine": {
-     "value": "非対応",
+     "value": "－",
      "supported": false
     },
-    "iSCSIターゲット": {
-     "value": "対応",
-     "supported": true
-    },
-    "ウイルスチェック": {
-     "value": "対応（DiXiM Security Endpoint別売、Windows Defender）",
-     "supported": true
-    },
     "リモート監視（キキNavi）": {
-     "value": "対応（リモート設定含む）",
+     "value": "〇",
+     "supported": null
+    },
+    "クラウドバックアップ（キキNavi）": {
+     "value": "〇",
+     "supported": null
+    },
+    "Active Directory連携": {
+     "value": "〇",
+     "supported": null
+    },
+    "iSCSIターゲット": {
+     "value": "〇",
+     "supported": null
+    },
+    "ドライブ暗号化": {
+     "value": "〇 ※BitLocker使用(ベーシックディスクのみ対応)",
      "supported": true
     },
     "ホットスワップ": {
-     "value": "対応",
-     "supported": true
+     "value": "〇",
+     "supported": null
     },
     "ホットスペア": {
-     "value": "非対応",
+     "value": "－",
      "supported": false
     },
-    "ドライブ暗号化": {
-     "value": "対応（BitLocker、ベーシックディスクのみ）",
-     "supported": true
-    },
-    "Webアクセス": {
-     "value": "非対応",
-     "supported": false
-    },
-    "メタデータ二重化": {
-     "value": "非対応",
+    "SSDキャッシュ": {
+     "value": "－",
      "supported": false
     },
     "データ重複除去": {
-     "value": "対応",
-     "supported": true
+     "value": "〇",
+     "supported": null
     },
     "レプリケーション": {
-     "value": "対応",
-     "supported": true
+     "value": "〇",
+     "supported": null
     },
     "フェイルオーバー": {
-     "value": "非対応",
+     "value": "－",
+     "supported": false
+    },
+    "Webアクセス": {
+     "value": "－",
+     "supported": false
+    },
+    "ウイルスチェック": {
+     "value": "・DiXiM Security Endpoint(ライセンスパック別売) ・Windows Defender ※対応確認済みソフトウェアは 対応情報ページ からご確認いただけます。",
+     "supported": true
+    },
+    "メタデータ二重化": {
+     "value": "－",
      "supported": false
     }
    },
    "releaseDate": "2026年10月中旬（プレスリリース）",
    "status": "現行",
-   "statusNote": "現行（新製品、2026年10月中旬より順次出荷）",
+   "statusNote": null,
    "variants": [
     {
      "sku": "WS6210DN02S5",
@@ -3914,8 +4476,22 @@
     }
    ],
    "sourceUrl": "https://www.buffalo.jp/product/detail/ws6210dn16s5.html",
-   "collectedBy": "research",
-   "imageUrl": "https://www.buffalo.jp/webpim/product/image/W/WS6210DNS5/WS6210DN16S5/WS6210DN16S5__0100.jpg"
+   "collectedBy": "scraper",
+   "imageUrl": "https://www.buffalo.jp/webpim/product/image/W/WS6210DNS5/WS6210DN16S5/WS6210DN16S5__0100.jpg?small_light(dw=1200,dh=630,cw=1200,ch=630,da=l,cc=ffffff,q=80)",
+   "raw": {
+    "os": "Windows Server IoT 2025 for Storage Standard",
+    "install": "デスクトップ",
+    "bays": "2",
+    "cpu": "Intel Atom x7211E ／ 1.00 GHz (ターボブースト:3.20 GHz)/2コア/2スレッド",
+    "memory": "DDR5 8GB 最大16GB(16GB×1 slot)",
+    "lan": "インターフェース（LAN端子） LAN端子（10GBASE-T）：背面×2 ／ インターフェース（LAN端子） LAN端子（2.5GBASE-T）：－ ／ インターフェース（LAN端子） LAN端子（1000BASE-T）：－ ／ インターフェース（LAN端子） 準拠規格：IEEE 802.3an(10GBASE-T) IEEE 802.3bz(5GBASE-T/2.5GBASE-T) IEEE 802.3ab(1000BASE-T) IEEE 802.3u(100BASE-TX) ／ インターフェース（LAN端子） 伝送速度：1000Mbps 全二重 100Mbps 半二重/全二重 10Gbps 全二重 2.5Gbps 全二重 5Gbps 全二重 ／ インターフェース（LAN端子） 端子形状：RJ-45型 8極 ／ インターフェース（LAN端子） 対応プロトコル：TCP/IP、UDP ／ インターフェース（LAN端子） 対応ネットワークファイル プロトコル：SMB ／ Wake on LAN：〇 ※Wake on LAN機能有効時、シャットダウン後のリンク速度は100Mbps固定になります。 Wake on LAN機能を使用するためには、ハブが100Mbpsをサポートしている必要があります。 100Mbpsをサポートしていないハブ等に接続している場合、Wake on LAN機能を使用できません。",
+    "raid": "1/0（出荷時 RAID1）",
+    "warranty": "3年間(本体およびハードディスク)"
+   },
+   "lastCheckedAt": "2026-10-14T06:42:00.100Z",
+   "fallbackFields": [
+    "releaseDate"
+   ]
   },
   {
    "id": "ls220dnb",
@@ -3930,14 +4506,13 @@
    "bays": 2,
    "cpu": "Marvell Armada370 800MHz/1コア",
    "memory": "DDR3 256MB",
-   "lanText": "1000BASE-T×1（背面）",
+   "lanText": "1000BASE-T×1",
    "lanSpeedMax": "1G",
    "lanMaxPorts": 1,
    "usb": "USB 2.0×1（背面、USB-HDDかUPSのいずれか、PC接続不可）",
    "raidModes": [
     "RAID 1",
-    "RAID 0",
-    "通常モード"
+    "RAID 0"
    ],
    "raidType": "ソフトウェアRAID",
    "redundantPower": false,
@@ -3945,63 +4520,75 @@
    "warrantyText": "3年間",
    "features": {
     "クラウドストレージ連携": {
-     "value": "非対応",
-     "supported": false
-    },
-    "Active Directory連携": {
-     "value": "対応",
-     "supported": true
-    },
-    "SSDキャッシュ": {
-     "value": "非対応",
+     "value": "－",
      "supported": false
     },
     "Time Machine": {
-     "value": "対応",
+     "value": "○",
      "supported": true
     },
-    "iSCSIターゲット": {
-     "value": "非対応",
-     "supported": false
-    },
-    "ウイルスチェック": {
-     "value": "非対応",
-     "supported": false
-    },
     "リモート監視（キキNavi）": {
-     "value": "非対応",
+     "value": "－",
      "supported": false
     },
-    "ホットスワップ": {
-     "value": "非対応",
+    "クラウドバックアップ（キキNavi）": {
+     "value": "－",
      "supported": false
     },
-    "ホットスペア": {
-     "value": "非対応",
+    "Active Directory連携": {
+     "value": "〇",
+     "supported": null
+    },
+    "iSCSIターゲット": {
+     "value": "－",
+     "supported": false
+    },
+    "スナップショット": {
+     "value": "－",
+     "supported": false
+    },
+    "不変スナップショット": {
+     "value": "－",
      "supported": false
     },
     "ドライブ暗号化": {
-     "value": "非対応",
+     "value": "－",
      "supported": false
     },
-    "Webアクセス": {
-     "value": "対応",
-     "supported": true
-    },
-    "スナップショット": {
-     "value": "非対応",
+    "ホットスワップ": {
+     "value": "－",
      "supported": false
     },
-    "メタデータ二重化": {
-     "value": "非対応",
+    "ホットスペア": {
+     "value": "－",
+     "supported": false
+    },
+    "SSDキャッシュ": {
+     "value": "－",
      "supported": false
     },
     "レプリケーション": {
-     "value": "非対応",
+     "value": "－",
      "supported": false
     },
     "フェイルオーバー": {
-     "value": "非対応",
+     "value": "－",
+     "supported": false
+    },
+    "Webアクセス": {
+     "value": "○",
+     "supported": true
+    },
+    "ウイルスチェック": {
+     "value": "－",
+     "supported": false
+    },
+    "異常ファイル操作検知": {
+     "value": "－",
+     "supported": false
+    },
+    "メタデータ二重化": {
+     "value": "－",
      "supported": false
     }
    },
@@ -4035,8 +4622,20 @@
     }
    ],
    "sourceUrl": "https://www.buffalo.jp/product/detail/ls220dn0402b.html",
-   "collectedBy": "research",
-   "imageUrl": "https://www.buffalo.jp/webpim/product/image/L/LS220DNB/LS220DN0402B/LS220DN0402B__0100.jpg"
+   "collectedBy": "scraper",
+   "imageUrl": "https://www.buffalo.jp/webpim/product/image/L/LS220DNB/LS220DN0402B/LS220DN0402B__0100.jpg?small_light(dw=1200,dh=630,cw=1200,ch=630,da=l,cc=ffffff,q=80)",
+   "raw": {
+    "os": "Linuxベース独自",
+    "install": "デスクトップ",
+    "bays": "2",
+    "cpu": "Marvell Armada370 ／ 800MHz/1コア",
+    "memory": "DDR3 256MB",
+    "lan": "インターフェース（LAN端子） LAN端子（10GBASE-T）：－ ／ インターフェース（LAN端子） LAN端子（2.5GBASE-T）：－ ／ インターフェース（LAN端子） LAN端子（1000BASE-T）：背面×1 ／ インターフェース（LAN端子） 準拠規格：1000BASE-T/100BASE-TX/10BASE-T(AUTO-MDIX対応) ／ インターフェース（LAN端子） 伝送速度：1000Mbps 全二重 100Mbps 半二重/全二重 10Mbps 半二重/全二重 ／ インターフェース（LAN端子） 端子形状：RJ-45型 8極 ／ インターフェース（LAN端子） 対応プロトコル：TCP/IP ／ インターフェース（LAN端子） 対応ネットワークファイル プロトコル：SMB/CIFS、AFP、FTP/FTPS ／ Wake on LAN：－",
+    "raid": "1/0（出荷時RAID1）",
+    "warranty": "3年間"
+   },
+   "lastCheckedAt": "2026-10-14T06:42:01.887Z",
+   "fallbackFields": []
   },
   {
    "id": "ls210dnb",
@@ -4051,74 +4650,86 @@
    "bays": 1,
    "cpu": "Marvell Armada370 800MHz/1コア",
    "memory": "DDR3 256MB",
-   "lanText": "1000BASE-T×1（背面）",
+   "lanText": "1000BASE-T×1",
    "lanSpeedMax": "1G",
    "lanMaxPorts": 1,
    "usb": "USB 2.0×1（背面、USB-HDDかUPSのいずれか、PC接続不可）",
    "raidModes": [],
-   "raidType": null,
+   "raidType": "－",
    "redundantPower": false,
    "warrantyYears": 3,
    "warrantyText": "3年",
    "features": {
     "クラウドストレージ連携": {
-     "value": "非対応",
-     "supported": false
-    },
-    "Active Directory連携": {
-     "value": "対応",
-     "supported": true
-    },
-    "SSDキャッシュ": {
-     "value": "非対応",
+     "value": "－",
      "supported": false
     },
     "Time Machine": {
-     "value": "対応",
+     "value": "○",
      "supported": true
     },
-    "iSCSIターゲット": {
-     "value": "非対応",
-     "supported": false
-    },
-    "ウイルスチェック": {
-     "value": "非対応",
-     "supported": false
-    },
     "リモート監視（キキNavi）": {
-     "value": "非対応",
+     "value": "－",
      "supported": false
     },
-    "ホットスワップ": {
-     "value": "非対応",
+    "クラウドバックアップ（キキNavi）": {
+     "value": "－",
      "supported": false
     },
-    "ホットスペア": {
-     "value": "非対応",
+    "Active Directory連携": {
+     "value": "〇",
+     "supported": null
+    },
+    "iSCSIターゲット": {
+     "value": "－",
+     "supported": false
+    },
+    "スナップショット": {
+     "value": "－",
+     "supported": false
+    },
+    "不変スナップショット": {
+     "value": "－",
      "supported": false
     },
     "ドライブ暗号化": {
-     "value": "非対応",
+     "value": "－",
      "supported": false
     },
-    "Webアクセス": {
-     "value": "対応",
-     "supported": true
-    },
-    "スナップショット": {
-     "value": "非対応",
+    "ホットスワップ": {
+     "value": "－",
      "supported": false
     },
-    "メタデータ二重化": {
-     "value": "非対応",
+    "ホットスペア": {
+     "value": "－",
+     "supported": false
+    },
+    "SSDキャッシュ": {
+     "value": "－",
      "supported": false
     },
     "レプリケーション": {
-     "value": "非対応",
+     "value": "－",
      "supported": false
     },
     "フェイルオーバー": {
-     "value": "非対応",
+     "value": "－",
+     "supported": false
+    },
+    "Webアクセス": {
+     "value": "○",
+     "supported": true
+    },
+    "ウイルスチェック": {
+     "value": "－",
+     "supported": false
+    },
+    "異常ファイル操作検知": {
+     "value": "－",
+     "supported": false
+    },
+    "メタデータ二重化": {
+     "value": "－",
      "supported": false
     }
    },
@@ -4152,8 +4763,22 @@
     }
    ],
    "sourceUrl": "https://www.buffalo.jp/product/detail/ls210dn0201b.html",
-   "collectedBy": "research",
-   "imageUrl": "https://www.buffalo.jp/webpim/product/image/L/LS210DNB/LS210DN0201B/LS210DN0201B__0100.jpg"
+   "collectedBy": "scraper",
+   "imageUrl": "https://www.buffalo.jp/webpim/product/image/L/LS210DNB/LS210DN0201B/LS210DN0201B__0100.jpg?small_light(dw=1200,dh=630,cw=1200,ch=630,da=l,cc=ffffff,q=80)",
+   "raw": {
+    "os": "Linuxベース独自",
+    "install": "デスクトップ",
+    "bays": "1",
+    "cpu": "Marvell Armada370 ／ 800MHz/1コア",
+    "memory": "DDR3 256MB",
+    "lan": "インターフェース（LAN端子） LAN端子（10GBASE-T）：－ ／ インターフェース（LAN端子） LAN端子（2.5GBASE-T）：－ ／ インターフェース（LAN端子） LAN端子（1000BASE-T）：背面×1 ／ インターフェース（LAN端子） 準拠規格：1000BASE-T/100BASE-TX/10BASE-T(AUTO-MDIX対応) ／ インターフェース（LAN端子） 伝送速度：1000Mbps 全二重 100Mbps 半二重/全二重 10Mbps 半二重/全二重 ／ インターフェース（LAN端子） 端子形状：RJ-45型 8極 ／ インターフェース（LAN端子） 対応プロトコル：TCP/IP ／ インターフェース（LAN端子） 対応ネットワークファイル プロトコル：SMB/CIFS、AFP、FTP/FTPS ／ Wake on LAN：－",
+    "raid": "－",
+    "warranty": "3年"
+   },
+   "lastCheckedAt": "2026-10-14T06:42:04.876Z",
+   "fallbackFields": [
+    "raidModes"
+   ]
   }
  ]
 }
