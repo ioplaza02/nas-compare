@@ -147,6 +147,16 @@ function lanFrom(rows) {
   return { lanText: textLan, lanSpeedMax: null, lanMaxPorts: null };
 }
 
+// 商品画像：og:image があればそれを、なければページ内の商品画像（/webpim/product/image/）を使う
+function imageFrom(html) {
+  const og = html.match(/<meta[^>]+property=["']og:image["'][^>]+content=["']([^"']+)["']/i)?.[1]
+    || html.match(/<meta[^>]+content=["']([^"']+)["'][^>]+property=["']og:image["']/i)?.[1];
+  const pim = html.match(/["'](\/?[^"']*\/webpim\/product\/image\/[^"']+\.(?:jpg|png))["']/i)?.[1];
+  const url = (og && !/logo|ogp_default/i.test(og)) ? og : pim;
+  if (!url) return null;
+  return url.startsWith("http") ? url : BASE + (url.startsWith("/") ? "" : "/") + url;
+}
+
 async function scrapeSeries(seriesId, sampleSku) {
   const url = `${BASE}/product/detail/print/${sampleSku.toLowerCase()}.html`;
   const html = await getHtml(url);
@@ -197,6 +207,18 @@ async function scrapeSeries(seriesId, sampleSku) {
     status: /在庫を限定|在庫限り/.test(pageText) ? "在庫限り" : /生産終了|販売終了/.test(pageText) ? "生産終了" : "現行",
     variants: [...variants.values()].sort((a, b) => a.capacityTB - b.capacityTB),
     sourceUrl: `${BASE}/product/detail/${sampleSku.toLowerCase()}.html`,
+    imageUrl: imageFrom(html),
+    // 公式ページの表記をそのまま保存（画面ではこちらを優先して表示する）
+    raw: {
+      os,
+      install,
+      bays: baysText || null,
+      cpu: [cpu, clock].filter(Boolean).join(" ／ ") || null,
+      memory: find(rows, /^メモリー|^メモリ/),
+      lan: findAll(rows, /LAN/).map(r => `${r.key}：${r.value}`).join(" ／ ") || null,
+      raid: raidText || null,
+      warranty: warrantyText,
+    },
     _rowCount: rows.length,
   };
 }

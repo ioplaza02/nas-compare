@@ -239,7 +239,6 @@ function explain(src, cand, capTB) {
     } else same.push("どちらも独自OS（Linux系）");
   } else {
     diff.push(`OSの系統が異なる（${A}：${osLabel(src)}／${B}：${osLabel(cand)}）`);
-    memo.push("Windows系か独自OS系かで、管理画面や運用方法が変わります。お客様の現在の運用（Active Directoryの有無など）を確認しておくと安心です。");
   }
   // ベイ・設置
   if (src.bays && cand.bays) {
@@ -283,24 +282,22 @@ function explain(src, cand, capTB) {
       if (onlyC.length) diff.push(`${B}のみ記載のRAID：${onlyC.join("・")}`);
     }
   }
-  if (src.raidModes.includes("RAIDeX") || cand.raidModes.includes("RAIDeX"))
-    memo.push("RAIDeXはI-O DATA独自のRAID方式です。");
   if (cand.raidType === "ハードウェアRAID" || src.raidType === "ハードウェアRAID")
-    memo.push(`${src.raidType === "ハードウェアRAID" ? A : B}の機種はハードウェアRAID搭載です（仕様表記載）。`);
+    memo.push(`${src.raidType === "ハードウェアRAID" ? A : B}の機種はハードウェアRAID（仕様表より）`);
   // 保証
   if (src.warrantyYears && cand.warrantyYears) {
     if (src.warrantyYears === cand.warrantyYears) same.push(`保証期間が同じ（${src.warrantyYears}年）`);
     else {
       diff.push(`保証期間が異なる（${A}：${src.warrantyYears}年／${B}：${cand.warrantyYears}年）`);
       const longer = src.warrantyYears > cand.warrantyYears ? A : B;
-      memo.push(`保証期間は${longer}の方が長い設定です。保証の範囲（本体のみ／HDD含む）も出典ページで確認してください。`);
+      memo.push(`保証期間は${longer}の方が長い（保証の範囲は出典ページで要確認）`);
     }
   }
   // 冗長電源
-  if (cand.redundantPower === true) memo.push(`${B}の機種は冗長電源（リダンダント電源）搭載です。`);
-  if (src.redundantPower === true) memo.push(`${A}の機種は冗長電源（リダンダント電源）搭載です。`);
+  if (cand.redundantPower === true) memo.push(`${B}の機種は冗長電源あり（仕様表より）`);
+  if (src.redundantPower === true) memo.push(`${A}の機種は冗長電源あり（仕様表より）`);
   // 販売状況
-  if (cand.status !== "現行") memo.push(`${B}の機種は「${cand.status}」です。後継機の有無を確認してください。`);
+  if (cand.status !== "現行") memo.push(`${B}の機種は「${cand.status}」（後継機の有無は要確認）`);
 
   // 要約
   const key = [];
@@ -327,37 +324,47 @@ function variantsCell(p, capTB) {
   }).join("<br>");
 }
 
-function compareTable(src, cand, capTB) {
-  const rows = [
-    ["OS", osLabel(src), osLabel(cand), src.osType === cand.osType && (src.osType === "Linux" || src.windowsEdition === cand.windowsEdition)],
-    ["搭載OS（詳細）", esc(src.osEdition || "—"), esc(cand.osEdition || "—"), null],
-    ["設置形態", esc(src.install), esc(cand.install), src.install === cand.install],
-    ["ベイ数", src.bays ? `${src.bays}ベイ` : "—", cand.bays ? `${cand.bays}ベイ` : "—", src.bays === cand.bays],
-    ["容量ラインナップ", variantsCell(src, capTB), variantsCell(cand, capTB), null],
-    ["LAN（最大速度）", lanLabel(src), lanLabel(cand), src.lanSpeedMax === cand.lanSpeedMax && src.lanMaxPorts === cand.lanMaxPorts],
-    ["LAN（詳細）", esc(src.lanText || "—"), esc(cand.lanText || "—"), null],
-    ["CPU", esc(src.cpu || "—"), esc(cand.cpu || "—"), null],
-    ["メモリー", esc(src.memory || "—"), esc(cand.memory || "—"), null],
-    ["対応RAID", esc(src.raidModes.join("・") || "—"), esc(cand.raidModes.join("・") || "—"), src.raidModes.slice().sort().join() === cand.raidModes.slice().sort().join()],
-    ["保証期間", src.warrantyYears ? `${src.warrantyYears}年` : "—", cand.warrantyYears ? `${cand.warrantyYears}年` : "—", src.warrantyYears === cand.warrantyYears],
-  ];
-  for (const f of FEATURE_ROWS) {
-    const a = f.get(src), b = f.get(cand);
-    rows.push([f.label, featText(a), featText(b), a.v === b.v]);
-  }
-  const ex = [extraFeatures(src), extraFeatures(cand)];
-  rows.push(["その他の特徴<br><small>（データ上確認できたもの）</small>", esc(ex[0].join("、") || "—"), esc(ex[1].join("、") || "—"), null]);
-  rows.push(["販売状況", esc(src.status), esc(cand.status) + (cand.statusNote ? `<br><small class="muted">${esc(cand.statusNote)}</small>` : ""), null]);
-  rows.push(["出典", src.sourceUrl ? `<a href="${esc(src.sourceUrl)}" target="_blank" rel="noopener">公式ページ</a>` : "—",
-    cand.sourceUrl ? `<a href="${esc(cand.sourceUrl)}" target="_blank" rel="noopener">公式ページ</a>` : "—", null]);
+// 公式ページの表記そのまま（raw）があればそれを、なければ整形済みの値を表示
+function rawOr(p, key, fallback) {
+  const v = p.raw?.[key];
+  return esc(v != null && v !== "" ? v : (fallback ?? "—"));
+}
+const ALL_SAME = (vals) => vals.every(v => v === vals[0]);
+const TOOL = `<span class="tool-mark" title="ツールが公式の値から判定・要約した行">※</span>`;
 
+// 比較表：商品をいくつ並べても、列幅は等分（2社なら1/2、3社なら1/3…）
+function compareTable(cols, capTB) {
+  const row = (label, cellFn, sameFn) => {
+    const cells = cols.map(cellFn);
+    const same = sameFn ? ALL_SAME(cols.map(sameFn)) : null;
+    return `<tr class="${same === false ? "is-diff" : ""}"><th>${label}</th>${cells.map(c => `<td>${c}</td>`).join("")}</tr>`;
+  };
+  const rows = [
+    row(`OS区分${TOOL}`, p => osLabel(p), p => p.osType + (p.osType === "Windows" ? p.windowsEdition : "")),
+    row("搭載OS", p => rawOr(p, "os", p.osEdition)),
+    row("設置形態", p => rawOr(p, "install", p.install), p => p.install),
+    row("ベイ数", p => p.raw?.bays ? esc(p.raw.bays) : (p.bays ? `${p.bays}ベイ` : "—"), p => p.bays),
+    row("容量ラインナップ", p => variantsCell(p, capTB)),
+    row(`LAN最大速度${TOOL}`, p => lanLabel(p), p => `${p.lanSpeedMax}/${p.lanMaxPorts}`),
+    row("LAN", p => rawOr(p, "lan", p.lanText)),
+    row("CPU", p => rawOr(p, "cpu", p.cpu)),
+    row("メモリー", p => rawOr(p, "memory", p.memory)),
+    row("対応RAID", p => rawOr(p, "raid", p.raidModes.join("・")), p => p.raidModes.slice().sort().join()),
+    row("保証期間", p => rawOr(p, "warranty", p.warrantyYears ? `${p.warrantyYears}年` : null), p => p.warrantyYears),
+    ...FEATURE_ROWS.map(f => row(f.label + TOOL, p => featText(f.get(p)), p => f.get(p).v)),
+    row(`その他の特徴${TOOL}<br><small>（データ上確認できたもの）</small>`, p => esc(extraFeatures(p).join("、") || "—")),
+    row("販売状況", p => esc(p.status) + (p.statusNote ? `<br><small class="muted">${esc(p.statusNote)}</small>` : "")),
+    row("出典", p => p.sourceUrl ? `<a href="${esc(p.sourceUrl)}" target="_blank" rel="noopener">公式ページ</a>` : "—"),
+  ];
   const cls = p => p.maker === "I-O DATA" ? "io" : "bf";
+  const head = p => `
+    ${p.imageUrl ? `<img class="cmp__img" src="${esc(p.imageUrl)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">` : ""}
+    <span>${esc(makerLabel(p))}：${esc(p.name)}</span>
+    ${p.collectedBy === "research" ? `<span class="badge badge--draft" title="公式ページを要約して作った仮データです。取得スクリプト実行後に公式表記そのままに置き換わります">仮データ</span>` : ""}`;
   return `<div class="cmp-wrap"><table class="cmp">
-    <thead><tr><th></th>
-      <th class="${cls(src)}">${esc(makerLabel(src))}：${esc(src.name)}</th>
-      <th class="${cls(cand)}">${esc(makerLabel(cand))}：${esc(cand.name)}</th></tr></thead>
-    <tbody>${rows.map(([k, a, b, same]) =>
-      `<tr class="${same === false ? "is-diff" : ""}"><th>${k}</th><td>${a}</td><td>${b}</td></tr>`).join("")}</tbody>
+    <colgroup><col class="cmp__label-col">${cols.map(() => "<col>").join("")}</colgroup>
+    <thead><tr><th></th>${cols.map(p => `<th class="${cls(p)}">${head(p)}</th>`).join("")}</tr></thead>
+    <tbody>${rows.join("")}</tbody>
   </table></div>`;
 }
 
@@ -369,6 +376,7 @@ function candidateCard(src, cand, rank, capTB) {
   return `<article class="cand">
     <div class="cand__head">
       <span class="cand__rank">${rank}</span>
+      ${cand.imageUrl ? `<img class="cand__img" src="${esc(cand.imageUrl)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">` : ""}
       <div>
         <p class="cand__name">${esc(makerLabel(cand))}　${esc(cand.name)}</p>
         <span class="cand__sku">${nv ? `近い容量の型番：<strong>${esc(nv.sku)}</strong>（${fmtTB(nv.capacityTB)}）` : `容量：${capRange(cand)}`}</span>
@@ -379,11 +387,12 @@ function candidateCard(src, cand, rank, capTB) {
       </div>
     </div>
     <p class="cand__summary">${esc(ex.summary)}</p>
-    ${compareTable(src, cand, capTB)}
+    ${compareTable([src, cand], capTB)}
+    <p class="tool-note">※印の行と、下の「共通点／違い／確認ポイント」は、ツールが上の表の値を比べて自動で作った文です。それ以外のセルは各社公式ページの値です。</p>
     <div class="explain">
       <div class="explain__box explain__box--same"><h4>✓ 共通点</h4>${list(ex.same, "特になし")}</div>
       <div class="explain__box explain__box--diff"><h4>△ 違い</h4>${list(ex.diff, "主な仕様に違いはありません")}</div>
-      <div class="explain__box explain__box--memo"><h4>💡 営業メモ</h4>${list(ex.memo, "特記事項なし")}</div>
+      <div class="explain__box explain__box--memo"><h4>💡 確認ポイント</h4>${list(ex.memo, "特記事項なし")}</div>
     </div>
   </article>`;
 }
@@ -507,6 +516,14 @@ function runIo2Other() {
     <p>${osLabel(src)}／${esc(src.install)}／${src.bays ? src.bays + "ベイ" : "—"}／LAN ${lanLabel(src)}／容量 ${capRange(src)}／保証 ${src.warrantyYears ?? "—"}年</p>
     ${!res.variant ? `<p>※容量まで指定すると（例：${esc(src.variants[0]?.sku || "")}）、同じ容量の型番も探します。</p>` : ""}
   </div>`;
+  const tops = makers.map(mid => {
+    const pool = (state.others[mid] || []).filter(p => includeOld || p.status === "現行");
+    return rankCandidates(src, pool, capTB, 1)[0];
+  }).filter(Boolean);
+  if (tops.length >= 2) {
+    html += `<section class="maker-section"><h3>まとめ比較（各メーカーの1位）</h3>
+      <article class="cand">${compareTable([src, ...tops], capTB)}</article></section>`;
+  }
   for (const mid of makers) {
     const m = MAKERS.find(x => x.id === mid);
     const pool = (state.others[mid] || []).filter(p => includeOld || p.status === "現行");

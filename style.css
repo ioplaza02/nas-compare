@@ -152,12 +152,21 @@ body {
 }
 
 .cmp-wrap { overflow-x: auto; }
-.cmp { width: 100%; border-collapse: collapse; font-size: 13px; min-width: 520px; }
+.cmp { width: 100%; border-collapse: collapse; font-size: 13px; min-width: 520px; table-layout: fixed; }
+.cmp__label-col { width: 170px; }
+.cmp td { overflow-wrap: anywhere; }
+.cmp thead th { vertical-align: bottom; }
+.cmp thead th span { display: block; }
+.cmp__img { display: block; height: 90px; max-width: 100%; object-fit: contain; margin: 0 auto 6px; background: #fff; }
+.cand__img { height: 56px; width: 80px; object-fit: contain; background: #fff; border-radius: 6px; }
+.tool-mark { color: #9a6a00; font-weight: 700; margin-left: 2px; cursor: help; }
+.tool-note { font-size: 12px; color: var(--text-muted); margin: 8px 0 0; }
+.badge--draft { display: inline-block !important; width: auto; background: #fff1cc; color: #8a5a00; margin-top: 4px; }
 .cmp th, .cmp td { border: 1px solid var(--border); padding: 6px 8px; vertical-align: top; text-align: left; }
 .cmp thead th { font-size: 12px; }
 .cmp thead th.io { background: var(--io-bg); color: var(--io); }
 .cmp thead th.bf { background: var(--bf-bg); color: var(--bf); }
-.cmp tbody th { background: #f3f1ec; width: 130px; font-weight: 600; color: var(--text-secondary); white-space: nowrap; }
+.cmp tbody th { background: #f3f1ec; white-space: normal !important; font-weight: 600; color: var(--text-secondary); }
 .cmp tr.is-diff td { background: var(--diff-bg); }
 .cmp .muted { color: var(--text-muted); }
 .cmp .hit { background: #d8f0e4; border-radius: 4px; padding: 0 4px; font-weight: 700; }
