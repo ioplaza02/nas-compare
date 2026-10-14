@@ -1,6 +1,32 @@
 {
- "updatedAt": "2026-10-14T08:20:41.489Z",
+ "updatedAt": "2026-10-14T08:52:05.128Z",
  "source": "バッファロー公式サイト（buffalo.jp）商品ページの仕様表",
+ "newProducts": [
+  {
+   "series": "WS6210DNW5",
+   "label": "2ドライブ TeraStation / Windows Server IoT 2025 for Storage Workgroup",
+   "notes": []
+  },
+  {
+   "series": "WS6210DNS5",
+   "label": "2ドライブ TeraStation / Windows Server IoT 2025 for Storage Standard",
+   "notes": []
+  },
+  {
+   "series": "WS6410DNW5",
+   "label": "4ドライブ TeraStation / Windows Server IoT 2025 for Storage Workgroup",
+   "notes": [
+    "受注生産"
+   ]
+  },
+  {
+   "series": "WS6410DNS5",
+   "label": "4ドライブ TeraStation / Windows Server IoT 2025 for Storage Standard",
+   "notes": [
+    "受注生産"
+   ]
+  }
+ ],
  "products": [
   {
    "id": "ts3230dn",
@@ -109,25 +135,41 @@
      "sku": "TS3230DN0202",
      "capacityTB": 2,
      "url": "https://www.buffalo.jp/product/detail/ts3230dn0202.html",
-     "jan": "4981254072745"
+     "jan": "4981254072745",
+     "priceIncTax": 176000,
+     "priceExTax": 160000,
+     "priceText": "176,000円(税抜160,000円)",
+     "priceStatus": "新価格"
     },
     {
      "sku": "TS3230DN0402",
      "capacityTB": 4,
      "url": "https://www.buffalo.jp/product/detail/ts3230dn0402.html",
-     "jan": "4981254072738"
+     "jan": "4981254072738",
+     "priceIncTax": 187000,
+     "priceExTax": 170000,
+     "priceText": "187,000円(税抜170,000円)",
+     "priceStatus": "新価格"
     },
     {
      "sku": "TS3230DN0602",
      "capacityTB": 6,
      "url": "https://www.buffalo.jp/product/detail/ts3230dn0602.html",
-     "jan": "4981254072721"
+     "jan": "4981254072721",
+     "priceIncTax": 203500,
+     "priceExTax": 185000,
+     "priceText": "203,500円(税抜185,000円)",
+     "priceStatus": "新価格"
     },
     {
      "sku": "TS3230DN0802",
      "capacityTB": 8,
      "url": "https://www.buffalo.jp/product/detail/ts3230dn0802.html",
-     "jan": "4981254072714"
+     "jan": "4981254072714",
+     "priceIncTax": 209000,
+     "priceExTax": 190000,
+     "priceText": "209,000円(税抜190,000円)",
+     "priceStatus": "新価格"
     }
    ],
    "sourceUrl": "https://www.buffalo.jp/product/detail/ts3230dn0402.html",
@@ -143,7 +185,7 @@
     "raid": "1/0（出荷時 RAID1）",
     "warranty": "3年間(本体およびハードディスク)"
    },
-   "lastCheckedAt": "2026-10-14T08:19:39.344Z",
+   "lastCheckedAt": "2026-10-14T08:45:36.359Z",
    "fallbackFields": []
   },
   {
@@ -256,37 +298,61 @@
      "sku": "TS3430DN0404",
      "capacityTB": 4,
      "url": "https://www.buffalo.jp/product/detail/ts3430dn0404.html",
-     "jan": "4981254072707"
+     "jan": "4981254072707",
+     "priceIncTax": 297000,
+     "priceExTax": 270000,
+     "priceText": "297,000円(税抜270,000円)",
+     "priceStatus": "新価格"
     },
     {
      "sku": "TS3430DN0804",
      "capacityTB": 8,
      "url": "https://www.buffalo.jp/product/detail/ts3430dn0804.html",
-     "jan": "4981254072691"
+     "jan": "4981254072691",
+     "priceIncTax": 319000,
+     "priceExTax": 290000,
+     "priceText": "319,000円(税抜290,000円)",
+     "priceStatus": "新価格"
     },
     {
      "sku": "TS3430DN1204",
      "capacityTB": 12,
      "url": "https://www.buffalo.jp/product/detail/ts3430dn1204.html",
-     "jan": "4981254072684"
+     "jan": "4981254072684",
+     "priceIncTax": 363000,
+     "priceExTax": 330000,
+     "priceText": "363,000円(税抜330,000円)",
+     "priceStatus": "新価格"
     },
     {
      "sku": "TS3430DN1604",
      "capacityTB": 16,
      "url": "https://www.buffalo.jp/product/detail/ts3430dn1604.html",
-     "jan": "4981254072677"
+     "jan": "4981254072677",
+     "priceIncTax": 374000,
+     "priceExTax": 340000,
+     "priceText": "374,000円(税抜340,000円)",
+     "priceStatus": "新価格"
     },
     {
      "sku": "TS3430DN2404",
      "capacityTB": 24,
      "url": "https://www.buffalo.jp/product/detail/ts3430dn2404.html",
-     "jan": "4981254072660"
+     "jan": "4981254072660",
+     "priceIncTax": 477400,
+     "priceExTax": 434000,
+     "priceText": "477,400円(税抜434,000円)",
+     "priceStatus": "新価格"
     },
     {
      "sku": "TS3430DN3204",
      "capacityTB": 32,
      "url": "https://www.buffalo.jp/product/detail/ts3430dn3204.html",
-     "jan": "4981254072653"
+     "jan": "4981254072653",
+     "priceIncTax": 602800,
+     "priceExTax": 548000,
+     "priceText": "602,800円(税抜548,000円)",
+     "priceStatus": "新価格"
     }
    ],
    "sourceUrl": "https://www.buffalo.jp/product/detail/ts3430dn0804.html",
@@ -302,7 +368,7 @@
     "raid": "6/5/10/1/0（出荷時 RAID6）",
     "warranty": "3年間(本体およびハードディスク)"
    },
-   "lastCheckedAt": "2026-10-14T08:19:40.657Z",
+   "lastCheckedAt": "2026-10-14T08:45:50.444Z",
    "fallbackFields": []
   },
   {
@@ -415,37 +481,61 @@
      "sku": "TS3430RN0404",
      "capacityTB": 4,
      "url": "https://www.buffalo.jp/product/detail/ts3430rn0404.html",
-     "jan": "4981254072615"
+     "jan": "4981254072615",
+     "priceIncTax": 335500,
+     "priceExTax": 305000,
+     "priceText": "335,500円(税抜305,000円)",
+     "priceStatus": "新価格"
     },
     {
      "sku": "TS3430RN0804",
      "capacityTB": 8,
      "url": "https://www.buffalo.jp/product/detail/ts3430rn0804.html",
-     "jan": "4981254072608"
+     "jan": "4981254072608",
+     "priceIncTax": 357500,
+     "priceExTax": 325000,
+     "priceText": "357,500円(税抜325,000円)",
+     "priceStatus": "新価格"
     },
     {
      "sku": "TS3430RN1204",
      "capacityTB": 12,
      "url": "https://www.buffalo.jp/product/detail/ts3430rn1204.html",
-     "jan": "4981254072592"
+     "jan": "4981254072592",
+     "priceIncTax": 401500,
+     "priceExTax": 365000,
+     "priceText": "401,500円(税抜365,000円)",
+     "priceStatus": "新価格"
     },
     {
      "sku": "TS3430RN1604",
      "capacityTB": 16,
      "url": "https://www.buffalo.jp/product/detail/ts3430rn1604.html",
-     "jan": "4981254072585"
+     "jan": "4981254072585",
+     "priceIncTax": 412500,
+     "priceExTax": 375000,
+     "priceText": "412,500円(税抜375,000円)",
+     "priceStatus": "新価格"
     },
     {
      "sku": "TS3430RN2404",
      "capacityTB": 24,
      "url": "https://www.buffalo.jp/product/detail/ts3430rn2404.html",
-     "jan": "4981254072578"
+     "jan": "4981254072578",
+     "priceIncTax": 515900,
+     "priceExTax": 469000,
+     "priceText": "515,900円(税抜469,000円)",
+     "priceStatus": "新価格"
     },
     {
      "sku": "TS3430RN3204",
      "capacityTB": 32,
      "url": "https://www.buffalo.jp/product/detail/ts3430rn3204.html",
-     "jan": "4981254072561"
+     "jan": "4981254072561",
+     "priceIncTax": 641300,
+     "priceExTax": 583000,
+     "priceText": "641,300円(税抜583,000円)",
+     "priceStatus": "新価格"
     }
    ],
    "sourceUrl": "https://www.buffalo.jp/product/detail/ts3430rn0804.html",
@@ -461,7 +551,7 @@
     "raid": "6/5/10/1/0（出荷時 RAID6）",
     "warranty": "3年間(本体およびハードディスク)"
    },
-   "lastCheckedAt": "2026-10-14T08:19:43.848Z",
+   "lastCheckedAt": "2026-10-14T08:46:04.361Z",
    "fallbackFields": []
   },
   {
@@ -571,25 +661,41 @@
      "sku": "TS5220DN0202",
      "capacityTB": 2,
      "url": "https://www.buffalo.jp/product/detail/ts5220dn0202.html",
-     "jan": "4981254067680"
+     "jan": "4981254067680",
+     "priceIncTax": 220000,
+     "priceExTax": 200000,
+     "priceText": "220,000円(税抜200,000円)",
+     "priceStatus": "新価格"
     },
     {
      "sku": "TS5220DN0402",
      "capacityTB": 4,
      "url": "https://www.buffalo.jp/product/detail/ts5220dn0402.html",
-     "jan": "4981254067673"
+     "jan": "4981254067673",
+     "priceIncTax": 231000,
+     "priceExTax": 210000,
+     "priceText": "231,000円(税抜210,000円)",
+     "priceStatus": "新価格"
     },
     {
      "sku": "TS5220DN0602",
      "capacityTB": 6,
      "url": "https://www.buffalo.jp/product/detail/ts5220dn0602.html",
-     "jan": "4981254067666"
+     "jan": "4981254067666",
+     "priceIncTax": 247500,
+     "priceExTax": 225000,
+     "priceText": "247,500円(税抜225,000円)",
+     "priceStatus": "新価格"
     },
     {
      "sku": "TS5220DN0802",
      "capacityTB": 8,
      "url": "https://www.buffalo.jp/product/detail/ts5220dn0802.html",
-     "jan": "4981254067659"
+     "jan": "4981254067659",
+     "priceIncTax": 253000,
+     "priceExTax": 230000,
+     "priceText": "253,000円(税抜230,000円)",
+     "priceStatus": "新価格"
     }
    ],
    "sourceUrl": "https://www.buffalo.jp/product/detail/ts5220dn0402.html",
@@ -605,7 +711,7 @@
     "raid": "1/0（出荷時 RAID1）",
     "warranty": "3年間(本体およびハードディスク)"
    },
-   "lastCheckedAt": "2026-10-14T08:19:45.674Z",
+   "lastCheckedAt": "2026-10-14T08:46:14.451Z",
    "fallbackFields": []
   },
   {
@@ -715,13 +821,20 @@
      "sku": "TS5220DF00502",
      "capacityTB": 0.5,
      "url": "https://www.buffalo.jp/product/detail/ts5220df00502.html",
-     "jan": "4981254067703"
+     "jan": "4981254067703",
+     "priceIncTax": 168300,
+     "priceExTax": 153000,
+     "priceText": "168,300円(税抜153,000円)"
     },
     {
      "sku": "TS5220DF0202",
      "capacityTB": 2,
      "url": "https://www.buffalo.jp/product/detail/ts5220df0202.html",
-     "jan": "4981254067697"
+     "jan": "4981254067697",
+     "priceIncTax": 261800,
+     "priceExTax": 238000,
+     "priceText": "261,800円(税抜238,000円)",
+     "priceStatus": "在庫限り"
     }
    ],
    "sourceUrl": "https://www.buffalo.jp/product/detail/ts5220df00502.html",
@@ -737,7 +850,7 @@
     "raid": "1/0（出荷時 RAID1）",
     "warranty": "3年間(本体およびSSD) ※SSDが保証総書込み容量(TBW)に達した場合は、書き込み保証対象外となります"
    },
-   "lastCheckedAt": "2026-10-14T08:19:47.175Z",
+   "lastCheckedAt": "2026-10-14T08:46:20.520Z",
    "fallbackFields": []
   },
   {
@@ -850,55 +963,94 @@
      "sku": "TS5420DN0404",
      "capacityTB": 4,
      "url": "https://www.buffalo.jp/product/detail/ts5420dn0404.html",
-     "jan": "4981254067871"
+     "jan": "4981254067871",
+     "priceIncTax": 341000,
+     "priceExTax": 310000,
+     "priceText": "341,000円(税抜310,000円)",
+     "priceStatus": "新価格"
     },
     {
      "sku": "TS5420DN0804",
      "capacityTB": 8,
      "url": "https://www.buffalo.jp/product/detail/ts5420dn0804.html",
-     "jan": "4981254067857"
+     "jan": "4981254067857",
+     "priceIncTax": 363000,
+     "priceExTax": 330000,
+     "priceText": "363,000円(税抜330,000円)",
+     "priceStatus": "新価格"
     },
     {
      "sku": "TS5420DN1204",
      "capacityTB": 12,
      "url": "https://www.buffalo.jp/product/detail/ts5420dn1204.html",
-     "jan": "4981254067826"
+     "jan": "4981254067826",
+     "priceIncTax": 407000,
+     "priceExTax": 370000,
+     "priceText": "407,000円(税抜370,000円)",
+     "priceStatus": "新価格"
     },
     {
      "sku": "TS5420DN1604",
      "capacityTB": 16,
      "url": "https://www.buffalo.jp/product/detail/ts5420dn1604.html",
-     "jan": "4981254067796"
+     "jan": "4981254067796",
+     "priceIncTax": 418000,
+     "priceExTax": 380000,
+     "priceText": "418,000円(税抜380,000円)",
+     "priceStatus": "新価格"
     },
     {
      "sku": "TS5420DN2404",
      "capacityTB": 24,
      "url": "https://www.buffalo.jp/product/detail/ts5420dn2404.html",
-     "jan": "4981254067789"
+     "jan": "4981254067789",
+     "priceIncTax": 521400,
+     "priceExTax": 474000,
+     "priceText": "521,400円(税抜474,000円)",
+     "priceStatus": "新価格"
     },
     {
      "sku": "TS5420DN3204",
      "capacityTB": 32,
      "url": "https://www.buffalo.jp/product/detail/ts5420dn3204.html",
-     "jan": "4981254067741"
+     "jan": "4981254067741",
+     "priceIncTax": 646800,
+     "priceExTax": 588000,
+     "priceText": "646,800円(税抜588,000円)",
+     "priceStatus": "新価格"
     },
     {
      "sku": "TS5420DN4804",
      "capacityTB": 48,
      "url": "https://www.buffalo.jp/product/detail/ts5420dn4804.html",
-     "jan": "4981254067734"
+     "jan": "4981254067734",
+     "priceIncTax": 937200,
+     "priceExTax": 852000,
+     "priceText": "937,200円(税抜852,000円)",
+     "priceStatus": "新価格"
     },
     {
      "sku": "TS5420DN6404",
      "capacityTB": 64,
      "url": "https://www.buffalo.jp/product/detail/ts5420dn6404.html",
-     "jan": "4981254067727"
+     "jan": "4981254067727",
+     "priceIncTax": 1074700,
+     "priceExTax": 977000,
+     "priceText": "1,074,700円(税抜977,000円)",
+     "priceStatus": "新価格"
     },
     {
      "sku": "TS5420DN8004",
      "capacityTB": 80,
      "url": "https://www.buffalo.jp/product/detail/ts5420dn8004.html",
-     "jan": "4981254067710"
+     "jan": "4981254067710",
+     "priceIncTax": 1339800,
+     "priceExTax": 1218000,
+     "priceText": "1,339,800円(税抜1,218,000円)",
+     "priceStatus": "新価格",
+     "infoNotes": [
+      "受注生産"
+     ]
     }
    ],
    "sourceUrl": "https://www.buffalo.jp/product/detail/ts5420dn0804.html",
@@ -914,7 +1066,7 @@
     "raid": "6/5/10/1/0（出荷時 RAID6）",
     "warranty": "3年間(本体およびハードディスク)"
    },
-   "lastCheckedAt": "2026-10-14T08:19:49.027Z",
+   "lastCheckedAt": "2026-10-14T08:46:40.381Z",
    "fallbackFields": []
   },
   {
@@ -1027,55 +1179,93 @@
      "sku": "TS5420RN0404",
      "capacityTB": 4,
      "url": "https://www.buffalo.jp/product/detail/ts5420rn0404.html",
-     "jan": "4981254068250"
+     "jan": "4981254068250",
+     "priceIncTax": 379500,
+     "priceExTax": 345000,
+     "priceText": "379,500円(税抜345,000円)",
+     "priceStatus": "新価格"
     },
     {
      "sku": "TS5420RN0804",
      "capacityTB": 8,
      "url": "https://www.buffalo.jp/product/detail/ts5420rn0804.html",
-     "jan": "4981254068236"
+     "jan": "4981254068236",
+     "priceIncTax": 401500,
+     "priceExTax": 365000,
+     "priceText": "401,500円(税抜365,000円)",
+     "priceStatus": "新価格"
     },
     {
      "sku": "TS5420RN1204",
      "capacityTB": 12,
      "url": "https://www.buffalo.jp/product/detail/ts5420rn1204.html",
-     "jan": "4981254068205"
+     "jan": "4981254068205",
+     "priceIncTax": 445500,
+     "priceExTax": 405000,
+     "priceText": "445,500円(税抜405,000円)",
+     "priceStatus": "新価格"
     },
     {
      "sku": "TS5420RN1604",
      "capacityTB": 16,
      "url": "https://www.buffalo.jp/product/detail/ts5420rn1604.html",
-     "jan": "4981254068182"
+     "jan": "4981254068182",
+     "priceIncTax": 456500,
+     "priceExTax": 415000,
+     "priceText": "456,500円(税抜415,000円)",
+     "priceStatus": "新価格"
     },
     {
      "sku": "TS5420RN2404",
      "capacityTB": 24,
      "url": "https://www.buffalo.jp/product/detail/ts5420rn2404.html",
-     "jan": "4981254068168"
+     "jan": "4981254068168",
+     "priceIncTax": 559900,
+     "priceExTax": 509000,
+     "priceText": "559,900円(税抜509,000円)",
+     "priceStatus": "新価格"
     },
     {
      "sku": "TS5420RN3204",
      "capacityTB": 32,
      "url": "https://www.buffalo.jp/product/detail/ts5420rn3204.html",
-     "jan": "4981254068151"
+     "jan": "4981254068151",
+     "priceIncTax": 685300,
+     "priceExTax": 623000,
+     "priceText": "685,300円(税抜623,000円)",
+     "priceStatus": "新価格"
     },
     {
      "sku": "TS5420RN4804",
      "capacityTB": 48,
      "url": "https://www.buffalo.jp/product/detail/ts5420rn4804.html",
-     "jan": "4981254068144"
+     "jan": "4981254068144",
+     "priceIncTax": 1052700,
+     "priceExTax": 957000,
+     "priceText": "1,052,700円(税抜957,000円)"
     },
     {
      "sku": "TS5420RN6404",
      "capacityTB": 64,
      "url": "https://www.buffalo.jp/product/detail/ts5420rn6404.html",
-     "jan": "4981254068137"
+     "jan": "4981254068137",
+     "priceIncTax": 1113200,
+     "priceExTax": 1012000,
+     "priceText": "1,113,200円(税抜1,012,000円)",
+     "priceStatus": "新価格"
     },
     {
      "sku": "TS5420RN8004",
      "capacityTB": 80,
      "url": "https://www.buffalo.jp/product/detail/ts5420rn8004.html",
-     "jan": "4981254068113"
+     "jan": "4981254068113",
+     "priceIncTax": 1378300,
+     "priceExTax": 1253000,
+     "priceText": "1,378,300円(税抜1,253,000円)",
+     "priceStatus": "新価格",
+     "infoNotes": [
+      "受注生産"
+     ]
     }
    ],
    "sourceUrl": "https://www.buffalo.jp/product/detail/ts5420rn0804.html",
@@ -1091,7 +1281,7 @@
     "raid": "6/5/10/1/0（出荷時 RAID6）",
     "warranty": "3年間(本体およびハードディスク)"
    },
-   "lastCheckedAt": "2026-10-14T08:19:52.120Z",
+   "lastCheckedAt": "2026-10-14T08:47:01.067Z",
    "fallbackFields": []
   },
   {
@@ -1204,37 +1394,64 @@
      "sku": "TS5620DN1806",
      "capacityTB": 18,
      "url": "https://www.buffalo.jp/product/detail/ts5620dn1806.html",
-     "jan": "4981254068502"
+     "jan": "4981254068502",
+     "priceIncTax": 499400,
+     "priceExTax": 454000,
+     "priceText": "499,400円(税抜454,000円)",
+     "priceStatus": "新価格"
     },
     {
      "sku": "TS5620DN2406",
      "capacityTB": 24,
      "url": "https://www.buffalo.jp/product/detail/ts5620dn2406.html",
-     "jan": "4981254068496"
+     "jan": "4981254068496",
+     "priceIncTax": 565400,
+     "priceExTax": 514000,
+     "priceText": "565,400円(税抜514,000円)",
+     "priceStatus": "新価格"
     },
     {
      "sku": "TS5620DN3606",
      "capacityTB": 36,
      "url": "https://www.buffalo.jp/product/detail/ts5620dn3606.html",
-     "jan": "4981254068489"
+     "jan": "4981254068489",
+     "priceIncTax": 825000,
+     "priceExTax": 750000,
+     "priceText": "825,000円(税抜750,000円)",
+     "priceStatus": "新価格"
     },
     {
      "sku": "TS5620DN7206",
      "capacityTB": 72,
      "url": "https://www.buffalo.jp/product/detail/ts5620dn7206.html",
-     "jan": "4981254068458"
+     "jan": "4981254068458",
+     "priceIncTax": 1496000,
+     "priceExTax": 1360000,
+     "priceText": "1,496,000円(税抜1,360,000円)",
+     "priceStatus": "新価格"
     },
     {
      "sku": "TS5620DN9606",
      "capacityTB": 96,
      "url": "https://www.buffalo.jp/product/detail/ts5620dn9606.html",
-     "jan": "4981254068434"
+     "jan": "4981254068434",
+     "priceIncTax": 1848000,
+     "priceExTax": 1680000,
+     "priceText": "1,848,000円(税抜1,680,000円)",
+     "priceStatus": "新価格"
     },
     {
      "sku": "TS5620DN12006",
      "capacityTB": 120,
      "url": "https://www.buffalo.jp/product/detail/ts5620dn12006.html",
-     "jan": "4981254068403"
+     "jan": "4981254068403",
+     "priceIncTax": 2200000,
+     "priceExTax": 2000000,
+     "priceText": "2,200,000円(税抜2,000,000円)",
+     "priceStatus": "新価格",
+     "infoNotes": [
+      "受注生産"
+     ]
     }
    ],
    "sourceUrl": "https://www.buffalo.jp/product/detail/ts5620dn2406.html",
@@ -1250,7 +1467,7 @@
     "raid": "6/5/10/1/0（出荷時 RAID6）",
     "warranty": "3年間(本体およびハードディスク)"
    },
-   "lastCheckedAt": "2026-10-14T08:19:52.866Z",
+   "lastCheckedAt": "2026-10-14T08:47:15.098Z",
    "fallbackFields": []
   },
   {
@@ -1363,37 +1580,64 @@
      "sku": "TS5820DN3208",
      "capacityTB": 32,
      "url": "https://www.buffalo.jp/product/detail/ts5820dn3208.html",
-     "jan": "4981254068663"
+     "jan": "4981254068663",
+     "priceIncTax": 748000,
+     "priceExTax": 680000,
+     "priceText": "748,000円(税抜680,000円)",
+     "priceStatus": "新価格"
     },
     {
      "sku": "TS5820DN4808",
      "capacityTB": 48,
      "url": "https://www.buffalo.jp/product/detail/ts5820dn4808.html",
-     "jan": "4981254068656"
+     "jan": "4981254068656",
+     "priceIncTax": 1067000,
+     "priceExTax": 970000,
+     "priceText": "1,067,000円(税抜970,000円)",
+     "priceStatus": "新価格"
     },
     {
      "sku": "TS5820DN6408",
      "capacityTB": 64,
      "url": "https://www.buffalo.jp/product/detail/ts5820dn6408.html",
-     "jan": "4981254068649"
+     "jan": "4981254068649",
+     "priceIncTax": 1419000,
+     "priceExTax": 1290000,
+     "priceText": "1,419,000円(税抜1,290,000円)",
+     "priceStatus": "新価格"
     },
     {
      "sku": "TS5820DN9608",
      "capacityTB": 96,
      "url": "https://www.buffalo.jp/product/detail/ts5820dn9608.html",
-     "jan": "4981254068632"
+     "jan": "4981254068632",
+     "priceIncTax": 2068000,
+     "priceExTax": 1880000,
+     "priceText": "2,068,000円(税抜1,880,000円)",
+     "priceStatus": "新価格"
     },
     {
      "sku": "TS5820DN12808",
      "capacityTB": 128,
      "url": "https://www.buffalo.jp/product/detail/ts5820dn12808.html",
-     "jan": "4981254068540"
+     "jan": "4981254068540",
+     "priceIncTax": 2629000,
+     "priceExTax": 2390000,
+     "priceText": "2,629,000円(税抜2,390,000円)",
+     "priceStatus": "新価格"
     },
     {
      "sku": "TS5820DN16008",
      "capacityTB": 160,
      "url": "https://www.buffalo.jp/product/detail/ts5820dn16008.html",
-     "jan": "4981254068519"
+     "jan": "4981254068519",
+     "priceIncTax": 3091000,
+     "priceExTax": 2810000,
+     "priceText": "3,091,000円(税抜2,810,000円)",
+     "priceStatus": "新価格",
+     "infoNotes": [
+      "受注生産"
+     ]
     }
    ],
    "sourceUrl": "https://www.buffalo.jp/product/detail/ts5820dn4808.html",
@@ -1409,7 +1653,7 @@
     "raid": "6/5/10/1/0（出荷時 RAID6）",
     "warranty": "3年間(本体およびハードディスク)"
    },
-   "lastCheckedAt": "2026-10-14T08:19:55.562Z",
+   "lastCheckedAt": "2026-10-14T08:47:29.010Z",
    "fallbackFields": []
   },
   {
@@ -1522,85 +1766,155 @@
      "sku": "TS51220RH0804",
      "capacityTB": 8,
      "url": "https://www.buffalo.jp/product/detail/ts51220rh0804.html",
-     "jan": null
+     "jan": "4981254065709",
+     "priceText": "-",
+     "priceStatus": "販売終了"
     },
     {
      "sku": "TS51220RH1604",
      "capacityTB": 16,
      "url": "https://www.buffalo.jp/product/detail/ts51220rh1604.html",
-     "jan": null
+     "jan": "4981254065693",
+     "priceIncTax": 902000,
+     "priceExTax": 820000,
+     "priceText": "902,000円(税抜820,000円)",
+     "priceStatus": "新価格"
     },
     {
      "sku": "TS51220RH2412",
      "capacityTB": 24,
      "url": "https://www.buffalo.jp/product/detail/ts51220rh2412.html",
-     "jan": null
+     "jan": "4981254065631",
+     "priceText": "-",
+     "priceStatus": "販売終了"
     },
     {
      "sku": "TS51220RH3204",
      "capacityTB": 32,
      "url": "https://www.buffalo.jp/product/detail/ts51220rh3204.html",
-     "jan": "4981254065686"
+     "jan": "4981254065686",
+     "priceIncTax": 1199000,
+     "priceExTax": 1090000,
+     "priceText": "1,199,000円(税抜1,090,000円)",
+     "priceStatus": "新価格"
     },
     {
      "sku": "TS51220RH4004",
      "capacityTB": 40,
      "url": "https://www.buffalo.jp/product/detail/ts51220rh4004.html",
-     "jan": null
+     "jan": "4981254065679",
+     "priceIncTax": 1342000,
+     "priceExTax": 1220000,
+     "priceText": "1,342,000円(税抜1,220,000円)",
+     "priceStatus": "新価格"
     },
     {
      "sku": "TS51220RH4812",
      "capacityTB": 48,
      "url": "https://www.buffalo.jp/product/detail/ts51220rh4812.html",
-     "jan": null
+     "jan": "4981254065624",
+     "priceIncTax": 1606000,
+     "priceExTax": 1460000,
+     "priceText": "1,606,000円(税抜1,460,000円)",
+     "priceStatus": "新価格"
     },
     {
      "sku": "TS51220RH4804",
      "capacityTB": 48,
      "url": "https://www.buffalo.jp/product/detail/ts51220rh4804.html",
-     "jan": null
+     "jan": "4981254065662",
+     "priceIncTax": 1474000,
+     "priceExTax": 1340000,
+     "priceText": "1,474,000円(税抜1,340,000円)",
+     "priceStatus": "新価格",
+     "infoNotes": [
+      "受注生産"
+     ]
     },
     {
      "sku": "TS51220RH6404",
      "capacityTB": 64,
      "url": "https://www.buffalo.jp/product/detail/ts51220rh6404.html",
-     "jan": null
+     "jan": "4981254065655",
+     "priceIncTax": 1749000,
+     "priceExTax": 1590000,
+     "priceText": "1,749,000円(税抜1,590,000円)",
+     "priceStatus": "新価格",
+     "infoNotes": [
+      "受注生産"
+     ]
     },
     {
      "sku": "TS51220RH8004",
      "capacityTB": 80,
      "url": "https://www.buffalo.jp/product/detail/ts51220rh8004.html",
-     "jan": null
+     "jan": "4981254067574",
+     "priceIncTax": 2134000,
+     "priceExTax": 1940000,
+     "priceText": "2,134,000円(税抜1,940,000円)",
+     "priceStatus": "新価格",
+     "infoNotes": [
+      "受注生産"
+     ]
     },
     {
      "sku": "TS51220RH9612",
      "capacityTB": 96,
      "url": "https://www.buffalo.jp/product/detail/ts51220rh9612.html",
-     "jan": null
+     "jan": "4981254065617",
+     "priceIncTax": 2486000,
+     "priceExTax": 2260000,
+     "priceText": "2,486,000円(税抜2,260,000円)",
+     "priceStatus": "新価格"
     },
     {
      "sku": "TS51220RH12012",
      "capacityTB": 120,
      "url": "https://www.buffalo.jp/product/detail/ts51220rh12012.html",
-     "jan": null
+     "jan": "4981254065600",
+     "priceIncTax": 3190000,
+     "priceExTax": 2900000,
+     "priceText": "3,190,000円(税抜2,900,000円)",
+     "priceStatus": "新価格"
     },
     {
      "sku": "TS51220RH14412",
      "capacityTB": 144,
      "url": "https://www.buffalo.jp/product/detail/ts51220rh14412.html",
-     "jan": null
+     "jan": "4981254065594",
+     "priceIncTax": 3608000,
+     "priceExTax": 3280000,
+     "priceText": "3,608,000円(税抜3,280,000円)",
+     "priceStatus": "新価格",
+     "infoNotes": [
+      "受注生産"
+     ]
     },
     {
      "sku": "TS51220RH19212",
      "capacityTB": 192,
      "url": "https://www.buffalo.jp/product/detail/ts51220rh19212.html",
-     "jan": null
+     "jan": "4981254065587",
+     "priceIncTax": 4631000,
+     "priceExTax": 4210000,
+     "priceText": "4,631,000円(税抜4,210,000円)",
+     "priceStatus": "新価格",
+     "infoNotes": [
+      "受注生産"
+     ]
     },
     {
      "sku": "TS51220RH24012",
      "capacityTB": 240,
      "url": "https://www.buffalo.jp/product/detail/ts51220rh24012.html",
-     "jan": null
+     "jan": "4981254067550",
+     "priceIncTax": 5588000,
+     "priceExTax": 5080000,
+     "priceText": "5,588,000円(税抜5,080,000円)",
+     "priceStatus": "新価格",
+     "infoNotes": [
+      "受注生産"
+     ]
     }
    ],
    "sourceUrl": "https://www.buffalo.jp/product/detail/ts51220rh3204.html",
@@ -1616,7 +1930,7 @@
     "raid": "6/5/10/1/0（出荷時 RAID6）",
     "warranty": "3年間(本体およびハードディスク)"
    },
-   "lastCheckedAt": "2026-10-14T08:19:57.388Z",
+   "lastCheckedAt": "2026-10-14T08:47:58.412Z",
    "fallbackFields": []
   },
   {
@@ -1729,73 +2043,139 @@
      "sku": "TS71210RH1604",
      "capacityTB": 16,
      "url": "https://www.buffalo.jp/product/detail/ts71210rh1604.html",
-     "jan": null
+     "jan": "4981254067055",
+     "priceIncTax": 1298000,
+     "priceExTax": 1180000,
+     "priceText": "1,298,000円(税抜1,180,000円)",
+     "priceStatus": "新価格"
     },
     {
      "sku": "TS71210RH3204",
      "capacityTB": 32,
      "url": "https://www.buffalo.jp/product/detail/ts71210rh3204.html",
-     "jan": "4981254067048"
+     "jan": "4981254067048",
+     "priceIncTax": 1595000,
+     "priceExTax": 1450000,
+     "priceText": "1,595,000円(税抜1,450,000円)",
+     "priceStatus": "新価格"
     },
     {
      "sku": "TS71210RH4004",
      "capacityTB": 40,
      "url": "https://www.buffalo.jp/product/detail/ts71210rh4004.html",
-     "jan": null
+     "jan": "4981254067031",
+     "priceIncTax": 1738000,
+     "priceExTax": 1580000,
+     "priceText": "1,738,000円(税抜1,580,000円)",
+     "priceStatus": "新価格"
     },
     {
      "sku": "TS71210RH4812",
      "capacityTB": 48,
      "url": "https://www.buffalo.jp/product/detail/ts71210rh4812.html",
-     "jan": "4981254066980"
+     "jan": "4981254066980",
+     "priceIncTax": 2002000,
+     "priceExTax": 1820000,
+     "priceText": "2,002,000円(税抜1,820,000円)",
+     "priceStatus": "新価格"
     },
     {
      "sku": "TS71210RH4804",
      "capacityTB": 48,
      "url": "https://www.buffalo.jp/product/detail/ts71210rh4804.html",
-     "jan": null
+     "jan": "4981254067024",
+     "priceIncTax": 1870000,
+     "priceExTax": 1700000,
+     "priceText": "1,870,000円(税抜1,700,000円)",
+     "priceStatus": "新価格",
+     "infoNotes": [
+      "受注生産"
+     ]
     },
     {
      "sku": "TS71210RH6404",
      "capacityTB": 64,
      "url": "https://www.buffalo.jp/product/detail/ts71210rh6404.html",
-     "jan": null
+     "jan": "4981254067017",
+     "priceIncTax": 2145000,
+     "priceExTax": 1950000,
+     "priceText": "2,145,000円(税抜1,950,000円)",
+     "priceStatus": "新価格",
+     "infoNotes": [
+      "受注生産"
+     ]
     },
     {
      "sku": "TS71210RH8004",
      "capacityTB": 80,
      "url": "https://www.buffalo.jp/product/detail/ts71210rh8004.html",
-     "jan": "4981254066997"
+     "jan": "4981254066997",
+     "priceIncTax": 2530000,
+     "priceExTax": 2300000,
+     "priceText": "2,530,000円(税抜2,300,000円)",
+     "priceStatus": "新価格",
+     "infoNotes": [
+      "受注生産"
+     ]
     },
     {
      "sku": "TS71210RH9612",
      "capacityTB": 96,
      "url": "https://www.buffalo.jp/product/detail/ts71210rh9612.html",
-     "jan": "4981254066973"
+     "jan": "4981254066973",
+     "priceIncTax": 2882000,
+     "priceExTax": 2620000,
+     "priceText": "2,882,000円(税抜2,620,000円)",
+     "priceStatus": "新価格"
     },
     {
      "sku": "TS71210RH12012",
      "capacityTB": 120,
      "url": "https://www.buffalo.jp/product/detail/ts71210rh12012.html",
-     "jan": "4981254066966"
+     "jan": "4981254066966",
+     "priceIncTax": 3586000,
+     "priceExTax": 3260000,
+     "priceText": "3,586,000円(税抜3,260,000円)",
+     "priceStatus": "新価格"
     },
     {
      "sku": "TS71210RH14412",
      "capacityTB": 144,
      "url": "https://www.buffalo.jp/product/detail/ts71210rh14412.html",
-     "jan": "4981254066959"
+     "jan": "4981254066959",
+     "priceIncTax": 4004000,
+     "priceExTax": 3640000,
+     "priceText": "4,004,000円(税抜3,640,000円)",
+     "priceStatus": "新価格",
+     "infoNotes": [
+      "受注生産"
+     ]
     },
     {
      "sku": "TS71210RH19212",
      "capacityTB": 192,
      "url": "https://www.buffalo.jp/product/detail/ts71210rh19212.html",
-     "jan": "4981254066942"
+     "jan": "4981254066942",
+     "priceIncTax": 5027000,
+     "priceExTax": 4570000,
+     "priceText": "5,027,000円(税抜4,570,000円)",
+     "priceStatus": "新価格",
+     "infoNotes": [
+      "受注生産"
+     ]
     },
     {
      "sku": "TS71210RH24012",
      "capacityTB": 240,
      "url": "https://www.buffalo.jp/product/detail/ts71210rh24012.html",
-     "jan": "4981254066928"
+     "jan": "4981254066928",
+     "priceIncTax": 5984000,
+     "priceExTax": 5440000,
+     "priceText": "5,984,000円(税抜5,440,000円)",
+     "priceStatus": "新価格",
+     "infoNotes": [
+      "受注生産"
+     ]
     }
    ],
    "sourceUrl": "https://www.buffalo.jp/product/detail/ts71210rh3204.html",
@@ -1811,7 +2191,7 @@
     "raid": "6/5/10/1/0（出荷時 RAID6）",
     "warranty": "3年間（本体およびハードディスク）"
    },
-   "lastCheckedAt": "2026-10-14T08:19:59.303Z",
+   "lastCheckedAt": "2026-10-14T08:48:24.422Z",
    "fallbackFields": []
   },
   {
@@ -1921,19 +2301,31 @@
      "sku": "TS6200DN0202",
      "capacityTB": 2,
      "url": "https://www.buffalo.jp/product/detail/ts6200dn0202.html",
-     "jan": "4981254052013"
+     "jan": "4981254052013",
+     "priceIncTax": 286000,
+     "priceExTax": 260000,
+     "priceText": "286,000円(税抜260,000円)",
+     "priceStatus": "新価格"
     },
     {
      "sku": "TS6200DN0402",
      "capacityTB": 4,
      "url": "https://www.buffalo.jp/product/detail/ts6200dn0402.html",
-     "jan": "4981254052020"
+     "jan": "4981254052020",
+     "priceIncTax": 297000,
+     "priceExTax": 270000,
+     "priceText": "297,000円(税抜270,000円)",
+     "priceStatus": "新価格"
     },
     {
      "sku": "TS6200DN0802",
      "capacityTB": 8,
      "url": "https://www.buffalo.jp/product/detail/ts6200dn0802.html",
-     "jan": "4981254052037"
+     "jan": "4981254052037",
+     "priceIncTax": 319000,
+     "priceExTax": 290000,
+     "priceText": "319,000円(税抜290,000円)",
+     "priceStatus": "新価格"
     }
    ],
    "sourceUrl": "https://www.buffalo.jp/product/detail/ts6200dn0402.html",
@@ -1949,7 +2341,7 @@
     "raid": "1/0（出荷時 RAID1）",
     "warranty": "3年間(本体およびハードディスク)"
    },
-   "lastCheckedAt": "2026-10-14T08:20:00.909Z",
+   "lastCheckedAt": "2026-10-14T08:48:32.441Z",
    "fallbackFields": []
   },
   {
@@ -2062,31 +2454,50 @@
      "sku": "TS6400DN0404",
      "capacityTB": 4,
      "url": "https://www.buffalo.jp/product/detail/ts6400dn0404.html",
-     "jan": null
+     "jan": "4981254052068",
+     "priceIncTax": 407000,
+     "priceExTax": 370000,
+     "priceText": "407,000円(税抜370,000円)",
+     "priceStatus": "新価格"
     },
     {
      "sku": "TS6400DN0804",
      "capacityTB": 8,
      "url": "https://www.buffalo.jp/product/detail/ts6400dn0804.html",
-     "jan": "4981254052075"
+     "jan": "4981254052075",
+     "priceIncTax": 429000,
+     "priceExTax": 390000,
+     "priceText": "429,000円(税抜390,000円)",
+     "priceStatus": "新価格"
     },
     {
      "sku": "TS6400DN1604",
      "capacityTB": 16,
      "url": "https://www.buffalo.jp/product/detail/ts6400dn1604.html",
-     "jan": null
+     "jan": "4981254052082",
+     "priceIncTax": 484000,
+     "priceExTax": 440000,
+     "priceText": "484,000円(税抜440,000円)",
+     "priceStatus": "新価格"
     },
     {
      "sku": "TS6400DN2404",
      "capacityTB": 24,
      "url": "https://www.buffalo.jp/product/detail/ts6400dn2404.html",
-     "jan": null
+     "jan": "4981254052099",
+     "priceIncTax": 587400,
+     "priceExTax": 534000,
+     "priceText": "587,400円(税抜534,000円)",
+     "priceStatus": "新価格"
     },
     {
      "sku": "TS6400DN4804",
      "capacityTB": 48,
      "url": "https://www.buffalo.jp/product/detail/ts6400dn4804.html",
-     "jan": null
+     "jan": "4981254066416",
+     "priceIncTax": 1068100,
+     "priceExTax": 971000,
+     "priceText": "1,068,100円(税抜971,000円)"
     }
    ],
    "sourceUrl": "https://www.buffalo.jp/product/detail/ts6400dn0804.html",
@@ -2102,7 +2513,7 @@
     "raid": "6/5/10/1/0（出荷時 RAID6）",
     "warranty": "3年間(本体およびハードディスク)"
    },
-   "lastCheckedAt": "2026-10-14T08:20:03.201Z",
+   "lastCheckedAt": "2026-10-14T08:48:44.441Z",
    "fallbackFields": []
   },
   {
@@ -2215,43 +2626,70 @@
      "sku": "TS6400RN0404",
      "capacityTB": 4,
      "url": "https://www.buffalo.jp/product/detail/ts6400rn0404.html",
-     "jan": null
+     "jan": "4981254052150",
+     "priceIncTax": 445500,
+     "priceExTax": 405000,
+     "priceText": "445,500円(税抜405,000円)",
+     "priceStatus": "新価格"
     },
     {
      "sku": "TS6400RN0804",
      "capacityTB": 8,
      "url": "https://www.buffalo.jp/product/detail/ts6400rn0804.html",
-     "jan": "4981254052167"
+     "jan": "4981254052167",
+     "priceIncTax": 467500,
+     "priceExTax": 425000,
+     "priceText": "467,500円(税抜425,000円)",
+     "priceStatus": "新価格"
     },
     {
      "sku": "TS6400RN1604",
      "capacityTB": 16,
      "url": "https://www.buffalo.jp/product/detail/ts6400rn1604.html",
-     "jan": null
+     "jan": "4981254052174",
+     "priceIncTax": 522500,
+     "priceExTax": 475000,
+     "priceText": "522,500円(税抜475,000円)",
+     "priceStatus": "新価格"
     },
     {
      "sku": "TS6400RN2404",
      "capacityTB": 24,
      "url": "https://www.buffalo.jp/product/detail/ts6400rn2404.html",
-     "jan": null
+     "jan": "4981254052181",
+     "priceIncTax": 625900,
+     "priceExTax": 569000,
+     "priceText": "625,900円(税抜569,000円)",
+     "priceStatus": "新価格"
     },
     {
      "sku": "TS6400RN3204",
      "capacityTB": 32,
      "url": "https://www.buffalo.jp/product/detail/ts6400rn3204.html",
-     "jan": null
+     "jan": "4981254052198",
+     "priceIncTax": 751300,
+     "priceExTax": 683000,
+     "priceText": "751,300円(税抜683,000円)",
+     "priceStatus": "新価格"
     },
     {
      "sku": "TS6400RN4004",
      "capacityTB": 40,
      "url": "https://www.buffalo.jp/product/detail/ts6400rn4004.html",
-     "jan": null
+     "jan": "4981254052204",
+     "priceIncTax": 913000,
+     "priceExTax": 830000,
+     "priceText": "913,000円(税抜830,000円)",
+     "priceStatus": "新価格"
     },
     {
      "sku": "TS6400RN4804",
      "capacityTB": 48,
      "url": "https://www.buffalo.jp/product/detail/ts6400rn4804.html",
-     "jan": null
+     "jan": "4981254066393",
+     "priceIncTax": 1095600,
+     "priceExTax": 996000,
+     "priceText": "1,095,600円(税抜996,000円)"
     }
    ],
    "sourceUrl": "https://www.buffalo.jp/product/detail/ts6400rn0804.html",
@@ -2267,7 +2705,7 @@
     "raid": "6/5/10/1/0（出荷時 RAID6）",
     "warranty": "3年間(本体およびハードディスク)"
    },
-   "lastCheckedAt": "2026-10-14T08:20:05.279Z",
+   "lastCheckedAt": "2026-10-14T08:49:00.535Z",
    "fallbackFields": []
   },
   {
@@ -2380,31 +2818,51 @@
      "sku": "TS6600DN1806",
      "capacityTB": 18,
      "url": "https://www.buffalo.jp/product/detail/ts6600dn1806.html",
-     "jan": null
+     "jan": "4981254053423",
+     "priceIncTax": 565400,
+     "priceExTax": 514000,
+     "priceText": "565,400円(税抜514,000円)",
+     "priceStatus": "新価格"
     },
     {
      "sku": "TS6600DN2406",
      "capacityTB": 24,
      "url": "https://www.buffalo.jp/product/detail/ts6600dn2406.html",
-     "jan": "4981254053430"
+     "jan": "4981254053430",
+     "priceIncTax": 631400,
+     "priceExTax": 574000,
+     "priceText": "631,400円(税抜574,000円)",
+     "priceStatus": "新価格"
     },
     {
      "sku": "TS6600DN3606",
      "capacityTB": 36,
      "url": "https://www.buffalo.jp/product/detail/ts6600dn3606.html",
-     "jan": null
+     "jan": "4981254053447",
+     "priceIncTax": 891000,
+     "priceExTax": 810000,
+     "priceText": "891,000円(税抜810,000円)",
+     "priceStatus": "新価格"
     },
     {
      "sku": "TS6600DN6006",
      "capacityTB": 60,
      "url": "https://www.buffalo.jp/product/detail/ts6600dn6006.html",
-     "jan": null
+     "jan": "4981254053454",
+     "priceIncTax": 1375000,
+     "priceExTax": 1250000,
+     "priceText": "1,375,000円(税抜1,250,000円)",
+     "priceStatus": "新価格"
     },
     {
      "sku": "TS6600DN7206",
      "capacityTB": 72,
      "url": "https://www.buffalo.jp/product/detail/ts6600dn7206.html",
-     "jan": null
+     "jan": "4981254066409",
+     "priceIncTax": 1562000,
+     "priceExTax": 1420000,
+     "priceText": "1,562,000円(税抜1,420,000円)",
+     "priceStatus": "新価格"
     }
    ],
    "sourceUrl": "https://www.buffalo.jp/product/detail/ts6600dn2406.html",
@@ -2420,7 +2878,7 @@
     "raid": "6/5/10/1/0（出荷時 RAID6）",
     "warranty": "3年間(本体およびハードディスク)"
    },
-   "lastCheckedAt": "2026-10-14T08:20:07.054Z",
+   "lastCheckedAt": "2026-10-14T08:49:13.066Z",
    "fallbackFields": []
   },
   {
@@ -2522,25 +2980,41 @@
      "sku": "WS5220DN02W5",
      "capacityTB": 2,
      "url": "https://www.buffalo.jp/product/detail/ws5220dn02w5.html",
-     "jan": "4981254074978"
+     "jan": "4981254074978",
+     "priceIncTax": 297000,
+     "priceExTax": 270000,
+     "priceText": "297,000円(税抜270,000円)",
+     "priceStatus": "新価格"
     },
     {
      "sku": "WS5220DN04W5",
      "capacityTB": 4,
      "url": "https://www.buffalo.jp/product/detail/ws5220dn04w5.html",
-     "jan": "4981254074961"
+     "jan": "4981254074961",
+     "priceIncTax": 308000,
+     "priceExTax": 280000,
+     "priceText": "308,000円(税抜280,000円)",
+     "priceStatus": "新価格"
     },
     {
      "sku": "WS5220DN08W5",
      "capacityTB": 8,
      "url": "https://www.buffalo.jp/product/detail/ws5220dn08w5.html",
-     "jan": "4981254074954"
+     "jan": "4981254074954",
+     "priceIncTax": 330000,
+     "priceExTax": 300000,
+     "priceText": "330,000円(税抜300,000円)",
+     "priceStatus": "新価格"
     },
     {
      "sku": "WS5220DN16W5",
      "capacityTB": 16,
      "url": "https://www.buffalo.jp/product/detail/ws5220dn16w5.html",
-     "jan": "4981254074947"
+     "jan": "4981254074947",
+     "priceIncTax": 440000,
+     "priceExTax": 400000,
+     "priceText": "440,000円(税抜400,000円)",
+     "priceStatus": "新価格"
     }
    ],
    "sourceUrl": "https://www.buffalo.jp/product/detail/ws5220dn16w5.html",
@@ -2556,7 +3030,7 @@
     "raid": "1/0（出荷時 RAID1）",
     "warranty": "3年間(本体およびハードディスク)"
    },
-   "lastCheckedAt": "2026-10-14T08:20:09.612Z",
+   "lastCheckedAt": "2026-10-14T08:49:22.907Z",
    "fallbackFields": []
   },
   {
@@ -2658,25 +3132,41 @@
      "sku": "WS5220DN02S5",
      "capacityTB": 2,
      "url": "https://www.buffalo.jp/product/detail/ws5220dn02s5.html",
-     "jan": "4981254074930"
+     "jan": "4981254074930",
+     "priceIncTax": 390500,
+     "priceExTax": 355000,
+     "priceText": "390,500円(税抜355,000円)",
+     "priceStatus": "新価格"
     },
     {
      "sku": "WS5220DN04S5",
      "capacityTB": 4,
      "url": "https://www.buffalo.jp/product/detail/ws5220dn04s5.html",
-     "jan": "4981254074923"
+     "jan": "4981254074923",
+     "priceIncTax": 401500,
+     "priceExTax": 365000,
+     "priceText": "401,500円(税抜365,000円)",
+     "priceStatus": "新価格"
     },
     {
      "sku": "WS5220DN08S5",
      "capacityTB": 8,
      "url": "https://www.buffalo.jp/product/detail/ws5220dn08s5.html",
-     "jan": "4981254074916"
+     "jan": "4981254074916",
+     "priceIncTax": 423500,
+     "priceExTax": 385000,
+     "priceText": "423,500円(税抜385,000円)",
+     "priceStatus": "新価格"
     },
     {
      "sku": "WS5220DN16S5",
      "capacityTB": 16,
      "url": "https://www.buffalo.jp/product/detail/ws5220dn16s5.html",
-     "jan": "4981254074909"
+     "jan": "4981254074909",
+     "priceIncTax": 533500,
+     "priceExTax": 485000,
+     "priceText": "533,500円(税抜485,000円)",
+     "priceStatus": "新価格"
     }
    ],
    "sourceUrl": "https://www.buffalo.jp/product/detail/ws5220dn08s5.html",
@@ -2692,7 +3182,7 @@
     "raid": "1/0（出荷時 RAID1）",
     "warranty": "3年間(本体およびハードディスク)"
    },
-   "lastCheckedAt": "2026-10-14T08:20:11.048Z",
+   "lastCheckedAt": "2026-10-14T08:49:32.449Z",
    "fallbackFields": []
   },
   {
@@ -2795,25 +3285,41 @@
      "sku": "WS5420DN04W5",
      "capacityTB": 4,
      "url": "https://www.buffalo.jp/product/detail/ws5420dn04w5.html",
-     "jan": "4981254074893"
+     "jan": "4981254074893",
+     "priceIncTax": 418000,
+     "priceExTax": 380000,
+     "priceText": "418,000円(税抜380,000円)",
+     "priceStatus": "新価格"
     },
     {
      "sku": "WS5420DN08W5",
      "capacityTB": 8,
      "url": "https://www.buffalo.jp/product/detail/ws5420dn08w5.html",
-     "jan": "4981254074886"
+     "jan": "4981254074886",
+     "priceIncTax": 440000,
+     "priceExTax": 400000,
+     "priceText": "440,000円(税抜400,000円)",
+     "priceStatus": "新価格"
     },
     {
      "sku": "WS5420DN16W5",
      "capacityTB": 16,
      "url": "https://www.buffalo.jp/product/detail/ws5420dn16w5.html",
-     "jan": "4981254074879"
+     "jan": "4981254074879",
+     "priceIncTax": 495000,
+     "priceExTax": 450000,
+     "priceText": "495,000円(税抜450,000円)",
+     "priceStatus": "新価格"
     },
     {
      "sku": "WS5420DN32W5",
      "capacityTB": 32,
      "url": "https://www.buffalo.jp/product/detail/ws5420dn32w5.html",
-     "jan": "4981254074862"
+     "jan": "4981254074862",
+     "priceIncTax": 723800,
+     "priceExTax": 658000,
+     "priceText": "723,800円(税抜658,000円)",
+     "priceStatus": "新価格"
     }
    ],
    "sourceUrl": "https://www.buffalo.jp/product/detail/ws5420dn08w5.html",
@@ -2829,7 +3335,7 @@
     "raid": "5/1/0（出荷時RAID5）",
     "warranty": "3年間(本体およびハードディスク)"
    },
-   "lastCheckedAt": "2026-10-14T08:20:13.619Z",
+   "lastCheckedAt": "2026-10-14T08:49:43.074Z",
    "fallbackFields": []
   },
   {
@@ -2932,25 +3438,41 @@
      "sku": "WS5420DN04S5",
      "capacityTB": 4,
      "url": "https://www.buffalo.jp/product/detail/ws5420dn04s5.html",
-     "jan": "4981254074855"
+     "jan": "4981254074855",
+     "priceIncTax": 511500,
+     "priceExTax": 465000,
+     "priceText": "511,500円(税抜465,000円)",
+     "priceStatus": "新価格"
     },
     {
      "sku": "WS5420DN08S5",
      "capacityTB": 8,
      "url": "https://www.buffalo.jp/product/detail/ws5420dn08s5.html",
-     "jan": "4981254074848"
+     "jan": "4981254074848",
+     "priceIncTax": 533500,
+     "priceExTax": 485000,
+     "priceText": "533,500円(税抜485,000円)",
+     "priceStatus": "新価格"
     },
     {
      "sku": "WS5420DN16S5",
      "capacityTB": 16,
      "url": "https://www.buffalo.jp/product/detail/ws5420dn16s5.html",
-     "jan": "4981254074831"
+     "jan": "4981254074831",
+     "priceIncTax": 588500,
+     "priceExTax": 535000,
+     "priceText": "588,500円(税抜535,000円)",
+     "priceStatus": "新価格"
     },
     {
      "sku": "WS5420DN32S5",
      "capacityTB": 32,
      "url": "https://www.buffalo.jp/product/detail/ws5420dn32s5.html",
-     "jan": "4981254074824"
+     "jan": "4981254074824",
+     "priceIncTax": 817300,
+     "priceExTax": 743000,
+     "priceText": "817,300円(税抜743,000円)",
+     "priceStatus": "新価格"
     }
    ],
    "sourceUrl": "https://www.buffalo.jp/product/detail/ws5420dn08s5.html",
@@ -2966,7 +3488,7 @@
     "raid": "5/1/0（出荷時RAID5）",
     "warranty": "3年間(本体およびハードディスク)"
    },
-   "lastCheckedAt": "2026-10-14T08:20:15.047Z",
+   "lastCheckedAt": "2026-10-14T08:49:53.056Z",
    "fallbackFields": []
   },
   {
@@ -3069,25 +3591,41 @@
      "sku": "WS5420RN04W5",
      "capacityTB": 4,
      "url": "https://www.buffalo.jp/product/detail/ws5420rn04w5.html",
-     "jan": "4981254074817"
+     "jan": "4981254074817",
+     "priceIncTax": 456500,
+     "priceExTax": 415000,
+     "priceText": "456,500円(税抜415,000円)",
+     "priceStatus": "新価格"
     },
     {
      "sku": "WS5420RN08W5",
      "capacityTB": 8,
      "url": "https://www.buffalo.jp/product/detail/ws5420rn08w5.html",
-     "jan": "4981254074800"
+     "jan": "4981254074800",
+     "priceIncTax": 478500,
+     "priceExTax": 435000,
+     "priceText": "478,500円(税抜435,000円)",
+     "priceStatus": "新価格"
     },
     {
      "sku": "WS5420RN16W5",
      "capacityTB": 16,
      "url": "https://www.buffalo.jp/product/detail/ws5420rn16w5.html",
-     "jan": "4981254074794"
+     "jan": "4981254074794",
+     "priceIncTax": 533500,
+     "priceExTax": 485000,
+     "priceText": "533,500円(税抜485,000円)",
+     "priceStatus": "新価格"
     },
     {
      "sku": "WS5420RN32W5",
      "capacityTB": 32,
      "url": "https://www.buffalo.jp/product/detail/ws5420rn32w5.html",
-     "jan": "4981254074787"
+     "jan": "4981254074787",
+     "priceIncTax": 762300,
+     "priceExTax": 693000,
+     "priceText": "762,300円(税抜693,000円)",
+     "priceStatus": "新価格"
     }
    ],
    "sourceUrl": "https://www.buffalo.jp/product/detail/ws5420rn32w5.html",
@@ -3103,7 +3641,7 @@
     "raid": "5/1/0（出荷時RAID5）",
     "warranty": "3年間(本体およびハードディスク)"
    },
-   "lastCheckedAt": "2026-10-14T08:20:17.776Z",
+   "lastCheckedAt": "2026-10-14T08:50:03.037Z",
    "fallbackFields": []
   },
   {
@@ -3206,19 +3744,31 @@
      "sku": "WS5420RN08S5",
      "capacityTB": 8,
      "url": "https://www.buffalo.jp/product/detail/ws5420rn08s5.html",
-     "jan": "4981254074770"
+     "jan": "4981254074770",
+     "priceIncTax": 572000,
+     "priceExTax": 520000,
+     "priceText": "572,000円(税抜520,000円)",
+     "priceStatus": "新価格"
     },
     {
      "sku": "WS5420RN16S5",
      "capacityTB": 16,
      "url": "https://www.buffalo.jp/product/detail/ws5420rn16s5.html",
-     "jan": "4981254074763"
+     "jan": "4981254074763",
+     "priceIncTax": 627000,
+     "priceExTax": 570000,
+     "priceText": "627,000円(税抜570,000円)",
+     "priceStatus": "新価格"
     },
     {
      "sku": "WS5420RN32S5",
      "capacityTB": 32,
      "url": "https://www.buffalo.jp/product/detail/ws5420rn32s5.html",
-     "jan": "4981254074756"
+     "jan": "4981254074756",
+     "priceIncTax": 855800,
+     "priceExTax": 778000,
+     "priceText": "855,800円(税抜778,000円)",
+     "priceStatus": "新価格"
     }
    ],
    "sourceUrl": "https://www.buffalo.jp/product/detail/ws5420rn08s5.html",
@@ -3234,7 +3784,7 @@
     "raid": "5/1/0（出荷時RAID5）",
     "warranty": "3年間(本体およびハードディスク)"
    },
-   "lastCheckedAt": "2026-10-14T08:20:19.553Z",
+   "lastCheckedAt": "2026-10-14T08:50:10.557Z",
    "fallbackFields": []
   },
   {
@@ -3338,25 +3888,41 @@
      "sku": "WSH5420DN04W5",
      "capacityTB": 4,
      "url": "https://www.buffalo.jp/product/detail/wsh5420dn04w5.html",
-     "jan": "4981254075920"
+     "jan": "4981254075920",
+     "priceIncTax": 528000,
+     "priceExTax": 480000,
+     "priceText": "528,000円(税抜480,000円)",
+     "priceStatus": "新価格"
     },
     {
      "sku": "WSH5420DN08W5",
      "capacityTB": 8,
      "url": "https://www.buffalo.jp/product/detail/wsh5420dn08w5.html",
-     "jan": "4981254075913"
+     "jan": "4981254075913",
+     "priceIncTax": 550000,
+     "priceExTax": 500000,
+     "priceText": "550,000円(税抜500,000円)",
+     "priceStatus": "新価格"
     },
     {
      "sku": "WSH5420DN16W5",
      "capacityTB": 16,
      "url": "https://www.buffalo.jp/product/detail/wsh5420dn16w5.html",
-     "jan": "4981254075906"
+     "jan": "4981254075906",
+     "priceIncTax": 605000,
+     "priceExTax": 550000,
+     "priceText": "605,000円(税抜550,000円)",
+     "priceStatus": "新価格"
     },
     {
      "sku": "WSH5420DN32W5",
      "capacityTB": 32,
      "url": "https://www.buffalo.jp/product/detail/wsh5420dn32w5.html",
-     "jan": "4981254075890"
+     "jan": "4981254075890",
+     "priceIncTax": 833800,
+     "priceExTax": 758000,
+     "priceText": "833,800円(税抜758,000円)",
+     "priceStatus": "新価格"
     }
    ],
    "sourceUrl": "https://www.buffalo.jp/product/detail/wsh5420dn08w5.html",
@@ -3372,7 +3938,7 @@
     "raid": "6/5/10/0（出荷時RAID6）",
     "warranty": "3年間(本体およびハードディスク)"
    },
-   "lastCheckedAt": "2026-10-14T08:20:21.555Z",
+   "lastCheckedAt": "2026-10-14T08:50:20.542Z",
    "fallbackFields": []
   },
   {
@@ -3476,25 +4042,41 @@
      "sku": "WSH5420DN04S5",
      "capacityTB": 4,
      "url": "https://www.buffalo.jp/product/detail/wsh5420dn04s5.html",
-     "jan": "4981254075883"
+     "jan": "4981254075883",
+     "priceIncTax": 621500,
+     "priceExTax": 565000,
+     "priceText": "621,500円(税抜565,000円)",
+     "priceStatus": "新価格"
     },
     {
      "sku": "WSH5420DN08S5",
      "capacityTB": 8,
      "url": "https://www.buffalo.jp/product/detail/wsh5420dn08s5.html",
-     "jan": "4981254075876"
+     "jan": "4981254075876",
+     "priceIncTax": 643500,
+     "priceExTax": 585000,
+     "priceText": "643,500円(税抜585,000円)",
+     "priceStatus": "新価格"
     },
     {
      "sku": "WSH5420DN16S5",
      "capacityTB": 16,
      "url": "https://www.buffalo.jp/product/detail/wsh5420dn16s5.html",
-     "jan": "4981254075869"
+     "jan": "4981254075869",
+     "priceIncTax": 698500,
+     "priceExTax": 635000,
+     "priceText": "698,500円(税抜635,000円)",
+     "priceStatus": "新価格"
     },
     {
      "sku": "WSH5420DN32S5",
      "capacityTB": 32,
      "url": "https://www.buffalo.jp/product/detail/wsh5420dn32s5.html",
-     "jan": "4981254075852"
+     "jan": "4981254075852",
+     "priceIncTax": 927300,
+     "priceExTax": 843000,
+     "priceText": "927,300円(税抜843,000円)",
+     "priceStatus": "新価格"
     }
    ],
    "sourceUrl": "https://www.buffalo.jp/product/detail/wsh5420dn16s5.html",
@@ -3510,7 +4092,7 @@
     "raid": "6/5/10/0（出荷時RAID6）",
     "warranty": "3年間(本体およびハードディスク)"
    },
-   "lastCheckedAt": "2026-10-14T08:20:23.890Z",
+   "lastCheckedAt": "2026-10-14T08:50:31.034Z",
    "fallbackFields": []
   },
   {
@@ -3614,25 +4196,41 @@
      "sku": "WSH5420RN04W5",
      "capacityTB": 4,
      "url": "https://www.buffalo.jp/product/detail/wsh5420rn04w5.html",
-     "jan": "4981254075845"
+     "jan": "4981254075845",
+     "priceIncTax": 566500,
+     "priceExTax": 515000,
+     "priceText": "566,500円(税抜515,000円)",
+     "priceStatus": "新価格"
     },
     {
      "sku": "WSH5420RN08W5",
      "capacityTB": 8,
      "url": "https://www.buffalo.jp/product/detail/wsh5420rn08w5.html",
-     "jan": "4981254075838"
+     "jan": "4981254075838",
+     "priceIncTax": 588500,
+     "priceExTax": 535000,
+     "priceText": "588,500円(税抜535,000円)",
+     "priceStatus": "新価格"
     },
     {
      "sku": "WSH5420RN16W5",
      "capacityTB": 16,
      "url": "https://www.buffalo.jp/product/detail/wsh5420rn16w5.html",
-     "jan": "4981254075821"
+     "jan": "4981254075821",
+     "priceIncTax": 643500,
+     "priceExTax": 585000,
+     "priceText": "643,500円(税抜585,000円)",
+     "priceStatus": "新価格"
     },
     {
      "sku": "WSH5420RN32W5",
      "capacityTB": 32,
      "url": "https://www.buffalo.jp/product/detail/wsh5420rn32w5.html",
-     "jan": "4981254075814"
+     "jan": "4981254075814",
+     "priceIncTax": 872300,
+     "priceExTax": 793000,
+     "priceText": "872,300円(税抜793,000円)",
+     "priceStatus": "新価格"
     }
    ],
    "sourceUrl": "https://www.buffalo.jp/product/detail/wsh5420rn08w5.html",
@@ -3648,7 +4246,7 @@
     "raid": "6/5/10/0（出荷時RAID6）",
     "warranty": "3年間(本体およびハードディスク)"
    },
-   "lastCheckedAt": "2026-10-14T08:20:25.028Z",
+   "lastCheckedAt": "2026-10-14T08:50:41.177Z",
    "fallbackFields": []
   },
   {
@@ -3752,25 +4350,41 @@
      "sku": "WSH5420RN08S5",
      "capacityTB": 8,
      "url": "https://www.buffalo.jp/product/detail/wsh5420rn08s5.html",
-     "jan": "4981254075807"
+     "jan": "4981254075807",
+     "priceIncTax": 682000,
+     "priceExTax": 620000,
+     "priceText": "682,000円(税抜620,000円)",
+     "priceStatus": "新価格"
     },
     {
      "sku": "WSH5420RN16S5",
      "capacityTB": 16,
      "url": "https://www.buffalo.jp/product/detail/wsh5420rn16s5.html",
-     "jan": "4981254075791"
+     "jan": "4981254075791",
+     "priceIncTax": 737000,
+     "priceExTax": 670000,
+     "priceText": "737,000円(税抜670,000円)",
+     "priceStatus": "新価格"
     },
     {
      "sku": "WSH5420RN32S5",
      "capacityTB": 32,
      "url": "https://www.buffalo.jp/product/detail/wsh5420rn32s5.html",
-     "jan": "4981254075784"
+     "jan": "4981254075784",
+     "priceIncTax": 965800,
+     "priceExTax": 878000,
+     "priceText": "965,800円(税抜878,000円)",
+     "priceStatus": "新価格"
     },
     {
      "sku": "WSH5420RN40S5",
      "capacityTB": 40,
      "url": "https://www.buffalo.jp/product/detail/wsh5420rn40s5.html",
-     "jan": "4981254075777"
+     "jan": "4981254075777",
+     "priceIncTax": 1120900,
+     "priceExTax": 1019000,
+     "priceText": "1,120,900円(税抜1,019,000円)",
+     "priceStatus": "新価格"
     }
    ],
    "sourceUrl": "https://www.buffalo.jp/product/detail/wsh5420rn40s5.html",
@@ -3786,7 +4400,7 @@
     "raid": "6/5/10/0（出荷時RAID6）",
     "warranty": "3年間(本体およびハードディスク)"
    },
-   "lastCheckedAt": "2026-10-14T08:20:27.024Z",
+   "lastCheckedAt": "2026-10-14T08:50:51.236Z",
    "fallbackFields": []
   },
   {
@@ -3890,25 +4504,41 @@
      "sku": "WSH5620DN12S5",
      "capacityTB": 12,
      "url": "https://www.buffalo.jp/product/detail/wsh5620dn12s5.html",
-     "jan": "4981254075760"
+     "jan": "4981254075760",
+     "priceIncTax": 812900,
+     "priceExTax": 739000,
+     "priceText": "812,900円(税抜739,000円)",
+     "priceStatus": "新価格"
     },
     {
      "sku": "WSH5620DN24S5",
      "capacityTB": 24,
      "url": "https://www.buffalo.jp/product/detail/wsh5620dn24s5.html",
-     "jan": "4981254075753"
+     "jan": "4981254075753",
+     "priceIncTax": 845900,
+     "priceExTax": 769000,
+     "priceText": "845,900円(税抜769,000円)",
+     "priceStatus": "新価格"
     },
     {
      "sku": "WSH5620DN36S5",
      "capacityTB": 36,
      "url": "https://www.buffalo.jp/product/detail/wsh5620dn36s5.html",
-     "jan": "4981254075746"
+     "jan": "4981254075746",
+     "priceIncTax": 1105500,
+     "priceExTax": 1005000,
+     "priceText": "1,105,500円(税抜1,005,000円)",
+     "priceStatus": "新価格"
     },
     {
      "sku": "WSH5620DN48S5",
      "capacityTB": 48,
      "url": "https://www.buffalo.jp/product/detail/wsh5620dn48s5.html",
-     "jan": "4981254075739"
+     "jan": "4981254075739",
+     "priceIncTax": 1452000,
+     "priceExTax": 1320000,
+     "priceText": "1,452,000円(税抜1,320,000円)",
+     "priceStatus": "新価格"
     }
    ],
    "sourceUrl": "https://www.buffalo.jp/product/detail/wsh5620dn24s5.html",
@@ -3924,7 +4554,7 @@
     "raid": "6/5/10/0（出荷時RAID6）",
     "warranty": "3年間(本体およびハードディスク)"
    },
-   "lastCheckedAt": "2026-10-14T08:20:29.617Z",
+   "lastCheckedAt": "2026-10-14T08:51:01.005Z",
    "fallbackFields": []
   },
   {
@@ -4027,31 +4657,54 @@
      "sku": "WS6410DN04W5",
      "capacityTB": 4,
      "url": "https://www.buffalo.jp/product/detail/ws6410dn04w5.html",
-     "jan": "4981254079706"
+     "jan": "4981254079706",
+     "priceIncTax": 473000,
+     "priceExTax": 430000,
+     "priceText": "473,000円(税抜430,000円)",
+     "priceStatus": "新商品"
     },
     {
      "sku": "WS6410DN08W5",
      "capacityTB": 8,
      "url": "https://www.buffalo.jp/product/detail/ws6410dn08w5.html",
-     "jan": "4981254079713"
+     "jan": "4981254079713",
+     "priceIncTax": 495000,
+     "priceExTax": 450000,
+     "priceText": "495,000円(税抜450,000円)",
+     "priceStatus": "新商品"
     },
     {
      "sku": "WS6410DN16W5",
      "capacityTB": 16,
      "url": "https://www.buffalo.jp/product/detail/ws6410dn16w5.html",
-     "jan": "4981254079720"
+     "jan": "4981254079720",
+     "priceIncTax": 550000,
+     "priceExTax": 500000,
+     "priceText": "550,000円(税抜500,000円)",
+     "priceStatus": "新商品"
     },
     {
      "sku": "WS6410DN32W5",
      "capacityTB": 32,
      "url": "https://www.buffalo.jp/product/detail/ws6410dn32w5.html",
-     "jan": "4981254079737"
+     "jan": "4981254079737",
+     "priceIncTax": 778800,
+     "priceExTax": 708000,
+     "priceText": "778,800円(税抜708,000円)",
+     "priceStatus": "新商品"
     },
     {
      "sku": "WS6410DN48W5",
      "capacityTB": 48,
      "url": "https://www.buffalo.jp/product/detail/ws6410dn48w5.html",
-     "jan": "4981254079744"
+     "jan": "4981254079744",
+     "priceIncTax": 1069200,
+     "priceExTax": 972000,
+     "priceText": "1,069,200円(税抜972,000円)",
+     "priceStatus": "新商品",
+     "infoNotes": [
+      "受注生産"
+     ]
     }
    ],
    "sourceUrl": "https://www.buffalo.jp/product/detail/ws6410dn48w5.html",
@@ -4067,7 +4720,7 @@
     "raid": "5/1/0（出荷時RAID5）",
     "warranty": "3年間(本体およびハードディスク)"
    },
-   "lastCheckedAt": "2026-10-14T08:20:31.061Z",
+   "lastCheckedAt": "2026-10-14T08:51:12.508Z",
    "fallbackFields": [
     "releaseDate"
    ]
@@ -4172,31 +4825,54 @@
      "sku": "WS6410DN04S5",
      "capacityTB": 4,
      "url": "https://www.buffalo.jp/product/detail/ws6410dn04s5.html",
-     "jan": "4981254079652"
+     "jan": "4981254079652",
+     "priceIncTax": 566500,
+     "priceExTax": 515000,
+     "priceText": "566,500円(税抜515,000円)",
+     "priceStatus": "新商品"
     },
     {
      "sku": "WS6410DN08S5",
      "capacityTB": 8,
      "url": "https://www.buffalo.jp/product/detail/ws6410dn08s5.html",
-     "jan": "4981254079669"
+     "jan": "4981254079669",
+     "priceIncTax": 588500,
+     "priceExTax": 535000,
+     "priceText": "588,500円(税抜535,000円)",
+     "priceStatus": "新商品"
     },
     {
      "sku": "WS6410DN16S5",
      "capacityTB": 16,
      "url": "https://www.buffalo.jp/product/detail/ws6410dn16s5.html",
-     "jan": "4981254079676"
+     "jan": "4981254079676",
+     "priceIncTax": 643500,
+     "priceExTax": 585000,
+     "priceText": "643,500円(税抜585,000円)",
+     "priceStatus": "新商品"
     },
     {
      "sku": "WS6410DN32S5",
      "capacityTB": 32,
      "url": "https://www.buffalo.jp/product/detail/ws6410dn32s5.html",
-     "jan": "4981254079683"
+     "jan": "4981254079683",
+     "priceIncTax": 872300,
+     "priceExTax": 793000,
+     "priceText": "872,300円(税抜793,000円)",
+     "priceStatus": "新商品"
     },
     {
      "sku": "WS6410DN48S5",
      "capacityTB": 48,
      "url": "https://www.buffalo.jp/product/detail/ws6410dn48s5.html",
-     "jan": "4981254079690"
+     "jan": "4981254079690",
+     "priceIncTax": 1162700,
+     "priceExTax": 1057000,
+     "priceText": "1,162,700円(税抜1,057,000円)",
+     "priceStatus": "新商品",
+     "infoNotes": [
+      "受注生産"
+     ]
     }
    ],
    "sourceUrl": "https://www.buffalo.jp/product/detail/ws6410dn48s5.html",
@@ -4212,7 +4888,7 @@
     "raid": "5/1/0（出荷時RAID5）",
     "warranty": "3年間(本体およびハードディスク)"
    },
-   "lastCheckedAt": "2026-10-14T08:20:34.035Z",
+   "lastCheckedAt": "2026-10-14T08:51:25.034Z",
    "fallbackFields": [
     "releaseDate"
    ]
@@ -4316,25 +4992,41 @@
      "sku": "WS6210DN02W5",
      "capacityTB": 2,
      "url": "https://www.buffalo.jp/product/detail/ws6210dn02w5.html",
-     "jan": "4981254079614"
+     "jan": "4981254079614",
+     "priceIncTax": 352000,
+     "priceExTax": 320000,
+     "priceText": "352,000円(税抜320,000円)",
+     "priceStatus": "新商品"
     },
     {
      "sku": "WS6210DN04W5",
      "capacityTB": 4,
      "url": "https://www.buffalo.jp/product/detail/ws6210dn04w5.html",
-     "jan": "4981254079621"
+     "jan": "4981254079621",
+     "priceIncTax": 363000,
+     "priceExTax": 330000,
+     "priceText": "363,000円(税抜330,000円)",
+     "priceStatus": "新商品"
     },
     {
      "sku": "WS6210DN08W5",
      "capacityTB": 8,
      "url": "https://www.buffalo.jp/product/detail/ws6210dn08w5.html",
-     "jan": "4981254079638"
+     "jan": "4981254079638",
+     "priceIncTax": 385000,
+     "priceExTax": 350000,
+     "priceText": "385,000円(税抜350,000円)",
+     "priceStatus": "新商品"
     },
     {
      "sku": "WS6210DN16W5",
      "capacityTB": 16,
      "url": "https://www.buffalo.jp/product/detail/ws6210dn16w5.html",
-     "jan": "4981254079645"
+     "jan": "4981254079645",
+     "priceIncTax": 495000,
+     "priceExTax": 450000,
+     "priceText": "495,000円(税抜450,000円)",
+     "priceStatus": "新商品"
     }
    ],
    "sourceUrl": "https://www.buffalo.jp/product/detail/ws6210dn16w5.html",
@@ -4350,7 +5042,7 @@
     "raid": "1/0（出荷時 RAID1）",
     "warranty": "3年間(本体およびハードディスク)"
    },
-   "lastCheckedAt": "2026-10-14T08:20:35.384Z",
+   "lastCheckedAt": "2026-10-14T08:51:34.568Z",
    "fallbackFields": [
     "releaseDate"
    ]
@@ -4454,25 +5146,41 @@
      "sku": "WS6210DN02S5",
      "capacityTB": 2,
      "url": "https://www.buffalo.jp/product/detail/ws6210dn02s5.html",
-     "jan": "4981254079577"
+     "jan": "4981254079577",
+     "priceIncTax": 445500,
+     "priceExTax": 405000,
+     "priceText": "445,500円(税抜405,000円)",
+     "priceStatus": "新商品"
     },
     {
      "sku": "WS6210DN04S5",
      "capacityTB": 4,
      "url": "https://www.buffalo.jp/product/detail/ws6210dn04s5.html",
-     "jan": "4981254079584"
+     "jan": "4981254079584",
+     "priceIncTax": 456500,
+     "priceExTax": 415000,
+     "priceText": "456,500円(税抜415,000円)",
+     "priceStatus": "新商品"
     },
     {
      "sku": "WS6210DN08S5",
      "capacityTB": 8,
      "url": "https://www.buffalo.jp/product/detail/ws6210dn08s5.html",
-     "jan": "4981254079591"
+     "jan": "4981254079591",
+     "priceIncTax": 478500,
+     "priceExTax": 435000,
+     "priceText": "478,500円(税抜435,000円)",
+     "priceStatus": "新商品"
     },
     {
      "sku": "WS6210DN16S5",
      "capacityTB": 16,
      "url": "https://www.buffalo.jp/product/detail/ws6210dn16s5.html",
-     "jan": "4981254079607"
+     "jan": "4981254079607",
+     "priceIncTax": 588500,
+     "priceExTax": 535000,
+     "priceText": "588,500円(税抜535,000円)",
+     "priceStatus": "新商品"
     }
    ],
    "sourceUrl": "https://www.buffalo.jp/product/detail/ws6210dn16s5.html",
@@ -4488,7 +5196,7 @@
     "raid": "1/0（出荷時 RAID1）",
     "warranty": "3年間(本体およびハードディスク)"
    },
-   "lastCheckedAt": "2026-10-14T08:20:37.191Z",
+   "lastCheckedAt": "2026-10-14T08:51:45.031Z",
    "fallbackFields": [
     "releaseDate"
    ]
@@ -4600,25 +5308,41 @@
      "sku": "LS220DN0202B",
      "capacityTB": 2,
      "url": "https://www.buffalo.jp/product/detail/ls220dn0202b.html",
-     "jan": "4981254034712"
+     "jan": "4981254034712",
+     "priceIncTax": 91300,
+     "priceExTax": 83000,
+     "priceText": "91,300円(税抜83,000円)",
+     "priceStatus": "新価格"
     },
     {
      "sku": "LS220DN0402B",
      "capacityTB": 4,
      "url": "https://www.buffalo.jp/product/detail/ls220dn0402b.html",
-     "jan": "4981254034729"
+     "jan": "4981254034729",
+     "priceIncTax": 102300,
+     "priceExTax": 93000,
+     "priceText": "102,300円(税抜93,000円)",
+     "priceStatus": "新価格"
     },
     {
      "sku": "LS220DN0602B",
      "capacityTB": 6,
      "url": "https://www.buffalo.jp/product/detail/ls220dn0602b.html",
-     "jan": "4981254034736"
+     "jan": "4981254034736",
+     "priceIncTax": 107800,
+     "priceExTax": 98000,
+     "priceText": "107,800円(税抜98,000円)",
+     "priceStatus": "新価格"
     },
     {
      "sku": "LS220DN0802B",
      "capacityTB": 8,
      "url": "https://www.buffalo.jp/product/detail/ls220dn0802b.html",
-     "jan": "4981254057193"
+     "jan": "4981254057193",
+     "priceIncTax": 113300,
+     "priceExTax": 103000,
+     "priceText": "113,300円(税抜103,000円)",
+     "priceStatus": "新価格"
     }
    ],
    "sourceUrl": "https://www.buffalo.jp/product/detail/ls220dn0402b.html",
@@ -4634,7 +5358,7 @@
     "raid": "1/0（出荷時RAID1）",
     "warranty": "3年間"
    },
-   "lastCheckedAt": "2026-10-14T08:20:39.891Z",
+   "lastCheckedAt": "2026-10-14T08:51:54.618Z",
    "fallbackFields": []
   },
   {
@@ -4741,25 +5465,41 @@
      "sku": "LS210DN0101B",
      "capacityTB": 1,
      "url": "https://www.buffalo.jp/product/detail/ls210dn0101b.html",
-     "jan": "4981254042311"
+     "jan": "4981254042311",
+     "priceIncTax": 52800,
+     "priceExTax": 48000,
+     "priceText": "52,800円(税抜48,000円)",
+     "priceStatus": "新価格"
     },
     {
      "sku": "LS210DN0201B",
      "capacityTB": 2,
      "url": "https://www.buffalo.jp/product/detail/ls210dn0201b.html",
-     "jan": "4981254042366"
+     "jan": "4981254042366",
+     "priceIncTax": 58300,
+     "priceExTax": 53000,
+     "priceText": "58,300円(税抜53,000円)",
+     "priceStatus": "新価格"
     },
     {
      "sku": "LS210DN0301B",
      "capacityTB": 3,
      "url": "https://www.buffalo.jp/product/detail/ls210dn0301b.html",
-     "jan": "4981254042373"
+     "jan": "4981254042373",
+     "priceIncTax": 61600,
+     "priceExTax": 56000,
+     "priceText": "61,600円(税抜56,000円)",
+     "priceStatus": "新価格"
     },
     {
      "sku": "LS210DN0401B",
      "capacityTB": 4,
      "url": "https://www.buffalo.jp/product/detail/ls210dn0401b.html",
-     "jan": "4981254042380"
+     "jan": "4981254042380",
+     "priceIncTax": 63800,
+     "priceExTax": 58000,
+     "priceText": "63,800円(税抜58,000円)",
+     "priceStatus": "新価格"
     }
    ],
    "sourceUrl": "https://www.buffalo.jp/product/detail/ls210dn0201b.html",
@@ -4775,7 +5515,7 @@
     "raid": "－",
     "warranty": "3年"
    },
-   "lastCheckedAt": "2026-10-14T08:20:41.489Z",
+   "lastCheckedAt": "2026-10-14T08:52:05.127Z",
    "fallbackFields": [
     "raidModes"
    ]
