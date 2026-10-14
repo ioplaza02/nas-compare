@@ -93,7 +93,7 @@ function normalizeIO(p) {
     warrantyYears: p.warrantyYears ?? null,
     officeSize: p.officeSize || null,
     featureList: p.features || [],
-    variants: (p.variants || []).map(v => ({ sku: v.sku, capacityTB: v.capacityTB, status: v.status, url: p.sourceUrl })),
+    variants: (p.variants || []).map(v => ({ sku: v.sku, capacityTB: v.capacityTB, status: v.status, url: p.sourceUrl, priceIncTax: v.priceIncTax ?? null })),
     status: p.status,
     imageUrl: p.imageUrl,
     sourceUrl: p.sourceUrl,
@@ -392,6 +392,130 @@ function rawOr(p, key, fallback) {
   const v = p.raw?.[key];
   return esc(v != null && v !== "" ? v : (fallback ?? "—"));
 }
+// ---------------------------------------------------------------------
+// 購入検討（容量を選ぶ → 価格 → 商品ページ）
+// ---------------------------------------------------------------------
+let TABLE_SEQ = 0;
+const TABLES = {};
+const yen = n => "¥" + Number(n).toLocaleString("ja-JP");
+
+// 最初に選ばれている容量：入力された容量（指定がなければ基準機種の一番小さい容量）に一番近いもの
+function defaultVariant(p, i, targetTB) {
+  if (!p.variants.length) return null;
+  return nearestVariant(p, targetTB) || p.variants[0];
+}
+
+function capSelect(tableId, i, p, selected) {
+  if (!p.variants.length) return "—";
+  const opts = [...p.variants].sort((a, b) => a.capacityTB - b.capacityTB).map(v =>
+    `<option value="${esc(v.sku)}" ${selected && v.sku === selected.sku ? "selected" : ""}>${fmtTB(v.capacityTB)}（${esc(v.sku)}）</option>`).join("");
+  return `<select class="cap-select" data-table="${tableId}" data-col="${i}">${opts}</select>`;
+}
+
+// 価格：NASセレクターと同じく、税込を大きく・税抜を小さく表示（税抜＝税込÷1.1）
+function priceHtml(p, v, withSku = true) {
+  if (!v) return "—";
+  const sku = withSku ? `<span class="price-sku">${esc(v.sku)}</span>` : "";
+  if (v.priceIncTax) {
+    return `${sku}<span class="price">${yen(v.priceIncTax)}</span><span class="price__ex">（税抜 ${yen(Math.round(v.priceIncTax / 1.1))}）</span>`;
+  }
+  return `${sku}<span class="muted">公式サイトに価格の掲載なし</span>`;
+}
+// 販売状況：公式に書かれている表記（在庫限り・受注生産など）だけを出す。通常販売品は空欄。
+function statusText(p, v) {
+  const parts = [];
+  const st = (v && v.status) || "";
+  if (st && st !== "現行") parts.push(st);
+  if (!v && p.status && p.status !== "現行") parts.push(p.status);
+  if (!v && p.statusNote) parts.push(p.statusNote);
+  return parts.map(esc).join("<br>");
+}
+
+function variantUrl(p, v) {
+  return (v && v.url) || p.sourceUrl;
+}
+function linkHtml(p, v) {
+  const url = variantUrl(p, v);
+  if (!url) return "—";
+  return `<a class="buy-btn" href="${esc(url)}" target="_blank" rel="noopener" title="${esc(v?.sku || "")}">商品ページを開く ↗</a>`;
+}
+
+// 容量を変えたら、その列の価格とリンクを書き換える
+document.addEventListener("change", e => {
+  const sel = e.target.closest(".cap-select");
+  if (!sel) return;
+  const p = TABLES[sel.dataset.table]?.[+sel.dataset.col];
+  const v = p?.variants.find(x => x.sku === sel.value);
+  if (!p || !v) return;
+  updateBuyCells(sel.dataset.table, +sel.dataset.col, v);
+  // 基準（左端）の容量を変えたら、候補の容量もそれに一番近いものへ合わせる
+  if (+sel.dataset.col === 0) {
+    TABLES[sel.dataset.table].forEach((q, i) => {
+      if (i === 0) return;
+      const nv = nearestVariant(q, v.capacityTB);
+      if (!nv) return;
+      const s2 = document.querySelector(`.cap-select[data-table="${sel.dataset.table}"][data-col="${i}"]`);
+      if (s2) s2.value = nv.sku;
+      updateBuyCells(sel.dataset.table, i, nv);
+    });
+  }
+});
+function updateBuyCells(tableId, col, v) {
+  const p = TABLES[tableId][col];
+  const key = `${tableId}-${col}`;
+  document.querySelector(`[data-price="${key}"]`).innerHTML = priceHtml(p, v);
+  document.querySelector(`[data-link="${key}"]`).innerHTML = linkHtml(p, v);
+}
+
+// 「全容量の価格を見る」ポップアップ
+document.addEventListener("click", e => {
+  const btn = e.target.closest("[data-allprices]");
+  if (btn) {
+    const [t, c] = btn.dataset.allprices.split("-");
+    openPriceModal(TABLES[t]?.[+c]);
+    return;
+  }
+  if (e.target.closest("[data-close-modal]") || e.target.classList.contains("modal")) closePriceModal();
+});
+document.addEventListener("keydown", e => { if (e.key === "Escape") closePriceModal(); });
+
+function openPriceModal(p) {
+  if (!p) return;
+  const vs = [...p.variants].sort((a, b) => a.capacityTB - b.capacityTB);
+  // 容量によらず同じ商品ページの場合（I-O DATAなど）は、リンクボタンを1つにまとめる
+  const urls = new Set(vs.map(v => variantUrl(p, v)));
+  const singleLink = urls.size <= 1;
+  const rows = vs.map(v => `
+    <tr>
+      <td><strong>${fmtTB(v.capacityTB)}</strong></td>
+      <td>${esc(v.sku)}</td>
+      <td class="price-cell">${priceHtml(p, v, false)}</td>
+      <td class="status-cell">${statusText(p, v)}</td>
+      ${singleLink ? "" : `<td><a class="buy-btn" href="${esc(variantUrl(p, v))}" target="_blank" rel="noopener">商品ページ ↗</a></td>`}
+    </tr>`).join("");
+  let m = document.getElementById("price-modal");
+  if (!m) { m = document.createElement("div"); m.id = "price-modal"; m.className = "modal"; document.body.appendChild(m); }
+  m.innerHTML = `<div class="modal__box" role="dialog" aria-modal="true">
+      <button type="button" class="modal__close" data-close-modal aria-label="閉じる">×</button>
+      <div class="modal__head">
+        ${p.imageUrl ? `<img class="modal__img" src="${esc(p.imageUrl)}" alt="" referrerpolicy="no-referrer" onerror="this.remove()">` : ""}
+        <div>
+          <p class="modal__maker">${esc(makerLabel(p))}</p>
+          <h2 class="modal__title">${esc(p.name)}</h2>
+          ${singleLink && urls.size ? `<a class="buy-btn" href="${esc([...urls][0])}" target="_blank" rel="noopener">商品ページを開く ↗</a>` : ""}
+        </div>
+      </div>
+      <div class="modal__scroll"><table class="price-table">
+        <thead><tr><th>容量</th><th>型番</th><th>価格（税込）</th><th>備考</th>${singleLink ? "" : "<th></th>"}</tr></thead>
+        <tbody>${rows}</tbody></table></div>
+      <p class="modal__note">${p.maker === "I-O DATA"
+        ? "価格はI-O DATA公式サイト掲載のメーカー希望小売価格です。税抜価格は税込価格÷1.1で表示しています。"
+        : "B社公式サイトに価格が掲載されている場合のみ表示しています。実売価格は販売店でご確認ください。"}</p>
+    </div>`;
+  m.hidden = false;
+}
+function closePriceModal() { const m = document.getElementById("price-modal"); if (m) m.hidden = true; }
+
 // LAN欄：公式表記のうち、ポートの行（10GBASE-T・1000BASE-T など）だけを見やすく並べる
 function lanRaw(p) {
   const raw = p.raw?.lan;
@@ -408,6 +532,10 @@ const TOOL = `<span class="tool-mark" title="ツールが公式の値から判�
 // 縦にスクロールしていくと項目ごとの違いが分かるよう、基準と値が違うセルを黄色にする。
 function compareTable(cols, capTB) {
   const base = cols[0];
+  const tableId = "t" + (++TABLE_SEQ);
+  TABLES[tableId] = cols;
+  const baseCaps = base.variants.map(v => v.capacityTB).filter(c => c != null);
+  const targetTB = capTB ?? (baseCaps.length ? Math.min(...baseCaps) : null);
   const row = (label, cellFn, keyFn, cls = "") => {
     const baseKey = keyFn ? keyFn(base) : undefined;
     const tds = cols.map((p, i) => {
@@ -425,11 +553,10 @@ function compareTable(cols, capTB) {
       const sc = scorePair(base, p, capTB);
       return `<div class="score__label">${sc}%</div><div class="score__bar"><div class="score__fill" style="width:${sc}%"></div></div>`;
     })(), null, "row-score"),
-    row("近い容量の型番", (p, i) => {
-      if (i === 0) return capTB != null ? `<strong>${fmtTB(capTB)}</strong>` : `<span class="muted">容量の指定なし</span>`;
-      const nv = nearestVariant(p, capTB);
-      return nv ? `<strong>${esc(nv.sku)}</strong>（${fmtTB(nv.capacityTB)}）` : `<span class="muted">—</span>`;
-    }),
+    row("容量を選ぶ", (p, i) => capSelect(tableId, i, p, defaultVariant(p, i, targetTB)), null, "row-buy"),
+    row("型番・価格（税込）", (p, i) => `<div data-price="${tableId}-${i}">${priceHtml(p, defaultVariant(p, i, targetTB))}</div>`, null, "row-buy"),
+    row("商品ページ", (p, i) => `<div data-link="${tableId}-${i}">${linkHtml(p, defaultVariant(p, i, targetTB))}</div>
+      <button type="button" class="link-btn" data-allprices="${tableId}-${i}">全容量の価格を見る</button>`, null, "row-buy"),
     row(`要約${TOOL}`, (p, i) => i === 0 ? BASE_CELL : `<strong>${esc(exs[i].summary)}</strong>`, null, "row-summary"),
     row(`OS区分${TOOL}`, p => osLabel(p), p => p.osType + (p.osType === "Windows" ? p.windowsEdition : "")),
     row("搭載OS", p => rawOr(p, "os", p.osEdition)),
@@ -445,7 +572,7 @@ function compareTable(cols, capTB) {
     row("保証期間", p => rawOr(p, "warranty", p.warrantyYears ? `${p.warrantyYears}年` : null), p => p.warrantyYears),
     ...FEATURE_ROWS.map(f => row(f.label + TOOL, p => featText(f.get(p)), p => f.get(p).v)),
     row(`その他の特徴${TOOL}<br><small>（データ上確認できたもの）</small>`, p => esc(extraFeatures(p).join("、") || "—")),
-    row("販売状況", p => esc(p.status) + (p.statusNote ? `<br><small class="muted">${esc(p.statusNote)}</small>` : ""), p => p.status),
+    row("備考<br><small>（在庫限り等の表記）</small>", p => statusText(p, null) || `<span class="muted">—</span>`),
     row(`✓ 共通点${TOOL}`, (p, i) => i === 0 ? BASE_CELL : list(exs[i].same), null, "row-explain row-same"),
     row(`△ 違い${TOOL}`, (p, i) => i === 0 ? BASE_CELL : list(exs[i].diff), null, "row-explain row-diff"),
     row(`💡 確認ポイント${TOOL}`, (p, i) => i === 0 ? BASE_CELL : list(exs[i].memo), null, "row-explain row-memo"),

@@ -238,3 +238,35 @@ body {
   .cmp { min-width: 820px; }
   .cmp thead th { position: static; }
 }
+
+/* ---- 購入検討（容量・価格・商品ページ） ---- */
+.cmp tr.row-buy td { background: #fff8f0; }
+.cmp tr.row-buy th { color: #b3121f; }
+.cap-select { width: 100%; padding: 6px 8px; font-size: 15px; border: 1px solid var(--border-strong); border-radius: 6px; background: #fff; font-family: inherit; }
+.price-sku { display: block; font-size: 13px; color: var(--text-secondary); font-weight: 700; }
+.price { display: block; font-size: 20px; font-weight: 700; color: #111; white-space: nowrap; }
+.price__ex { display: block; font-size: 12px; color: var(--text-muted); }
+.buy-btn {
+  display: inline-block; background: #b3121f; color: #fff !important; text-decoration: none;
+  padding: 6px 12px; border-radius: 6px; font-size: 14px; font-weight: 700; margin-bottom: 6px;
+}
+.buy-btn:hover { filter: brightness(1.1); }
+.link-btn { display: block; border: none; background: none; color: var(--accent); text-decoration: underline; cursor: pointer; padding: 0; font-size: 14px; font-family: inherit; }
+
+.modal { position: fixed; inset: 0; background: rgba(0,0,0,.45); display: flex; align-items: center; justify-content: center; z-index: 300; padding: 16px; }
+.modal[hidden] { display: none; }
+.modal__box { background: #fff; border-radius: 12px; padding: 24px; width: 100%; max-width: 760px; max-height: 90vh; display: flex; flex-direction: column; position: relative; }
+.modal__close { position: absolute; top: 10px; right: 14px; border: none; background: none; font-size: 26px; cursor: pointer; line-height: 1; }
+.modal__maker { margin: 0; font-size: 14px; color: var(--text-secondary); }
+.modal__title { margin: 2px 0 12px; font-size: 20px; }
+.modal__scroll { overflow-y: auto; }
+.modal__note { font-size: 13px; color: var(--text-secondary); margin: 12px 0 0; }
+.price-table { width: 100%; border-collapse: collapse; font-size: 15px; }
+.price-table th, .price-table td { border-bottom: 1px solid var(--border); padding: 8px 6px; text-align: left; vertical-align: middle; }
+.price-table .buy-btn { margin: 0; }
+
+.modal__head { display: flex; gap: 16px; align-items: center; margin-bottom: 12px; padding-right: 24px; }
+.modal__img { width: 140px; height: 110px; object-fit: contain; background: #fff; border: 1px solid var(--border); border-radius: 8px; flex-shrink: 0; }
+.modal__head .buy-btn { margin-top: 6px; }
+.price-table .price { font-size: 18px; }
+.price-table .status-cell { min-width: 90px; color: #9c2b2b; font-weight: 700; font-size: 14px; }
