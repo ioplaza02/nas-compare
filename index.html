@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>NAS他社比較ツール（社内用）</title>
+<title>B社 NAS比較ツール（社内用）</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&display=swap" rel="stylesheet">
@@ -13,7 +13,7 @@
 
 <div class="password-gate" id="password-gate">
   <form class="password-gate__box" id="password-form">
-    <p class="password-gate__title">NAS他社比較ツール（社内用）</p>
+    <p class="password-gate__title">B社 NAS比較ツール（社内用）</p>
     <p class="password-gate__note">社内関係者限定です。パスワードを入力してください。</p>
     <div class="password-gate__field">
       <input type="password" id="password-input" class="password-gate__input" autocomplete="off">
@@ -28,22 +28,22 @@
 
 <header class="brand-banner">
   <span class="brand-banner__badge">社内営業用</span>
-  <span class="brand-banner__title">NAS 他社比較ツール</span>
+  <span class="brand-banner__title">B社 NAS 比較ツール</span>
 </header>
 
 <div class="disclaimer">
   <p>
-    お客様へご提案する前の下調べ用ツールです。他社製品の情報は各社公式サイトの仕様表から取得しています。
-    お客様へ提示する前に、必ず各カードの「出典」リンクから最新の仕様をご確認ください。
-    価格は他社が公式に掲載していないことが多いため、比較対象にしていません。
+    お客様へご提案する前の下調べ用ツールです。B社製品の情報はB社公式サイトの仕様表から取得しています。
+    お客様へ提示する前に、必ず表の「出典」行のリンクから最新の仕様をご確認ください。
+    価格はB社が公式に掲載していないことが多いため、比較対象にしていません。
   </p>
   <p class="disclaimer__updated" id="updated-at"></p>
 </div>
 
 <nav class="tabs" role="tablist">
   <button type="button" class="tabs__btn is-active" data-tab="list" role="tab">① I-O DATA商品一覧</button>
-  <button type="button" class="tabs__btn" data-tab="io2other" role="tab">② I-O DATA → 他社の近い機種</button>
-  <button type="button" class="tabs__btn" data-tab="other2io" role="tab">③ 他社型番 → I-O DATAの候補</button>
+  <button type="button" class="tabs__btn" data-tab="io2other" role="tab">② I-O DATA → B社の近い機種</button>
+  <button type="button" class="tabs__btn" data-tab="other2io" role="tab">③ B社型番 → I-O DATAの候補</button>
 </nav>
 
 <main class="main">
@@ -68,15 +68,13 @@
     <div class="io-grid" id="list-grid"></div>
   </section>
 
-  <!-- ② I-O DATA → 他社 -->
+  <!-- ② I-O DATA → B社 -->
   <section class="panel" id="panel-io2other" hidden>
     <div class="query-box">
       <label class="query-box__label" for="io-input">I-O DATA の型番（容量違いの型番でも、シリーズでもOK）</label>
       <input type="text" id="io-input" class="text-input text-input--wide" list="io-datalist" placeholder="例：HDL4-Z25SI3B16B / HDL4-Z25SI3BB" autocomplete="off">
       <datalist id="io-datalist"></datalist>
 
-      <p class="query-box__label">比べたい他社メーカー</p>
-      <div class="maker-checks" id="maker-checks"></div>
 
       <label class="check"><input type="checkbox" id="io2other-discontinued"> 在庫限り品も候補に含める</label>
 
@@ -86,13 +84,13 @@
     <div id="io2other-result"></div>
   </section>
 
-  <!-- ③ 他社 → I-O DATA -->
+  <!-- ③ B社 → I-O DATA -->
   <section class="panel" id="panel-other2io" hidden>
     <div class="query-box">
-      <label class="query-box__label" for="other-input">他社の型番（自由入力）</label>
+      <label class="query-box__label" for="other-input">B社の型番（自由入力）</label>
       <input type="text" id="other-input" class="text-input text-input--wide" list="other-datalist" placeholder="例：TS5420DN0804 / WS5420DN08W5 / TS3430RN" autocomplete="off">
       <datalist id="other-datalist"></datalist>
-      <p class="query-box__hint">現在はバッファロー製品に対応しています（Synology・QNAPは準備中）。全角・ハイフン・スペースの違いは自動で吸収します。</p>
+      <p class="query-box__hint">全角・ハイフン・スペースの違いは自動で吸収します。シリーズ名だけでも検索できます。</p>
 
       <label class="check"><input type="checkbox" id="other2io-discontinued"> 在庫限り・生産終了品も候補に含める</label>
 

@@ -30,7 +30,7 @@ body {
 
 /* ---- ヘッダー ---- */
 .brand-banner {
-  background: linear-gradient(120deg, #0b2f7a 0%, #1a56c4 55%, #2f6fe0 100%);
+  background: linear-gradient(120deg, #6e0b14 0%, #b3121f 50%, #e0323c 100%);
   padding: 20px 24px;
   display: flex; align-items: center; gap: 14px; flex-wrap: wrap;
 }
@@ -61,7 +61,7 @@ body {
   padding: 10px 18px; font-size: 15px; cursor: pointer; border-radius: 8px 8px 0 0;
   color: var(--text-secondary); white-space: nowrap; font-weight: 600;
 }
-.tabs__btn.is-active { background: var(--surface-1); color: var(--io); border-color: var(--border-strong); }
+.tabs__btn.is-active { background: var(--surface-1); color: #b3121f; border-color: var(--border-strong); }
 
 .main { padding: 20px 24px 40px; }
 
@@ -157,7 +157,7 @@ body {
 .cmp__label-col { width: 170px; }
 .cmp td { overflow-wrap: anywhere; }
 .cmp thead th { vertical-align: bottom; }
-.cmp thead th span { display: block; }
+.cmp thead th span:not(.cmp__tag):not(.badge) { display: block; }
 .cmp__img { display: block; height: 90px; max-width: 100%; object-fit: contain; margin: 0 auto 6px; background: #fff; }
 .cand__img { height: 56px; width: 80px; object-fit: contain; background: #fff; border-radius: 6px; }
 .tool-mark { color: #9a6a00; font-weight: 700; margin-left: 2px; cursor: help; }
@@ -216,4 +216,25 @@ body {
   .main, .footer { padding-left: 16px; padding-right: 16px; }
   .tabs, .disclaimer { margin-left: 16px; margin-right: 16px; }
   .score { margin-left: 0; width: 100%; }
+}
+
+/* ---- 4列比較表（縦スクロールで違いを見る） ---- */
+.cmp-wrap { overflow: visible; }
+.cmp thead th { position: sticky; top: 0; z-index: 2; box-shadow: 0 2px 0 var(--border-strong); }
+.cmp thead th.cmp__corner { background: #f3f1ec; font-size: 13px; color: var(--text-secondary); vertical-align: bottom; }
+.cmp thead th .cmp__tag { display: inline-block; width: auto; font-size: 12px; font-weight: 700; padding: 1px 8px; border-radius: 999px; background: #fff; border: 1px solid currentColor; margin-bottom: 6px; }
+.cmp__maker { font-size: 13px; }
+.cmp__name { font-size: 15px; font-weight: 700; color: var(--text-primary); }
+.cmp td.is-diff { background: var(--diff-bg); }
+.cmp tr.row-score td, .cmp tr.row-summary td { background: #f4faf7; }
+.cmp tr.row-explain td { font-size: 14px; }
+.cmp tr.row-same th { color: var(--accent); }
+.cmp tr.row-diff th { color: #9a6a00; }
+.cmp tr.row-memo th { color: var(--io); }
+.cell-list { margin: 0; padding-left: 18px; }
+.cell-list li { margin: 2px 0; }
+@media (max-width: 900px) {
+  .cmp-wrap { overflow-x: auto; }
+  .cmp { min-width: 820px; }
+  .cmp thead th { position: static; }
 }

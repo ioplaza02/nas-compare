@@ -1,8 +1,8 @@
 // =====================================================================
-// NAS 他社比較ツール（社内営業用）
+// B社 NAS比較ツール（社内営業用）
 //  ① I-O DATA商品一覧
-//  ② I-O DATAの型番 → 他社（現在はバッファロー）の近い機種
-//  ③ 他社の型番 → I-O DATAの候補
+//  ② I-O DATAの型番 → B社の近い機種
+//  ③ B社の型番 → I-O DATAの候補
 // =====================================================================
 
 // I-O DATAのデータは、既存のNASセレクター（毎日自動更新）のものをそのまま読み込む。
@@ -10,11 +10,9 @@
 // 読めなかった場合（ローカル確認時など）は、同梱のコピーを使う。
 const IO_DATA_URLS = ["../nas-selector/data/products.json", "data/iodata-products.json"];
 
-// 他社メーカーの定義。ready:false のメーカーは「準備中」として選べないようにしておく。
+// 比較相手のメーカー（画面上の表記は「B社」）
 const MAKERS = [
-  { id: "buffalo", label: "バッファロー", dataUrl: "data/buffalo-products.json", ready: true },
-  { id: "synology", label: "Synology", dataUrl: null, ready: false },
-  { id: "qnap", label: "QNAP", dataUrl: null, ready: false },
+  { id: "buffalo", label: "B社", dataUrl: "data/buffalo-products.json", ready: true },
 ];
 
 const STALE_DAYS = 40;
@@ -388,14 +386,33 @@ function rawOr(p, key, fallback) {
 const ALL_SAME = (vals) => vals.every(v => v === vals[0]);
 const TOOL = `<span class="tool-mark" title="ツールが公式の値から判定・要約した行">※</span>`;
 
-// 比較表：商品をいくつ並べても、列幅は等分（2社なら1/2、3社なら1/3…）
+// 比較表：左端が「比較の基準」、その右に候補を並べる。列幅はすべて等分。
+// 縦にスクロールしていくと項目ごとの違いが分かるよう、基準と値が違うセルを黄色にする。
 function compareTable(cols, capTB) {
-  const row = (label, cellFn, sameFn) => {
-    const cells = cols.map(cellFn);
-    const same = sameFn ? ALL_SAME(cols.map(sameFn)) : null;
-    return `<tr class="${same === false ? "is-diff" : ""}"><th>${label}</th>${cells.map(c => `<td>${c}</td>`).join("")}</tr>`;
+  const base = cols[0];
+  const row = (label, cellFn, keyFn, cls = "") => {
+    const baseKey = keyFn ? keyFn(base) : undefined;
+    const tds = cols.map((p, i) => {
+      const diff = keyFn && i > 0 && baseKey != null && keyFn(p) !== baseKey;
+      return `<td class="${diff ? "is-diff" : ""}">${cellFn(p, i)}</td>`;
+    }).join("");
+    return `<tr class="${cls}"><th>${label}</th>${tds}</tr>`;
   };
+  const exs = cols.map((p, i) => i === 0 ? null : explain(base, p, capTB));
+  const list = items => items?.length ? `<ul class="cell-list">${items.map(t => `<li>${esc(t)}</li>`).join("")}</ul>` : `<span class="muted">なし</span>`;
+  const BASE_CELL = `<span class="muted">（比較の基準）</span>`;
+
   const rows = [
+    row(`一致度${TOOL}`, (p, i) => i === 0 ? BASE_CELL : (() => {
+      const sc = scorePair(base, p, capTB);
+      return `<div class="score__label">${sc}%</div><div class="score__bar"><div class="score__fill" style="width:${sc}%"></div></div>`;
+    })(), null, "row-score"),
+    row("近い容量の型番", (p, i) => {
+      if (i === 0) return capTB != null ? `<strong>${fmtTB(capTB)}</strong>` : `<span class="muted">容量の指定なし</span>`;
+      const nv = nearestVariant(p, capTB);
+      return nv ? `<strong>${esc(nv.sku)}</strong>（${fmtTB(nv.capacityTB)}）` : `<span class="muted">—</span>`;
+    }),
+    row(`要約${TOOL}`, (p, i) => i === 0 ? BASE_CELL : `<strong>${esc(exs[i].summary)}</strong>`, null, "row-summary"),
     row(`OS区分${TOOL}`, p => osLabel(p), p => p.osType + (p.osType === "Windows" ? p.windowsEdition : "")),
     row("搭載OS", p => rawOr(p, "os", p.osEdition)),
     row("設置形態", p => rawOr(p, "install", p.install), p => p.install),
@@ -410,48 +427,25 @@ function compareTable(cols, capTB) {
     row("保証期間", p => rawOr(p, "warranty", p.warrantyYears ? `${p.warrantyYears}年` : null), p => p.warrantyYears),
     ...FEATURE_ROWS.map(f => row(f.label + TOOL, p => featText(f.get(p)), p => f.get(p).v)),
     row(`その他の特徴${TOOL}<br><small>（データ上確認できたもの）</small>`, p => esc(extraFeatures(p).join("、") || "—")),
-    row("販売状況", p => esc(p.status) + (p.statusNote ? `<br><small class="muted">${esc(p.statusNote)}</small>` : "")),
+    row("販売状況", p => esc(p.status) + (p.statusNote ? `<br><small class="muted">${esc(p.statusNote)}</small>` : ""), p => p.status),
+    row(`✓ 共通点${TOOL}`, (p, i) => i === 0 ? BASE_CELL : list(exs[i].same), null, "row-explain row-same"),
+    row(`△ 違い${TOOL}`, (p, i) => i === 0 ? BASE_CELL : list(exs[i].diff), null, "row-explain row-diff"),
+    row(`💡 確認ポイント${TOOL}`, (p, i) => i === 0 ? BASE_CELL : list(exs[i].memo), null, "row-explain row-memo"),
     row("出典", p => p.sourceUrl ? `<a href="${esc(p.sourceUrl)}" target="_blank" rel="noopener">公式ページ</a>` : "—"),
   ];
   const cls = p => p.maker === "I-O DATA" ? "io" : "bf";
-  const head = p => `
+  const head = (p, i) => `
+    <span class="cmp__tag">${i === 0 ? "比較の基準" : `候補 ${i}`}</span>
     ${p.imageUrl ? `<img class="cmp__img" src="${esc(p.imageUrl)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">` : ""}
-    <span>${esc(makerLabel(p))}：${esc(p.name)}</span>
+    <span class="cmp__maker">${esc(makerLabel(p))}</span>
+    <span class="cmp__name">${esc(p.name)}</span>
     ${p.collectedBy === "research" ? `<span class="badge badge--draft" title="公式ページを要約して作った仮データです。取得スクリプト実行後に公式表記そのままに置き換わります">仮データ</span>` : ""}`;
   return `<div class="cmp-wrap"><table class="cmp">
     <colgroup><col class="cmp__label-col">${cols.map(() => "<col>").join("")}</colgroup>
-    <thead><tr><th></th>${cols.map(p => `<th class="${cls(p)}">${head(p)}</th>`).join("")}</tr></thead>
+    <thead><tr><th class="cmp__corner">黄色＝基準と違う項目</th>${cols.map((p, i) => `<th class="${cls(p)}">${head(p, i)}</th>`).join("")}</tr></thead>
     <tbody>${rows.join("")}</tbody>
-  </table></div>`;
-}
-
-function candidateCard(src, cand, rank, capTB) {
-  const score = scorePair(src, cand, capTB);
-  const ex = explain(src, cand, capTB);
-  const nv = nearestVariant(cand, capTB);
-  const list = (items, empty) => items.length ? `<ul>${items.map(t => `<li>${esc(t)}</li>`).join("")}</ul>` : `<p class="muted" style="font-size:13px;margin:0">${empty}</p>`;
-  return `<article class="cand">
-    <div class="cand__head">
-      <span class="cand__rank">${rank}</span>
-      ${cand.imageUrl ? `<img class="cand__img" src="${esc(cand.imageUrl)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">` : ""}
-      <div>
-        <p class="cand__name">${esc(makerLabel(cand))}　${esc(cand.name)}</p>
-        <span class="cand__sku">${nv ? `近い容量の型番：<strong>${esc(nv.sku)}</strong>（${fmtTB(nv.capacityTB)}）` : `容量：${capRange(cand)}`}</span>
-      </div>
-      <div class="score">
-        <div class="score__label">一致度 ${score}%</div>
-        <div class="score__bar"><div class="score__fill" style="width:${score}%"></div></div>
-      </div>
-    </div>
-    <p class="cand__summary">${esc(ex.summary)}</p>
-    ${compareTable([src, cand], capTB)}
-    <p class="tool-note">※印の行と、下の「共通点／違い／確認ポイント」は、ツールが上の表の値を比べて自動で作った文です。それ以外のセルは各社公式ページの値です。</p>
-    <div class="explain">
-      <div class="explain__box explain__box--same"><h4>✓ 共通点</h4>${list(ex.same, "特になし")}</div>
-      <div class="explain__box explain__box--diff"><h4>△ 違い</h4>${list(ex.diff, "主な仕様に違いはありません")}</div>
-      <div class="explain__box explain__box--memo"><h4>💡 確認ポイント</h4>${list(ex.memo, "特記事項なし")}</div>
-    </div>
-  </article>`;
+  </table></div>
+  <p class="tool-note">※印の行は、ツールが公式の値を比べて自動で判定・作成した内容です。それ以外のセルは各社公式ページの値です。</p>`;
 }
 
 function rankCandidates(src, pool, capTB, n) {
@@ -543,7 +537,7 @@ function renderList() {
         <li>容量：${capRange(p)}</li>
         <li>保証：${p.warrantyYears ? p.warrantyYears + "年" : "—"}${p.officeSize ? "／" + esc(p.officeSize) : ""}</li>
       </ul>
-      <button type="button" class="io-card__btn" data-compare="${esc(p.id)}">他社の近い機種を探す →</button>
+      <button type="button" class="io-card__btn" data-compare="${esc(p.id)}">B社の近い機種と比較 →</button>
     </div>`).join("") || `<p class="empty">条件に合う商品がありません。</p>`;
   document.querySelectorAll("[data-compare]").forEach(b => b.addEventListener("click", () => {
     const p = state.io.find(x => x.id === b.dataset.compare);
@@ -554,7 +548,7 @@ function renderList() {
 }
 
 // ---------------------------------------------------------------------
-// ② I-O DATA → 他社
+// ② I-O DATA → B社
 // ---------------------------------------------------------------------
 function runIo2Other() {
   const inputEl = document.getElementById("io-input");
@@ -563,37 +557,23 @@ function runIo2Other() {
   errEl.hidden = true;
   const res = resolve(inputEl.value, state.io);
   if (res.error) { out.innerHTML = ""; return showError(errEl, res, inputEl, runIo2Other); }
-  const makers = [...document.querySelectorAll("#maker-checks input:checked")].map(i => i.value);
-  if (!makers.length) { errEl.hidden = false; errEl.textContent = "比べたいメーカーを1つ以上選んでください"; out.innerHTML = ""; return; }
   const includeOld = document.getElementById("io2other-discontinued").checked;
   const src = res.product, capTB = res.variant?.capacityTB ?? null;
+  const pool = Object.values(state.others).flat().filter(p => includeOld || p.status === "現行");
+  const top = rankCandidates(src, pool, capTB, 3);
 
-  let html = `<div class="source-head">
-    <h2>${esc(src.name)}${res.variant ? `　<small>${esc(res.variant.sku)}（${fmtTB(capTB)}）</small>` : ""}</h2>
-    <p>${osLabel(src)}／${esc(src.install)}／${src.bays ? src.bays + "ベイ" : "—"}／LAN ${lanLabel(src)}／容量 ${capRange(src)}／保証 ${src.warrantyYears ?? "—"}年</p>
-    ${!res.variant ? `<p>※容量まで指定すると（例：${esc(src.variants[0]?.sku || "")}）、同じ容量の型番も探します。</p>` : ""}
-  </div>`;
-  const tops = makers.map(mid => {
-    const pool = (state.others[mid] || []).filter(p => includeOld || p.status === "現行");
-    return rankCandidates(src, pool, capTB, 1)[0];
-  }).filter(Boolean);
-  if (tops.length >= 2) {
-    html += `<section class="maker-section"><h3>まとめ比較（各メーカーの1位）</h3>
-      <article class="cand">${compareTable([src, ...tops], capTB)}</article></section>`;
-  }
-  for (const mid of makers) {
-    const m = MAKERS.find(x => x.id === mid);
-    const pool = (state.others[mid] || []).filter(p => includeOld || p.status === "現行");
-    const top = rankCandidates(src, pool, capTB, 3);
-    html += `<section class="maker-section"><h3>${esc(m.label)} の近い機種（上位${top.length}件）</h3>
-      ${top.length ? top.map((c, i) => candidateCard(src, c, i + 1, capTB)).join("") : `<p class="empty">候補がありません。</p>`}</section>`;
-  }
-  out.innerHTML = html;
+  out.innerHTML = `<div class="source-head">
+      <h2>${esc(src.name)}${res.variant ? `　<small>${esc(res.variant.sku)}（${fmtTB(capTB)}）</small>` : ""}</h2>
+      ${!res.variant ? `<p>※容量まで指定すると（例：${esc(src.variants[0]?.sku || "")}）、同じ容量の型番も探します。</p>` : ""}
+    </div>
+    <section class="maker-section"><h3>B社の近い機種 ${top.length}件と比較</h3>
+      ${top.length ? compareTable([src, ...top], capTB) : `<p class="empty">候補がありません。</p>`}
+    </section>`;
   out.scrollIntoView({ behavior: "smooth", block: "start" });
 }
 
 // ---------------------------------------------------------------------
-// ③ 他社 → I-O DATA
+// ③ B社 → I-O DATA
 // ---------------------------------------------------------------------
 function runOther2Io() {
   const inputEl = document.getElementById("other-input");
@@ -606,16 +586,14 @@ function runOther2Io() {
   const includeOld = document.getElementById("other2io-discontinued").checked;
   const src = res.product, capTB = res.variant?.capacityTB ?? null;
   const pool = state.io.filter(p => includeOld || p.status === "現行");
-  const top = rankCandidates(src, pool, capTB, 4);
+  const top = rankCandidates(src, pool, capTB, 3);
 
   out.innerHTML = `<div class="source-head source-head--bf">
       <h2>${esc(makerLabel(src))}　${esc(src.name)}${res.variant ? `　<small>${esc(res.variant.sku)}（${fmtTB(capTB)}）</small>` : ""}</h2>
-      <p>${osLabel(src)}／${esc(src.install)}／${src.bays ? src.bays + "ベイ" : "—"}／LAN ${lanLabel(src)}／容量 ${capRange(src)}／保証 ${src.warrantyYears ?? "—"}年
-       ／<a href="${esc(src.sourceUrl)}" target="_blank" rel="noopener">出典</a></p>
       ${res.alternatives?.length ? `<p>※同じシリーズ名で別エディションもあります：${res.alternatives.map(a => esc(a.code)).join("、")}</p>` : ""}
     </div>
-    <section class="maker-section"><h3>I-O DATA の候補（上位${top.length}件）</h3>
-      ${top.map((c, i) => candidateCard(src, c, i + 1, capTB)).join("")}
+    <section class="maker-section"><h3>I-O DATA の候補 ${top.length}件と比較</h3>
+      ${compareTable([src, ...top], capTB)}
     </section>`;
   out.scrollIntoView({ behavior: "smooth", block: "start" });
 }
@@ -644,9 +622,6 @@ function setupInputs() {
   }
   document.getElementById("other-datalist").innerHTML = otherOpts.join("");
 
-  document.getElementById("maker-checks").innerHTML = MAKERS.map(m => m.ready
-    ? `<label class="check"><input type="checkbox" value="${m.id}" checked> ${esc(m.label)}</label>`
-    : `<label class="check check--disabled"><input type="checkbox" value="${m.id}" disabled> ${esc(m.label)}（準備中）</label>`).join("");
 
   document.querySelectorAll(".tabs__btn").forEach(b => b.addEventListener("click", () => switchTab(b.dataset.tab)));
   for (const id of ["list-search", "list-os", "list-install", "list-discontinued"])
