@@ -1,0 +1,8 @@
+{
+  "name": "nas-compare",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "scrape:buffalo": "node scripts/scrape-buffalo.mjs"
+  }
+}

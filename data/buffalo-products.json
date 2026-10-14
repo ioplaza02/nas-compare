@@ -1,0 +1,4127 @@
+{
+ "updatedAt": "2026-10-14T13:30:00+09:00",
+ "source": "バッファロー公式サイト（buffalo.jp）商品ページの仕様表",
+ "products": [
+  {
+   "id": "ts3230dn",
+   "maker": "BUFFALO",
+   "series": "TS3230DN",
+   "family": "TeraStation",
+   "name": "TeraStation（TS3230DNシリーズ）",
+   "osType": "Linux",
+   "osEdition": "Linuxベース独自",
+   "windowsEdition": null,
+   "install": "BOXタイプ",
+   "bays": 2,
+   "cpu": "Annapurna Labs Alpine AL524 2.0GHz/4コア 64bit",
+   "memory": "DDR4 2GB",
+   "lanText": "2.5GBASE-T×1、1000BASE-T×1（背面）",
+   "lanSpeedMax": "2.5G",
+   "lanMaxPorts": 1,
+   "usb": "USB 3.2(Gen 1)×2（背面、PC接続不可）",
+   "raidModes": [
+    "RAID 1",
+    "RAID 0"
+   ],
+   "raidType": "ソフトウェアRAID",
+   "redundantPower": false,
+   "warrantyYears": 3,
+   "warrantyText": "3年間(本体およびハードディスク)",
+   "features": {
+    "クラウドストレージ連携": {
+     "value": "対応",
+     "supported": true
+    },
+    "Active Directory連携": {
+     "value": "対応",
+     "supported": true
+    },
+    "SSDキャッシュ": {
+     "value": "非対応",
+     "supported": false
+    },
+    "Time Machine": {
+     "value": "対応",
+     "supported": true
+    },
+    "iSCSIターゲット": {
+     "value": "対応",
+     "supported": true
+    },
+    "ウイルスチェック": {
+     "value": "対応（拡張パック OP-EVシリーズ別売）",
+     "supported": true
+    },
+    "リモート監視（キキNavi）": {
+     "value": "対応",
+     "supported": true
+    },
+    "ホットスワップ": {
+     "value": "対応",
+     "supported": true
+    },
+    "ホットスペア": {
+     "value": "非対応",
+     "supported": false
+    },
+    "ドライブ暗号化": {
+     "value": "対応",
+     "supported": true
+    },
+    "Webアクセス": {
+     "value": "対応",
+     "supported": true
+    },
+    "スナップショット": {
+     "value": "非対応",
+     "supported": false
+    },
+    "不変スナップショット": {
+     "value": "非対応",
+     "supported": false
+    },
+    "メタデータ二重化": {
+     "value": "対応",
+     "supported": true
+    },
+    "レプリケーション": {
+     "value": "対応",
+     "supported": true
+    },
+    "フェイルオーバー": {
+     "value": "非対応",
+     "supported": false
+    },
+    "異常ファイル操作検知": {
+     "value": "対応（Ver.2.10以降、拡張子監視のみ）",
+     "supported": true
+    }
+   },
+   "releaseDate": "2024年10月",
+   "status": "現行",
+   "statusNote": null,
+   "variants": [
+    {
+     "sku": "TS3230DN0202",
+     "capacityTB": 2,
+     "url": "https://www.buffalo.jp/product/detail/ts3230dn0202.html",
+     "jan": "4981254072745"
+    },
+    {
+     "sku": "TS3230DN0402",
+     "capacityTB": 4,
+     "url": "https://www.buffalo.jp/product/detail/ts3230dn0402.html",
+     "jan": "4981254072738"
+    },
+    {
+     "sku": "TS3230DN0602",
+     "capacityTB": 6,
+     "url": "https://www.buffalo.jp/product/detail/ts3230dn0602.html",
+     "jan": "4981254072721"
+    },
+    {
+     "sku": "TS3230DN0802",
+     "capacityTB": 8,
+     "url": "https://www.buffalo.jp/product/detail/ts3230dn0802.html",
+     "jan": "4981254072714"
+    }
+   ],
+   "sourceUrl": "https://www.buffalo.jp/product/detail/ts3230dn0402.html",
+   "collectedBy": "research"
+  },
+  {
+   "id": "ts3430dn",
+   "maker": "BUFFALO",
+   "series": "TS3430DN",
+   "family": "TeraStation",
+   "name": "TeraStation（TS3430DNシリーズ）",
+   "osType": "Linux",
+   "osEdition": "Linuxベース独自",
+   "windowsEdition": null,
+   "install": "BOXタイプ",
+   "bays": 4,
+   "cpu": "Annapurna Labs Alpine AL524 2.0GHz/4コア 64bit",
+   "memory": "DDR4 2GB",
+   "lanText": "2.5GBASE-T×1、1000BASE-T×1（背面）",
+   "lanSpeedMax": "2.5G",
+   "lanMaxPorts": 1,
+   "usb": "USB 3.2(Gen 1)×2（背面、PC接続不可）",
+   "raidModes": [
+    "RAID 6",
+    "RAID 5",
+    "RAID 10",
+    "RAID 1",
+    "RAID 0"
+   ],
+   "raidType": "ソフトウェアRAID",
+   "redundantPower": false,
+   "warrantyYears": 3,
+   "warrantyText": "3年間(本体およびハードディスク)",
+   "features": {
+    "クラウドストレージ連携": {
+     "value": "対応",
+     "supported": true
+    },
+    "Active Directory連携": {
+     "value": "対応",
+     "supported": true
+    },
+    "SSDキャッシュ": {
+     "value": "非対応",
+     "supported": false
+    },
+    "Time Machine": {
+     "value": "対応",
+     "supported": true
+    },
+    "iSCSIターゲット": {
+     "value": "対応",
+     "supported": true
+    },
+    "ウイルスチェック": {
+     "value": "対応（拡張パック OP-EVシリーズ別売）",
+     "supported": true
+    },
+    "リモート監視（キキNavi）": {
+     "value": "対応",
+     "supported": true
+    },
+    "ホットスワップ": {
+     "value": "対応",
+     "supported": true
+    },
+    "ホットスペア": {
+     "value": "対応",
+     "supported": true
+    },
+    "ドライブ暗号化": {
+     "value": "対応",
+     "supported": true
+    },
+    "Webアクセス": {
+     "value": "対応",
+     "supported": true
+    },
+    "スナップショット": {
+     "value": "非対応",
+     "supported": false
+    },
+    "不変スナップショット": {
+     "value": "非対応",
+     "supported": false
+    },
+    "メタデータ二重化": {
+     "value": "対応",
+     "supported": true
+    },
+    "レプリケーション": {
+     "value": "対応",
+     "supported": true
+    },
+    "フェイルオーバー": {
+     "value": "非対応",
+     "supported": false
+    },
+    "異常ファイル操作検知": {
+     "value": "対応（Ver.2.10以降、拡張子監視のみ）",
+     "supported": true
+    }
+   },
+   "releaseDate": "2024年10月",
+   "status": "現行",
+   "statusNote": null,
+   "variants": [
+    {
+     "sku": "TS3430DN0404",
+     "capacityTB": 4,
+     "url": "https://www.buffalo.jp/product/detail/ts3430dn0404.html",
+     "jan": "4981254072707"
+    },
+    {
+     "sku": "TS3430DN0804",
+     "capacityTB": 8,
+     "url": "https://www.buffalo.jp/product/detail/ts3430dn0804.html",
+     "jan": "4981254072691"
+    },
+    {
+     "sku": "TS3430DN1204",
+     "capacityTB": 12,
+     "url": "https://www.buffalo.jp/product/detail/ts3430dn1204.html",
+     "jan": "4981254072684"
+    },
+    {
+     "sku": "TS3430DN1604",
+     "capacityTB": 16,
+     "url": "https://www.buffalo.jp/product/detail/ts3430dn1604.html",
+     "jan": "4981254072677"
+    },
+    {
+     "sku": "TS3430DN2404",
+     "capacityTB": 24,
+     "url": "https://www.buffalo.jp/product/detail/ts3430dn2404.html",
+     "jan": "4981254072660"
+    },
+    {
+     "sku": "TS3430DN3204",
+     "capacityTB": 32,
+     "url": "https://www.buffalo.jp/product/detail/ts3430dn3204.html",
+     "jan": "4981254072653"
+    }
+   ],
+   "sourceUrl": "https://www.buffalo.jp/product/detail/print/ts3430dn0804.html",
+   "collectedBy": "research"
+  },
+  {
+   "id": "ts3430rn",
+   "maker": "BUFFALO",
+   "series": "TS3430RN",
+   "family": "TeraStation",
+   "name": "TeraStation（TS3430RNシリーズ）",
+   "osType": "Linux",
+   "osEdition": "Linuxベース独自",
+   "windowsEdition": null,
+   "install": "ラックマウントタイプ",
+   "bays": 4,
+   "cpu": "Annapurna Labs Alpine AL524 2.0GHz/4コア 64bit",
+   "memory": "DDR4 2GB",
+   "lanText": "2.5GBASE-T×1、1000BASE-T×1（背面）",
+   "lanSpeedMax": "2.5G",
+   "lanMaxPorts": 1,
+   "usb": "USB 3.2(Gen 1)×2（背面、PC接続不可）、USB 2.0×1（前面）",
+   "raidModes": [
+    "RAID 6",
+    "RAID 5",
+    "RAID 10",
+    "RAID 1",
+    "RAID 0"
+   ],
+   "raidType": "ソフトウェアRAID",
+   "redundantPower": false,
+   "warrantyYears": 3,
+   "warrantyText": "3年間(本体およびハードディスク)",
+   "features": {
+    "クラウドストレージ連携": {
+     "value": "対応",
+     "supported": true
+    },
+    "Active Directory連携": {
+     "value": "対応",
+     "supported": true
+    },
+    "2段階認証": {
+     "value": "対応",
+     "supported": true
+    },
+    "SSDキャッシュ": {
+     "value": "非対応",
+     "supported": false
+    },
+    "Time Machine": {
+     "value": "対応",
+     "supported": true
+    },
+    "iSCSIターゲット": {
+     "value": "対応",
+     "supported": true
+    },
+    "ウイルスチェック": {
+     "value": "対応（拡張パック OP-EVシリーズ別売）",
+     "supported": true
+    },
+    "リモート監視（キキNavi）": {
+     "value": "対応（リモート設定はVer.1.74以降）",
+     "supported": true
+    },
+    "クラウドバックアップ（キキNavi）": {
+     "value": "対応",
+     "supported": true
+    },
+    "ホットスワップ": {
+     "value": "対応",
+     "supported": true
+    },
+    "ホットスペア": {
+     "value": "対応",
+     "supported": true
+    },
+    "ドライブ暗号化": {
+     "value": "対応",
+     "supported": true
+    },
+    "Webアクセス": {
+     "value": "対応",
+     "supported": true
+    },
+    "スナップショット": {
+     "value": "非対応",
+     "supported": false
+    },
+    "不変スナップショット": {
+     "value": "非対応",
+     "supported": false
+    },
+    "メタデータ二重化": {
+     "value": "対応",
+     "supported": true
+    },
+    "レプリケーション": {
+     "value": "対応",
+     "supported": true
+    },
+    "フェイルオーバー": {
+     "value": "非対応",
+     "supported": false
+    },
+    "異常ファイル操作検知": {
+     "value": "対応（Ver.2.10以降、拡張子監視のみ）",
+     "supported": true
+    }
+   },
+   "releaseDate": "2024年10月",
+   "status": "現行",
+   "statusNote": null,
+   "variants": [
+    {
+     "sku": "TS3430RN0404",
+     "capacityTB": 4,
+     "url": "https://www.buffalo.jp/product/detail/ts3430rn0404.html",
+     "jan": "4981254072615"
+    },
+    {
+     "sku": "TS3430RN0804",
+     "capacityTB": 8,
+     "url": "https://www.buffalo.jp/product/detail/ts3430rn0804.html",
+     "jan": "4981254072608"
+    },
+    {
+     "sku": "TS3430RN1204",
+     "capacityTB": 12,
+     "url": "https://www.buffalo.jp/product/detail/ts3430rn1204.html",
+     "jan": "4981254072592"
+    },
+    {
+     "sku": "TS3430RN1604",
+     "capacityTB": 16,
+     "url": "https://www.buffalo.jp/product/detail/ts3430rn1604.html",
+     "jan": "4981254072585"
+    },
+    {
+     "sku": "TS3430RN2404",
+     "capacityTB": 24,
+     "url": "https://www.buffalo.jp/product/detail/ts3430rn2404.html",
+     "jan": "4981254072578"
+    },
+    {
+     "sku": "TS3430RN3204",
+     "capacityTB": 32,
+     "url": "https://www.buffalo.jp/product/detail/ts3430rn3204.html",
+     "jan": "4981254072561"
+    }
+   ],
+   "sourceUrl": "https://www.buffalo.jp/product/detail/print/ts3430rn0804.html",
+   "collectedBy": "research"
+  },
+  {
+   "id": "ts5220dn",
+   "maker": "BUFFALO",
+   "series": "TS5220DN",
+   "family": "TeraStation",
+   "name": "TeraStation（TS5220DNシリーズ）",
+   "osType": "Linux",
+   "osEdition": "Linuxベース独自",
+   "windowsEdition": null,
+   "install": "BOXタイプ",
+   "bays": 2,
+   "cpu": "Annapurna Labs Alpine AL524 2.0GHz/4コア 64bit",
+   "memory": "DDR4 ECC 8GB",
+   "lanText": "10GBASE-T×1、1000BASE-T×2（背面）",
+   "lanSpeedMax": "10G",
+   "lanMaxPorts": 1,
+   "usb": "USB 3.2(Gen 1)×2（背面、PC接続不可）",
+   "raidModes": [
+    "RAID 1",
+    "RAID 0"
+   ],
+   "raidType": "ソフトウェアRAID",
+   "redundantPower": false,
+   "warrantyYears": 3,
+   "warrantyText": "3年間(本体およびハードディスク)",
+   "features": {
+    "クラウドストレージ連携": {
+     "value": "対応",
+     "supported": true
+    },
+    "Active Directory連携": {
+     "value": "対応",
+     "supported": true
+    },
+    "SSDキャッシュ": {
+     "value": "非対応",
+     "supported": false
+    },
+    "Time Machine": {
+     "value": "対応",
+     "supported": true
+    },
+    "iSCSIターゲット": {
+     "value": "対応",
+     "supported": true
+    },
+    "ウイルスチェック": {
+     "value": "対応（OP-EVシリーズ別売）",
+     "supported": true
+    },
+    "リモート監視（キキNavi）": {
+     "value": "対応",
+     "supported": true
+    },
+    "ホットスワップ": {
+     "value": "対応",
+     "supported": true
+    },
+    "ホットスペア": {
+     "value": "非対応",
+     "supported": false
+    },
+    "ドライブ暗号化": {
+     "value": "対応",
+     "supported": true
+    },
+    "Webアクセス": {
+     "value": "対応",
+     "supported": true
+    },
+    "スナップショット": {
+     "value": "対応",
+     "supported": true
+    },
+    "不変スナップショット": {
+     "value": "対応（Ver.2.20以降）",
+     "supported": true
+    },
+    "メタデータ二重化": {
+     "value": "対応",
+     "supported": true
+    },
+    "レプリケーション": {
+     "value": "対応",
+     "supported": true
+    },
+    "フェイルオーバー": {
+     "value": "対応",
+     "supported": true
+    },
+    "異常ファイル操作検知": {
+     "value": "対応（Ver.2.10以降）",
+     "supported": true
+    }
+   },
+   "releaseDate": "2023年4月",
+   "status": "現行",
+   "statusNote": null,
+   "variants": [
+    {
+     "sku": "TS5220DN0202",
+     "capacityTB": 2,
+     "url": "https://www.buffalo.jp/product/detail/ts5220dn0202.html",
+     "jan": "4981254067680"
+    },
+    {
+     "sku": "TS5220DN0402",
+     "capacityTB": 4,
+     "url": "https://www.buffalo.jp/product/detail/ts5220dn0402.html",
+     "jan": "4981254067673"
+    },
+    {
+     "sku": "TS5220DN0602",
+     "capacityTB": 6,
+     "url": "https://www.buffalo.jp/product/detail/ts5220dn0602.html",
+     "jan": "4981254067666"
+    },
+    {
+     "sku": "TS5220DN0802",
+     "capacityTB": 8,
+     "url": "https://www.buffalo.jp/product/detail/ts5220dn0802.html",
+     "jan": "4981254067659"
+    }
+   ],
+   "sourceUrl": "https://www.buffalo.jp/product/detail/ts5220dn0402.html",
+   "collectedBy": "research"
+  },
+  {
+   "id": "ts5220df",
+   "maker": "BUFFALO",
+   "series": "TS5220DF",
+   "family": "TeraStation",
+   "name": "TeraStation（TS5220DFシリーズ）",
+   "osType": "Linux",
+   "osEdition": "Linuxベース独自",
+   "windowsEdition": null,
+   "install": "BOXタイプ",
+   "bays": 2,
+   "cpu": "Annapurna Labs Alpine AL524 2.0GHz/4コア 64bit",
+   "memory": "DDR4 ECC 8GB",
+   "lanText": "10GBASE-T×1、1000BASE-T×2（背面）",
+   "lanSpeedMax": "10G",
+   "lanMaxPorts": 1,
+   "usb": "USB 3.2(Gen 1)×2（背面、PC接続不可）",
+   "raidModes": [
+    "RAID 1",
+    "RAID 0"
+   ],
+   "raidType": "ソフトウェアRAID",
+   "redundantPower": false,
+   "warrantyYears": 3,
+   "warrantyText": "3年間(本体およびSSD)",
+   "features": {
+    "クラウドストレージ連携": {
+     "value": "対応",
+     "supported": true
+    },
+    "Active Directory連携": {
+     "value": "対応",
+     "supported": true
+    },
+    "SSDキャッシュ": {
+     "value": "非対応",
+     "supported": false
+    },
+    "Time Machine": {
+     "value": "対応",
+     "supported": true
+    },
+    "iSCSIターゲット": {
+     "value": "対応",
+     "supported": true
+    },
+    "ウイルスチェック": {
+     "value": "対応（OP-EVシリーズ別売）",
+     "supported": true
+    },
+    "リモート監視（キキNavi）": {
+     "value": "対応",
+     "supported": true
+    },
+    "ホットスワップ": {
+     "value": "対応",
+     "supported": true
+    },
+    "ホットスペア": {
+     "value": "非対応",
+     "supported": false
+    },
+    "ドライブ暗号化": {
+     "value": "対応",
+     "supported": true
+    },
+    "Webアクセス": {
+     "value": "対応",
+     "supported": true
+    },
+    "スナップショット": {
+     "value": "対応",
+     "supported": true
+    },
+    "不変スナップショット": {
+     "value": "対応（Ver.2.20以降）",
+     "supported": true
+    },
+    "メタデータ二重化": {
+     "value": "対応",
+     "supported": true
+    },
+    "レプリケーション": {
+     "value": "対応",
+     "supported": true
+    },
+    "フェイルオーバー": {
+     "value": "対応",
+     "supported": true
+    },
+    "異常ファイル操作検知": {
+     "value": "対応（Ver.2.10以降）",
+     "supported": true
+    }
+   },
+   "releaseDate": "2023年5月",
+   "status": "在庫限り",
+   "statusNote": "在庫限り（ページに「この商品は現在、在庫を限定しております」、対応検索一覧ではTS5220DF0202に在庫限り表記）",
+   "variants": [
+    {
+     "sku": "TS5220DF00502",
+     "capacityTB": 0.512,
+     "url": "https://www.buffalo.jp/product/detail/ts5220df00502.html",
+     "jan": "4981254067703"
+    },
+    {
+     "sku": "TS5220DF0202",
+     "capacityTB": 2,
+     "url": "https://www.buffalo.jp/product/detail/ts5220df0202.html",
+     "jan": "4981254067697"
+    }
+   ],
+   "sourceUrl": "https://www.buffalo.jp/product/detail/ts5220df00502.html",
+   "collectedBy": "research"
+  },
+  {
+   "id": "ts5420dn",
+   "maker": "BUFFALO",
+   "series": "TS5420DN",
+   "family": "TeraStation",
+   "name": "TeraStation（TS5420DNシリーズ）",
+   "osType": "Linux",
+   "osEdition": "Linuxベース独自",
+   "windowsEdition": null,
+   "install": "BOXタイプ",
+   "bays": 4,
+   "cpu": "Annapurna Labs Alpine AL524 2.0GHz/4コア 64bit",
+   "memory": "DDR4 ECC 8GB",
+   "lanText": "10GBASE-T×1、1000BASE-T×2（背面）",
+   "lanSpeedMax": "10G",
+   "lanMaxPorts": 1,
+   "usb": "USB 3.2(Gen 1)×2（背面、PC接続不可）",
+   "raidModes": [
+    "RAID 6",
+    "RAID 5",
+    "RAID 10",
+    "RAID 1",
+    "RAID 0"
+   ],
+   "raidType": "ソフトウェアRAID",
+   "redundantPower": false,
+   "warrantyYears": 3,
+   "warrantyText": "3年間(本体およびハードディスク)",
+   "features": {
+    "クラウドストレージ連携": {
+     "value": "対応",
+     "supported": true
+    },
+    "Active Directory連携": {
+     "value": "対応",
+     "supported": true
+    },
+    "SSDキャッシュ": {
+     "value": "非対応",
+     "supported": false
+    },
+    "Time Machine": {
+     "value": "対応",
+     "supported": true
+    },
+    "iSCSIターゲット": {
+     "value": "対応",
+     "supported": true
+    },
+    "ウイルスチェック": {
+     "value": "別売オプション（OP-EVシリーズ）で対応",
+     "supported": true
+    },
+    "リモート監視（キキNavi）": {
+     "value": "対応",
+     "supported": true
+    },
+    "ホットスワップ": {
+     "value": "対応",
+     "supported": true
+    },
+    "ホットスペア": {
+     "value": "対応",
+     "supported": true
+    },
+    "ドライブ暗号化": {
+     "value": "対応",
+     "supported": true
+    },
+    "Webアクセス": {
+     "value": "対応",
+     "supported": true
+    },
+    "スナップショット": {
+     "value": "対応",
+     "supported": true
+    },
+    "不変スナップショット": {
+     "value": "対応（Ver.2.20以降）",
+     "supported": true
+    },
+    "メタデータ二重化": {
+     "value": "対応",
+     "supported": true
+    },
+    "レプリケーション": {
+     "value": "対応",
+     "supported": true
+    },
+    "フェイルオーバー": {
+     "value": "対応",
+     "supported": true
+    },
+    "異常ファイル操作検知": {
+     "value": "対応（Ver.2.10以降）",
+     "supported": true
+    }
+   },
+   "releaseDate": "2023年4月",
+   "status": "現行",
+   "statusNote": "現行（TS5420DN8004は受注生産）",
+   "variants": [
+    {
+     "sku": "TS5420DN0404",
+     "capacityTB": 4,
+     "url": "https://www.buffalo.jp/product/detail/ts5420dn0404.html",
+     "jan": "4981254067871"
+    },
+    {
+     "sku": "TS5420DN0804",
+     "capacityTB": 8,
+     "url": "https://www.buffalo.jp/product/detail/ts5420dn0804.html",
+     "jan": "4981254067857"
+    },
+    {
+     "sku": "TS5420DN1204",
+     "capacityTB": 12,
+     "url": "https://www.buffalo.jp/product/detail/ts5420dn1204.html",
+     "jan": "4981254067826"
+    },
+    {
+     "sku": "TS5420DN1604",
+     "capacityTB": 16,
+     "url": "https://www.buffalo.jp/product/detail/ts5420dn1604.html",
+     "jan": "4981254067796"
+    },
+    {
+     "sku": "TS5420DN2404",
+     "capacityTB": 24,
+     "url": "https://www.buffalo.jp/product/detail/ts5420dn2404.html",
+     "jan": "4981254067789"
+    },
+    {
+     "sku": "TS5420DN3204",
+     "capacityTB": 32,
+     "url": "https://www.buffalo.jp/product/detail/ts5420dn3204.html",
+     "jan": "4981254067741"
+    },
+    {
+     "sku": "TS5420DN4804",
+     "capacityTB": 48,
+     "url": "https://www.buffalo.jp/product/detail/ts5420dn4804.html",
+     "jan": "4981254067734"
+    },
+    {
+     "sku": "TS5420DN6404",
+     "capacityTB": 64,
+     "url": "https://www.buffalo.jp/product/detail/ts5420dn6404.html",
+     "jan": "4981254067727"
+    },
+    {
+     "sku": "TS5420DN8004",
+     "capacityTB": 80,
+     "url": "https://www.buffalo.jp/product/detail/ts5420dn8004.html",
+     "jan": "4981254067710"
+    }
+   ],
+   "sourceUrl": "https://www.buffalo.jp/product/detail/print/ts5420dn0804.html",
+   "collectedBy": "research"
+  },
+  {
+   "id": "ts5420rn",
+   "maker": "BUFFALO",
+   "series": "TS5420RN",
+   "family": "TeraStation",
+   "name": "TeraStation（TS5420RNシリーズ）",
+   "osType": "Linux",
+   "osEdition": "Linuxベース独自",
+   "windowsEdition": null,
+   "install": "ラックマウントタイプ",
+   "bays": 4,
+   "cpu": "Annapurna Labs Alpine AL524 2.0GHz/4コア 64bit",
+   "memory": "DDR4 ECC 8GB",
+   "lanText": "10GBASE-T×1、1000BASE-T×2（背面）",
+   "lanSpeedMax": "10G",
+   "lanMaxPorts": 1,
+   "usb": "USB 3.2(Gen 1)×3（前面×1、背面×2、PC接続不可）",
+   "raidModes": [
+    "RAID 6",
+    "RAID 5",
+    "RAID 10",
+    "RAID 1",
+    "RAID 0"
+   ],
+   "raidType": "ソフトウェアRAID",
+   "redundantPower": false,
+   "warrantyYears": 3,
+   "warrantyText": "3年間(本体およびハードディスク)",
+   "features": {
+    "クラウドストレージ連携": {
+     "value": "対応",
+     "supported": true
+    },
+    "Active Directory連携": {
+     "value": "対応",
+     "supported": true
+    },
+    "SSDキャッシュ": {
+     "value": "非対応",
+     "supported": false
+    },
+    "Time Machine": {
+     "value": "対応",
+     "supported": true
+    },
+    "iSCSIターゲット": {
+     "value": "対応",
+     "supported": true
+    },
+    "ウイルスチェック": {
+     "value": "別売オプション（OP-EVシリーズ）で対応",
+     "supported": true
+    },
+    "リモート監視（キキNavi）": {
+     "value": "対応",
+     "supported": true
+    },
+    "ホットスワップ": {
+     "value": "対応",
+     "supported": true
+    },
+    "ホットスペア": {
+     "value": "対応",
+     "supported": true
+    },
+    "ドライブ暗号化": {
+     "value": "対応",
+     "supported": true
+    },
+    "Webアクセス": {
+     "value": "対応",
+     "supported": true
+    },
+    "スナップショット": {
+     "value": "対応",
+     "supported": true
+    },
+    "不変スナップショット": {
+     "value": "対応（Ver.2.20以降）",
+     "supported": true
+    },
+    "メタデータ二重化": {
+     "value": "対応",
+     "supported": true
+    },
+    "レプリケーション": {
+     "value": "対応",
+     "supported": true
+    },
+    "フェイルオーバー": {
+     "value": "対応",
+     "supported": true
+    },
+    "異常ファイル操作検知": {
+     "value": "対応（Ver.2.10以降）",
+     "supported": true
+    }
+   },
+   "releaseDate": "2023年4月",
+   "status": "現行",
+   "statusNote": "現行（TS5420RN8004は受注生産）",
+   "variants": [
+    {
+     "sku": "TS5420RN0404",
+     "capacityTB": 4,
+     "url": "https://www.buffalo.jp/product/detail/ts5420rn0404.html",
+     "jan": "4981254068250"
+    },
+    {
+     "sku": "TS5420RN0804",
+     "capacityTB": 8,
+     "url": "https://www.buffalo.jp/product/detail/ts5420rn0804.html",
+     "jan": "4981254068236"
+    },
+    {
+     "sku": "TS5420RN1204",
+     "capacityTB": 12,
+     "url": "https://www.buffalo.jp/product/detail/ts5420rn1204.html",
+     "jan": "4981254068205"
+    },
+    {
+     "sku": "TS5420RN1604",
+     "capacityTB": 16,
+     "url": "https://www.buffalo.jp/product/detail/ts5420rn1604.html",
+     "jan": "4981254068182"
+    },
+    {
+     "sku": "TS5420RN2404",
+     "capacityTB": 24,
+     "url": "https://www.buffalo.jp/product/detail/ts5420rn2404.html",
+     "jan": "4981254068168"
+    },
+    {
+     "sku": "TS5420RN3204",
+     "capacityTB": 32,
+     "url": "https://www.buffalo.jp/product/detail/ts5420rn3204.html",
+     "jan": "4981254068151"
+    },
+    {
+     "sku": "TS5420RN4804",
+     "capacityTB": 48,
+     "url": "https://www.buffalo.jp/product/detail/ts5420rn4804.html",
+     "jan": "4981254068144"
+    },
+    {
+     "sku": "TS5420RN6404",
+     "capacityTB": 64,
+     "url": "https://www.buffalo.jp/product/detail/ts5420rn6404.html",
+     "jan": "4981254068137"
+    },
+    {
+     "sku": "TS5420RN8004",
+     "capacityTB": 80,
+     "url": "https://www.buffalo.jp/product/detail/ts5420rn8004.html",
+     "jan": "4981254068113"
+    }
+   ],
+   "sourceUrl": "https://www.buffalo.jp/product/detail/ts5420rn0804.html",
+   "collectedBy": "research"
+  },
+  {
+   "id": "ts5620dn",
+   "maker": "BUFFALO",
+   "series": "TS5620DN",
+   "family": "TeraStation",
+   "name": "TeraStation（TS5620DNシリーズ）",
+   "osType": "Linux",
+   "osEdition": "Linuxベース独自",
+   "windowsEdition": null,
+   "install": "BOXタイプ",
+   "bays": 6,
+   "cpu": "Annapurna Labs Alpine AL524 2.0GHz/4コア 64bit",
+   "memory": "DDR4 ECC 8GB",
+   "lanText": "10GBASE-T×1、1000BASE-T×2（背面）",
+   "lanSpeedMax": "10G",
+   "lanMaxPorts": 1,
+   "usb": "USB 3.2(Gen 1)×3（前面×1、背面×2、PC接続不可）",
+   "raidModes": [
+    "RAID 6",
+    "RAID 5",
+    "RAID 10",
+    "RAID 1",
+    "RAID 0"
+   ],
+   "raidType": "ソフトウェアRAID",
+   "redundantPower": false,
+   "warrantyYears": 3,
+   "warrantyText": "3年間(本体およびハードディスク)",
+   "features": {
+    "クラウドストレージ連携": {
+     "value": "対応",
+     "supported": true
+    },
+    "Active Directory連携": {
+     "value": "対応",
+     "supported": true
+    },
+    "SSDキャッシュ": {
+     "value": "非対応",
+     "supported": false
+    },
+    "Time Machine": {
+     "value": "対応",
+     "supported": true
+    },
+    "iSCSIターゲット": {
+     "value": "対応",
+     "supported": true
+    },
+    "ウイルスチェック": {
+     "value": "別売オプション（OP-EVシリーズ）で対応",
+     "supported": true
+    },
+    "リモート監視（キキNavi）": {
+     "value": "対応",
+     "supported": true
+    },
+    "ホットスワップ": {
+     "value": "対応",
+     "supported": true
+    },
+    "ホットスペア": {
+     "value": "対応",
+     "supported": true
+    },
+    "ドライブ暗号化": {
+     "value": "対応",
+     "supported": true
+    },
+    "Webアクセス": {
+     "value": "対応",
+     "supported": true
+    },
+    "スナップショット": {
+     "value": "対応",
+     "supported": true
+    },
+    "不変スナップショット": {
+     "value": "対応（Ver.2.20以降）",
+     "supported": true
+    },
+    "メタデータ二重化": {
+     "value": "対応",
+     "supported": true
+    },
+    "レプリケーション": {
+     "value": "対応",
+     "supported": true
+    },
+    "フェイルオーバー": {
+     "value": "対応",
+     "supported": true
+    },
+    "異常ファイル操作検知": {
+     "value": "対応（Ver.2.10以降）",
+     "supported": true
+    }
+   },
+   "releaseDate": "2023年4月",
+   "status": "現行",
+   "statusNote": "現行（TS5620DN12006は受注生産）",
+   "variants": [
+    {
+     "sku": "TS5620DN1806",
+     "capacityTB": 18,
+     "url": "https://www.buffalo.jp/product/detail/ts5620dn1806.html",
+     "jan": "4981254068502"
+    },
+    {
+     "sku": "TS5620DN2406",
+     "capacityTB": 24,
+     "url": "https://www.buffalo.jp/product/detail/ts5620dn2406.html",
+     "jan": "4981254068496"
+    },
+    {
+     "sku": "TS5620DN3606",
+     "capacityTB": 36,
+     "url": "https://www.buffalo.jp/product/detail/ts5620dn3606.html",
+     "jan": "4981254068489"
+    },
+    {
+     "sku": "TS5620DN7206",
+     "capacityTB": 72,
+     "url": "https://www.buffalo.jp/product/detail/ts5620dn7206.html",
+     "jan": "4981254068458"
+    },
+    {
+     "sku": "TS5620DN9606",
+     "capacityTB": 96,
+     "url": "https://www.buffalo.jp/product/detail/ts5620dn9606.html",
+     "jan": "4981254068434"
+    },
+    {
+     "sku": "TS5620DN12006",
+     "capacityTB": 120,
+     "url": "https://www.buffalo.jp/product/detail/ts5620dn12006.html",
+     "jan": "4981254068403"
+    }
+   ],
+   "sourceUrl": "https://www.buffalo.jp/product/detail/ts5620dn2406.html",
+   "collectedBy": "research"
+  },
+  {
+   "id": "ts5820dn",
+   "maker": "BUFFALO",
+   "series": "TS5820DN",
+   "family": "TeraStation",
+   "name": "TeraStation（TS5820DNシリーズ）",
+   "osType": "Linux",
+   "osEdition": "Linuxベース独自",
+   "windowsEdition": null,
+   "install": "BOXタイプ",
+   "bays": 8,
+   "cpu": "Annapurna Labs Alpine AL524 2.0GHz/4コア 64bit",
+   "memory": "DDR4 ECC 8GB",
+   "lanText": "10GBASE-T×1、1000BASE-T×2（背面）",
+   "lanSpeedMax": "10G",
+   "lanMaxPorts": 1,
+   "usb": "USB 3.2(Gen 1)×3（前面×1、背面×2、PC接続不可）",
+   "raidModes": [
+    "RAID 6",
+    "RAID 5",
+    "RAID 10",
+    "RAID 1",
+    "RAID 0"
+   ],
+   "raidType": "ソフトウェアRAID",
+   "redundantPower": false,
+   "warrantyYears": 3,
+   "warrantyText": "3年間(本体およびハードディスク)",
+   "features": {
+    "クラウドストレージ連携": {
+     "value": "対応",
+     "supported": true
+    },
+    "Active Directory連携": {
+     "value": "対応",
+     "supported": true
+    },
+    "SSDキャッシュ": {
+     "value": "非対応",
+     "supported": false
+    },
+    "Time Machine": {
+     "value": "対応",
+     "supported": true
+    },
+    "iSCSIターゲット": {
+     "value": "対応",
+     "supported": true
+    },
+    "ウイルスチェック": {
+     "value": "別売オプション（OP-EVシリーズ）で対応",
+     "supported": true
+    },
+    "リモート監視（キキNavi）": {
+     "value": "対応",
+     "supported": true
+    },
+    "ホットスワップ": {
+     "value": "対応",
+     "supported": true
+    },
+    "ホットスペア": {
+     "value": "対応",
+     "supported": true
+    },
+    "ドライブ暗号化": {
+     "value": "対応",
+     "supported": true
+    },
+    "Webアクセス": {
+     "value": "対応",
+     "supported": true
+    },
+    "スナップショット": {
+     "value": "対応",
+     "supported": true
+    },
+    "不変スナップショット": {
+     "value": "対応（Ver.2.20以降）",
+     "supported": true
+    },
+    "メタデータ二重化": {
+     "value": "対応",
+     "supported": true
+    },
+    "レプリケーション": {
+     "value": "対応",
+     "supported": true
+    },
+    "フェイルオーバー": {
+     "value": "対応",
+     "supported": true
+    },
+    "異常ファイル操作検知": {
+     "value": "対応（Ver.2.10以降）",
+     "supported": true
+    }
+   },
+   "releaseDate": "2023年6月",
+   "status": "現行",
+   "statusNote": "現行（TS5820DN16008は受注生産）",
+   "variants": [
+    {
+     "sku": "TS5820DN3208",
+     "capacityTB": 32,
+     "url": "https://www.buffalo.jp/product/detail/ts5820dn3208.html",
+     "jan": "4981254068663"
+    },
+    {
+     "sku": "TS5820DN4808",
+     "capacityTB": 48,
+     "url": "https://www.buffalo.jp/product/detail/ts5820dn4808.html",
+     "jan": "4981254068656"
+    },
+    {
+     "sku": "TS5820DN6408",
+     "capacityTB": 64,
+     "url": "https://www.buffalo.jp/product/detail/ts5820dn6408.html",
+     "jan": "4981254068649"
+    },
+    {
+     "sku": "TS5820DN9608",
+     "capacityTB": 96,
+     "url": "https://www.buffalo.jp/product/detail/ts5820dn9608.html",
+     "jan": "4981254068632"
+    },
+    {
+     "sku": "TS5820DN12808",
+     "capacityTB": 128,
+     "url": "https://www.buffalo.jp/product/detail/ts5820dn12808.html",
+     "jan": "4981254068540"
+    },
+    {
+     "sku": "TS5820DN16008",
+     "capacityTB": 160,
+     "url": "https://www.buffalo.jp/product/detail/ts5820dn16008.html",
+     "jan": "4981254068519"
+    }
+   ],
+   "sourceUrl": "https://www.buffalo.jp/product/detail/ts5820dn4808.html",
+   "collectedBy": "research"
+  },
+  {
+   "id": "ts51220rh",
+   "maker": "BUFFALO",
+   "series": "TS51220RH",
+   "family": "TeraStation",
+   "name": "TeraStation（TS51220RHシリーズ）",
+   "osType": "Linux",
+   "osEdition": "Linuxベース独自",
+   "windowsEdition": null,
+   "install": "ラックマウントタイプ",
+   "bays": 12,
+   "cpu": "Annapurna Labs Alpine V2 AL524 2.0GHz/4コア",
+   "memory": "DDR4 ECC 16GB",
+   "lanText": "10GBASE-T×2、1000BASE-T×2（背面）",
+   "lanSpeedMax": "10G",
+   "lanMaxPorts": 2,
+   "usb": "USB 3.2(Gen 1)×2（背面）、USB 2.0×2（前面）",
+   "raidModes": [
+    "RAID 6",
+    "RAID 5",
+    "RAID 10",
+    "RAID 1",
+    "RAID 0"
+   ],
+   "raidType": "ソフトウェアRAID",
+   "redundantPower": true,
+   "warrantyYears": 3,
+   "warrantyText": "3年間(本体およびハードディスク)",
+   "features": {
+    "クラウドストレージ連携": {
+     "value": "対応",
+     "supported": true
+    },
+    "Active Directory連携": {
+     "value": "対応",
+     "supported": true
+    },
+    "SSDキャッシュ": {
+     "value": "対応（別売OP-NVSSD必要、FW Ver.1.68以降）",
+     "supported": true
+    },
+    "Time Machine": {
+     "value": "対応",
+     "supported": true
+    },
+    "iSCSIターゲット": {
+     "value": "対応",
+     "supported": true
+    },
+    "ウイルスチェック": {
+     "value": "対応（OP-EVシリーズ別売）",
+     "supported": true
+    },
+    "リモート監視（キキNavi）": {
+     "value": "対応",
+     "supported": true
+    },
+    "ホットスワップ": {
+     "value": "対応",
+     "supported": true
+    },
+    "ホットスペア": {
+     "value": "対応",
+     "supported": true
+    },
+    "ドライブ暗号化": {
+     "value": "対応",
+     "supported": true
+    },
+    "Webアクセス": {
+     "value": "対応",
+     "supported": true
+    },
+    "スナップショット": {
+     "value": "対応",
+     "supported": true
+    },
+    "不変スナップショット": {
+     "value": "対応（Ver.2.20以降）",
+     "supported": true
+    },
+    "メタデータ二重化": {
+     "value": "対応",
+     "supported": true
+    },
+    "レプリケーション": {
+     "value": "対応",
+     "supported": true
+    },
+    "フェイルオーバー": {
+     "value": "対応",
+     "supported": true
+    },
+    "異常ファイル操作検知": {
+     "value": "対応（Ver.2.10以降）",
+     "supported": true
+    }
+   },
+   "releaseDate": "2023年3月",
+   "status": "現行",
+   "statusNote": "現行（4804/6404/8004/14412/19212/24012は受注生産。2412と0804は対応検索一覧に無く販売終了の可能性）",
+   "variants": [
+    {
+     "sku": "TS51220RH0804",
+     "capacityTB": 8,
+     "url": "https://www.buffalo.jp/product/detail/ts51220rh0804.html",
+     "jan": null
+    },
+    {
+     "sku": "TS51220RH1604",
+     "capacityTB": 16,
+     "url": "https://www.buffalo.jp/product/detail/ts51220rh1604.html",
+     "jan": null
+    },
+    {
+     "sku": "TS51220RH2412",
+     "capacityTB": 24,
+     "url": "https://www.buffalo.jp/product/detail/ts51220rh2412.html",
+     "jan": null
+    },
+    {
+     "sku": "TS51220RH3204",
+     "capacityTB": 32,
+     "url": "https://www.buffalo.jp/product/detail/ts51220rh3204.html",
+     "jan": "4981254065686"
+    },
+    {
+     "sku": "TS51220RH4004",
+     "capacityTB": 40,
+     "url": "https://www.buffalo.jp/product/detail/ts51220rh4004.html",
+     "jan": null
+    },
+    {
+     "sku": "TS51220RH4812",
+     "capacityTB": 48,
+     "url": "https://www.buffalo.jp/product/detail/ts51220rh4812.html",
+     "jan": null
+    },
+    {
+     "sku": "TS51220RH4804",
+     "capacityTB": 48,
+     "url": "https://www.buffalo.jp/product/detail/ts51220rh4804.html",
+     "jan": null
+    },
+    {
+     "sku": "TS51220RH6404",
+     "capacityTB": 64,
+     "url": "https://www.buffalo.jp/product/detail/ts51220rh6404.html",
+     "jan": null
+    },
+    {
+     "sku": "TS51220RH8004",
+     "capacityTB": 80,
+     "url": "https://www.buffalo.jp/product/detail/ts51220rh8004.html",
+     "jan": null
+    },
+    {
+     "sku": "TS51220RH9612",
+     "capacityTB": 96,
+     "url": "https://www.buffalo.jp/product/detail/ts51220rh9612.html",
+     "jan": null
+    },
+    {
+     "sku": "TS51220RH12012",
+     "capacityTB": 120,
+     "url": "https://www.buffalo.jp/product/detail/ts51220rh12012.html",
+     "jan": null
+    },
+    {
+     "sku": "TS51220RH14412",
+     "capacityTB": 144,
+     "url": "https://www.buffalo.jp/product/detail/ts51220rh14412.html",
+     "jan": null
+    },
+    {
+     "sku": "TS51220RH19212",
+     "capacityTB": 192,
+     "url": "https://www.buffalo.jp/product/detail/ts51220rh19212.html",
+     "jan": null
+    },
+    {
+     "sku": "TS51220RH24012",
+     "capacityTB": 240,
+     "url": "https://www.buffalo.jp/product/detail/ts51220rh24012.html",
+     "jan": null
+    }
+   ],
+   "sourceUrl": "https://www.buffalo.jp/product/detail/ts51220rh3204.html",
+   "collectedBy": "research"
+  },
+  {
+   "id": "ts71210rh",
+   "maker": "BUFFALO",
+   "series": "TS71210RH",
+   "family": "TeraStation",
+   "name": "TeraStation（TS71210RHシリーズ）",
+   "osType": "Linux",
+   "osEdition": "Linuxベース独自",
+   "windowsEdition": null,
+   "install": "ラックマウントタイプ",
+   "bays": 12,
+   "cpu": "Intel Xeon D-1713NT 2.2GHz（最大2.9GHz）/4コア",
+   "memory": "DDR4 ECC 16GB（最大64GB、16GB×4スロット）",
+   "lanText": "10GBASE-T×4（背面）",
+   "lanSpeedMax": "10G",
+   "lanMaxPorts": 4,
+   "usb": "USB 3.2(Gen 1)×2（背面）、USB 2.0×2（前面）",
+   "raidModes": [
+    "RAID 6",
+    "RAID 5",
+    "RAID 10",
+    "RAID 1",
+    "RAID 0"
+   ],
+   "raidType": "ソフトウェアRAID",
+   "redundantPower": true,
+   "warrantyYears": 3,
+   "warrantyText": "3年間(本体およびハードディスク)",
+   "features": {
+    "クラウドストレージ連携": {
+     "value": "対応",
+     "supported": true
+    },
+    "Active Directory連携": {
+     "value": "対応",
+     "supported": true
+    },
+    "SSDキャッシュ": {
+     "value": "対応（ファイル共有・iSCSI、別売OP-NVSSD必要）",
+     "supported": true
+    },
+    "Time Machine": {
+     "value": "対応",
+     "supported": true
+    },
+    "iSCSIターゲット": {
+     "value": "対応",
+     "supported": true
+    },
+    "ウイルスチェック": {
+     "value": "別売オプション（OP-EVシリーズ）で対応",
+     "supported": true
+    },
+    "リモート監視（キキNavi）": {
+     "value": "対応",
+     "supported": true
+    },
+    "ホットスワップ": {
+     "value": "対応",
+     "supported": true
+    },
+    "ホットスペア": {
+     "value": "対応",
+     "supported": true
+    },
+    "ドライブ暗号化": {
+     "value": "対応",
+     "supported": true
+    },
+    "Webアクセス": {
+     "value": "対応",
+     "supported": true
+    },
+    "スナップショット": {
+     "value": "対応",
+     "supported": true
+    },
+    "不変スナップショット": {
+     "value": "対応（Ver.2.00以降）",
+     "supported": true
+    },
+    "メタデータ二重化": {
+     "value": "対応",
+     "supported": true
+    },
+    "レプリケーション": {
+     "value": "対応",
+     "supported": true
+    },
+    "フェイルオーバー": {
+     "value": "対応（Ver.1.20以降）",
+     "supported": true
+    },
+    "異常ファイル操作検知": {
+     "value": "対応（Ver.1.42以降）",
+     "supported": true
+    }
+   },
+   "releaseDate": "2023年7月",
+   "status": "現行",
+   "statusNote": "現行（4804/6404/8004/14412/19212/24012は受注生産。4804は一覧によって新価格表記もあり）",
+   "variants": [
+    {
+     "sku": "TS71210RH1604",
+     "capacityTB": 16,
+     "url": "https://www.buffalo.jp/product/detail/ts71210rh1604.html",
+     "jan": null
+    },
+    {
+     "sku": "TS71210RH3204",
+     "capacityTB": 32,
+     "url": "https://www.buffalo.jp/product/detail/ts71210rh3204.html",
+     "jan": "4981254067048"
+    },
+    {
+     "sku": "TS71210RH4004",
+     "capacityTB": 40,
+     "url": "https://www.buffalo.jp/product/detail/ts71210rh4004.html",
+     "jan": null
+    },
+    {
+     "sku": "TS71210RH4812",
+     "capacityTB": 48,
+     "url": "https://www.buffalo.jp/product/detail/ts71210rh4812.html",
+     "jan": "4981254066980"
+    },
+    {
+     "sku": "TS71210RH4804",
+     "capacityTB": 48,
+     "url": "https://www.buffalo.jp/product/detail/ts71210rh4804.html",
+     "jan": null
+    },
+    {
+     "sku": "TS71210RH6404",
+     "capacityTB": 64,
+     "url": "https://www.buffalo.jp/product/detail/ts71210rh6404.html",
+     "jan": null
+    },
+    {
+     "sku": "TS71210RH8004",
+     "capacityTB": 80,
+     "url": "https://www.buffalo.jp/product/detail/ts71210rh8004.html",
+     "jan": "4981254066997"
+    },
+    {
+     "sku": "TS71210RH9612",
+     "capacityTB": 96,
+     "url": "https://www.buffalo.jp/product/detail/ts71210rh9612.html",
+     "jan": "4981254066973"
+    },
+    {
+     "sku": "TS71210RH12012",
+     "capacityTB": 120,
+     "url": "https://www.buffalo.jp/product/detail/ts71210rh12012.html",
+     "jan": "4981254066966"
+    },
+    {
+     "sku": "TS71210RH14412",
+     "capacityTB": 144,
+     "url": "https://www.buffalo.jp/product/detail/ts71210rh14412.html",
+     "jan": "4981254066959"
+    },
+    {
+     "sku": "TS71210RH19212",
+     "capacityTB": 192,
+     "url": "https://www.buffalo.jp/product/detail/ts71210rh19212.html",
+     "jan": "4981254066942"
+    },
+    {
+     "sku": "TS71210RH24012",
+     "capacityTB": 240,
+     "url": "https://www.buffalo.jp/product/detail/ts71210rh24012.html",
+     "jan": "4981254066928"
+    }
+   ],
+   "sourceUrl": "https://www.buffalo.jp/product/detail/ts71210rh3204.html",
+   "collectedBy": "research"
+  },
+  {
+   "id": "ts6200dn",
+   "maker": "BUFFALO",
+   "series": "TS6200DN",
+   "family": "TeraStation",
+   "name": "TeraStation（TS6200DNシリーズ）",
+   "osType": "Linux",
+   "osEdition": "Linuxベース独自",
+   "windowsEdition": null,
+   "install": "BOXタイプ",
+   "bays": 2,
+   "cpu": "Intel Atom C3338 1.50GHz（ターボ2.20GHz）2コア/2スレッド",
+   "memory": "DDR4 ECC 8GB",
+   "lanText": "10GBASE-T×1、1000BASE-T×2（背面）",
+   "lanSpeedMax": "10G",
+   "lanMaxPorts": 1,
+   "usb": "USB 3.2(Gen 1)×2（背面、PC接続不可）",
+   "raidModes": [
+    "RAID 1",
+    "RAID 0"
+   ],
+   "raidType": "ソフトウェアRAID",
+   "redundantPower": false,
+   "warrantyYears": 3,
+   "warrantyText": "3年間(本体およびハードディスク)",
+   "features": {
+    "クラウドストレージ連携": {
+     "value": "対応",
+     "supported": true
+    },
+    "Active Directory連携": {
+     "value": "対応",
+     "supported": true
+    },
+    "SSDキャッシュ": {
+     "value": "非対応",
+     "supported": false
+    },
+    "Time Machine": {
+     "value": "対応",
+     "supported": true
+    },
+    "iSCSIターゲット": {
+     "value": "対応",
+     "supported": true
+    },
+    "ウイルスチェック": {
+     "value": "別売の拡張・延長パックで対応",
+     "supported": true
+    },
+    "リモート監視（キキNavi）": {
+     "value": "対応",
+     "supported": true
+    },
+    "ホットスワップ": {
+     "value": "対応",
+     "supported": true
+    },
+    "ホットスペア": {
+     "value": "非対応",
+     "supported": false
+    },
+    "ドライブ暗号化": {
+     "value": "対応",
+     "supported": true
+    },
+    "Webアクセス": {
+     "value": "対応",
+     "supported": true
+    },
+    "スナップショット": {
+     "value": "対応",
+     "supported": true
+    },
+    "不変スナップショット": {
+     "value": "対応（Ver.6.30以降）",
+     "supported": true
+    },
+    "メタデータ二重化": {
+     "value": "対応",
+     "supported": true
+    },
+    "レプリケーション": {
+     "value": "対応",
+     "supported": true
+    },
+    "フェイルオーバー": {
+     "value": "対応",
+     "supported": true
+    },
+    "異常ファイル操作検知": {
+     "value": "対応（Ver.6.20以降）",
+     "supported": true
+    }
+   },
+   "releaseDate": "2019年8月",
+   "status": "現行",
+   "statusNote": null,
+   "variants": [
+    {
+     "sku": "TS6200DN0202",
+     "capacityTB": 2,
+     "url": "https://www.buffalo.jp/product/detail/ts6200dn0202.html",
+     "jan": "4981254052013"
+    },
+    {
+     "sku": "TS6200DN0402",
+     "capacityTB": 4,
+     "url": "https://www.buffalo.jp/product/detail/ts6200dn0402.html",
+     "jan": "4981254052020"
+    },
+    {
+     "sku": "TS6200DN0802",
+     "capacityTB": 8,
+     "url": "https://www.buffalo.jp/product/detail/ts6200dn0802.html",
+     "jan": "4981254052037"
+    }
+   ],
+   "sourceUrl": "https://www.buffalo.jp/product/detail/ts6200dn0402.html",
+   "collectedBy": "research"
+  },
+  {
+   "id": "ts6400dn",
+   "maker": "BUFFALO",
+   "series": "TS6400DN",
+   "family": "TeraStation",
+   "name": "TeraStation（TS6400DNシリーズ）",
+   "osType": "Linux",
+   "osEdition": "Linuxベース独自",
+   "windowsEdition": null,
+   "install": "BOXタイプ",
+   "bays": 4,
+   "cpu": "Intel Atom C3538 2.10GHz 4コア/4スレッド",
+   "memory": "DDR4 ECC 8GB",
+   "lanText": "10GBASE-T×1、1000BASE-T×2（背面）",
+   "lanSpeedMax": "10G",
+   "lanMaxPorts": 1,
+   "usb": "USB 3.2(Gen 1)×2（背面、PC接続不可）",
+   "raidModes": [
+    "RAID 6",
+    "RAID 5",
+    "RAID 10",
+    "RAID 1",
+    "RAID 0"
+   ],
+   "raidType": "ソフトウェアRAID",
+   "redundantPower": false,
+   "warrantyYears": 3,
+   "warrantyText": "標準の3年保証（HDDを含む）",
+   "features": {
+    "クラウドストレージ連携": {
+     "value": "対応",
+     "supported": true
+    },
+    "Active Directory連携": {
+     "value": "対応",
+     "supported": true
+    },
+    "SSDキャッシュ": {
+     "value": "非対応",
+     "supported": false
+    },
+    "Time Machine": {
+     "value": "対応",
+     "supported": true
+    },
+    "iSCSIターゲット": {
+     "value": "対応",
+     "supported": true
+    },
+    "ウイルスチェック": {
+     "value": "対応（別売拡張パック必要）",
+     "supported": true
+    },
+    "リモート監視（キキNavi）": {
+     "value": "対応",
+     "supported": true
+    },
+    "ホットスワップ": {
+     "value": "対応",
+     "supported": true
+    },
+    "ホットスペア": {
+     "value": "対応",
+     "supported": true
+    },
+    "ドライブ暗号化": {
+     "value": "対応",
+     "supported": true
+    },
+    "Webアクセス": {
+     "value": "対応",
+     "supported": true
+    },
+    "スナップショット": {
+     "value": "対応",
+     "supported": true
+    },
+    "不変スナップショット": {
+     "value": "対応（Ver.6.30以降）",
+     "supported": true
+    },
+    "メタデータ二重化": {
+     "value": "対応",
+     "supported": true
+    },
+    "レプリケーション": {
+     "value": "対応",
+     "supported": true
+    },
+    "フェイルオーバー": {
+     "value": "対応",
+     "supported": true
+    },
+    "異常ファイル操作検知": {
+     "value": "対応（Ver.6.20以降）",
+     "supported": true
+    }
+   },
+   "releaseDate": "2019年8月",
+   "status": "現行",
+   "statusNote": "現行（4804は一覧で価格表記なし）",
+   "variants": [
+    {
+     "sku": "TS6400DN0404",
+     "capacityTB": 4,
+     "url": "https://www.buffalo.jp/product/detail/ts6400dn0404.html",
+     "jan": null
+    },
+    {
+     "sku": "TS6400DN0804",
+     "capacityTB": 8,
+     "url": "https://www.buffalo.jp/product/detail/ts6400dn0804.html",
+     "jan": "4981254052075"
+    },
+    {
+     "sku": "TS6400DN1604",
+     "capacityTB": 16,
+     "url": "https://www.buffalo.jp/product/detail/ts6400dn1604.html",
+     "jan": null
+    },
+    {
+     "sku": "TS6400DN2404",
+     "capacityTB": 24,
+     "url": "https://www.buffalo.jp/product/detail/ts6400dn2404.html",
+     "jan": null
+    },
+    {
+     "sku": "TS6400DN4804",
+     "capacityTB": 48,
+     "url": "https://www.buffalo.jp/product/detail/ts6400dn4804.html",
+     "jan": null
+    }
+   ],
+   "sourceUrl": "https://www.buffalo.jp/product/detail/ts6400dn0804.html",
+   "collectedBy": "research"
+  },
+  {
+   "id": "ts6400rn",
+   "maker": "BUFFALO",
+   "series": "TS6400RN",
+   "family": "TeraStation",
+   "name": "TeraStation（TS6400RNシリーズ）",
+   "osType": "Linux",
+   "osEdition": "Linuxベース独自",
+   "windowsEdition": null,
+   "install": "ラックマウントタイプ",
+   "bays": 4,
+   "cpu": "Intel Atom C3538 2.10GHz 4コア/4スレッド",
+   "memory": "DDR4 ECC 8GB",
+   "lanText": "10GBASE-T×1、1000BASE-T×2（背面）",
+   "lanSpeedMax": "10G",
+   "lanMaxPorts": 1,
+   "usb": "USB 3.2(Gen 1)×3（前面×1、背面×2）",
+   "raidModes": [
+    "RAID 6",
+    "RAID 5",
+    "RAID 10",
+    "RAID 1",
+    "RAID 0"
+   ],
+   "raidType": "ソフトウェアRAID",
+   "redundantPower": false,
+   "warrantyYears": 3,
+   "warrantyText": "3年間(本体およびハードディスク)",
+   "features": {
+    "クラウドストレージ連携": {
+     "value": "対応",
+     "supported": true
+    },
+    "Active Directory連携": {
+     "value": "対応",
+     "supported": true
+    },
+    "SSDキャッシュ": {
+     "value": "非対応",
+     "supported": false
+    },
+    "Time Machine": {
+     "value": "対応",
+     "supported": true
+    },
+    "iSCSIターゲット": {
+     "value": "対応",
+     "supported": true
+    },
+    "ウイルスチェック": {
+     "value": "別売の拡張・延長パック（OP-TSVCシリーズ）必要",
+     "supported": null
+    },
+    "リモート監視（キキNavi）": {
+     "value": "対応",
+     "supported": true
+    },
+    "ホットスワップ": {
+     "value": "対応",
+     "supported": true
+    },
+    "ホットスペア": {
+     "value": "対応",
+     "supported": true
+    },
+    "ドライブ暗号化": {
+     "value": "対応",
+     "supported": true
+    },
+    "Webアクセス": {
+     "value": "対応",
+     "supported": true
+    },
+    "スナップショット": {
+     "value": "対応",
+     "supported": true
+    },
+    "不変スナップショット": {
+     "value": "対応（Ver.6.30以降）",
+     "supported": true
+    },
+    "メタデータ二重化": {
+     "value": "対応",
+     "supported": true
+    },
+    "レプリケーション": {
+     "value": "対応",
+     "supported": true
+    },
+    "フェイルオーバー": {
+     "value": "対応",
+     "supported": true
+    },
+    "異常ファイル操作検知": {
+     "value": "対応（Ver.6.20以降）",
+     "supported": true
+    }
+   },
+   "releaseDate": "2019年8月",
+   "status": "現行",
+   "statusNote": "現行（4804は一覧で価格表記なし）",
+   "variants": [
+    {
+     "sku": "TS6400RN0404",
+     "capacityTB": 4,
+     "url": "https://www.buffalo.jp/product/detail/ts6400rn0404.html",
+     "jan": null
+    },
+    {
+     "sku": "TS6400RN0804",
+     "capacityTB": 8,
+     "url": "https://www.buffalo.jp/product/detail/ts6400rn0804.html",
+     "jan": "4981254052167"
+    },
+    {
+     "sku": "TS6400RN1604",
+     "capacityTB": 16,
+     "url": "https://www.buffalo.jp/product/detail/ts6400rn1604.html",
+     "jan": null
+    },
+    {
+     "sku": "TS6400RN2404",
+     "capacityTB": 24,
+     "url": "https://www.buffalo.jp/product/detail/ts6400rn2404.html",
+     "jan": null
+    },
+    {
+     "sku": "TS6400RN3204",
+     "capacityTB": 32,
+     "url": "https://www.buffalo.jp/product/detail/ts6400rn3204.html",
+     "jan": null
+    },
+    {
+     "sku": "TS6400RN4004",
+     "capacityTB": 40,
+     "url": "https://www.buffalo.jp/product/detail/ts6400rn4004.html",
+     "jan": null
+    },
+    {
+     "sku": "TS6400RN4804",
+     "capacityTB": 48,
+     "url": "https://www.buffalo.jp/product/detail/ts6400rn4804.html",
+     "jan": null
+    }
+   ],
+   "sourceUrl": "https://www.buffalo.jp/product/detail/ts6400rn0804.html",
+   "collectedBy": "research"
+  },
+  {
+   "id": "ts6600dn",
+   "maker": "BUFFALO",
+   "series": "TS6600DN",
+   "family": "TeraStation",
+   "name": "TeraStation（TS6600DNシリーズ）",
+   "osType": "Linux",
+   "osEdition": "Linuxベース独自",
+   "windowsEdition": null,
+   "install": "BOXタイプ",
+   "bays": 6,
+   "cpu": "Intel Atom C3538 2.10GHz 4コア/4スレッド",
+   "memory": "DDR4 ECC 8GB",
+   "lanText": "10GBASE-T×1、1000BASE-T×2（背面）",
+   "lanSpeedMax": "10G",
+   "lanMaxPorts": 1,
+   "usb": "USB 3.2(Gen 1)×3（前面×1、背面×2）",
+   "raidModes": [
+    "RAID 6",
+    "RAID 5",
+    "RAID 10",
+    "RAID 1",
+    "RAID 0"
+   ],
+   "raidType": "ソフトウェアRAID",
+   "redundantPower": false,
+   "warrantyYears": 3,
+   "warrantyText": "3年間(本体およびハードディスク)",
+   "features": {
+    "クラウドストレージ連携": {
+     "value": "対応",
+     "supported": true
+    },
+    "Active Directory連携": {
+     "value": "対応",
+     "supported": true
+    },
+    "SSDキャッシュ": {
+     "value": "非対応",
+     "supported": false
+    },
+    "Time Machine": {
+     "value": "対応",
+     "supported": true
+    },
+    "iSCSIターゲット": {
+     "value": "対応",
+     "supported": true
+    },
+    "ウイルスチェック": {
+     "value": "対応（別売拡張パック）",
+     "supported": true
+    },
+    "リモート監視（キキNavi）": {
+     "value": "対応",
+     "supported": true
+    },
+    "ホットスワップ": {
+     "value": "対応",
+     "supported": true
+    },
+    "ホットスペア": {
+     "value": "対応",
+     "supported": true
+    },
+    "ドライブ暗号化": {
+     "value": "対応",
+     "supported": true
+    },
+    "Webアクセス": {
+     "value": "対応",
+     "supported": true
+    },
+    "スナップショット": {
+     "value": "対応",
+     "supported": true
+    },
+    "不変スナップショット": {
+     "value": "対応（Ver.6.30以降）",
+     "supported": true
+    },
+    "メタデータ二重化": {
+     "value": "対応",
+     "supported": true
+    },
+    "レプリケーション": {
+     "value": "対応",
+     "supported": true
+    },
+    "フェイルオーバー": {
+     "value": "対応",
+     "supported": true
+    },
+    "異常ファイル操作検知": {
+     "value": "対応（Ver.6.20以降）",
+     "supported": true
+    }
+   },
+   "releaseDate": "2019年11月",
+   "status": "現行",
+   "statusNote": null,
+   "variants": [
+    {
+     "sku": "TS6600DN1806",
+     "capacityTB": 18,
+     "url": "https://www.buffalo.jp/product/detail/ts6600dn1806.html",
+     "jan": null
+    },
+    {
+     "sku": "TS6600DN2406",
+     "capacityTB": 24,
+     "url": "https://www.buffalo.jp/product/detail/ts6600dn2406.html",
+     "jan": "4981254053430"
+    },
+    {
+     "sku": "TS6600DN3606",
+     "capacityTB": 36,
+     "url": "https://www.buffalo.jp/product/detail/ts6600dn3606.html",
+     "jan": null
+    },
+    {
+     "sku": "TS6600DN6006",
+     "capacityTB": 60,
+     "url": "https://www.buffalo.jp/product/detail/ts6600dn6006.html",
+     "jan": null
+    },
+    {
+     "sku": "TS6600DN7206",
+     "capacityTB": 72,
+     "url": "https://www.buffalo.jp/product/detail/ts6600dn7206.html",
+     "jan": null
+    }
+   ],
+   "sourceUrl": "https://www.buffalo.jp/product/detail/ts6600dn2406.html",
+   "collectedBy": "research"
+  },
+  {
+   "id": "ws5220dnw5",
+   "maker": "BUFFALO",
+   "series": "WS5220DNW5",
+   "family": "TeraStation",
+   "name": "TeraStation（WS5220DNW5シリーズ）",
+   "osType": "Windows",
+   "osEdition": "Windows Server IoT 2025 for Storage Workgroup",
+   "windowsEdition": "Workgroup",
+   "install": "BOXタイプ",
+   "bays": 2,
+   "cpu": "Intel Atom C3338 1.50GHz（ターボ2.20GHz）2コア/2スレッド",
+   "memory": "DDR4 ECC 8GB",
+   "lanText": "10GBASE-T×1、1000BASE-T×2（背面）",
+   "lanSpeedMax": "10G",
+   "lanMaxPorts": 1,
+   "usb": "USB 3.2(Gen 1)×2（背面）",
+   "raidModes": [
+    "RAID 1",
+    "RAID 0"
+   ],
+   "raidType": "ソフトウェアRAID",
+   "redundantPower": false,
+   "warrantyYears": 3,
+   "warrantyText": "3年間(本体およびハードディスク)",
+   "features": {
+    "クラウドストレージ連携": {
+     "value": "対応",
+     "supported": true
+    },
+    "Active Directory連携": {
+     "value": "対応",
+     "supported": true
+    },
+    "SSDキャッシュ": {
+     "value": "非対応",
+     "supported": false
+    },
+    "Time Machine": {
+     "value": "非対応",
+     "supported": false
+    },
+    "iSCSIターゲット": {
+     "value": "対応",
+     "supported": true
+    },
+    "ウイルスチェック": {
+     "value": "対応（DiXiM Security Endpoint別売）",
+     "supported": true
+    },
+    "リモート監視（キキNavi）": {
+     "value": "対応",
+     "supported": true
+    },
+    "ホットスワップ": {
+     "value": "非対応",
+     "supported": false
+    },
+    "ホットスペア": {
+     "value": "非対応",
+     "supported": false
+    },
+    "ドライブ暗号化": {
+     "value": "対応（BitLocker、ベーシックディスクのみ）",
+     "supported": true
+    },
+    "Webアクセス": {
+     "value": "非対応",
+     "supported": false
+    },
+    "メタデータ二重化": {
+     "value": "非対応",
+     "supported": false
+    },
+    "データ重複除去": {
+     "value": "非対応",
+     "supported": false
+    },
+    "レプリケーション": {
+     "value": "対応",
+     "supported": true
+    },
+    "フェイルオーバー": {
+     "value": "非対応",
+     "supported": false
+    }
+   },
+   "releaseDate": "2025年8月",
+   "status": "現行",
+   "statusNote": null,
+   "variants": [
+    {
+     "sku": "WS5220DN02W5",
+     "capacityTB": 2,
+     "url": "https://www.buffalo.jp/product/detail/ws5220dn02w5.html",
+     "jan": "4981254074978"
+    },
+    {
+     "sku": "WS5220DN04W5",
+     "capacityTB": 4,
+     "url": "https://www.buffalo.jp/product/detail/ws5220dn04w5.html",
+     "jan": "4981254074961"
+    },
+    {
+     "sku": "WS5220DN08W5",
+     "capacityTB": 8,
+     "url": "https://www.buffalo.jp/product/detail/ws5220dn08w5.html",
+     "jan": "4981254074954"
+    },
+    {
+     "sku": "WS5220DN16W5",
+     "capacityTB": 16,
+     "url": "https://www.buffalo.jp/product/detail/ws5220dn16w5.html",
+     "jan": "4981254074947"
+    }
+   ],
+   "sourceUrl": "https://www.buffalo.jp/product/detail/print/ws5220dn16w5.html",
+   "collectedBy": "research"
+  },
+  {
+   "id": "ws5220dns5",
+   "maker": "BUFFALO",
+   "series": "WS5220DNS5",
+   "family": "TeraStation",
+   "name": "TeraStation（WS5220DNS5シリーズ）",
+   "osType": "Windows",
+   "osEdition": "Windows Server IoT 2025 for Storage Standard",
+   "windowsEdition": "Standard",
+   "install": "BOXタイプ",
+   "bays": 2,
+   "cpu": "Intel Atom C3338 1.50GHz（ターボ2.20GHz）2コア/2スレッド",
+   "memory": "DDR4 ECC 8GB",
+   "lanText": "10GBASE-T×1、1000BASE-T×2（背面）",
+   "lanSpeedMax": "10G",
+   "lanMaxPorts": 1,
+   "usb": "USB 3.2(Gen 1)×2（背面）",
+   "raidModes": [
+    "RAID 1",
+    "RAID 0"
+   ],
+   "raidType": "ソフトウェアRAID",
+   "redundantPower": false,
+   "warrantyYears": 3,
+   "warrantyText": "3年間(本体およびハードディスク)",
+   "features": {
+    "クラウドストレージ連携": {
+     "value": "対応",
+     "supported": true
+    },
+    "Active Directory連携": {
+     "value": "対応",
+     "supported": true
+    },
+    "SSDキャッシュ": {
+     "value": "非対応",
+     "supported": false
+    },
+    "Time Machine": {
+     "value": "非対応",
+     "supported": false
+    },
+    "iSCSIターゲット": {
+     "value": "対応",
+     "supported": true
+    },
+    "ウイルスチェック": {
+     "value": "対応（DiXiM Security Endpoint別売、Windows Defender）",
+     "supported": true
+    },
+    "リモート監視（キキNavi）": {
+     "value": "対応",
+     "supported": true
+    },
+    "ホットスワップ": {
+     "value": "非対応",
+     "supported": false
+    },
+    "ホットスペア": {
+     "value": "非対応",
+     "supported": false
+    },
+    "ドライブ暗号化": {
+     "value": "対応（BitLocker、ベーシックディスクのみ）",
+     "supported": true
+    },
+    "Webアクセス": {
+     "value": "非対応",
+     "supported": false
+    },
+    "メタデータ二重化": {
+     "value": "非対応",
+     "supported": false
+    },
+    "データ重複除去": {
+     "value": "対応",
+     "supported": true
+    },
+    "レプリケーション": {
+     "value": "対応",
+     "supported": true
+    },
+    "フェイルオーバー": {
+     "value": "非対応",
+     "supported": false
+    }
+   },
+   "releaseDate": "2025年8月",
+   "status": "現行",
+   "statusNote": null,
+   "variants": [
+    {
+     "sku": "WS5220DN02S5",
+     "capacityTB": 2,
+     "url": "https://www.buffalo.jp/product/detail/ws5220dn02s5.html",
+     "jan": "4981254074930"
+    },
+    {
+     "sku": "WS5220DN04S5",
+     "capacityTB": 4,
+     "url": "https://www.buffalo.jp/product/detail/ws5220dn04s5.html",
+     "jan": "4981254074923"
+    },
+    {
+     "sku": "WS5220DN08S5",
+     "capacityTB": 8,
+     "url": "https://www.buffalo.jp/product/detail/ws5220dn08s5.html",
+     "jan": "4981254074916"
+    },
+    {
+     "sku": "WS5220DN16S5",
+     "capacityTB": 16,
+     "url": "https://www.buffalo.jp/product/detail/ws5220dn16s5.html",
+     "jan": "4981254074909"
+    }
+   ],
+   "sourceUrl": "https://www.buffalo.jp/product/detail/print/ws5220dn08s5.html",
+   "collectedBy": "research"
+  },
+  {
+   "id": "ws5420dnw5",
+   "maker": "BUFFALO",
+   "series": "WS5420DNW5",
+   "family": "TeraStation",
+   "name": "TeraStation（WS5420DNW5シリーズ）",
+   "osType": "Windows",
+   "osEdition": "Windows Server IoT 2025 for Storage Workgroup",
+   "windowsEdition": "Workgroup",
+   "install": "BOXタイプ",
+   "bays": 4,
+   "cpu": "Intel Atom C3338 1.50GHz（ターボ2.20GHz）2コア/2スレッド",
+   "memory": "DDR4 ECC 8GB",
+   "lanText": "10GBASE-T×1、1000BASE-T×2（背面）",
+   "lanSpeedMax": "10G",
+   "lanMaxPorts": 1,
+   "usb": "USB 3.2(Gen 1)×2（背面）",
+   "raidModes": [
+    "RAID 5",
+    "RAID 1",
+    "RAID 0"
+   ],
+   "raidType": "ソフトウェアRAID",
+   "redundantPower": false,
+   "warrantyYears": 3,
+   "warrantyText": "3年間(本体およびハードディスク)",
+   "features": {
+    "クラウドストレージ連携": {
+     "value": "対応",
+     "supported": true
+    },
+    "Active Directory連携": {
+     "value": "対応",
+     "supported": true
+    },
+    "SSDキャッシュ": {
+     "value": "非対応",
+     "supported": false
+    },
+    "Time Machine": {
+     "value": "非対応",
+     "supported": false
+    },
+    "iSCSIターゲット": {
+     "value": "対応",
+     "supported": true
+    },
+    "ウイルスチェック": {
+     "value": "対応（DiXiM Security Endpoint別売、Windows Defender）",
+     "supported": true
+    },
+    "リモート監視（キキNavi）": {
+     "value": "対応",
+     "supported": true
+    },
+    "ホットスワップ": {
+     "value": "対応（システム領域ドライブ故障時を除く）",
+     "supported": true
+    },
+    "ホットスペア": {
+     "value": "非対応",
+     "supported": false
+    },
+    "ドライブ暗号化": {
+     "value": "対応（BitLocker、ベーシックディスクのみ）",
+     "supported": true
+    },
+    "Webアクセス": {
+     "value": "非対応",
+     "supported": false
+    },
+    "メタデータ二重化": {
+     "value": "非対応",
+     "supported": false
+    },
+    "データ重複除去": {
+     "value": "非対応",
+     "supported": false
+    },
+    "レプリケーション": {
+     "value": "対応",
+     "supported": true
+    },
+    "フェイルオーバー": {
+     "value": "非対応",
+     "supported": false
+    }
+   },
+   "releaseDate": "2025年7月",
+   "status": "現行",
+   "statusNote": null,
+   "variants": [
+    {
+     "sku": "WS5420DN04W5",
+     "capacityTB": 4,
+     "url": "https://www.buffalo.jp/product/detail/ws5420dn04w5.html",
+     "jan": "4981254074893"
+    },
+    {
+     "sku": "WS5420DN08W5",
+     "capacityTB": 8,
+     "url": "https://www.buffalo.jp/product/detail/ws5420dn08w5.html",
+     "jan": "4981254074886"
+    },
+    {
+     "sku": "WS5420DN16W5",
+     "capacityTB": 16,
+     "url": "https://www.buffalo.jp/product/detail/ws5420dn16w5.html",
+     "jan": "4981254074879"
+    },
+    {
+     "sku": "WS5420DN32W5",
+     "capacityTB": 32,
+     "url": "https://www.buffalo.jp/product/detail/ws5420dn32w5.html",
+     "jan": "4981254074862"
+    }
+   ],
+   "sourceUrl": "https://www.buffalo.jp/product/detail/print/ws5420dn08w5.html",
+   "collectedBy": "research"
+  },
+  {
+   "id": "ws5420dns5",
+   "maker": "BUFFALO",
+   "series": "WS5420DNS5",
+   "family": "TeraStation",
+   "name": "TeraStation（WS5420DNS5シリーズ）",
+   "osType": "Windows",
+   "osEdition": "Windows Server IoT 2025 for Storage Standard",
+   "windowsEdition": "Standard",
+   "install": "BOXタイプ",
+   "bays": 4,
+   "cpu": "Intel Atom C3338 1.50GHz（ターボ2.20GHz）2コア/2スレッド",
+   "memory": "DDR4 ECC 8GB",
+   "lanText": "10GBASE-T×1、1000BASE-T×2（背面）",
+   "lanSpeedMax": "10G",
+   "lanMaxPorts": 1,
+   "usb": "USB 3.2(Gen 1)×2（背面）",
+   "raidModes": [
+    "RAID 5",
+    "RAID 1",
+    "RAID 0"
+   ],
+   "raidType": "ソフトウェアRAID",
+   "redundantPower": false,
+   "warrantyYears": 3,
+   "warrantyText": "3年間(本体およびハードディスク)",
+   "features": {
+    "クラウドストレージ連携": {
+     "value": "対応",
+     "supported": true
+    },
+    "Active Directory連携": {
+     "value": "対応",
+     "supported": true
+    },
+    "SSDキャッシュ": {
+     "value": "非対応",
+     "supported": false
+    },
+    "Time Machine": {
+     "value": "非対応",
+     "supported": false
+    },
+    "iSCSIターゲット": {
+     "value": "対応",
+     "supported": true
+    },
+    "ウイルスチェック": {
+     "value": "対応（DiXiM Security Endpoint別売、Windows Defender）",
+     "supported": true
+    },
+    "リモート監視（キキNavi）": {
+     "value": "対応",
+     "supported": true
+    },
+    "ホットスワップ": {
+     "value": "対応（システム領域ドライブ故障時を除く）",
+     "supported": true
+    },
+    "ホットスペア": {
+     "value": "非対応",
+     "supported": false
+    },
+    "ドライブ暗号化": {
+     "value": "対応（BitLocker、ベーシックディスクのみ）",
+     "supported": true
+    },
+    "Webアクセス": {
+     "value": "非対応",
+     "supported": false
+    },
+    "メタデータ二重化": {
+     "value": "非対応",
+     "supported": false
+    },
+    "データ重複除去": {
+     "value": "対応",
+     "supported": true
+    },
+    "レプリケーション": {
+     "value": "対応",
+     "supported": true
+    },
+    "フェイルオーバー": {
+     "value": "非対応",
+     "supported": false
+    }
+   },
+   "releaseDate": "2025年7月",
+   "status": "現行",
+   "statusNote": null,
+   "variants": [
+    {
+     "sku": "WS5420DN04S5",
+     "capacityTB": 4,
+     "url": "https://www.buffalo.jp/product/detail/ws5420dn04s5.html",
+     "jan": "4981254074855"
+    },
+    {
+     "sku": "WS5420DN08S5",
+     "capacityTB": 8,
+     "url": "https://www.buffalo.jp/product/detail/ws5420dn08s5.html",
+     "jan": "4981254074848"
+    },
+    {
+     "sku": "WS5420DN16S5",
+     "capacityTB": 16,
+     "url": "https://www.buffalo.jp/product/detail/ws5420dn16s5.html",
+     "jan": "4981254074831"
+    },
+    {
+     "sku": "WS5420DN32S5",
+     "capacityTB": 32,
+     "url": "https://www.buffalo.jp/product/detail/ws5420dn32s5.html",
+     "jan": "4981254074824"
+    }
+   ],
+   "sourceUrl": "https://www.buffalo.jp/product/detail/print/ws5420dn08s5.html",
+   "collectedBy": "research"
+  },
+  {
+   "id": "ws5420rnw5",
+   "maker": "BUFFALO",
+   "series": "WS5420RNW5",
+   "family": "TeraStation",
+   "name": "TeraStation（WS5420RNW5シリーズ）",
+   "osType": "Windows",
+   "osEdition": "Windows Server IoT 2025 for Storage Workgroup",
+   "windowsEdition": "Workgroup",
+   "install": "ラックマウントタイプ",
+   "bays": 4,
+   "cpu": "Intel Atom C3338 1.50GHz（ターボ2.20GHz）2コア/2スレッド",
+   "memory": "DDR4 ECC 8GB",
+   "lanText": "10GBASE-T×1、1000BASE-T×2（背面）",
+   "lanSpeedMax": "10G",
+   "lanMaxPorts": 1,
+   "usb": "USB 3.2(Gen 1)×3（前面×1、背面×2）",
+   "raidModes": [
+    "RAID 5",
+    "RAID 1",
+    "RAID 0"
+   ],
+   "raidType": "ソフトウェアRAID",
+   "redundantPower": false,
+   "warrantyYears": 3,
+   "warrantyText": "3年間(本体およびハードディスク)",
+   "features": {
+    "クラウドストレージ連携": {
+     "value": "対応",
+     "supported": true
+    },
+    "Active Directory連携": {
+     "value": "対応",
+     "supported": true
+    },
+    "SSDキャッシュ": {
+     "value": "非対応",
+     "supported": false
+    },
+    "Time Machine": {
+     "value": "非対応",
+     "supported": false
+    },
+    "iSCSIターゲット": {
+     "value": "対応",
+     "supported": true
+    },
+    "ウイルスチェック": {
+     "value": "対応（DiXiM Security Endpoint別売、Windows Defender）",
+     "supported": true
+    },
+    "リモート監視（キキNavi）": {
+     "value": "対応",
+     "supported": true
+    },
+    "ホットスワップ": {
+     "value": "対応（システム領域ドライブ故障時を除く）",
+     "supported": true
+    },
+    "ホットスペア": {
+     "value": "非対応",
+     "supported": false
+    },
+    "ドライブ暗号化": {
+     "value": "対応（BitLocker、ベーシックディスクのみ）",
+     "supported": true
+    },
+    "Webアクセス": {
+     "value": "非対応",
+     "supported": false
+    },
+    "メタデータ二重化": {
+     "value": "非対応",
+     "supported": false
+    },
+    "データ重複除去": {
+     "value": "非対応",
+     "supported": false
+    },
+    "レプリケーション": {
+     "value": "対応",
+     "supported": true
+    },
+    "フェイルオーバー": {
+     "value": "非対応",
+     "supported": false
+    }
+   },
+   "releaseDate": "2025年7月",
+   "status": "現行",
+   "statusNote": null,
+   "variants": [
+    {
+     "sku": "WS5420RN04W5",
+     "capacityTB": 4,
+     "url": "https://www.buffalo.jp/product/detail/ws5420rn04w5.html",
+     "jan": "4981254074817"
+    },
+    {
+     "sku": "WS5420RN08W5",
+     "capacityTB": 8,
+     "url": "https://www.buffalo.jp/product/detail/ws5420rn08w5.html",
+     "jan": "4981254074800"
+    },
+    {
+     "sku": "WS5420RN16W5",
+     "capacityTB": 16,
+     "url": "https://www.buffalo.jp/product/detail/ws5420rn16w5.html",
+     "jan": "4981254074794"
+    },
+    {
+     "sku": "WS5420RN32W5",
+     "capacityTB": 32,
+     "url": "https://www.buffalo.jp/product/detail/ws5420rn32w5.html",
+     "jan": "4981254074787"
+    }
+   ],
+   "sourceUrl": "https://www.buffalo.jp/product/detail/print/ws5420rn32w5.html",
+   "collectedBy": "research"
+  },
+  {
+   "id": "ws5420rns5",
+   "maker": "BUFFALO",
+   "series": "WS5420RNS5",
+   "family": "TeraStation",
+   "name": "TeraStation（WS5420RNS5シリーズ）",
+   "osType": "Windows",
+   "osEdition": "Windows Server IoT 2025 for Storage Standard",
+   "windowsEdition": "Standard",
+   "install": "ラックマウントタイプ",
+   "bays": 4,
+   "cpu": "Intel Atom C3338 1.50GHz（ターボ2.20GHz）2コア/2スレッド",
+   "memory": "DDR4 ECC 8GB",
+   "lanText": "10GBASE-T×1、1000BASE-T×2（背面）",
+   "lanSpeedMax": "10G",
+   "lanMaxPorts": 1,
+   "usb": "USB 3.2(Gen 1)×3（前面×1、背面×2）",
+   "raidModes": [
+    "RAID 5",
+    "RAID 1",
+    "RAID 0"
+   ],
+   "raidType": "ソフトウェアRAID",
+   "redundantPower": false,
+   "warrantyYears": 3,
+   "warrantyText": "3年間(本体およびハードディスク)",
+   "features": {
+    "クラウドストレージ連携": {
+     "value": "対応",
+     "supported": true
+    },
+    "Active Directory連携": {
+     "value": "対応",
+     "supported": true
+    },
+    "SSDキャッシュ": {
+     "value": "非対応",
+     "supported": false
+    },
+    "Time Machine": {
+     "value": "非対応",
+     "supported": false
+    },
+    "iSCSIターゲット": {
+     "value": "対応",
+     "supported": true
+    },
+    "ウイルスチェック": {
+     "value": "対応（DiXiM Security Endpoint別売、Windows Defender）",
+     "supported": true
+    },
+    "リモート監視（キキNavi）": {
+     "value": "対応",
+     "supported": true
+    },
+    "ホットスワップ": {
+     "value": "対応（システム領域ドライブ故障時を除く）",
+     "supported": true
+    },
+    "ホットスペア": {
+     "value": "非対応",
+     "supported": false
+    },
+    "ドライブ暗号化": {
+     "value": "対応（BitLocker、ベーシックディスクのみ）",
+     "supported": true
+    },
+    "Webアクセス": {
+     "value": "非対応",
+     "supported": false
+    },
+    "メタデータ二重化": {
+     "value": "非対応",
+     "supported": false
+    },
+    "データ重複除去": {
+     "value": "対応",
+     "supported": true
+    },
+    "レプリケーション": {
+     "value": "対応",
+     "supported": true
+    },
+    "フェイルオーバー": {
+     "value": "非対応",
+     "supported": false
+    }
+   },
+   "releaseDate": "2025年8月",
+   "status": "現行",
+   "statusNote": null,
+   "variants": [
+    {
+     "sku": "WS5420RN08S5",
+     "capacityTB": 8,
+     "url": "https://www.buffalo.jp/product/detail/ws5420rn08s5.html",
+     "jan": "4981254074770"
+    },
+    {
+     "sku": "WS5420RN16S5",
+     "capacityTB": 16,
+     "url": "https://www.buffalo.jp/product/detail/ws5420rn16s5.html",
+     "jan": "4981254074763"
+    },
+    {
+     "sku": "WS5420RN32S5",
+     "capacityTB": 32,
+     "url": "https://www.buffalo.jp/product/detail/ws5420rn32s5.html",
+     "jan": "4981254074756"
+    }
+   ],
+   "sourceUrl": "https://www.buffalo.jp/product/detail/print/ws5420rn08s5.html",
+   "collectedBy": "research"
+  },
+  {
+   "id": "wsh5420dnw5",
+   "maker": "BUFFALO",
+   "series": "WSH5420DNW5",
+   "family": "TeraStation",
+   "name": "TeraStation（WSH5420DNW5シリーズ）",
+   "osType": "Windows",
+   "osEdition": "Windows Server IoT 2025 for Storage Workgroup",
+   "windowsEdition": "Workgroup",
+   "install": "BOXタイプ",
+   "bays": 4,
+   "cpu": "Intel Atom C3338 1.50GHz（ターボ2.20GHz）2コア/2スレッド",
+   "memory": "DDR4 ECC 8GB",
+   "lanText": "10GBASE-T×1、1000BASE-T×2（背面）",
+   "lanSpeedMax": "10G",
+   "lanMaxPorts": 1,
+   "usb": "USB 3.2(Gen 1)×2（背面）",
+   "raidModes": [
+    "RAID 6",
+    "RAID 5",
+    "RAID 10",
+    "RAID 0"
+   ],
+   "raidType": "ハードウェアRAID",
+   "redundantPower": false,
+   "warrantyYears": 3,
+   "warrantyText": "3年間(本体およびハードディスク)",
+   "features": {
+    "クラウドストレージ連携": {
+     "value": "対応",
+     "supported": true
+    },
+    "Active Directory連携": {
+     "value": "対応",
+     "supported": true
+    },
+    "SSDキャッシュ": {
+     "value": "非対応",
+     "supported": false
+    },
+    "Time Machine": {
+     "value": "非対応",
+     "supported": false
+    },
+    "iSCSIターゲット": {
+     "value": "対応",
+     "supported": true
+    },
+    "ウイルスチェック": {
+     "value": "対応（DiXiM Security Endpoint別売、Windows Defender）",
+     "supported": true
+    },
+    "リモート監視（キキNavi）": {
+     "value": "対応",
+     "supported": true
+    },
+    "ホットスワップ": {
+     "value": "対応",
+     "supported": true
+    },
+    "ホットスペア": {
+     "value": "非対応",
+     "supported": false
+    },
+    "ドライブ暗号化": {
+     "value": "対応",
+     "supported": true
+    },
+    "Webアクセス": {
+     "value": "非対応",
+     "supported": false
+    },
+    "メタデータ二重化": {
+     "value": "非対応",
+     "supported": false
+    },
+    "データ重複除去": {
+     "value": "非対応",
+     "supported": false
+    },
+    "レプリケーション": {
+     "value": "対応",
+     "supported": true
+    },
+    "フェイルオーバー": {
+     "value": "非対応",
+     "supported": false
+    }
+   },
+   "releaseDate": "2025年10月",
+   "status": "現行",
+   "statusNote": null,
+   "variants": [
+    {
+     "sku": "WSH5420DN04W5",
+     "capacityTB": 4,
+     "url": "https://www.buffalo.jp/product/detail/wsh5420dn04w5.html",
+     "jan": "4981254075920"
+    },
+    {
+     "sku": "WSH5420DN08W5",
+     "capacityTB": 8,
+     "url": "https://www.buffalo.jp/product/detail/wsh5420dn08w5.html",
+     "jan": "4981254075913"
+    },
+    {
+     "sku": "WSH5420DN16W5",
+     "capacityTB": 16,
+     "url": "https://www.buffalo.jp/product/detail/wsh5420dn16w5.html",
+     "jan": "4981254075906"
+    },
+    {
+     "sku": "WSH5420DN32W5",
+     "capacityTB": 32,
+     "url": "https://www.buffalo.jp/product/detail/wsh5420dn32w5.html",
+     "jan": "4981254075890"
+    }
+   ],
+   "sourceUrl": "https://www.buffalo.jp/product/detail/print/wsh5420dn08w5.html",
+   "collectedBy": "research"
+  },
+  {
+   "id": "wsh5420dns5",
+   "maker": "BUFFALO",
+   "series": "WSH5420DNS5",
+   "family": "TeraStation",
+   "name": "TeraStation（WSH5420DNS5シリーズ）",
+   "osType": "Windows",
+   "osEdition": "Windows Server IoT 2025 for Storage Standard",
+   "windowsEdition": "Standard",
+   "install": "BOXタイプ",
+   "bays": 4,
+   "cpu": "Intel Atom C3338 1.50GHz（ターボ2.20GHz）2コア/2スレッド",
+   "memory": "DDR4 ECC 8GB",
+   "lanText": "10GBASE-T×1、1000BASE-T×2（背面）",
+   "lanSpeedMax": "10G",
+   "lanMaxPorts": 1,
+   "usb": "USB 3.2(Gen 1)×2（背面）",
+   "raidModes": [
+    "RAID 6",
+    "RAID 5",
+    "RAID 10",
+    "RAID 0"
+   ],
+   "raidType": "ハードウェアRAID",
+   "redundantPower": false,
+   "warrantyYears": 3,
+   "warrantyText": "3年間(本体およびハードディスク)",
+   "features": {
+    "クラウドストレージ連携": {
+     "value": "対応",
+     "supported": true
+    },
+    "Active Directory連携": {
+     "value": "対応",
+     "supported": true
+    },
+    "SSDキャッシュ": {
+     "value": "非対応",
+     "supported": false
+    },
+    "Time Machine": {
+     "value": "非対応",
+     "supported": false
+    },
+    "iSCSIターゲット": {
+     "value": "対応",
+     "supported": true
+    },
+    "ウイルスチェック": {
+     "value": "対応（DiXiM Security Endpoint別売、Windows Defender）",
+     "supported": true
+    },
+    "リモート監視（キキNavi）": {
+     "value": "対応",
+     "supported": true
+    },
+    "ホットスワップ": {
+     "value": "対応",
+     "supported": true
+    },
+    "ホットスペア": {
+     "value": "非対応",
+     "supported": false
+    },
+    "ドライブ暗号化": {
+     "value": "対応",
+     "supported": true
+    },
+    "Webアクセス": {
+     "value": "非対応",
+     "supported": false
+    },
+    "メタデータ二重化": {
+     "value": "非対応",
+     "supported": false
+    },
+    "データ重複除去": {
+     "value": "対応",
+     "supported": true
+    },
+    "レプリケーション": {
+     "value": "対応",
+     "supported": true
+    },
+    "フェイルオーバー": {
+     "value": "非対応",
+     "supported": false
+    }
+   },
+   "releaseDate": "2025年10月",
+   "status": "現行",
+   "statusNote": null,
+   "variants": [
+    {
+     "sku": "WSH5420DN04S5",
+     "capacityTB": 4,
+     "url": "https://www.buffalo.jp/product/detail/wsh5420dn04s5.html",
+     "jan": "4981254075883"
+    },
+    {
+     "sku": "WSH5420DN08S5",
+     "capacityTB": 8,
+     "url": "https://www.buffalo.jp/product/detail/wsh5420dn08s5.html",
+     "jan": "4981254075876"
+    },
+    {
+     "sku": "WSH5420DN16S5",
+     "capacityTB": 16,
+     "url": "https://www.buffalo.jp/product/detail/wsh5420dn16s5.html",
+     "jan": "4981254075869"
+    },
+    {
+     "sku": "WSH5420DN32S5",
+     "capacityTB": 32,
+     "url": "https://www.buffalo.jp/product/detail/wsh5420dn32s5.html",
+     "jan": "4981254075852"
+    }
+   ],
+   "sourceUrl": "https://www.buffalo.jp/product/detail/print/wsh5420dn16s5.html",
+   "collectedBy": "research"
+  },
+  {
+   "id": "wsh5420rnw5",
+   "maker": "BUFFALO",
+   "series": "WSH5420RNW5",
+   "family": "TeraStation",
+   "name": "TeraStation（WSH5420RNW5シリーズ）",
+   "osType": "Windows",
+   "osEdition": "Windows Server IoT 2025 for Storage Workgroup",
+   "windowsEdition": "Workgroup",
+   "install": "ラックマウントタイプ",
+   "bays": 4,
+   "cpu": "Intel Atom C3338 1.50GHz（ターボ2.20GHz）2コア/2スレッド",
+   "memory": "DDR4 ECC 8GB",
+   "lanText": "10GBASE-T×1、1000BASE-T×2（背面）",
+   "lanSpeedMax": "10G",
+   "lanMaxPorts": 1,
+   "usb": "USB 3.2(Gen 1)×3（前面×1、背面×2）",
+   "raidModes": [
+    "RAID 6",
+    "RAID 5",
+    "RAID 10",
+    "RAID 0"
+   ],
+   "raidType": "ハードウェアRAID",
+   "redundantPower": false,
+   "warrantyYears": 3,
+   "warrantyText": "3年間(本体およびハードディスク)",
+   "features": {
+    "クラウドストレージ連携": {
+     "value": "対応",
+     "supported": true
+    },
+    "Active Directory連携": {
+     "value": "対応",
+     "supported": true
+    },
+    "SSDキャッシュ": {
+     "value": "非対応",
+     "supported": false
+    },
+    "Time Machine": {
+     "value": "非対応",
+     "supported": false
+    },
+    "iSCSIターゲット": {
+     "value": "対応",
+     "supported": true
+    },
+    "ウイルスチェック": {
+     "value": "対応（DiXiM Security Endpoint別売、Windows Defender）",
+     "supported": true
+    },
+    "リモート監視（キキNavi）": {
+     "value": "対応（リモート設定含む）",
+     "supported": true
+    },
+    "クラウドバックアップ（キキNavi）": {
+     "value": "対応",
+     "supported": true
+    },
+    "ホットスワップ": {
+     "value": "対応",
+     "supported": true
+    },
+    "ホットスペア": {
+     "value": "非対応",
+     "supported": false
+    },
+    "ドライブ暗号化": {
+     "value": "対応",
+     "supported": true
+    },
+    "Webアクセス": {
+     "value": "非対応",
+     "supported": false
+    },
+    "メタデータ二重化": {
+     "value": "非対応",
+     "supported": false
+    },
+    "データ重複除去": {
+     "value": "非対応",
+     "supported": false
+    },
+    "レプリケーション": {
+     "value": "対応",
+     "supported": true
+    },
+    "フェイルオーバー": {
+     "value": "非対応",
+     "supported": false
+    }
+   },
+   "releaseDate": "2026年1月",
+   "status": "現行",
+   "statusNote": null,
+   "variants": [
+    {
+     "sku": "WSH5420RN04W5",
+     "capacityTB": 4,
+     "url": "https://www.buffalo.jp/product/detail/wsh5420rn04w5.html",
+     "jan": "4981254075845"
+    },
+    {
+     "sku": "WSH5420RN08W5",
+     "capacityTB": 8,
+     "url": "https://www.buffalo.jp/product/detail/wsh5420rn08w5.html",
+     "jan": "4981254075838"
+    },
+    {
+     "sku": "WSH5420RN16W5",
+     "capacityTB": 16,
+     "url": "https://www.buffalo.jp/product/detail/wsh5420rn16w5.html",
+     "jan": "4981254075821"
+    },
+    {
+     "sku": "WSH5420RN32W5",
+     "capacityTB": 32,
+     "url": "https://www.buffalo.jp/product/detail/wsh5420rn32w5.html",
+     "jan": "4981254075814"
+    }
+   ],
+   "sourceUrl": "https://www.buffalo.jp/product/detail/wsh5420rn08w5.html",
+   "collectedBy": "research"
+  },
+  {
+   "id": "wsh5420rns5",
+   "maker": "BUFFALO",
+   "series": "WSH5420RNS5",
+   "family": "TeraStation",
+   "name": "TeraStation（WSH5420RNS5シリーズ）",
+   "osType": "Windows",
+   "osEdition": "Windows Server IoT 2025 for Storage Standard",
+   "windowsEdition": "Standard",
+   "install": "ラックマウントタイプ",
+   "bays": 4,
+   "cpu": "Intel Atom C3338 1.50GHz（ターボ2.20GHz）2コア/2スレッド",
+   "memory": "DDR4 ECC 8GB",
+   "lanText": "10GBASE-T×1、1000BASE-T×2（背面）",
+   "lanSpeedMax": "10G",
+   "lanMaxPorts": 1,
+   "usb": "USB 3.2(Gen 1)×3（前面×1、背面×2）",
+   "raidModes": [
+    "RAID 6",
+    "RAID 5",
+    "RAID 10",
+    "RAID 0"
+   ],
+   "raidType": "ハードウェアRAID",
+   "redundantPower": false,
+   "warrantyYears": 3,
+   "warrantyText": "3年間(本体およびハードディスク)",
+   "features": {
+    "クラウドストレージ連携": {
+     "value": "対応",
+     "supported": true
+    },
+    "Active Directory連携": {
+     "value": "対応",
+     "supported": true
+    },
+    "SSDキャッシュ": {
+     "value": "非対応",
+     "supported": false
+    },
+    "Time Machine": {
+     "value": "非対応",
+     "supported": false
+    },
+    "iSCSIターゲット": {
+     "value": "対応",
+     "supported": true
+    },
+    "ウイルスチェック": {
+     "value": "対応（DiXiM Security Endpoint別売、Windows Defender）",
+     "supported": true
+    },
+    "リモート監視（キキNavi）": {
+     "value": "対応",
+     "supported": true
+    },
+    "ホットスワップ": {
+     "value": "対応",
+     "supported": true
+    },
+    "ホットスペア": {
+     "value": "非対応",
+     "supported": false
+    },
+    "ドライブ暗号化": {
+     "value": "対応",
+     "supported": true
+    },
+    "Webアクセス": {
+     "value": "非対応",
+     "supported": false
+    },
+    "メタデータ二重化": {
+     "value": "非対応",
+     "supported": false
+    },
+    "データ重複除去": {
+     "value": "対応",
+     "supported": true
+    },
+    "レプリケーション": {
+     "value": "対応",
+     "supported": true
+    },
+    "フェイルオーバー": {
+     "value": "非対応",
+     "supported": false
+    }
+   },
+   "releaseDate": "2025年10月",
+   "status": "現行",
+   "statusNote": null,
+   "variants": [
+    {
+     "sku": "WSH5420RN08S5",
+     "capacityTB": 8,
+     "url": "https://www.buffalo.jp/product/detail/wsh5420rn08s5.html",
+     "jan": "4981254075807"
+    },
+    {
+     "sku": "WSH5420RN16S5",
+     "capacityTB": 16,
+     "url": "https://www.buffalo.jp/product/detail/wsh5420rn16s5.html",
+     "jan": "4981254075791"
+    },
+    {
+     "sku": "WSH5420RN32S5",
+     "capacityTB": 32,
+     "url": "https://www.buffalo.jp/product/detail/wsh5420rn32s5.html",
+     "jan": "4981254075784"
+    },
+    {
+     "sku": "WSH5420RN40S5",
+     "capacityTB": 40,
+     "url": "https://www.buffalo.jp/product/detail/wsh5420rn40s5.html",
+     "jan": "4981254075777"
+    }
+   ],
+   "sourceUrl": "https://www.buffalo.jp/product/detail/wsh5420rn40s5.html",
+   "collectedBy": "research"
+  },
+  {
+   "id": "wsh5620dns5",
+   "maker": "BUFFALO",
+   "series": "WSH5620DNS5",
+   "family": "TeraStation",
+   "name": "TeraStation（WSH5620DNS5シリーズ）",
+   "osType": "Windows",
+   "osEdition": "Windows Server IoT 2025 for Storage Standard",
+   "windowsEdition": "Standard",
+   "install": "BOXタイプ",
+   "bays": 6,
+   "cpu": "Intel Atom C3338 1.50GHz（ターボ2.20GHz）2コア/2スレッド",
+   "memory": "DDR4 ECC 8GB",
+   "lanText": "10GBASE-T×1、1000BASE-T×2（背面）",
+   "lanSpeedMax": "10G",
+   "lanMaxPorts": 1,
+   "usb": "USB 3.2(Gen 1)×3（前面×1、背面×2）",
+   "raidModes": [
+    "RAID 6",
+    "RAID 5",
+    "RAID 10",
+    "RAID 0"
+   ],
+   "raidType": "ハードウェアRAID",
+   "redundantPower": false,
+   "warrantyYears": 3,
+   "warrantyText": "3年（本体・HDD）",
+   "features": {
+    "クラウドストレージ連携": {
+     "value": "対応",
+     "supported": true
+    },
+    "Active Directory連携": {
+     "value": "対応",
+     "supported": true
+    },
+    "SSDキャッシュ": {
+     "value": "非対応",
+     "supported": false
+    },
+    "Time Machine": {
+     "value": "非対応",
+     "supported": false
+    },
+    "iSCSIターゲット": {
+     "value": "対応",
+     "supported": true
+    },
+    "ウイルスチェック": {
+     "value": "対応（DiXiM Security Endpoint別売、Windows Defender）",
+     "supported": true
+    },
+    "リモート監視（キキNavi）": {
+     "value": "対応（リモート設定・クラウドバックアップ含む）",
+     "supported": true
+    },
+    "ホットスワップ": {
+     "value": "対応",
+     "supported": true
+    },
+    "ホットスペア": {
+     "value": "非対応",
+     "supported": false
+    },
+    "ドライブ暗号化": {
+     "value": "対応",
+     "supported": true
+    },
+    "Webアクセス": {
+     "value": "非対応",
+     "supported": false
+    },
+    "メタデータ二重化": {
+     "value": "非対応",
+     "supported": false
+    },
+    "データ重複除去": {
+     "value": "対応",
+     "supported": true
+    },
+    "レプリケーション": {
+     "value": "対応",
+     "supported": true
+    },
+    "フェイルオーバー": {
+     "value": "非対応",
+     "supported": false
+    }
+   },
+   "releaseDate": "2025年12月",
+   "status": "現行",
+   "statusNote": null,
+   "variants": [
+    {
+     "sku": "WSH5620DN12S5",
+     "capacityTB": 12,
+     "url": "https://www.buffalo.jp/product/detail/wsh5620dn12s5.html",
+     "jan": "4981254075760"
+    },
+    {
+     "sku": "WSH5620DN24S5",
+     "capacityTB": 24,
+     "url": "https://www.buffalo.jp/product/detail/wsh5620dn24s5.html",
+     "jan": "4981254075753"
+    },
+    {
+     "sku": "WSH5620DN36S5",
+     "capacityTB": 36,
+     "url": "https://www.buffalo.jp/product/detail/wsh5620dn36s5.html",
+     "jan": "4981254075746"
+    },
+    {
+     "sku": "WSH5620DN48S5",
+     "capacityTB": 48,
+     "url": "https://www.buffalo.jp/product/detail/wsh5620dn48s5.html",
+     "jan": "4981254075739"
+    }
+   ],
+   "sourceUrl": "https://www.buffalo.jp/product/detail/print/wsh5620dn24s5.html",
+   "collectedBy": "research"
+  },
+  {
+   "id": "ws6410dnw5",
+   "maker": "BUFFALO",
+   "series": "WS6410DNW5",
+   "family": "TeraStation",
+   "name": "TeraStation（WS6410DNW5シリーズ）",
+   "osType": "Windows",
+   "osEdition": "Windows Server IoT 2025 for Storage Workgroup",
+   "windowsEdition": "Workgroup",
+   "install": "BOXタイプ",
+   "bays": 4,
+   "cpu": "Intel Atom x7211E 1.00GHz（ターボ3.20GHz）2コア/2スレッド",
+   "memory": "DDR5 8GB（最大16GB、16GB×1スロット）",
+   "lanText": "10GBASE-T×2（背面、5G/2.5G/1000BASE-T対応）",
+   "lanSpeedMax": "10G",
+   "lanMaxPorts": 2,
+   "usb": "USB 3.2(Gen 2) Type-C×1、USB 3.2(Gen 1) Type-A×1、USB 2.0 Type-A×2（いずれも背面）",
+   "raidModes": [
+    "RAID 5",
+    "RAID 1",
+    "RAID 0"
+   ],
+   "raidType": "ソフトウェアRAID",
+   "redundantPower": false,
+   "warrantyYears": 3,
+   "warrantyText": "3年間(本体およびハードディスク)",
+   "features": {
+    "クラウドストレージ連携": {
+     "value": "対応",
+     "supported": true
+    },
+    "Active Directory連携": {
+     "value": "対応",
+     "supported": true
+    },
+    "SSDキャッシュ": {
+     "value": "非対応",
+     "supported": false
+    },
+    "Time Machine": {
+     "value": "非対応",
+     "supported": false
+    },
+    "iSCSIターゲット": {
+     "value": "対応",
+     "supported": true
+    },
+    "ウイルスチェック": {
+     "value": "対応（DiXiM Security Endpoint別売、Windows Defender）",
+     "supported": true
+    },
+    "リモート監視（キキNavi）": {
+     "value": "対応",
+     "supported": true
+    },
+    "ホットスワップ": {
+     "value": "対応",
+     "supported": true
+    },
+    "ホットスペア": {
+     "value": "対応（記憶域スペース利用時のみ）",
+     "supported": true
+    },
+    "ドライブ暗号化": {
+     "value": "対応（BitLocker、ベーシックディスクのみ）",
+     "supported": true
+    },
+    "Webアクセス": {
+     "value": "非対応",
+     "supported": false
+    },
+    "メタデータ二重化": {
+     "value": "非対応",
+     "supported": false
+    },
+    "データ重複除去": {
+     "value": "非対応",
+     "supported": false
+    },
+    "レプリケーション": {
+     "value": "対応",
+     "supported": true
+    },
+    "フェイルオーバー": {
+     "value": "非対応",
+     "supported": false
+    }
+   },
+   "releaseDate": "2026年10月中旬（プレスリリース、商品ページには発売時期の記載なし）",
+   "status": "現行",
+   "statusNote": "現行（新製品、2026年10月中旬より順次出荷）",
+   "variants": [
+    {
+     "sku": "WS6410DN04W5",
+     "capacityTB": 4,
+     "url": "https://www.buffalo.jp/product/detail/ws6410dn04w5.html",
+     "jan": "4981254079706"
+    },
+    {
+     "sku": "WS6410DN08W5",
+     "capacityTB": 8,
+     "url": "https://www.buffalo.jp/product/detail/ws6410dn08w5.html",
+     "jan": "4981254079713"
+    },
+    {
+     "sku": "WS6410DN16W5",
+     "capacityTB": 16,
+     "url": "https://www.buffalo.jp/product/detail/ws6410dn16w5.html",
+     "jan": "4981254079720"
+    },
+    {
+     "sku": "WS6410DN32W5",
+     "capacityTB": 32,
+     "url": "https://www.buffalo.jp/product/detail/ws6410dn32w5.html",
+     "jan": "4981254079737"
+    },
+    {
+     "sku": "WS6410DN48W5",
+     "capacityTB": 48,
+     "url": "https://www.buffalo.jp/product/detail/ws6410dn48w5.html",
+     "jan": "4981254079744"
+    }
+   ],
+   "sourceUrl": "https://www.buffalo.jp/product/detail/ws6410dn48w5.html",
+   "collectedBy": "research"
+  },
+  {
+   "id": "ws6410dns5",
+   "maker": "BUFFALO",
+   "series": "WS6410DNS5",
+   "family": "TeraStation",
+   "name": "TeraStation（WS6410DNS5シリーズ）",
+   "osType": "Windows",
+   "osEdition": "Windows Server IoT 2025 for Storage Standard",
+   "windowsEdition": "Standard",
+   "install": "BOXタイプ",
+   "bays": 4,
+   "cpu": "Intel Atom x7211E 1.00GHz（ターボ3.20GHz）2コア/2スレッド",
+   "memory": "DDR5 8GB（最大16GB、16GB×1スロット）",
+   "lanText": "10GBASE-T×2（背面、5G/2.5G/1000BASE-T対応）",
+   "lanSpeedMax": "10G",
+   "lanMaxPorts": 2,
+   "usb": "USB 3.2(Gen 2) Type-C×1、USB 3.2(Gen 1) Type-A×1、USB 2.0 Type-A×2（いずれも背面）",
+   "raidModes": [
+    "RAID 5",
+    "RAID 1",
+    "RAID 0"
+   ],
+   "raidType": "ソフトウェアRAID",
+   "redundantPower": null,
+   "warrantyYears": null,
+   "warrantyText": null,
+   "features": {
+    "ホットスペア": {
+     "value": "対応（記憶域スペース利用時のみ）",
+     "supported": true
+    },
+    "データ重複除去": {
+     "value": "対応",
+     "supported": true
+    }
+   },
+   "releaseDate": "2026年10月中旬（プレスリリース）",
+   "status": "現行",
+   "statusNote": "現行（新製品、2026年10月中旬より順次出荷）",
+   "variants": [
+    {
+     "sku": "WS6410DN04S5",
+     "capacityTB": 4,
+     "url": "https://www.buffalo.jp/product/detail/ws6410dn04s5.html",
+     "jan": "4981254079652"
+    },
+    {
+     "sku": "WS6410DN08S5",
+     "capacityTB": 8,
+     "url": "https://www.buffalo.jp/product/detail/ws6410dn08s5.html",
+     "jan": "4981254079669"
+    },
+    {
+     "sku": "WS6410DN16S5",
+     "capacityTB": 16,
+     "url": "https://www.buffalo.jp/product/detail/ws6410dn16s5.html",
+     "jan": "4981254079676"
+    },
+    {
+     "sku": "WS6410DN32S5",
+     "capacityTB": 32,
+     "url": "https://www.buffalo.jp/product/detail/ws6410dn32s5.html",
+     "jan": "4981254079683"
+    },
+    {
+     "sku": "WS6410DN48S5",
+     "capacityTB": 48,
+     "url": "https://www.buffalo.jp/product/detail/ws6410dn48s5.html",
+     "jan": "4981254079690"
+    }
+   ],
+   "sourceUrl": "https://www.buffalo.jp/product/detail/ws6410dn48s5.html",
+   "collectedBy": "research"
+  },
+  {
+   "id": "ws6210dnw5",
+   "maker": "BUFFALO",
+   "series": "WS6210DNW5",
+   "family": "TeraStation",
+   "name": "TeraStation（WS6210DNW5シリーズ）",
+   "osType": "Windows",
+   "osEdition": "Windows Server IoT 2025 for Storage Workgroup",
+   "windowsEdition": "Workgroup",
+   "install": "BOXタイプ",
+   "bays": 2,
+   "cpu": "Intel Atom x7211E 1.00GHz（ターボ3.20GHz）2コア/2スレッド",
+   "memory": "DDR5 8GB（最大16GB、16GB×1スロット）",
+   "lanText": "10GBASE-T×2（背面）",
+   "lanSpeedMax": "10G",
+   "lanMaxPorts": 2,
+   "usb": "USB 3.2(Gen 2) Type-C×1、USB 3.2(Gen 1) Type-A×1、USB 2.0 Type-A×2（いずれも背面）",
+   "raidModes": [
+    "RAID 1",
+    "RAID 0"
+   ],
+   "raidType": "ソフトウェアRAID",
+   "redundantPower": null,
+   "warrantyYears": null,
+   "warrantyText": null,
+   "features": {
+    "ホットスワップ": {
+     "value": "対応",
+     "supported": true
+    },
+    "ホットスペア": {
+     "value": "非対応",
+     "supported": false
+    },
+    "データ重複除去": {
+     "value": "非対応",
+     "supported": false
+    }
+   },
+   "releaseDate": "2026年10月中旬（プレスリリース）",
+   "status": "現行",
+   "statusNote": "現行（新製品、2026年10月中旬より順次出荷）",
+   "variants": [
+    {
+     "sku": "WS6210DN02W5",
+     "capacityTB": 2,
+     "url": "https://www.buffalo.jp/product/detail/ws6210dn02w5.html",
+     "jan": "4981254079614"
+    },
+    {
+     "sku": "WS6210DN04W5",
+     "capacityTB": 4,
+     "url": "https://www.buffalo.jp/product/detail/ws6210dn04w5.html",
+     "jan": "4981254079621"
+    },
+    {
+     "sku": "WS6210DN08W5",
+     "capacityTB": 8,
+     "url": "https://www.buffalo.jp/product/detail/ws6210dn08w5.html",
+     "jan": "4981254079638"
+    },
+    {
+     "sku": "WS6210DN16W5",
+     "capacityTB": 16,
+     "url": "https://www.buffalo.jp/product/detail/ws6210dn16w5.html",
+     "jan": "4981254079645"
+    }
+   ],
+   "sourceUrl": "https://www.buffalo.jp/product/detail/ws6210dn16w5.html",
+   "collectedBy": "research"
+  },
+  {
+   "id": "ws6210dns5",
+   "maker": "BUFFALO",
+   "series": "WS6210DNS5",
+   "family": "TeraStation",
+   "name": "TeraStation（WS6210DNS5シリーズ）",
+   "osType": "Windows",
+   "osEdition": "Windows Server IoT 2025 for Storage Standard",
+   "windowsEdition": "Standard",
+   "install": "BOXタイプ",
+   "bays": 2,
+   "cpu": "Intel Atom x7211E 1.00GHz（ターボ3.20GHz）2コア/2スレッド",
+   "memory": "DDR5 8GB（最大16GB、16GB×1スロット）",
+   "lanText": "10GBASE-T×2（背面）",
+   "lanSpeedMax": "10G",
+   "lanMaxPorts": 2,
+   "usb": "USB 3.2(Gen 2) Type-C×1、USB 3.2(Gen 1) Type-A×1、USB 2.0 Type-A×2（いずれも背面）",
+   "raidModes": [
+    "RAID 1",
+    "RAID 0"
+   ],
+   "raidType": "ソフトウェアRAID",
+   "redundantPower": false,
+   "warrantyYears": 3,
+   "warrantyText": "3年間(本体およびハードディスク)",
+   "features": {
+    "クラウドストレージ連携": {
+     "value": "対応",
+     "supported": true
+    },
+    "Active Directory連携": {
+     "value": "対応",
+     "supported": true
+    },
+    "SSDキャッシュ": {
+     "value": "非対応",
+     "supported": false
+    },
+    "Time Machine": {
+     "value": "非対応",
+     "supported": false
+    },
+    "iSCSIターゲット": {
+     "value": "対応",
+     "supported": true
+    },
+    "ウイルスチェック": {
+     "value": "対応（DiXiM Security Endpoint別売、Windows Defender）",
+     "supported": true
+    },
+    "リモート監視（キキNavi）": {
+     "value": "対応（リモート設定含む）",
+     "supported": true
+    },
+    "ホットスワップ": {
+     "value": "対応",
+     "supported": true
+    },
+    "ホットスペア": {
+     "value": "非対応",
+     "supported": false
+    },
+    "ドライブ暗号化": {
+     "value": "対応（BitLocker、ベーシックディスクのみ）",
+     "supported": true
+    },
+    "Webアクセス": {
+     "value": "非対応",
+     "supported": false
+    },
+    "メタデータ二重化": {
+     "value": "非対応",
+     "supported": false
+    },
+    "データ重複除去": {
+     "value": "対応",
+     "supported": true
+    },
+    "レプリケーション": {
+     "value": "対応",
+     "supported": true
+    },
+    "フェイルオーバー": {
+     "value": "非対応",
+     "supported": false
+    }
+   },
+   "releaseDate": "2026年10月中旬（プレスリリース）",
+   "status": "現行",
+   "statusNote": "現行（新製品、2026年10月中旬より順次出荷）",
+   "variants": [
+    {
+     "sku": "WS6210DN02S5",
+     "capacityTB": 2,
+     "url": "https://www.buffalo.jp/product/detail/ws6210dn02s5.html",
+     "jan": "4981254079577"
+    },
+    {
+     "sku": "WS6210DN04S5",
+     "capacityTB": 4,
+     "url": "https://www.buffalo.jp/product/detail/ws6210dn04s5.html",
+     "jan": "4981254079584"
+    },
+    {
+     "sku": "WS6210DN08S5",
+     "capacityTB": 8,
+     "url": "https://www.buffalo.jp/product/detail/ws6210dn08s5.html",
+     "jan": "4981254079591"
+    },
+    {
+     "sku": "WS6210DN16S5",
+     "capacityTB": 16,
+     "url": "https://www.buffalo.jp/product/detail/ws6210dn16s5.html",
+     "jan": "4981254079607"
+    }
+   ],
+   "sourceUrl": "https://www.buffalo.jp/product/detail/ws6210dn16s5.html",
+   "collectedBy": "research"
+  },
+  {
+   "id": "ls220dnb",
+   "maker": "BUFFALO",
+   "series": "LS220DNB",
+   "family": "LinkStation",
+   "name": "LinkStation（LS220DNBシリーズ）",
+   "osType": "Linux",
+   "osEdition": "Linuxベース独自",
+   "windowsEdition": null,
+   "install": "BOXタイプ",
+   "bays": 2,
+   "cpu": "Marvell Armada370 800MHz/1コア",
+   "memory": "DDR3 256MB",
+   "lanText": "1000BASE-T×1（背面）",
+   "lanSpeedMax": "1G",
+   "lanMaxPorts": 1,
+   "usb": "USB 2.0×1（背面、USB-HDDかUPSのいずれか、PC接続不可）",
+   "raidModes": [
+    "RAID 1",
+    "RAID 0",
+    "通常モード"
+   ],
+   "raidType": "ソフトウェアRAID",
+   "redundantPower": false,
+   "warrantyYears": 3,
+   "warrantyText": "3年間",
+   "features": {
+    "クラウドストレージ連携": {
+     "value": "非対応",
+     "supported": false
+    },
+    "Active Directory連携": {
+     "value": "対応",
+     "supported": true
+    },
+    "SSDキャッシュ": {
+     "value": "非対応",
+     "supported": false
+    },
+    "Time Machine": {
+     "value": "対応",
+     "supported": true
+    },
+    "iSCSIターゲット": {
+     "value": "非対応",
+     "supported": false
+    },
+    "ウイルスチェック": {
+     "value": "非対応",
+     "supported": false
+    },
+    "リモート監視（キキNavi）": {
+     "value": "非対応",
+     "supported": false
+    },
+    "ホットスワップ": {
+     "value": "非対応",
+     "supported": false
+    },
+    "ホットスペア": {
+     "value": "非対応",
+     "supported": false
+    },
+    "ドライブ暗号化": {
+     "value": "非対応",
+     "supported": false
+    },
+    "Webアクセス": {
+     "value": "対応",
+     "supported": true
+    },
+    "スナップショット": {
+     "value": "非対応",
+     "supported": false
+    },
+    "メタデータ二重化": {
+     "value": "非対応",
+     "supported": false
+    },
+    "レプリケーション": {
+     "value": "非対応",
+     "supported": false
+    },
+    "フェイルオーバー": {
+     "value": "非対応",
+     "supported": false
+    }
+   },
+   "releaseDate": "2016年1月",
+   "status": "現行",
+   "statusNote": null,
+   "variants": [
+    {
+     "sku": "LS220DN0202B",
+     "capacityTB": 2,
+     "url": "https://www.buffalo.jp/product/detail/ls220dn0202b.html",
+     "jan": "4981254034712"
+    },
+    {
+     "sku": "LS220DN0402B",
+     "capacityTB": 4,
+     "url": "https://www.buffalo.jp/product/detail/ls220dn0402b.html",
+     "jan": "4981254034729"
+    },
+    {
+     "sku": "LS220DN0602B",
+     "capacityTB": 6,
+     "url": "https://www.buffalo.jp/product/detail/ls220dn0602b.html",
+     "jan": "4981254034736"
+    },
+    {
+     "sku": "LS220DN0802B",
+     "capacityTB": 8,
+     "url": "https://www.buffalo.jp/product/detail/ls220dn0802b.html",
+     "jan": "4981254057193"
+    }
+   ],
+   "sourceUrl": "https://www.buffalo.jp/product/detail/ls220dn0402b.html",
+   "collectedBy": "research"
+  },
+  {
+   "id": "ls210dnb",
+   "maker": "BUFFALO",
+   "series": "LS210DNB",
+   "family": "LinkStation",
+   "name": "LinkStation（LS210DNBシリーズ）",
+   "osType": "Linux",
+   "osEdition": "Linuxベース独自",
+   "windowsEdition": null,
+   "install": "BOXタイプ",
+   "bays": 1,
+   "cpu": "Marvell Armada370 800MHz/1コア",
+   "memory": "DDR3 256MB",
+   "lanText": "1000BASE-T×1（背面）",
+   "lanSpeedMax": "1G",
+   "lanMaxPorts": 1,
+   "usb": "USB 2.0×1（背面、USB-HDDかUPSのいずれか、PC接続不可）",
+   "raidModes": [],
+   "raidType": null,
+   "redundantPower": false,
+   "warrantyYears": 3,
+   "warrantyText": "3年",
+   "features": {
+    "クラウドストレージ連携": {
+     "value": "非対応",
+     "supported": false
+    },
+    "Active Directory連携": {
+     "value": "対応",
+     "supported": true
+    },
+    "SSDキャッシュ": {
+     "value": "非対応",
+     "supported": false
+    },
+    "Time Machine": {
+     "value": "対応",
+     "supported": true
+    },
+    "iSCSIターゲット": {
+     "value": "非対応",
+     "supported": false
+    },
+    "ウイルスチェック": {
+     "value": "非対応",
+     "supported": false
+    },
+    "リモート監視（キキNavi）": {
+     "value": "非対応",
+     "supported": false
+    },
+    "ホットスワップ": {
+     "value": "非対応",
+     "supported": false
+    },
+    "ホットスペア": {
+     "value": "非対応",
+     "supported": false
+    },
+    "ドライブ暗号化": {
+     "value": "非対応",
+     "supported": false
+    },
+    "Webアクセス": {
+     "value": "対応",
+     "supported": true
+    },
+    "スナップショット": {
+     "value": "非対応",
+     "supported": false
+    },
+    "メタデータ二重化": {
+     "value": "非対応",
+     "supported": false
+    },
+    "レプリケーション": {
+     "value": "非対応",
+     "supported": false
+    },
+    "フェイルオーバー": {
+     "value": "非対応",
+     "supported": false
+    }
+   },
+   "releaseDate": "2017年3月",
+   "status": "現行",
+   "statusNote": null,
+   "variants": [
+    {
+     "sku": "LS210DN0101B",
+     "capacityTB": 1,
+     "url": "https://www.buffalo.jp/product/detail/ls210dn0101b.html",
+     "jan": "4981254042311"
+    },
+    {
+     "sku": "LS210DN0201B",
+     "capacityTB": 2,
+     "url": "https://www.buffalo.jp/product/detail/ls210dn0201b.html",
+     "jan": "4981254042366"
+    },
+    {
+     "sku": "LS210DN0301B",
+     "capacityTB": 3,
+     "url": "https://www.buffalo.jp/product/detail/ls210dn0301b.html",
+     "jan": "4981254042373"
+    },
+    {
+     "sku": "LS210DN0401B",
+     "capacityTB": 4,
+     "url": "https://www.buffalo.jp/product/detail/ls210dn0401b.html",
+     "jan": "4981254042380"
+    }
+   ],
+   "sourceUrl": "https://www.buffalo.jp/product/detail/ls210dn0201b.html",
+   "collectedBy": "research"
+  }
+ ]
+}
