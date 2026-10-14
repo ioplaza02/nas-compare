@@ -113,6 +113,7 @@ async function loadData() {
   }
   if (!ioJson) throw new Error("I-O DATAの商品データを読み込めませんでした");
   state.io = ioJson.products.map(normalizeIO);
+  try { state.ioCloud = await fetchJson("data/iodata-cloud.json"); } catch (e) { console.warn("クラウド対応表データなし:", e.message); }
   state.updated.iodata = ioJson.updatedAt;
 
   for (const m of MAKERS.filter(m => m.ready)) {
@@ -181,6 +182,11 @@ function nearestVariant(p, capTB) {
 // 機能の対応状況を、両社で同じ物差しにそろえる
 //   true=対応 / false=非対応 / null=データ上の記載なし（不明）
 // ---------------------------------------------------------------------
+// I-O DATAのクラウド対応は、公式「クラウドストレージサービス対応表」から作った data/iodata-cloud.json を使う
+// （商品ページの機能一覧とは表記がずれることがあるため）
+function ioCloud(p) { return state.ioCloud?.products?.[p.id] || null; }
+const IO_CLOUD_LINK = () => state.ioCloud?.source;
+
 const FEATURE_ROWS = [
   {
     label: "リモート監視サービス",
@@ -189,10 +195,39 @@ const FEATURE_ROWS = [
       : featOther(p, "リモート監視（キキNavi）", "キキNavi"),
   },
   {
-    label: "クラウドストレージ連携",
-    get: p => p.maker === "I-O DATA"
-      ? (p.featureList.includes("クラウドストレージ連携") ? { v: true, t: "対応" } : { v: null })
-      : featOther(p, "クラウドストレージ連携", "対応"),
+    // お客様が「クラウドと連携したい」と言う時の意味（OneDrive・Dropbox等との同期）
+    label: "クラウドストレージ連携<br><small>（OneDrive・Dropbox等との同期）</small>",
+    get: p => {
+      if (p.maker !== "I-O DATA") {
+        const r = featOther(p, "クラウドストレージ連携", "対応");
+        if (r.v === true) r.t = "対応（対応サービスは出典ページで確認）";
+        return r;
+      }
+      const c = ioCloud(p);
+      if (!c) return { v: null, t: "対応表に記載なし（要確認）", link: IO_CLOUD_LINK() };
+      if (c.syncSupported === null) return { v: null, t: c.syncNote, link: IO_CLOUD_LINK() };
+      return c.syncSupported
+        ? { v: true, t: `対応：${c.syncServices.join("、")}`, link: IO_CLOUD_LINK() }
+        : { v: false, t: "非対応（対応表ですべて×）", link: IO_CLOUD_LINK() };
+    },
+  },
+  {
+    // メーカー自身が提供する有償のクラウドバックアップ（上とは別物）
+    label: "メーカーのクラウドバックアップ<br><small>（有償オプション）</small>",
+    get: p => {
+      if (p.maker !== "I-O DATA") {
+        const r = featOther(p, "クラウドバックアップ（キキNavi）", "キキNaviクラウドバックアップ");
+        if (r.v !== null) return r;
+        const k = p.features?.["リモート監視（キキNavi）"];
+        if (k?.supported && /クラウドバックアップ/.test(k.value)) return { v: true, t: "キキNaviクラウドバックアップ" };
+        return { v: null };
+      }
+      const c = ioCloud(p);
+      if (c) return c.narsusCloud
+        ? { v: true, t: "NarSuSクラウドバックアップ", link: IO_CLOUD_LINK() }
+        : { v: false, t: "非対応（対応表で×）", link: IO_CLOUD_LINK() };
+      return p.featureList.includes("NarSuSクラウドバックアップ") ? { v: true, t: "NarSuSクラウドバックアップ" } : { v: null };
+    },
   },
   {
     label: "Time Machine（Mac）",
@@ -209,13 +244,14 @@ function featOther(p, key, okText) {
   return { v: null, t: f.value };
 }
 function featText(r) {
-  if (r.v === true) return esc(r.t || "対応");
-  if (r.v === false) return esc(r.t || "非対応");
-  return `<span class="muted">${esc(r.t || "記載なし")}</span>`;
+  const link = r.link ? ` <a href="${esc(r.link)}" target="_blank" rel="noopener">対応表</a>` : "";
+  if (r.v === true) return esc(r.t || "対応") + link;
+  if (r.v === false) return esc(r.t || "非対応") + link;
+  return `<span class="muted">${esc(r.t || "記載なし")}</span>` + link;
 }
 // 一覧表で比較に使わなかった「その他の特徴」
-const IO_MAPPED = new Set(["NarSuS", "クラウドストレージ連携", "Time Machine", "10GbE"]);
-const OTHER_MAPPED = new Set(["リモート監視（キキNavi）", "クラウドストレージ連携", "Time Machine"]);
+const IO_MAPPED = new Set(["NarSuS", "クラウドストレージ連携", "NarSuSクラウドバックアップ", "Time Machine", "10GbE"]);
+const OTHER_MAPPED = new Set(["リモート監視（キキNavi）", "クラウドストレージ連携", "クラウドバックアップ（キキNavi）", "Time Machine"]);
 function extraFeatures(p) {
   if (p.maker === "I-O DATA") return p.featureList.filter(f => !IO_MAPPED.has(f));
   return Object.entries(p.features || {})
@@ -272,6 +308,12 @@ function explain(src, cand, capTB) {
     const maxS = Math.max(...capS), maxC = Math.max(...capC);
     if (maxS !== maxC) diff.push(`容量ラインナップの上限が異なる（${A}：最大${fmtTB(maxS)}／${B}：最大${fmtTB(maxC)}）`);
   }
+  // ECCメモリー
+  const e1 = eccOf(src), e2 = eccOf(cand);
+  if (e1 !== null && e2 !== null) {
+    if (e1 === e2) same.push(`メモリーが${e1 ? "ECC" : "Non-ECC"}で同じ`);
+    else diff.push(`メモリーのECCが異なる（${A}：${e1 ? "ECC" : "Non-ECC"}／${B}：${e2 ? "ECC" : "Non-ECC"}）`);
+  }
   // RAID
   const rs = new Set(src.raidModes), rc = new Set(cand.raidModes);
   const onlyS = [...rs].filter(x => !rc.has(x)), onlyC = [...rc].filter(x => !rs.has(x));
@@ -324,6 +366,20 @@ function variantsCell(p, capTB) {
   }).join("<br>");
 }
 
+// ECCの判定：表記に「ECC」があれば対応。「non-ECC」と書いてあるか、ECCの記載がなければ非対応（Non-ECC）。
+// メモリーの記載自体がない場合は判定しない。
+function eccOf(p) {
+  const m = p.raw?.memory || p.memory;
+  if (!m) return null;
+  if (/non[\s-]?ECC/i.test(m)) return false;
+  return /ECC/i.test(m);
+}
+function eccLabel(p) {
+  const e = eccOf(p);
+  if (e === null) return `<span class="muted">判定不可（メモリー記載なし）</span>`;
+  return e ? "ECC" : "Non-ECC";
+}
+
 // 公式ページの表記そのまま（raw）があればそれを、なければ整形済みの値を表示
 function rawOr(p, key, fallback) {
   const v = p.raw?.[key];
@@ -349,6 +405,7 @@ function compareTable(cols, capTB) {
     row("LAN", p => rawOr(p, "lan", p.lanText)),
     row("CPU", p => rawOr(p, "cpu", p.cpu)),
     row("メモリー", p => rawOr(p, "memory", p.memory)),
+    row(`ECCメモリー${TOOL}`, p => eccLabel(p), p => eccOf(p)),
     row("対応RAID", p => rawOr(p, "raid", p.raidModes.join("・")), p => p.raidModes.slice().sort().join()),
     row("保証期間", p => rawOr(p, "warranty", p.warrantyYears ? `${p.warrantyYears}年` : null), p => p.warrantyYears),
     ...FEATURE_ROWS.map(f => row(f.label + TOOL, p => featText(f.get(p)), p => f.get(p).v)),

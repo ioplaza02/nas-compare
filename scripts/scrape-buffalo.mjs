@@ -98,7 +98,7 @@ export function parseSku(sku) {
 const FEATURE_KEYS = [
   ["クラウドストレージ連携", /クラウドストレージ連携/],
   ["Time Machine", /Time\s?Machine/i],
-  ["リモート監視（キキNavi）", /キキNavi(?!.*クラウドバックアップ)/],
+  ["リモート監視（キキNavi）", /キキNavi/],
   ["クラウドバックアップ（キキNavi）", /クラウドバックアップ/],
   ["Active Directory連携", /Active Directory/],
   ["iSCSIターゲット", /^iSCSIターゲット|iSCSIターゲット$/],

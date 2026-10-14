@@ -1,0 +1,361 @@
+{
+ "source": "https://www.iodata.jp/pio/io/nas/landisk/cloud.htm",
+ "sourceTitle": "LAN DISK クラウドストレージサービス対応表（2026年10月7日現在の表記）",
+ "checkedAt": "2026-10-14",
+ "note": "対応表の○×を読み取って作成。表にない機種は「要確認」として扱う。",
+ "products": {
+  "hdl6-hb": {
+   "syncServices": [
+    "Dropbox",
+    "Box",
+    "Working Folder",
+    "HOME-BOX²"
+   ],
+   "syncSupported": true,
+   "narsusCloud": true,
+   "tableRow": "HDL6-HB、HDL4-HBEX、HDL2-HB"
+  },
+  "hdl4-hbex": {
+   "syncServices": [
+    "Dropbox",
+    "Box",
+    "Working Folder",
+    "HOME-BOX²"
+   ],
+   "syncSupported": true,
+   "narsusCloud": true,
+   "tableRow": "HDL6-HB、HDL4-HBEX、HDL2-HB"
+  },
+  "hdl2-hb": {
+   "syncServices": [
+    "Dropbox",
+    "Box",
+    "Working Folder",
+    "HOME-BOX²"
+   ],
+   "syncSupported": true,
+   "narsusCloud": true,
+   "tableRow": "HDL6-HB、HDL4-HBEX、HDL2-HB"
+  },
+  "hdl6-hab": {
+   "syncServices": [
+    "Microsoft OneDrive",
+    "OneDrive for Business",
+    "Google ドライブ",
+    "Dropbox",
+    "Box",
+    "Working Folder",
+    "HOME-BOX²"
+   ],
+   "syncSupported": true,
+   "narsusCloud": true,
+   "tableRow": "HDL6-HAB、HDL4-HAEXB、HDL2-HAB、HDL4-HAB-U ほか"
+  },
+  "hdl4-haexb": {
+   "syncServices": [
+    "Microsoft OneDrive",
+    "OneDrive for Business",
+    "Google ドライブ",
+    "Dropbox",
+    "Box",
+    "Working Folder",
+    "HOME-BOX²"
+   ],
+   "syncSupported": true,
+   "narsusCloud": true,
+   "tableRow": "HDL6-HAB、HDL4-HAEXB、HDL2-HAB、HDL4-HAB-U ほか"
+  },
+  "hdl2-hab": {
+   "syncServices": [
+    "Microsoft OneDrive",
+    "OneDrive for Business",
+    "Google ドライブ",
+    "Dropbox",
+    "Box",
+    "Working Folder",
+    "HOME-BOX²"
+   ],
+   "syncSupported": true,
+   "narsusCloud": true,
+   "tableRow": "HDL6-HAB、HDL4-HAEXB、HDL2-HAB、HDL4-HAB-U ほか"
+  },
+  "hdl4-hab-u": {
+   "syncServices": [
+    "Microsoft OneDrive",
+    "OneDrive for Business",
+    "Google ドライブ",
+    "Dropbox",
+    "Box",
+    "Working Folder",
+    "HOME-BOX²"
+   ],
+   "syncSupported": true,
+   "narsusCloud": true,
+   "tableRow": "HDL6-HAB、HDL4-HAEXB、HDL2-HAB、HDL4-HAB-U ほか"
+  },
+  "hdl4-lx": {
+   "syncServices": [],
+   "syncSupported": false,
+   "narsusCloud": true,
+   "tableRow": "HDL4-LX、HDL2-LX、HDL4-LXU"
+  },
+  "hdl2-lx": {
+   "syncServices": [],
+   "syncSupported": false,
+   "narsusCloud": true,
+   "tableRow": "HDL4-LX、HDL2-LX、HDL4-LXU"
+  },
+  "hdl4-lxu": {
+   "syncServices": [],
+   "syncSupported": false,
+   "narsusCloud": true,
+   "tableRow": "HDL4-LX、HDL2-LX、HDL4-LXU"
+  },
+  "hdl4-xab": {
+   "syncServices": [
+    "Microsoft OneDrive",
+    "OneDrive for Business",
+    "Google ドライブ",
+    "Dropbox",
+    "Box"
+   ],
+   "syncSupported": true,
+   "narsusCloud": true,
+   "tableRow": "HDL4-XAB、HDL2-XAB、HDL4-XAB-U ほか"
+  },
+  "hdl2-xab": {
+   "syncServices": [
+    "Microsoft OneDrive",
+    "OneDrive for Business",
+    "Google ドライブ",
+    "Dropbox",
+    "Box"
+   ],
+   "syncSupported": true,
+   "narsusCloud": true,
+   "tableRow": "HDL4-XAB、HDL2-XAB、HDL4-XAB-U ほか"
+  },
+  "hdl4-xab-u": {
+   "syncServices": [
+    "Microsoft OneDrive",
+    "OneDrive for Business",
+    "Google ドライブ",
+    "Dropbox",
+    "Box"
+   ],
+   "syncSupported": true,
+   "narsusCloud": true,
+   "tableRow": "HDL4-XAB、HDL2-XAB、HDL4-XAB-U ほか"
+  },
+  "hdl4-lv": {
+   "syncServices": [],
+   "syncSupported": false,
+   "narsusCloud": false,
+   "tableRow": "HDL4-LV、HDL4-LVB、HDL2-LV ほか"
+  },
+  "hdl4-lvb": {
+   "syncServices": [],
+   "syncSupported": false,
+   "narsusCloud": false,
+   "tableRow": "HDL4-LV、HDL4-LVB、HDL2-LV ほか"
+  },
+  "hdl2-lv": {
+   "syncServices": [],
+   "syncSupported": false,
+   "narsusCloud": false,
+   "tableRow": "HDL4-LV、HDL4-LVB、HDL2-LV ほか"
+  },
+  "hdl2-lvb": {
+   "syncServices": [],
+   "syncSupported": false,
+   "narsusCloud": false,
+   "tableRow": "HDL4-LV、HDL4-LVB、HDL2-LV ほか"
+  },
+  "hdl4-lvu": {
+   "syncServices": [],
+   "syncSupported": false,
+   "narsusCloud": false,
+   "tableRow": "HDL4-LV、HDL4-LVB、HDL2-LV ほか"
+  },
+  "hdl4-lvub": {
+   "syncServices": [],
+   "syncSupported": false,
+   "narsusCloud": false,
+   "tableRow": "HDL4-LV、HDL4-LVB、HDL2-LV ほか"
+  },
+  "hdl2-len": {
+   "syncServices": [
+    "Dropbox",
+    "Box"
+   ],
+   "syncSupported": true,
+   "narsusCloud": false,
+   "tableRow": "HDL2-LEN、HDL2-LENB、HDL1-LEN、HDL1-LENB"
+  },
+  "hdl2-lenb": {
+   "syncServices": [
+    "Dropbox",
+    "Box"
+   ],
+   "syncSupported": true,
+   "narsusCloud": false,
+   "tableRow": "HDL2-LEN、HDL2-LENB、HDL1-LEN、HDL1-LENB"
+  },
+  "hdl1-len": {
+   "syncServices": [
+    "Dropbox",
+    "Box"
+   ],
+   "syncSupported": true,
+   "narsusCloud": false,
+   "tableRow": "HDL2-LEN、HDL2-LENB、HDL1-LEN、HDL1-LENB"
+  },
+  "hdl1-lenb": {
+   "syncServices": [
+    "Dropbox",
+    "Box"
+   ],
+   "syncSupported": true,
+   "narsusCloud": false,
+   "tableRow": "HDL2-LEN、HDL2-LENB、HDL1-LEN、HDL1-LENB"
+  },
+  "hdl1-lasoho": {
+   "syncServices": [
+    "Dropbox",
+    "Box"
+   ],
+   "syncSupported": true,
+   "narsusCloud": false,
+   "tableRow": "HDL1-LASOHO"
+  },
+  "hdl2-aaxwb": {
+   "syncServices": [
+    "Microsoft OneDrive",
+    "OneDrive for Business",
+    "Google ドライブ",
+    "Dropbox",
+    "Box"
+   ],
+   "syncSupported": true,
+   "narsusCloud": false,
+   "tableRow": "HDL2-AAXWB、HDL-AAXW ほか"
+  },
+  "hdl-aaxw": {
+   "syncServices": [
+    "Microsoft OneDrive",
+    "OneDrive for Business",
+    "Google ドライブ",
+    "Dropbox",
+    "Box"
+   ],
+   "syncSupported": true,
+   "narsusCloud": false,
+   "tableRow": "HDL2-AAXWB、HDL-AAXW ほか"
+  },
+  "hdl4-z25si3b": {
+   "syncServices": null,
+   "syncSupported": null,
+   "syncNote": "Windowsモデルの対応表には同期（テレワーク）用途の欄なし",
+   "narsusCloud": true,
+   "tableRow": "HDL4-Z25系（Windowsモデル）"
+  },
+  "hdl2-z25si3b": {
+   "syncServices": null,
+   "syncSupported": null,
+   "syncNote": "Windowsモデルの対応表には同期（テレワーク）用途の欄なし",
+   "narsusCloud": true,
+   "tableRow": "HDL4-Z25系（Windowsモデル）"
+  },
+  "hdl4-z25si3bb": {
+   "syncServices": null,
+   "syncSupported": null,
+   "syncNote": "Windowsモデルの対応表には同期（テレワーク）用途の欄なし",
+   "narsusCloud": true,
+   "tableRow": "HDL4-Z25系（Windowsモデル）"
+  },
+  "hdl2-z25si3bb": {
+   "syncServices": null,
+   "syncSupported": null,
+   "syncNote": "Windowsモデルの対応表には同期（テレワーク）用途の欄なし",
+   "narsusCloud": true,
+   "tableRow": "HDL4-Z25系（Windowsモデル）"
+  },
+  "hdl4-z25si3bub": {
+   "syncServices": null,
+   "syncSupported": null,
+   "syncNote": "Windowsモデルの対応表には同期（テレワーク）用途の欄なし",
+   "narsusCloud": true,
+   "tableRow": "HDL4-Z25系（Windowsモデル）"
+  },
+  "hdl4-z25si3bu": {
+   "syncServices": null,
+   "syncSupported": null,
+   "syncNote": "Windowsモデルの対応表には同期（テレワーク）用途の欄なし",
+   "narsusCloud": true,
+   "tableRow": "HDL4-Z25系（Windowsモデル）"
+  },
+  "hdl4-z25wi3bb": {
+   "syncServices": null,
+   "syncSupported": null,
+   "syncNote": "Windowsモデルの対応表には同期（テレワーク）用途の欄なし",
+   "narsusCloud": true,
+   "tableRow": "HDL4-Z25系（Windowsモデル）"
+  },
+  "hdl2-z25wi3bb": {
+   "syncServices": null,
+   "syncSupported": null,
+   "syncNote": "Windowsモデルの対応表には同期（テレワーク）用途の欄なし",
+   "narsusCloud": true,
+   "tableRow": "HDL4-Z25系（Windowsモデル）"
+  },
+  "hdl4-z25wi3bub": {
+   "syncServices": null,
+   "syncSupported": null,
+   "syncNote": "Windowsモデルの対応表には同期（テレワーク）用途の欄なし",
+   "narsusCloud": true,
+   "tableRow": "HDL4-Z25系（Windowsモデル）"
+  },
+  "hdl4-z25satb": {
+   "syncServices": null,
+   "syncSupported": null,
+   "syncNote": "Windowsモデルの対応表には同期（テレワーク）用途の欄なし",
+   "narsusCloud": true,
+   "tableRow": "HDL4-Z25系（Windowsモデル）"
+  },
+  "hdl2-z25satb": {
+   "syncServices": null,
+   "syncSupported": null,
+   "syncNote": "Windowsモデルの対応表には同期（テレワーク）用途の欄なし",
+   "narsusCloud": true,
+   "tableRow": "HDL4-Z25系（Windowsモデル）"
+  },
+  "hdl4-z25satbu": {
+   "syncServices": null,
+   "syncSupported": null,
+   "syncNote": "Windowsモデルの対応表には同期（テレワーク）用途の欄なし",
+   "narsusCloud": true,
+   "tableRow": "HDL4-Z25系（Windowsモデル）"
+  },
+  "hdl4-z25watb": {
+   "syncServices": null,
+   "syncSupported": null,
+   "syncNote": "Windowsモデルの対応表には同期（テレワーク）用途の欄なし",
+   "narsusCloud": true,
+   "tableRow": "HDL4-Z25系（Windowsモデル）"
+  },
+  "hdl2-z25watb": {
+   "syncServices": null,
+   "syncSupported": null,
+   "syncNote": "Windowsモデルの対応表には同期（テレワーク）用途の欄なし",
+   "narsusCloud": true,
+   "tableRow": "HDL4-Z25系（Windowsモデル）"
+  },
+  "hdl4-z25watbu": {
+   "syncServices": null,
+   "syncSupported": null,
+   "syncNote": "Windowsモデルの対応表には同期（テレワーク）用途の欄なし",
+   "narsusCloud": true,
+   "tableRow": "HDL4-Z25系（Windowsモデル）"
+  }
+ }
+}
