@@ -234,11 +234,20 @@ const FEATURE_ROWS = [
       : featOther(p, "Time Machine", "対応"),
   },
 ];
+// 仕様表の○×の判定（取得スクリプトと同じ規則）。○は3種類の文字が混在しているので全部対応。
+function markOf(value) {
+  const t = String(value ?? "").trim();
+  if (!t) return null;
+  if (/^(非対応|なし|×|✕|－|ー|-|―)/.test(t)) return false;
+  if (/^(○|〇|◯|●|対応|あり)/.test(t)) return true;
+  return null;
+}
 function featOther(p, key, okText) {
   const f = p.features?.[key];
   if (!f) return { v: null };
-  if (f.supported === true) return { v: true, t: okText };
-  if (f.supported === false) return { v: false, t: "非対応" };
+  const sup = markOf(f.value);
+  if (sup === true) return { v: true, t: okText };
+  if (sup === false) return { v: false, t: "非対応" };
   return { v: null, t: f.value };
 }
 function featText(r) {
@@ -253,7 +262,7 @@ const OTHER_MAPPED = new Set(["リモート監視（キキNavi）", "クラウ�
 function extraFeatures(p) {
   if (p.maker === "I-O DATA") return p.featureList.filter(f => !IO_MAPPED.has(f));
   return Object.entries(p.features || {})
-    .filter(([k, f]) => f.supported === true && !OTHER_MAPPED.has(k))
+    .filter(([k, f]) => markOf(f.value) === true && !OTHER_MAPPED.has(k))
     .map(([k]) => k);
 }
 
@@ -383,6 +392,15 @@ function rawOr(p, key, fallback) {
   const v = p.raw?.[key];
   return esc(v != null && v !== "" ? v : (fallback ?? "—"));
 }
+// LAN欄：公式表記のうち、ポートの行（10GBASE-T・1000BASE-T など）だけを見やすく並べる
+function lanRaw(p) {
+  const raw = p.raw?.lan;
+  if (!raw) return esc(p.lanText || "—");
+  const parts = raw.split(" ／ ")
+    .filter(x => /BASE-T|SFP/.test(x.split("：")[0]) && !/準拠規格|伝送速度/.test(x))
+    .map(x => x.replace(/^.*LAN端子（([^）]+)）/, "$1"));
+  return parts.length ? parts.map(esc).join("<br>") : esc(raw);
+}
 const ALL_SAME = (vals) => vals.every(v => v === vals[0]);
 const TOOL = `<span class="tool-mark" title="ツールが公式の値から判定・要約した行">※</span>`;
 
@@ -419,7 +437,7 @@ function compareTable(cols, capTB) {
     row("ベイ数", p => p.raw?.bays ? esc(p.raw.bays) : (p.bays ? `${p.bays}ベイ` : "—"), p => p.bays),
     row("容量ラインナップ", p => variantsCell(p, capTB)),
     row(`LAN最大速度${TOOL}`, p => lanLabel(p), p => `${p.lanSpeedMax}/${p.lanMaxPorts}`),
-    row("LAN", p => rawOr(p, "lan", p.lanText)),
+    row("LAN", p => lanRaw(p)),
     row("CPU", p => rawOr(p, "cpu", p.cpu)),
     row("メモリー", p => rawOr(p, "memory", p.memory)),
     row(`ECCメモリー${TOOL}`, p => eccLabel(p), p => eccOf(p)),

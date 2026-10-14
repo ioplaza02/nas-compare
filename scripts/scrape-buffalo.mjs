@@ -116,10 +116,13 @@ const FEATURE_KEYS = [
   ["異常ファイル操作検知", /異常ファイル/],
   ["メタデータ二重化", /メタデータ二重化/],
 ];
-function supported(v) {
+// 仕様表の○×を判定する。○は「○（U+25CB）」「〇（U+3007）」「◯（U+25EF）」の3種類が混在しているので全部対応。
+// 先頭の記号・語だけで判定する（「対応情報ページをご確認」のような説明文を「対応」と誤判定しないため）
+export function supported(v) {
   if (!v) return null;
-  if (/^(非対応|なし|×|－|-)/.test(v)) return false;
-  if (/対応|あり|○/.test(v)) return true;
+  const t = v.trim();
+  if (/^(非対応|なし|×|✕|－|ー|-|―)/.test(t)) return false;
+  if (/^(○|〇|◯|●|対応|あり)/.test(t)) return true;
   return null;
 }
 
@@ -215,7 +218,8 @@ async function scrapeSeries(seriesId, sampleSku) {
       bays: baysText || null,
       cpu: [cpu, clock].filter(Boolean).join(" ／ ") || null,
       memory: find(rows, /^メモリー|^メモリ/),
-      lan: findAll(rows, /LAN/).map(r => `${r.key}：${r.value}`).join(" ／ ") || null,
+      lan: findAll(rows, /LAN端子（[^）]*BASE[^）]*）/)
+        .map(r => `${r.key.match(/（([^）]*BASE[^）]*)）/)[1]}：${r.value}`).join(" ／ ") || null,
       raid: raidText || null,
       warranty: warrantyText,
     },
