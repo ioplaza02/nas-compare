@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-14T06:42:04.876Z",
+ "updatedAt": "2026-10-14T08:20:41.489Z",
  "source": "バッファロー公式サイト（buffalo.jp）商品ページの仕様表",
  "products": [
   {
@@ -139,11 +139,11 @@
     "bays": "2",
     "cpu": "Annapurna Labs Alpine AL524 ／ 2.0GHz/4コア 64bit",
     "memory": "DDR4 2GB",
-    "lan": "インターフェース（LAN端子） LAN端子（10GBASE-T）：－ ／ インターフェース（LAN端子） LAN端子（2.5GBASE-T）：背面×1 ／ インターフェース（LAN端子） LAN端子（1000BASE-T）：背面×1 ／ インターフェース（LAN端子） 準拠規格：Serial ATA III ／ インターフェース（LAN端子） 伝送速度：LAN端子(1000BASE-T)： 1000Mbps 全二重 100Mbps 半二重/全二重 10Mbps 半二重/全二重 LAN端子(2.5GBASE-T)： 2.5Gbps 全二重 1000Mbps 全二重 100Mbps 半二重/全二重 ／ インターフェース（LAN端子） 端子形状：RJ-45型 8極 ／ インターフェース（LAN端子） 対応プロトコル：TCP/IP ／ インターフェース（LAN端子） 対応ネットワークファイル プロトコル：SMB/CIFS AFP FTP SFTP NFS HTTP/HTTPS SNMP iSCSI rsync ／ Wake on LAN：○",
+    "lan": "10GBASE-T：－ ／ 2.5GBASE-T：背面×1 ／ 1000BASE-T：背面×1",
     "raid": "1/0（出荷時 RAID1）",
     "warranty": "3年間(本体およびハードディスク)"
    },
-   "lastCheckedAt": "2026-10-14T06:41:01.999Z",
+   "lastCheckedAt": "2026-10-14T08:19:39.344Z",
    "fallbackFields": []
   },
   {
@@ -298,11 +298,11 @@
     "bays": "4",
     "cpu": "Annapurna Labs Alpine AL524 ／ 2.0GHz/4コア 64bit",
     "memory": "DDR4 2GB",
-    "lan": "インターフェース（LAN端子） LAN端子（10GBASE-T）：－ ／ インターフェース（LAN端子） LAN端子（2.5GBASE-T）：背面×1 ／ インターフェース（LAN端子） LAN端子（1000BASE-T）：背面×1 ／ インターフェース（LAN端子） 準拠規格：LAN端子(1000BASE-T)：IEEE802.3ab / IEEE802.3u / IEEE802.3 準拠（1000BASE-T / 100BASE-TX / 10BASE-T） LAN端子(2.5GBASE-T)：IEEE802.3bz / IEEE802.3ab / IEEE802.3u 準拠（2.5GBASE-T / 1000BASE-T / 100BASE-TX） ／ インターフェース（LAN端子） 伝送速度：LAN端子(1000BASE-T)： 1000Mbps 全二重 100Mbps 半二重/全二重 10Mbps 半二重/全二重 LAN端子(2.5GBASE-T)： 2.5Gbps 全二重 1000Mbps 全二重 100Mbps 半二重/全二重 ／ インターフェース（LAN端子） 端子形状：RJ-45型 8極 ／ インターフェース（LAN端子） 対応プロトコル：TCP/IP ／ インターフェース（LAN端子） 対応ネットワークファイル プロトコル：SMB/CIFS AFP FTP SFTP NFS HTTP/HTTPS SNMP iSCSI rsync ／ Wake on LAN：○",
+    "lan": "10GBASE-T：－ ／ 2.5GBASE-T：背面×1 ／ 1000BASE-T：背面×1",
     "raid": "6/5/10/1/0（出荷時 RAID6）",
     "warranty": "3年間(本体およびハードディスク)"
    },
-   "lastCheckedAt": "2026-10-14T06:41:03.899Z",
+   "lastCheckedAt": "2026-10-14T08:19:40.657Z",
    "fallbackFields": []
   },
   {
@@ -457,11 +457,11 @@
     "bays": "4",
     "cpu": "Annapurna Labs Alpine AL524 ／ 2.0GHz/4コア 64bit",
     "memory": "DDR4 2GB",
-    "lan": "インターフェース（LAN端子） LAN端子（10GBASE-T）：－ ／ インターフェース（LAN端子） LAN端子（2.5GBASE-T）：背面×1 ／ インターフェース（LAN端子） LAN端子（1000BASE-T）：背面×1 ／ インターフェース（LAN端子） 準拠規格：LAN端子(1000BASE-T)：IEEE802.3ab / IEEE802.3u / IEEE802.3 準拠（1000BASE-T / 100BASE-TX / 10BASE-T） LAN端子(2.5GBASE-T)：IEEE802.3bz / IEEE802.3ab / IEEE802.3u 準拠（2.5GBASE-T / 1000BASE-T / 100BASE-TX） ／ インターフェース（LAN端子） 伝送速度：LAN端子(1000BASE-T)： 1000Mbps 全二重 100Mbps 半二重/全二重 10Mbps 半二重/全二重 LAN端子(2.5GBASE-T)： 2.5Gbps 全二重 1000Mbps 全二重 100Mbps 半二重/全二重 ／ インターフェース（LAN端子） 端子形状：RJ-45型 8極 ／ インターフェース（LAN端子） 対応プロトコル：TCP/IP ／ インターフェース（LAN端子） 対応ネットワークファイル プロトコル：SMB/CIFS AFP FTP SFTP NFS HTTP/HTTPS SNMP iSCSI rsync ／ Wake on LAN：○",
+    "lan": "10GBASE-T：－ ／ 2.5GBASE-T：背面×1 ／ 1000BASE-T：背面×1",
     "raid": "6/5/10/1/0（出荷時 RAID6）",
     "warranty": "3年間(本体およびハードディスク)"
    },
-   "lastCheckedAt": "2026-10-14T06:41:05.897Z",
+   "lastCheckedAt": "2026-10-14T08:19:43.848Z",
    "fallbackFields": []
   },
   {
@@ -536,7 +536,7 @@
     },
     "SSDキャッシュ": {
      "value": "ー",
-     "supported": null
+     "supported": false
     },
     "レプリケーション": {
      "value": "○",
@@ -552,7 +552,7 @@
     },
     "ウイルスチェック": {
      "value": "ウイルスチェック機能拡張・延長パックについては、 対応情報ページ からご確認いただけます。",
-     "supported": true
+     "supported": null
     },
     "異常ファイル操作検知": {
      "value": "○ Ver.2.10以降",
@@ -601,11 +601,11 @@
     "bays": "2",
     "cpu": "Annapurna Labs Alpine AL524 ／ 2.0GHz/4コア 64bit",
     "memory": "DDR4 ECC 8GB",
-    "lan": "インターフェース（LAN端子） LAN端子（10GBASE-T）：背面×1 ／ インターフェース（LAN端子） LAN端子（2.5GBASE-T）：－ ／ インターフェース（LAN端子） LAN端子（1000BASE-T）：背面×2 ／ インターフェース（LAN端子） 準拠規格：IEEE802.3an IEEE802.3ab IEEE802.3u IEEE802.3準拠(10GBASE-T/1000BASE-T/100BASE-TX/10BASE-T) IEEE802.3bz(5GBASE-T/2.5GBASE-T) ／ インターフェース（LAN端子） 伝送速度：LAN端子(1000BASE-T)： 1000Mbps 全二重 100Mbps 半二重/全二重 10Mbps 半二重/全二重 LAN端子(10GBASE-T)： 10Gbps 全二重 5Gbps 全二重 2.5Gbps 全二重 1000Mbps 全二重 100Mbps 半二重/全二重 ／ インターフェース（LAN端子） 端子形状：RJ-45型 8極 ／ インターフェース（LAN端子） 対応プロトコル：TCP/IP ／ インターフェース（LAN端子） 対応ネットワークファイル プロトコル：SMB/CIFS AFP FTP SFTP NFS HTTP/HTTPS SNMP iSCSI rsync ／ Wake on LAN：○(1GbEのみ)",
+    "lan": "10GBASE-T：背面×1 ／ 2.5GBASE-T：－ ／ 1000BASE-T：背面×2",
     "raid": "1/0（出荷時 RAID1）",
     "warranty": "3年間(本体およびハードディスク)"
    },
-   "lastCheckedAt": "2026-10-14T06:41:07.971Z",
+   "lastCheckedAt": "2026-10-14T08:19:45.674Z",
    "fallbackFields": []
   },
   {
@@ -696,7 +696,7 @@
     },
     "ウイルスチェック": {
      "value": "ウイルスチェック機能拡張・延長パックについては、 対応情報ページ からご確認いただけます。",
-     "supported": true
+     "supported": null
     },
     "異常ファイル操作検知": {
      "value": "○ Ver.2.10以降",
@@ -733,11 +733,11 @@
     "bays": "2",
     "cpu": "Annapurna Labs Alpine AL524 ／ 2.0GHz/4コア 64bit",
     "memory": "DDR4 ECC 8GB",
-    "lan": "インターフェース（LAN端子） LAN端子（10GBASE-T）：背面×1 ／ インターフェース（LAN端子） LAN端子（2.5GBASE-T）：－ ／ インターフェース（LAN端子） LAN端子（1000BASE-T）：背面×2 ／ インターフェース（LAN端子） 準拠規格：IEEE802.3an IEEE802.3ab IEEE802.3u IEEE802.3準拠(10GBASE-T/1000BASE-T/100BASE-TX/10BASE-T) IEEE802.3bz(5GBASE-T/2.5GBASE-T) ／ インターフェース（LAN端子） 伝送速度：LAN端子(1000BASE-T)： 1000Mbps 全二重 100Mbps 半二重/全二重 10Mbps 半二重/全二重 LAN端子(10GBASE-T)： 10Gbps 全二重 5Gbps 全二重 2.5Gbps 全二重 1000Mbps 全二重 100Mbps 半二重/全二重 ／ インターフェース（LAN端子） 端子形状：RJ-45型 8極 ／ インターフェース（LAN端子） 対応プロトコル：TCP/IP ／ インターフェース（LAN端子） 対応ネットワークファイル プロトコル：SMB/CIFS AFP FTP SFTP NFS HTTP/HTTPS SNMP iSCSI rsync ／ Wake on LAN：○(1GbEのみ)",
+    "lan": "10GBASE-T：背面×1 ／ 2.5GBASE-T：－ ／ 1000BASE-T：背面×2",
     "raid": "1/0（出荷時 RAID1）",
     "warranty": "3年間(本体およびSSD) ※SSDが保証総書込み容量(TBW)に達した場合は、書き込み保証対象外となります"
    },
-   "lastCheckedAt": "2026-10-14T06:41:09.897Z",
+   "lastCheckedAt": "2026-10-14T08:19:47.175Z",
    "fallbackFields": []
   },
   {
@@ -831,7 +831,7 @@
     },
     "ウイルスチェック": {
      "value": "ウイルスチェック機能拡張・延長パックについては、 対応情報ページ からご確認いただけます。",
-     "supported": true
+     "supported": null
     },
     "異常ファイル操作検知": {
      "value": "○ Ver.2.10以降",
@@ -910,11 +910,11 @@
     "bays": "4",
     "cpu": "Annapurna Labs Alpine AL524 ／ 2.0GHz/4コア 64bit",
     "memory": "DDR4 ECC 8GB",
-    "lan": "インターフェース（LAN端子） LAN端子（10GBASE-T）：背面×1 ／ インターフェース（LAN端子） LAN端子（2.5GBASE-T）：－ ／ インターフェース（LAN端子） LAN端子（1000BASE-T）：背面×2 ／ インターフェース（LAN端子） 準拠規格：IEEE802.3an IEEE802.3ab IEEE802.3u IEEE802.3準拠(10GBASE-T/1000BASE-T/100BASE-TX/10BASE-T) IEEE802.3bz(5GBASE-T/2.5GBASE-T) ／ インターフェース（LAN端子） 伝送速度：LAN端子(1000BASE-T)： 1000Mbps 全二重 100Mbps 半二重/全二重 10Mbps 半二重/全二重 LAN端子(10GBASE-T)： 10Gbps 全二重 5Gbps 全二重 2.5Gbps 全二重 1000Mbps 全二重 100Mbps 半二重/全二重 ／ インターフェース（LAN端子） 端子形状：RJ-45型 8極 ／ インターフェース（LAN端子） 対応プロトコル：TCP/IP ／ インターフェース（LAN端子） 対応ネットワークファイル プロトコル：SMB/CIFS AFP FTP SFTP NFS HTTP/HTTPS SNMP iSCSI rsync ／ Wake on LAN：○(1GbEのみ)",
+    "lan": "10GBASE-T：背面×1 ／ 2.5GBASE-T：－ ／ 1000BASE-T：背面×2",
     "raid": "6/5/10/1/0（出荷時 RAID6）",
     "warranty": "3年間(本体およびハードディスク)"
    },
-   "lastCheckedAt": "2026-10-14T06:41:11.710Z",
+   "lastCheckedAt": "2026-10-14T08:19:49.027Z",
    "fallbackFields": []
   },
   {
@@ -1008,7 +1008,7 @@
     },
     "ウイルスチェック": {
      "value": "ウイルスチェック機能拡張・延長パックについては、 対応情報ページ からご確認いただけます。",
-     "supported": true
+     "supported": null
     },
     "異常ファイル操作検知": {
      "value": "○ Ver.2.10以降",
@@ -1087,11 +1087,11 @@
     "bays": "4",
     "cpu": "Annapurna Labs Alpine AL524 ／ 2.0GHz/4コア 64bit",
     "memory": "DDR4 ECC 8GB",
-    "lan": "インターフェース（LAN端子） LAN端子（10GBASE-T）：背面×1 ／ インターフェース（LAN端子） LAN端子（2.5GBASE-T）：－ ／ インターフェース（LAN端子） LAN端子（1000BASE-T）：背面×2 ／ インターフェース（LAN端子） 準拠規格：IEEE802.3an IEEE802.3ab IEEE802.3u IEEE802.3準拠(10GBASE-T/1000BASE-T/100BASE-TX/10BASE-T) IEEE802.3bz(5GBASE-T/2.5GBASE-T) ／ インターフェース（LAN端子） 伝送速度：LAN端子(1000BASE-T)： 1000Mbps 全二重 100Mbps 半二重/全二重 10Mbps 半二重/全二重 LAN端子(10GBASE-T)： 10Gbps 全二重 5Gbps 全二重 2.5Gbps 全二重 1000Mbps 全二重 100Mbps 半二重/全二重 ／ インターフェース（LAN端子） 端子形状：RJ-45型 8極 ／ インターフェース（LAN端子） 対応プロトコル：TCP/IP ／ インターフェース（LAN端子） 対応ネットワークファイル プロトコル：SMB/CIFS AFP FTP SFTP NFS HTTP/HTTPS SNMP iSCSI rsync ／ Wake on LAN：○(1GbEのみ)",
+    "lan": "10GBASE-T：背面×1 ／ 2.5GBASE-T：－ ／ 1000BASE-T：背面×2",
     "raid": "6/5/10/1/0（出荷時 RAID6）",
     "warranty": "3年間(本体およびハードディスク)"
    },
-   "lastCheckedAt": "2026-10-14T06:41:13.998Z",
+   "lastCheckedAt": "2026-10-14T08:19:52.120Z",
    "fallbackFields": []
   },
   {
@@ -1185,7 +1185,7 @@
     },
     "ウイルスチェック": {
      "value": "ウイルスチェック機能拡張・延長パックについては、 対応情報ページ からご確認いただけます。",
-     "supported": true
+     "supported": null
     },
     "異常ファイル操作検知": {
      "value": "○ Ver.2.10以降",
@@ -1246,11 +1246,11 @@
     "bays": "6",
     "cpu": "Annapurna Labs Alpine AL524 ／ 2.0GHz/4コア 64bit",
     "memory": "DDR4 ECC 8GB",
-    "lan": "インターフェース（LAN端子） LAN端子（10GBASE-T）：背面×1 ／ インターフェース（LAN端子） LAN端子（2.5GBASE-T）：－ ／ インターフェース（LAN端子） LAN端子（1000BASE-T）：背面×2 ／ インターフェース（LAN端子） 準拠規格：IEEE802.3an IEEE802.3ab IEEE802.3u IEEE802.3準拠(10GBASE-T/1000BASE-T/100BASE-TX/10BASE-T) IEEE802.3bz(5GBASE-T/2.5GBASE-T) ／ インターフェース（LAN端子） 伝送速度：LAN端子(1000BASE-T)： 1000Mbps 全二重 100Mbps 半二重/全二重 10Mbps 半二重/全二重 LAN端子(10GBASE-T)： 10Gbps 全二重 5Gbps 全二重 2.5Gbps 全二重 1000Mbps 全二重 100Mbps 半二重/全二重 ／ インターフェース（LAN端子） 端子形状：RJ-45型 8極 ／ インターフェース（LAN端子） 対応プロトコル：TCP/IP ／ インターフェース（LAN端子） 対応ネットワークファイル プロトコル：SMB/CIFS AFP FTP SFTP NFS HTTP/HTTPS SNMP iSCSI rsync ／ Wake on LAN：○(1GbEのみ)",
+    "lan": "10GBASE-T：背面×1 ／ 2.5GBASE-T：－ ／ 1000BASE-T：背面×2",
     "raid": "6/5/10/1/0（出荷時 RAID6）",
     "warranty": "3年間(本体およびハードディスク)"
    },
-   "lastCheckedAt": "2026-10-14T06:41:16.306Z",
+   "lastCheckedAt": "2026-10-14T08:19:52.866Z",
    "fallbackFields": []
   },
   {
@@ -1344,7 +1344,7 @@
     },
     "ウイルスチェック": {
      "value": "ウイルスチェック機能拡張・延長パックについては、 対応情報ページ からご確認いただけます。",
-     "supported": true
+     "supported": null
     },
     "異常ファイル操作検知": {
      "value": "○ Ver.2.10以降",
@@ -1405,11 +1405,11 @@
     "bays": "8",
     "cpu": "Annapurna Labs Alpine AL524 ／ 2.0GHz/4コア 64bit",
     "memory": "DDR4 ECC 8GB",
-    "lan": "インターフェース（LAN端子） LAN端子（10GBASE-T）：背面×1 ／ インターフェース（LAN端子） LAN端子（2.5GBASE-T）：－ ／ インターフェース（LAN端子） LAN端子（1000BASE-T）：背面×2 ／ インターフェース（LAN端子） 準拠規格：IEEE802.3an IEEE802.3ab IEEE802.3u IEEE802.3準拠(10GBASE-T/1000BASE-T/100BASE-TX/10BASE-T) IEEE802.3bz(5GBASE-T/2.5GBASE-T) ／ インターフェース（LAN端子） 伝送速度：LAN端子(1000BASE-T)： 1000Mbps 全二重 100Mbps 半二重/全二重 10Mbps 半二重/全二重 LAN端子(10GBASE-T)： 10Gbps 全二重 5Gbps 全二重 2.5Gbps 全二重 1000Mbps 全二重 100Mbps 半二重/全二重 ／ インターフェース（LAN端子） 端子形状：RJ-45型 8極 ／ インターフェース（LAN端子） 対応プロトコル：TCP/IP ／ インターフェース（LAN端子） 対応ネットワークファイル プロトコル：SMB/CIFS AFP FTP SFTP NFS HTTP/HTTPS SNMP iSCSI rsync ／ Wake on LAN：○(1GbEのみ)",
+    "lan": "10GBASE-T：背面×1 ／ 2.5GBASE-T：－ ／ 1000BASE-T：背面×2",
     "raid": "6/5/10/1/0（出荷時 RAID6）",
     "warranty": "3年間(本体およびハードディスク)"
    },
-   "lastCheckedAt": "2026-10-14T06:41:17.946Z",
+   "lastCheckedAt": "2026-10-14T08:19:55.562Z",
    "fallbackFields": []
   },
   {
@@ -1487,7 +1487,7 @@
     },
     "SSDキャッシュ": {
      "value": "〇（ファイル共有/iSCSI） Ver.1.68以降 別途オプション品 OP-NVSSD（PCIeカード+SSD）が必要となります。",
-     "supported": null
+     "supported": true
     },
     "レプリケーション": {
      "value": "○",
@@ -1503,7 +1503,7 @@
     },
     "ウイルスチェック": {
      "value": "ウイルスチェック機能拡張・延長パックについては、 対応情報ページ からご確認いただけます。",
-     "supported": true
+     "supported": null
     },
     "異常ファイル操作検知": {
      "value": "○ Ver.2.10以降",
@@ -1612,11 +1612,11 @@
     "bays": "4※または12 ※8ベイスロット空き",
     "cpu": "Annapurna Labs Alpine V2 AL524 ／ 2.0GHz/4コア",
     "memory": "DDR4 ECC 16GB",
-    "lan": "インターフェース（LAN端子） LAN端子（10GBASE-T）：背面×2 ／ インターフェース（LAN端子） LAN端子（2.5GBASE-T）：－ ／ インターフェース（LAN端子） LAN端子（1000BASE-T）：背面×2 ／ インターフェース（LAN端子） 準拠規格：IEEE802.3ad Link Aggregation IEEE802.3x Flow Control IEEE802.3an 10GBASE-T IEEE802.3bz 2.5GBASE-T/5GBASE-T IEEE802.3ab 1000BASE-T IEEE802.3u 100BASE-TX IEEE802.3 10BASE-T (1GbE portのみ) ／ インターフェース（LAN端子） 伝送速度：LAN端子(1000BASE-T)： 1000Mbps 全二重 100Mbps 半二重/全二重 10Mbps 半二重/全二重 LAN端子(10GBASE-T)： 10Gbps 全二重 5Gbps 全二重 2.5Gbps 全二重 1000Mbps 全二重 100Mbps 半二重/全二重 ／ インターフェース（LAN端子） 端子形状：RJ-45型 8極 ／ インターフェース（LAN端子） 対応プロトコル：TCP/IP ／ インターフェース（LAN端子） 対応ネットワークファイル プロトコル：SMB/CIFS AFP FTP SFTP NFS HTTP/HTTPS SNMP iSCSI rsync ／ Wake on LAN：○(1GbEのみ)",
+    "lan": "10GBASE-T：背面×2 ／ 2.5GBASE-T：－ ／ 1000BASE-T：背面×2",
     "raid": "6/5/10/1/0（出荷時 RAID6）",
     "warranty": "3年間(本体およびハードディスク)"
    },
-   "lastCheckedAt": "2026-10-14T06:41:20.134Z",
+   "lastCheckedAt": "2026-10-14T08:19:57.388Z",
    "fallbackFields": []
   },
   {
@@ -1658,15 +1658,15 @@
     },
     "リモート監視（キキNavi）": {
      "value": "〇",
-     "supported": null
+     "supported": true
     },
     "クラウドバックアップ（キキNavi）": {
      "value": "〇 Ver.1.20以降",
-     "supported": null
+     "supported": true
     },
     "Active Directory連携": {
      "value": "〇",
-     "supported": null
+     "supported": true
     },
     "iSCSIターゲット": {
      "value": "○",
@@ -1674,11 +1674,11 @@
     },
     "スナップショット": {
      "value": "〇",
-     "supported": null
+     "supported": true
     },
     "不変スナップショット": {
      "value": "〇 Ver.2.00以降",
-     "supported": null
+     "supported": true
     },
     "ドライブ暗号化": {
      "value": "○",
@@ -1710,15 +1710,15 @@
     },
     "ウイルスチェック": {
      "value": "ウイルスチェック機能拡張・延長パックについては、 対応情報ページ からご確認いただけます。",
-     "supported": true
+     "supported": null
     },
     "異常ファイル操作検知": {
      "value": "〇 Ver.1.42以降",
-     "supported": null
+     "supported": true
     },
     "メタデータ二重化": {
      "value": "〇",
-     "supported": null
+     "supported": true
     }
    },
    "releaseDate": "2023年7月",
@@ -1807,11 +1807,11 @@
     "bays": "4※または12 ※8ベイスロット空き",
     "cpu": "Intel Xeon D-1713NT ／ 2.2 GHz/4コア Max 2.9 GHz (4core) or Max 3.5GHz (1core)",
     "memory": "DDR4 ECC 16GB 最大 64 GB (16GB x 4 slot)",
-    "lan": "インターフェース（LAN端子） LAN端子（10GBASE-T）：背面×4 ／ インターフェース（LAN端子） LAN端子（2.5GBASE-T）：－ ／ インターフェース（LAN端子） LAN端子（1000BASE-T）：－ ／ インターフェース（LAN端子） 準拠規格：IEEE802.3ad Link Aggregation IEEE802.3x Flow Control IEEE802.3an 10GBASE-T IEEE802.3ab 1000BASE-T ／ インターフェース（LAN端子） 伝送速度：1G/10Gbps （オートセンス） ／ インターフェース（LAN端子） 端子形状：RJ-45型 8極 ／ インターフェース（LAN端子） 対応プロトコル：TCP/IP ／ インターフェース（LAN端子） 対応ネットワークファイル プロトコル：SMB/CIFS AFP FTP SFTP NFS HTTP/HTTPS SNMP iSCSI rsync ／ Wake on LAN：○",
+    "lan": "10GBASE-T：背面×4 ／ 2.5GBASE-T：－ ／ 1000BASE-T：－",
     "raid": "6/5/10/1/0（出荷時 RAID6）",
     "warranty": "3年間（本体およびハードディスク）"
    },
-   "lastCheckedAt": "2026-10-14T06:41:21.883Z",
+   "lastCheckedAt": "2026-10-14T08:19:59.303Z",
    "fallbackFields": []
   },
   {
@@ -1850,15 +1850,15 @@
     },
     "リモート監視（キキNavi）": {
      "value": "〇",
-     "supported": null
+     "supported": true
     },
     "クラウドバックアップ（キキNavi）": {
      "value": "〇",
-     "supported": null
+     "supported": true
     },
     "Active Directory連携": {
      "value": "〇",
-     "supported": null
+     "supported": true
     },
     "iSCSIターゲット": {
      "value": "○",
@@ -1866,11 +1866,11 @@
     },
     "スナップショット": {
      "value": "〇",
-     "supported": null
+     "supported": true
     },
     "不変スナップショット": {
      "value": "〇 Ver.6.30以降",
-     "supported": null
+     "supported": true
     },
     "ドライブ暗号化": {
      "value": "○",
@@ -1902,15 +1902,15 @@
     },
     "ウイルスチェック": {
      "value": "ウイルスチェック機能拡張・延長パックについては、 対応情報ページ からご確認いただけます。",
-     "supported": true
+     "supported": null
     },
     "異常ファイル操作検知": {
      "value": "〇 Ver.6.20以降",
-     "supported": null
+     "supported": true
     },
     "メタデータ二重化": {
      "value": "〇",
-     "supported": null
+     "supported": true
     }
    },
    "releaseDate": "2019年8月",
@@ -1945,11 +1945,11 @@
     "bays": "2",
     "cpu": "Intel Atom C3338 ／ 1.50 GHz (ターボブースト:2.20 GHz)/2コア/2スレッド",
     "memory": "DDR4 ECC 8GB",
-    "lan": "インターフェース（LAN端子） LAN端子（10GBASE-T）：背面×1 ／ インターフェース（LAN端子） LAN端子（2.5GBASE-T）：－ ／ インターフェース（LAN端子） LAN端子（1000BASE-T）：背面×2 ／ インターフェース（LAN端子） 準拠規格：IEEE802.3an IEEE802.3ab IEEE802.3u IEEE802.3準拠(10GBASE-T/1000BASE-T/100BASE-TX/10BASE-T) IEEE802.3bz(5GBASE-T/2.5GBASE-T) ／ インターフェース（LAN端子） 伝送速度：10Gbps 全二重 5Gbps 全二重 2.5Gbps 全二重 1000Mbps 全二重 100Mbps 全二重 10Mbps 全二重 ※10GbEポートは10Mbps非対応 ／ インターフェース（LAN端子） 端子形状：RJ-45型 8極 ／ インターフェース（LAN端子） 対応プロトコル：TCP/IP ／ インターフェース（LAN端子） 対応ネットワークファイル プロトコル：SMB/CIFS AFP FTP SFTP NFS HTTP/HTTPS SNMP iSCSI rsync ／ Wake on LAN：○(1GbEのみ)",
+    "lan": "10GBASE-T：背面×1 ／ 2.5GBASE-T：－ ／ 1000BASE-T：背面×2",
     "raid": "1/0（出荷時 RAID1）",
     "warranty": "3年間(本体およびハードディスク)"
    },
-   "lastCheckedAt": "2026-10-14T06:41:24.825Z",
+   "lastCheckedAt": "2026-10-14T08:20:00.909Z",
    "fallbackFields": []
   },
   {
@@ -1991,15 +1991,15 @@
     },
     "リモート監視（キキNavi）": {
      "value": "〇",
-     "supported": null
+     "supported": true
     },
     "クラウドバックアップ（キキNavi）": {
      "value": "〇",
-     "supported": null
+     "supported": true
     },
     "Active Directory連携": {
      "value": "〇",
-     "supported": null
+     "supported": true
     },
     "iSCSIターゲット": {
      "value": "○",
@@ -2007,11 +2007,11 @@
     },
     "スナップショット": {
      "value": "〇",
-     "supported": null
+     "supported": true
     },
     "不変スナップショット": {
      "value": "〇 Ver.6.30以降",
-     "supported": null
+     "supported": true
     },
     "ドライブ暗号化": {
      "value": "○",
@@ -2043,15 +2043,15 @@
     },
     "ウイルスチェック": {
      "value": "ウイルスチェック機能拡張・延長パックについては、 対応情報ページ からご確認いただけます。",
-     "supported": true
+     "supported": null
     },
     "異常ファイル操作検知": {
      "value": "〇 Ver.6.20以降",
-     "supported": null
+     "supported": true
     },
     "メタデータ二重化": {
      "value": "〇",
-     "supported": null
+     "supported": true
     }
    },
    "releaseDate": "2019年8月",
@@ -2098,11 +2098,11 @@
     "bays": "4",
     "cpu": "Intel Atom C3538 ／ 2.10 GHz (ターボブースト:2.10 GHz)/4コア/4スレッド",
     "memory": "DDR4 ECC 8GB",
-    "lan": "インターフェース（LAN端子） LAN端子（10GBASE-T）：背面×1 ／ インターフェース（LAN端子） LAN端子（2.5GBASE-T）：－ ／ インターフェース（LAN端子） LAN端子（1000BASE-T）：背面×2 ／ インターフェース（LAN端子） 準拠規格：IEEE802.3an IEEE802.3ab IEEE802.3u IEEE802.3準拠(10GBASE-T/1000BASE-T/100BASE-TX/10BASE-T) IEEE802.3bz(5GBASE-T/2.5GBASE-T) ／ インターフェース（LAN端子） 伝送速度：10Gbps 全二重 5Gbps 全二重 2.5Gbps 全二重 1000Mbps 全二重 100Mbps 全二重 10Mbps 全二重 ※10GbEポートは10Mbps非対応 ／ インターフェース（LAN端子） 端子形状：RJ-45型 8極 ／ インターフェース（LAN端子） 対応プロトコル：TCP/IP ／ インターフェース（LAN端子） 対応ネットワークファイル プロトコル：SMB/CIFS AFP FTP SFTP NFS HTTP/HTTPS SNMP iSCSI rsync ／ Wake on LAN：○(1GbEのみ)",
+    "lan": "10GBASE-T：背面×1 ／ 2.5GBASE-T：－ ／ 1000BASE-T：背面×2",
     "raid": "6/5/10/1/0（出荷時 RAID6）",
     "warranty": "3年間(本体およびハードディスク)"
    },
-   "lastCheckedAt": "2026-10-14T06:41:25.954Z",
+   "lastCheckedAt": "2026-10-14T08:20:03.201Z",
    "fallbackFields": []
   },
   {
@@ -2144,15 +2144,15 @@
     },
     "リモート監視（キキNavi）": {
      "value": "〇",
-     "supported": null
+     "supported": true
     },
     "クラウドバックアップ（キキNavi）": {
      "value": "〇",
-     "supported": null
+     "supported": true
     },
     "Active Directory連携": {
      "value": "〇",
-     "supported": null
+     "supported": true
     },
     "iSCSIターゲット": {
      "value": "○",
@@ -2160,11 +2160,11 @@
     },
     "スナップショット": {
      "value": "〇",
-     "supported": null
+     "supported": true
     },
     "不変スナップショット": {
      "value": "〇 Ver.6.30以降",
-     "supported": null
+     "supported": true
     },
     "ドライブ暗号化": {
      "value": "○",
@@ -2196,15 +2196,15 @@
     },
     "ウイルスチェック": {
      "value": "ウイルスチェック機能拡張・延長パックについては、 対応情報ページ からご確認いただけます。",
-     "supported": true
+     "supported": null
     },
     "異常ファイル操作検知": {
      "value": "〇 Ver.6.20以降",
-     "supported": null
+     "supported": true
     },
     "メタデータ二重化": {
      "value": "〇",
-     "supported": null
+     "supported": true
     }
    },
    "releaseDate": "2019年8月",
@@ -2263,11 +2263,11 @@
     "bays": "4",
     "cpu": "Intel Atom C3538 ／ 2.10 GHz (ターボブースト:2.10 GHz)/4コア/4スレッド",
     "memory": "DDR4 ECC 8GB",
-    "lan": "インターフェース（LAN端子） LAN端子（10GBASE-T）：背面×1 ／ インターフェース（LAN端子） LAN端子（2.5GBASE-T）：－ ／ インターフェース（LAN端子） LAN端子（1000BASE-T）：背面×2 ／ インターフェース（LAN端子） 準拠規格：IEEE802.3an IEEE802.3ab IEEE802.3u IEEE802.3準拠(10GBASE-T/1000BASE-T/100BASE-TX/10BASE-T) IEEE802.3bz(5GBASE-T/2.5GBASE-T) ／ インターフェース（LAN端子） 伝送速度：10Gbps 全二重 5Gbps 全二重 2.5Gbps 全二重 1000Mbps 全二重 100Mbps 全二重 10Mbps 全二重 ※10GbEポートは10Mbps非対応 ／ インターフェース（LAN端子） 端子形状：RJ-45型 8極 ／ インターフェース（LAN端子） 対応プロトコル：TCP/IP ／ インターフェース（LAN端子） 対応ネットワークファイル プロトコル：SMB/CIFS AFP FTP SFTP NFS HTTP/HTTPS SNMP iSCSI rsync ／ Wake on LAN：○(1GbEのみ)",
+    "lan": "10GBASE-T：背面×1 ／ 2.5GBASE-T：－ ／ 1000BASE-T：背面×2",
     "raid": "6/5/10/1/0（出荷時 RAID6）",
     "warranty": "3年間(本体およびハードディスク)"
    },
-   "lastCheckedAt": "2026-10-14T06:41:28.005Z",
+   "lastCheckedAt": "2026-10-14T08:20:05.279Z",
    "fallbackFields": []
   },
   {
@@ -2309,15 +2309,15 @@
     },
     "リモート監視（キキNavi）": {
      "value": "〇",
-     "supported": null
+     "supported": true
     },
     "クラウドバックアップ（キキNavi）": {
      "value": "〇",
-     "supported": null
+     "supported": true
     },
     "Active Directory連携": {
      "value": "〇",
-     "supported": null
+     "supported": true
     },
     "iSCSIターゲット": {
      "value": "○",
@@ -2325,11 +2325,11 @@
     },
     "スナップショット": {
      "value": "〇",
-     "supported": null
+     "supported": true
     },
     "不変スナップショット": {
      "value": "〇 Ver.6.30以降",
-     "supported": null
+     "supported": true
     },
     "ドライブ暗号化": {
      "value": "○",
@@ -2361,15 +2361,15 @@
     },
     "ウイルスチェック": {
      "value": "ウイルスチェック機能拡張・延長パックについては、 対応情報ページ からご確認いただけます。",
-     "supported": true
+     "supported": null
     },
     "異常ファイル操作検知": {
      "value": "〇 Ver.6.20以降",
-     "supported": null
+     "supported": true
     },
     "メタデータ二重化": {
      "value": "〇",
-     "supported": null
+     "supported": true
     }
    },
    "releaseDate": "2019年11月",
@@ -2416,11 +2416,11 @@
     "bays": "6",
     "cpu": "Intel Atom C3538 ／ 2.10 GHz (ターボブースト:2.10 GHz)/4コア/4スレッド",
     "memory": "DDR4 ECC 8GB",
-    "lan": "インターフェース（LAN端子） LAN端子（10GBASE-T）：背面×1 ／ インターフェース（LAN端子） LAN端子（2.5GBASE-T）：－ ／ インターフェース（LAN端子） LAN端子（1000BASE-T）：背面×2 ／ インターフェース（LAN端子） 準拠規格：IEEE802.3an(10GBASE-T) IEEE802.3ab(1000BASE-T) IEEE802.3u(100BASE-TX) IEEE802.3(10BASE-T) IEEE802.3bz(5GBASE-T/2.5GBASE-T) ／ インターフェース（LAN端子） 伝送速度：10Gbps 全二重 5Gbps 全二重 2.5Gbps 全二重 1000Mbps 全二重 100Mbps 全二重 10Mbps 全二重 ※10GbEポートは10Mbps非対応 ／ インターフェース（LAN端子） 端子形状：RJ-45型 8極 ／ インターフェース（LAN端子） 対応プロトコル：TCP/IP ／ インターフェース（LAN端子） 対応ネットワークファイル プロトコル：SMB/CIFS AFP FTP SFTP NFS HTTP/HTTPS SNMP iSCSI rsync ／ Wake on LAN：○(1GbEのみ)",
+    "lan": "10GBASE-T：背面×1 ／ 2.5GBASE-T：－ ／ 1000BASE-T：背面×2",
     "raid": "6/5/10/1/0（出荷時 RAID6）",
     "warranty": "3年間(本体およびハードディスク)"
    },
-   "lastCheckedAt": "2026-10-14T06:41:30.286Z",
+   "lastCheckedAt": "2026-10-14T08:20:07.054Z",
    "fallbackFields": []
   },
   {
@@ -2451,7 +2451,7 @@
    "features": {
     "クラウドストレージ連携": {
      "value": "〇",
-     "supported": null
+     "supported": true
     },
     "Time Machine": {
      "value": "－",
@@ -2459,19 +2459,19 @@
     },
     "リモート監視（キキNavi）": {
      "value": "〇",
-     "supported": null
+     "supported": true
     },
     "クラウドバックアップ（キキNavi）": {
      "value": "〇",
-     "supported": null
+     "supported": true
     },
     "Active Directory連携": {
      "value": "〇",
-     "supported": null
+     "supported": true
     },
     "iSCSIターゲット": {
      "value": "〇",
-     "supported": null
+     "supported": true
     },
     "ドライブ暗号化": {
      "value": "〇 ※BitLocker使用(ベーシックディスクのみ対応)",
@@ -2495,7 +2495,7 @@
     },
     "レプリケーション": {
      "value": "〇",
-     "supported": null
+     "supported": true
     },
     "フェイルオーバー": {
      "value": "－",
@@ -2507,7 +2507,7 @@
     },
     "ウイルスチェック": {
      "value": "・DiXiM Security Endpoint(ライセンスパック別売) ・Windows Defender ※対応確認済みソフトウェアは 対応情報ページ からご確認いただけます。",
-     "supported": true
+     "supported": null
     },
     "メタデータ二重化": {
      "value": "－",
@@ -2552,11 +2552,11 @@
     "bays": "2",
     "cpu": "Intel Atom C3338 ／ 1.50 GHz (ターボブースト:2.20 GHz)/2コア/2スレッド",
     "memory": "DDR4 ECC 8GB",
-    "lan": "インターフェース（LAN端子） LAN端子（10GBASE-T）：背面×1 ／ インターフェース（LAN端子） LAN端子（2.5GBASE-T）：－ ／ インターフェース（LAN端子） LAN端子（1000BASE-T）：背面×2 ／ インターフェース（LAN端子） 準拠規格：IEEE 802.3an(10GBASE-T) IEEE 802.3bz(5GBASE-T/2.5GBASE-T) IEEE 802.3ab(1000BASE-T) IEEE 802.3u(100BASE-TX) IEEE 802.3(10BASE-T) ／ インターフェース（LAN端子） 伝送速度：1000Mbps 全二重 100Mbps 半二重/全二重 10Gbps 全二重 10Mbps 全二重 2.5Gbps 全二重 5Gbps 全二重 ※1GbEポートは全二重のみ対応 ※10GbEポートは10Mbps非対応 ／ インターフェース（LAN端子） 端子形状：RJ-45型 8極 ／ インターフェース（LAN端子） 対応プロトコル：TCP/IP、UDP ／ インターフェース（LAN端子） 対応ネットワークファイル プロトコル：SMB ／ Wake on LAN：〇 ※LAN3(10GbE)はWake on LAN機能有効時、シャットダウン後のLAN3リンク速度は100Mbps固定になります。 Wake on LAN機能を使用するためには、ハブが100Mbpsをサポートしている必要があります。 100Mbpsをサポートしていないハブ等に接続している場合、Wake on LAN機能を使用できません。",
+    "lan": "10GBASE-T：背面×1 ／ 2.5GBASE-T：－ ／ 1000BASE-T：背面×2",
     "raid": "1/0（出荷時 RAID1）",
     "warranty": "3年間(本体およびハードディスク)"
    },
-   "lastCheckedAt": "2026-10-14T06:41:32.207Z",
+   "lastCheckedAt": "2026-10-14T08:20:09.612Z",
    "fallbackFields": []
   },
   {
@@ -2587,7 +2587,7 @@
    "features": {
     "クラウドストレージ連携": {
      "value": "〇",
-     "supported": null
+     "supported": true
     },
     "Time Machine": {
      "value": "－",
@@ -2595,19 +2595,19 @@
     },
     "リモート監視（キキNavi）": {
      "value": "〇",
-     "supported": null
+     "supported": true
     },
     "クラウドバックアップ（キキNavi）": {
      "value": "〇",
-     "supported": null
+     "supported": true
     },
     "Active Directory連携": {
      "value": "〇",
-     "supported": null
+     "supported": true
     },
     "iSCSIターゲット": {
      "value": "〇",
-     "supported": null
+     "supported": true
     },
     "ドライブ暗号化": {
      "value": "〇 ※BitLocker使用(ベーシックディスクのみ対応)",
@@ -2627,11 +2627,11 @@
     },
     "データ重複除去": {
      "value": "〇",
-     "supported": null
+     "supported": true
     },
     "レプリケーション": {
      "value": "〇",
-     "supported": null
+     "supported": true
     },
     "フェイルオーバー": {
      "value": "－",
@@ -2643,7 +2643,7 @@
     },
     "ウイルスチェック": {
      "value": "・DiXiM Security Endpoint(ライセンスパック別売) ・Windows Defender ※対応確認済みソフトウェアは 対応情報ページ からご確認いただけます。",
-     "supported": true
+     "supported": null
     },
     "メタデータ二重化": {
      "value": "－",
@@ -2688,11 +2688,11 @@
     "bays": "2",
     "cpu": "Intel Atom C3338 ／ 1.50 GHz (ターボブースト:2.20 GHz)/2コア/2スレッド",
     "memory": "DDR4 ECC 8GB",
-    "lan": "インターフェース（LAN端子） LAN端子（10GBASE-T）：背面×1 ／ インターフェース（LAN端子） LAN端子（2.5GBASE-T）：－ ／ インターフェース（LAN端子） LAN端子（1000BASE-T）：背面×2 ／ インターフェース（LAN端子） 準拠規格：IEEE 802.3an(10GBASE-T) IEEE 802.3bz(5GBASE-T/2.5GBASE-T) IEEE 802.3ab(1000BASE-T) IEEE 802.3u(100BASE-TX) IEEE 802.3(10BASE-T) ／ インターフェース（LAN端子） 伝送速度：1000Mbps 全二重 100Mbps 半二重/全二重 10Gbps 全二重 10Mbps 全二重 2.5Gbps 全二重 5Gbps 全二重 ※1GbEポートは全二重のみ対応 ※10GbEポートは10Mbps非対応 ／ インターフェース（LAN端子） 端子形状：RJ-45型 8極 ／ インターフェース（LAN端子） 対応プロトコル：TCP/IP、UDP ／ インターフェース（LAN端子） 対応ネットワークファイル プロトコル：SMB ／ Wake on LAN：〇 ※LAN3(10GbE)はWake on LAN機能有効時、シャットダウン後のLAN3リンク速度は100Mbps固定になります。 Wake on LAN機能を使用するためには、ハブが100Mbpsをサポートしている必要があります。 100Mbpsをサポートしていないハブ等に接続している場合、Wake on LAN機能を使用できません。",
+    "lan": "10GBASE-T：背面×1 ／ 2.5GBASE-T：－ ／ 1000BASE-T：背面×2",
     "raid": "1/0（出荷時 RAID1）",
     "warranty": "3年間(本体およびハードディスク)"
    },
-   "lastCheckedAt": "2026-10-14T06:41:34.439Z",
+   "lastCheckedAt": "2026-10-14T08:20:11.048Z",
    "fallbackFields": []
   },
   {
@@ -2724,7 +2724,7 @@
    "features": {
     "クラウドストレージ連携": {
      "value": "〇",
-     "supported": null
+     "supported": true
     },
     "Time Machine": {
      "value": "－",
@@ -2732,19 +2732,19 @@
     },
     "リモート監視（キキNavi）": {
      "value": "〇",
-     "supported": null
+     "supported": true
     },
     "クラウドバックアップ（キキNavi）": {
      "value": "〇",
-     "supported": null
+     "supported": true
     },
     "Active Directory連携": {
      "value": "〇",
-     "supported": null
+     "supported": true
     },
     "iSCSIターゲット": {
      "value": "〇",
-     "supported": null
+     "supported": true
     },
     "ドライブ暗号化": {
      "value": "〇 ※BitLocker使用(ベーシックディスクのみ対応)",
@@ -2752,7 +2752,7 @@
     },
     "ホットスワップ": {
      "value": "〇 ※システム領域で使用しているドライブが故障した場合を除く。",
-     "supported": null
+     "supported": true
     },
     "ホットスペア": {
      "value": "－",
@@ -2768,7 +2768,7 @@
     },
     "レプリケーション": {
      "value": "〇",
-     "supported": null
+     "supported": true
     },
     "フェイルオーバー": {
      "value": "－",
@@ -2780,7 +2780,7 @@
     },
     "ウイルスチェック": {
      "value": "・DiXiM Security Endpoint(ライセンスパック別売) ・Windows Defender ※対応確認済みソフトウェアは 対応情報ページ からご確認いただけます。",
-     "supported": true
+     "supported": null
     },
     "メタデータ二重化": {
      "value": "－",
@@ -2825,11 +2825,11 @@
     "bays": "4",
     "cpu": "Intel Atom C3338 ／ 1.50 GHz (ターボブースト:2.20 GHz)/2コア/2スレッド",
     "memory": "DDR4 ECC 8GB",
-    "lan": "インターフェース（LAN端子） LAN端子（10GBASE-T）：背面×1 ／ インターフェース（LAN端子） LAN端子（2.5GBASE-T）：－ ／ インターフェース（LAN端子） LAN端子（1000BASE-T）：背面×2 ／ インターフェース（LAN端子） 準拠規格：IEEE 802.3an(10GBASE-T) IEEE 802.3bz(5GBASE-T/2.5GBASE-T) IEEE 802.3ab(1000BASE-T) IEEE 802.3u(100BASE-TX) IEEE 802.3(10BASE-T) ／ インターフェース（LAN端子） 伝送速度：1000Mbps 全二重 100Mbps 半二重/全二重 10Gbps 全二重 10Mbps 全二重 2.5Gbps 全二重 5Gbps 全二重 ※1GbEポートは全二重のみ対応 ※10GbEポートは10Mbps非対応 ／ インターフェース（LAN端子） 端子形状：RJ-45型 8極 ／ インターフェース（LAN端子） 対応プロトコル：TCP/IP、UDP ／ インターフェース（LAN端子） 対応ネットワークファイル プロトコル：SMB ／ Wake on LAN：〇 ※LAN3(10GbE)はWake on LAN機能有効時、シャットダウン後のLAN3リンク速度は100Mbps固定になります。 Wake on LAN機能を使用するためには、ハブが100Mbpsをサポートしている必要があります。 100Mbpsをサポートしていないハブ等に接続している場合、Wake on LAN機能を使用できません。",
+    "lan": "10GBASE-T：背面×1 ／ 2.5GBASE-T：－ ／ 1000BASE-T：背面×2",
     "raid": "5/1/0（出荷時RAID5）",
     "warranty": "3年間(本体およびハードディスク)"
    },
-   "lastCheckedAt": "2026-10-14T06:41:36.083Z",
+   "lastCheckedAt": "2026-10-14T08:20:13.619Z",
    "fallbackFields": []
   },
   {
@@ -2861,7 +2861,7 @@
    "features": {
     "クラウドストレージ連携": {
      "value": "〇",
-     "supported": null
+     "supported": true
     },
     "Time Machine": {
      "value": "－",
@@ -2869,19 +2869,19 @@
     },
     "リモート監視（キキNavi）": {
      "value": "〇",
-     "supported": null
+     "supported": true
     },
     "クラウドバックアップ（キキNavi）": {
      "value": "〇",
-     "supported": null
+     "supported": true
     },
     "Active Directory連携": {
      "value": "〇",
-     "supported": null
+     "supported": true
     },
     "iSCSIターゲット": {
      "value": "〇",
-     "supported": null
+     "supported": true
     },
     "ドライブ暗号化": {
      "value": "〇 ※BitLocker使用(ベーシックディスクのみ対応)",
@@ -2889,7 +2889,7 @@
     },
     "ホットスワップ": {
      "value": "〇 ※システム領域で使用しているドライブが故障した場合を除く。",
-     "supported": null
+     "supported": true
     },
     "ホットスペア": {
      "value": "－",
@@ -2901,11 +2901,11 @@
     },
     "データ重複除去": {
      "value": "〇",
-     "supported": null
+     "supported": true
     },
     "レプリケーション": {
      "value": "〇",
-     "supported": null
+     "supported": true
     },
     "フェイルオーバー": {
      "value": "－",
@@ -2917,7 +2917,7 @@
     },
     "ウイルスチェック": {
      "value": "・DiXiM Security Endpoint(ライセンスパック別売) ・Windows Defender ※対応確認済みソフトウェアは 対応情報ページ からご確認いただけます。",
-     "supported": true
+     "supported": null
     },
     "メタデータ二重化": {
      "value": "－",
@@ -2962,11 +2962,11 @@
     "bays": "4",
     "cpu": "Intel Atom C3338 ／ 1.50 GHz (ターボブースト:2.20 GHz)/2コア/2スレッド",
     "memory": "DDR4 ECC 8GB",
-    "lan": "インターフェース（LAN端子） LAN端子（10GBASE-T）：背面×1 ／ インターフェース（LAN端子） LAN端子（2.5GBASE-T）：－ ／ インターフェース（LAN端子） LAN端子（1000BASE-T）：背面×2 ／ インターフェース（LAN端子） 準拠規格：IEEE 802.3an(10GBASE-T) IEEE 802.3bz(5GBASE-T/2.5GBASE-T) IEEE 802.3ab(1000BASE-T) IEEE 802.3u(100BASE-TX) IEEE 802.3(10BASE-T) ／ インターフェース（LAN端子） 伝送速度：1000Mbps 全二重 100Mbps 半二重/全二重 10Gbps 全二重 10Mbps 全二重 2.5Gbps 全二重 5Gbps 全二重 ※1GbEポートは全二重のみ対応 ※10GbEポートは10Mbps非対応 ／ インターフェース（LAN端子） 端子形状：RJ-45型 8極 ／ インターフェース（LAN端子） 対応プロトコル：TCP/IP、UDP ／ インターフェース（LAN端子） 対応ネットワークファイル プロトコル：SMB ／ Wake on LAN：〇 ※LAN3(10GbE)はWake on LAN機能有効時、シャットダウン後のLAN3リンク速度は100Mbps固定になります。 Wake on LAN機能を使用するためには、ハブが100Mbpsをサポートしている必要があります。 100Mbpsをサポートしていないハブ等に接続している場合、Wake on LAN機能を使用できません。",
+    "lan": "10GBASE-T：背面×1 ／ 2.5GBASE-T：－ ／ 1000BASE-T：背面×2",
     "raid": "5/1/0（出荷時RAID5）",
     "warranty": "3年間(本体およびハードディスク)"
    },
-   "lastCheckedAt": "2026-10-14T06:41:38.286Z",
+   "lastCheckedAt": "2026-10-14T08:20:15.047Z",
    "fallbackFields": []
   },
   {
@@ -2998,7 +2998,7 @@
    "features": {
     "クラウドストレージ連携": {
      "value": "〇",
-     "supported": null
+     "supported": true
     },
     "Time Machine": {
      "value": "－",
@@ -3006,19 +3006,19 @@
     },
     "リモート監視（キキNavi）": {
      "value": "〇",
-     "supported": null
+     "supported": true
     },
     "クラウドバックアップ（キキNavi）": {
      "value": "〇",
-     "supported": null
+     "supported": true
     },
     "Active Directory連携": {
      "value": "〇",
-     "supported": null
+     "supported": true
     },
     "iSCSIターゲット": {
      "value": "〇",
-     "supported": null
+     "supported": true
     },
     "ドライブ暗号化": {
      "value": "〇 ※BitLocker使用(ベーシックディスクのみ対応)",
@@ -3026,7 +3026,7 @@
     },
     "ホットスワップ": {
      "value": "〇 ※システム領域で使用しているドライブが故障した場合を除く。",
-     "supported": null
+     "supported": true
     },
     "ホットスペア": {
      "value": "－",
@@ -3038,11 +3038,11 @@
     },
     "データ重複除去": {
      "value": "ー",
-     "supported": null
+     "supported": false
     },
     "レプリケーション": {
      "value": "〇",
-     "supported": null
+     "supported": true
     },
     "フェイルオーバー": {
      "value": "－",
@@ -3054,7 +3054,7 @@
     },
     "ウイルスチェック": {
      "value": "・DiXiM Security Endpoint(ライセンスパック別売) ・Windows Defender ※対応確認済みソフトウェアは 対応情報ページ からご確認いただけます。",
-     "supported": true
+     "supported": null
     },
     "メタデータ二重化": {
      "value": "－",
@@ -3099,11 +3099,11 @@
     "bays": "4",
     "cpu": "Intel Atom C3338 ／ 1.50 GHz (ターボブースト:2.20 GHz)/2コア/2スレッド",
     "memory": "DDR4 ECC 8GB",
-    "lan": "インターフェース（LAN端子） LAN端子（10GBASE-T）：背面×1 ／ インターフェース（LAN端子） LAN端子（2.5GBASE-T）：－ ／ インターフェース（LAN端子） LAN端子（1000BASE-T）：背面×2 ／ インターフェース（LAN端子） 準拠規格：IEEE 802.3an(10GBASE-T) IEEE 802.3bz(5GBASE-T/2.5GBASE-T) IEEE 802.3ab(1000BASE-T) IEEE 802.3u(100BASE-TX) IEEE 802.3(10BASE-T) ／ インターフェース（LAN端子） 伝送速度：1000Mbps 全二重 100Mbps 半二重/全二重 10Gbps 全二重 10Mbps 全二重 2.5Gbps 全二重 5Gbps 全二重 ※1GbEポートは全二重のみ対応 ※10GbEポートは10Mbps非対応 ／ インターフェース（LAN端子） 端子形状：RJ-45型 8極 ／ インターフェース（LAN端子） 対応プロトコル：TCP/IP、UDP ／ インターフェース（LAN端子） 対応ネットワークファイル プロトコル：SMB ／ Wake on LAN：〇 ※LAN3(10GbE)はWake on LAN機能有効時、シャットダウン後のLAN3リンク速度は100Mbps固定になります。 Wake on LAN機能を使用するためには、ハブが100Mbpsをサポートしている必要があります。 100Mbpsをサポートしていないハブ等に接続している場合、Wake on LAN機能を使用できません。",
+    "lan": "10GBASE-T：背面×1 ／ 2.5GBASE-T：－ ／ 1000BASE-T：背面×2",
     "raid": "5/1/0（出荷時RAID5）",
     "warranty": "3年間(本体およびハードディスク)"
    },
-   "lastCheckedAt": "2026-10-14T06:41:40.246Z",
+   "lastCheckedAt": "2026-10-14T08:20:17.776Z",
    "fallbackFields": []
   },
   {
@@ -3143,19 +3143,19 @@
     },
     "リモート監視（キキNavi）": {
      "value": "〇",
-     "supported": null
+     "supported": true
     },
     "クラウドバックアップ（キキNavi）": {
      "value": "〇",
-     "supported": null
+     "supported": true
     },
     "Active Directory連携": {
      "value": "〇",
-     "supported": null
+     "supported": true
     },
     "iSCSIターゲット": {
      "value": "〇",
-     "supported": null
+     "supported": true
     },
     "ドライブ暗号化": {
      "value": "〇 ※BitLocker使用(ベーシックディスクのみ対応)",
@@ -3163,7 +3163,7 @@
     },
     "ホットスワップ": {
      "value": "〇 ※システム領域で使用しているドライブが故障した場合を除く。",
-     "supported": null
+     "supported": true
     },
     "ホットスペア": {
      "value": "－",
@@ -3175,11 +3175,11 @@
     },
     "データ重複除去": {
      "value": "〇",
-     "supported": null
+     "supported": true
     },
     "レプリケーション": {
      "value": "〇",
-     "supported": null
+     "supported": true
     },
     "フェイルオーバー": {
      "value": "－",
@@ -3191,7 +3191,7 @@
     },
     "ウイルスチェック": {
      "value": "・DiXiM Security Endpoint(ライセンスパック別売) ・Windows Defender ※対応確認済みソフトウェアは 対応情報ページ からご確認いただけます。",
-     "supported": true
+     "supported": null
     },
     "メタデータ二重化": {
      "value": "－",
@@ -3230,11 +3230,11 @@
     "bays": "4",
     "cpu": "Intel Atom C3338 ／ 1.50 GHz (ターボブースト:2.20 GHz)/2コア/2スレッド",
     "memory": "DDR4 ECC 8GB",
-    "lan": "インターフェース（LAN端子） LAN端子（10GBASE-T）：背面×1 ／ インターフェース（LAN端子） LAN端子（2.5GBASE-T）：－ ／ インターフェース（LAN端子） LAN端子（1000BASE-T）：背面×2 ／ インターフェース（LAN端子） 準拠規格：IEEE 802.3an(10GBASE-T) IEEE 802.3bz(5GBASE-T/2.5GBASE-T) IEEE 802.3ab(1000BASE-T) IEEE 802.3u(100BASE-TX) IEEE 802.3(10BASE-T) ／ インターフェース（LAN端子） 伝送速度：1000Mbps 全二重 100Mbps 半二重/全二重 10Gbps 全二重 10Mbps 全二重 2.5Gbps 全二重 5Gbps 全二重 ※1GbEポートは全二重のみ対応 ※10GbEポートは10Mbps非対応 ／ インターフェース（LAN端子） 端子形状：RJ-45型 8極 ／ インターフェース（LAN端子） 対応プロトコル：TCP/IP、UDP ／ インターフェース（LAN端子） 対応ネットワークファイル プロトコル：SMB ／ Wake on LAN：〇 ※LAN3(10GbE)はWake on LAN機能有効時、シャットダウン後のLAN3リンク速度は100Mbps固定になります。 Wake on LAN機能を使用するためには、ハブが100Mbpsをサポートしている必要があります。 100Mbpsをサポートしていないハブ等に接続している場合、Wake on LAN機能を使用できません。",
+    "lan": "10GBASE-T：背面×1 ／ 2.5GBASE-T：－ ／ 1000BASE-T：背面×2",
     "raid": "5/1/0（出荷時RAID5）",
     "warranty": "3年間(本体およびハードディスク)"
    },
-   "lastCheckedAt": "2026-10-14T06:41:42.387Z",
+   "lastCheckedAt": "2026-10-14T08:20:19.553Z",
    "fallbackFields": []
   },
   {
@@ -3267,7 +3267,7 @@
    "features": {
     "クラウドストレージ連携": {
      "value": "〇",
-     "supported": null
+     "supported": true
     },
     "Time Machine": {
      "value": "－",
@@ -3275,27 +3275,27 @@
     },
     "リモート監視（キキNavi）": {
      "value": "〇",
-     "supported": null
+     "supported": true
     },
     "クラウドバックアップ（キキNavi）": {
      "value": "〇",
-     "supported": null
+     "supported": true
     },
     "Active Directory連携": {
      "value": "〇",
-     "supported": null
+     "supported": true
     },
     "iSCSIターゲット": {
      "value": "〇",
-     "supported": null
+     "supported": true
     },
     "ドライブ暗号化": {
      "value": "〇",
-     "supported": null
+     "supported": true
     },
     "ホットスワップ": {
      "value": "〇",
-     "supported": null
+     "supported": true
     },
     "ホットスペア": {
      "value": "－",
@@ -3307,7 +3307,7 @@
     },
     "データ重複除去": {
      "value": "ー",
-     "supported": null
+     "supported": false
     },
     "レプリケーション": {
      "value": "○",
@@ -3323,7 +3323,7 @@
     },
     "ウイルスチェック": {
      "value": "・DiXiM Security Endpoint(ライセンスパック別売) ・Windows Defender ※対応確認済みソフトウェアは 対応情報ページ からご確認いただけます。",
-     "supported": true
+     "supported": null
     },
     "メタデータ二重化": {
      "value": "－",
@@ -3368,11 +3368,11 @@
     "bays": "4",
     "cpu": "Intel Atom C3338 ／ 1.50 GHz (ターボブースト:2.20 GHz)/2コア/2スレッド",
     "memory": "DDR4 ECC 8GB",
-    "lan": "インターフェース（LAN端子） LAN端子（10GBASE-T）：背面×1 ／ インターフェース（LAN端子） LAN端子（2.5GBASE-T）：－ ／ インターフェース（LAN端子） LAN端子（1000BASE-T）：背面×2 ／ インターフェース（LAN端子） 準拠規格：IEEE 802.3an(10GBASE-T) IEEE 802.3bz(5GBASE-T/2.5GBASE-T) IEEE 802.3ab(1000BASE-T) IEEE 802.3u(100BASE-TX) IEEE 802.3i(10BASE-T) ／ インターフェース（LAN端子） 伝送速度：1000Mbps 全二重 100Mbps 半二重/全二重 10Gbps 全二重 10Mbps 全二重 2.5Gbps 全二重 5Gbps 全二重 ※1GbEポートは全二重のみ対応 ※10GbEポートは10Mbps非対応 ／ インターフェース（LAN端子） 端子形状：RJ-45型 8極 ／ インターフェース（LAN端子） 対応プロトコル：TCP/IP、UDP ／ インターフェース（LAN端子） 対応ネットワークファイル プロトコル：SMB ／ Wake on LAN：〇 ※LAN3(10GbE)はWake on LAN機能有効時、シャットダウン後のLAN3リンク速度は100Mbps固定になります。 Wake on LAN機能を使用するためには、ハブが100Mbpsをサポートしている必要があります。 100Mbpsをサポートしていないハブ等に接続している場合、Wake on LAN機能を使用できません。",
+    "lan": "10GBASE-T：背面×1 ／ 2.5GBASE-T：－ ／ 1000BASE-T：背面×2",
     "raid": "6/5/10/0（出荷時RAID6）",
     "warranty": "3年間(本体およびハードディスク)"
    },
-   "lastCheckedAt": "2026-10-14T06:41:43.923Z",
+   "lastCheckedAt": "2026-10-14T08:20:21.555Z",
    "fallbackFields": []
   },
   {
@@ -3405,7 +3405,7 @@
    "features": {
     "クラウドストレージ連携": {
      "value": "〇",
-     "supported": null
+     "supported": true
     },
     "Time Machine": {
      "value": "－",
@@ -3413,27 +3413,27 @@
     },
     "リモート監視（キキNavi）": {
      "value": "〇",
-     "supported": null
+     "supported": true
     },
     "クラウドバックアップ（キキNavi）": {
      "value": "〇",
-     "supported": null
+     "supported": true
     },
     "Active Directory連携": {
      "value": "〇",
-     "supported": null
+     "supported": true
     },
     "iSCSIターゲット": {
      "value": "〇",
-     "supported": null
+     "supported": true
     },
     "ドライブ暗号化": {
      "value": "〇",
-     "supported": null
+     "supported": true
     },
     "ホットスワップ": {
      "value": "〇",
-     "supported": null
+     "supported": true
     },
     "ホットスペア": {
      "value": "－",
@@ -3461,7 +3461,7 @@
     },
     "ウイルスチェック": {
      "value": "・DiXiM Security Endpoint(ライセンスパック別売) ・Windows Defender ※対応確認済みソフトウェアは 対応情報ページ からご確認いただけます。",
-     "supported": true
+     "supported": null
     },
     "メタデータ二重化": {
      "value": "－",
@@ -3506,11 +3506,11 @@
     "bays": "4",
     "cpu": "Intel Atom C3338 ／ 1.50 GHz (ターボブースト:2.20 GHz)/2コア/2スレッド",
     "memory": "DDR4 ECC 8GB",
-    "lan": "インターフェース（LAN端子） LAN端子（10GBASE-T）：背面×1 ／ インターフェース（LAN端子） LAN端子（2.5GBASE-T）：－ ／ インターフェース（LAN端子） LAN端子（1000BASE-T）：背面×2 ／ インターフェース（LAN端子） 準拠規格：IEEE 802.3an(10GBASE-T) IEEE 802.3bz(5GBASE-T/2.5GBASE-T) IEEE 802.3ab(1000BASE-T) IEEE 802.3u(100BASE-TX) IEEE 802.3i(10BASE-T) ／ インターフェース（LAN端子） 伝送速度：1000Mbps 全二重 100Mbps 半二重/全二重 10Gbps 全二重 10Mbps 全二重 2.5Gbps 全二重 5Gbps 全二重 ※1GbEポートは全二重のみ対応 ※10GbEポートは10Mbps非対応 ／ インターフェース（LAN端子） 端子形状：RJ-45型 8極 ／ インターフェース（LAN端子） 対応プロトコル：TCP/IP、UDP ／ インターフェース（LAN端子） 対応ネットワークファイル プロトコル：SMB ／ Wake on LAN：〇 ※LAN3(10GbE)はWake on LAN機能有効時、シャットダウン後のLAN3リンク速度は100Mbps固定になります。 Wake on LAN機能を使用するためには、ハブが100Mbpsをサポートしている必要があります。 100Mbpsをサポートしていないハブ等に接続している場合、Wake on LAN機能を使用できません。",
+    "lan": "10GBASE-T：背面×1 ／ 2.5GBASE-T：－ ／ 1000BASE-T：背面×2",
     "raid": "6/5/10/0（出荷時RAID6）",
     "warranty": "3年間(本体およびハードディスク)"
    },
-   "lastCheckedAt": "2026-10-14T06:41:45.720Z",
+   "lastCheckedAt": "2026-10-14T08:20:23.890Z",
    "fallbackFields": []
   },
   {
@@ -3543,7 +3543,7 @@
    "features": {
     "クラウドストレージ連携": {
      "value": "〇",
-     "supported": null
+     "supported": true
     },
     "Time Machine": {
      "value": "－",
@@ -3551,27 +3551,27 @@
     },
     "リモート監視（キキNavi）": {
      "value": "〇",
-     "supported": null
+     "supported": true
     },
     "クラウドバックアップ（キキNavi）": {
      "value": "〇",
-     "supported": null
+     "supported": true
     },
     "Active Directory連携": {
      "value": "〇",
-     "supported": null
+     "supported": true
     },
     "iSCSIターゲット": {
      "value": "〇",
-     "supported": null
+     "supported": true
     },
     "ドライブ暗号化": {
      "value": "〇",
-     "supported": null
+     "supported": true
     },
     "ホットスワップ": {
      "value": "〇",
-     "supported": null
+     "supported": true
     },
     "ホットスペア": {
      "value": "－",
@@ -3583,7 +3583,7 @@
     },
     "データ重複除去": {
      "value": "ー",
-     "supported": null
+     "supported": false
     },
     "レプリケーション": {
      "value": "○",
@@ -3599,7 +3599,7 @@
     },
     "ウイルスチェック": {
      "value": "・DiXiM Security Endpoint(ライセンスパック別売) ・Windows Defender ※対応確認済みソフトウェアは 対応情報ページ からご確認いただけます。",
-     "supported": true
+     "supported": null
     },
     "メタデータ二重化": {
      "value": "－",
@@ -3644,11 +3644,11 @@
     "bays": "4",
     "cpu": "Intel Atom C3338 ／ 1.50 GHz (ターボブースト:2.20 GHz)/2コア/2スレッド",
     "memory": "DDR4 ECC 8GB",
-    "lan": "インターフェース（LAN端子） LAN端子（10GBASE-T）：背面×1 ／ インターフェース（LAN端子） LAN端子（2.5GBASE-T）：－ ／ インターフェース（LAN端子） LAN端子（1000BASE-T）：背面×2 ／ インターフェース（LAN端子） 準拠規格：IEEE 802.3an(10GBASE-T) IEEE 802.3bz(5GBASE-T/2.5GBASE-T) IEEE 802.3ab(1000BASE-T) IEEE 802.3u(100BASE-TX) IEEE 802.3i(10BASE-T) ／ インターフェース（LAN端子） 伝送速度：1000Mbps 全二重 100Mbps 半二重/全二重 10Gbps 全二重 10Mbps 全二重 2.5Gbps 全二重 5Gbps 全二重 ※1GbEポートは全二重のみ対応 ※10GbEポートは10Mbps非対応 ／ インターフェース（LAN端子） 端子形状：RJ-45型 8極 ／ インターフェース（LAN端子） 対応プロトコル：TCP/IP、UDP ／ インターフェース（LAN端子） 対応ネットワークファイル プロトコル：SMB ／ Wake on LAN：〇 ※LAN3(10GbE)はWake on LAN機能有効時、シャットダウン後のLAN3リンク速度は100Mbps固定になります。 Wake on LAN機能を使用するためには、ハブが100Mbpsをサポートしている必要があります。 100Mbpsをサポートしていないハブ等に接続している場合、Wake on LAN機能を使用できません。",
+    "lan": "10GBASE-T：背面×1 ／ 2.5GBASE-T：－ ／ 1000BASE-T：背面×2",
     "raid": "6/5/10/0（出荷時RAID6）",
     "warranty": "3年間(本体およびハードディスク)"
    },
-   "lastCheckedAt": "2026-10-14T06:41:47.750Z",
+   "lastCheckedAt": "2026-10-14T08:20:25.028Z",
    "fallbackFields": []
   },
   {
@@ -3681,7 +3681,7 @@
    "features": {
     "クラウドストレージ連携": {
      "value": "〇",
-     "supported": null
+     "supported": true
     },
     "Time Machine": {
      "value": "－",
@@ -3689,27 +3689,27 @@
     },
     "リモート監視（キキNavi）": {
      "value": "〇",
-     "supported": null
+     "supported": true
     },
     "クラウドバックアップ（キキNavi）": {
      "value": "〇",
-     "supported": null
+     "supported": true
     },
     "Active Directory連携": {
      "value": "〇",
-     "supported": null
+     "supported": true
     },
     "iSCSIターゲット": {
      "value": "〇",
-     "supported": null
+     "supported": true
     },
     "ドライブ暗号化": {
      "value": "〇",
-     "supported": null
+     "supported": true
     },
     "ホットスワップ": {
      "value": "〇",
-     "supported": null
+     "supported": true
     },
     "ホットスペア": {
      "value": "－",
@@ -3721,7 +3721,7 @@
     },
     "データ重複除去": {
      "value": "〇",
-     "supported": null
+     "supported": true
     },
     "レプリケーション": {
      "value": "○",
@@ -3737,7 +3737,7 @@
     },
     "ウイルスチェック": {
      "value": "・DiXiM Security Endpoint(ライセンスパック別売) ・Windows Defender ※対応確認済みソフトウェアは 対応情報ページ からご確認いただけます。",
-     "supported": true
+     "supported": null
     },
     "メタデータ二重化": {
      "value": "－",
@@ -3782,11 +3782,11 @@
     "bays": "4",
     "cpu": "Intel Atom C3338 ／ 1.50 GHz (ターボブースト:2.20 GHz)/2コア/2スレッド",
     "memory": "DDR4 ECC 8GB",
-    "lan": "インターフェース（LAN端子） LAN端子（10GBASE-T）：背面×1 ／ インターフェース（LAN端子） LAN端子（2.5GBASE-T）：－ ／ インターフェース（LAN端子） LAN端子（1000BASE-T）：背面×2 ／ インターフェース（LAN端子） 準拠規格：IEEE 802.3an(10GBASE-T) IEEE 802.3bz(5GBASE-T/2.5GBASE-T) IEEE 802.3ab(1000BASE-T) IEEE 802.3u(100BASE-TX) IEEE 802.3i(10BASE-T) ／ インターフェース（LAN端子） 伝送速度：1000Mbps 全二重 100Mbps 半二重/全二重 10Gbps 全二重 10Mbps 全二重 2.5Gbps 全二重 5Gbps 全二重 ※1GbEポートは全二重のみ対応 ※10GbEポートは10Mbps非対応 ／ インターフェース（LAN端子） 端子形状：RJ-45型 8極 ／ インターフェース（LAN端子） 対応プロトコル：TCP/IP、UDP ／ インターフェース（LAN端子） 対応ネットワークファイル プロトコル：SMB ／ Wake on LAN：〇 ※LAN3(10GbE)はWake on LAN機能有効時、シャットダウン後のLAN3リンク速度は100Mbps固定になります。 Wake on LAN機能を使用するためには、ハブが100Mbpsをサポートしている必要があります。 100Mbpsをサポートしていないハブ等に接続している場合、Wake on LAN機能を使用できません。",
+    "lan": "10GBASE-T：背面×1 ／ 2.5GBASE-T：－ ／ 1000BASE-T：背面×2",
     "raid": "6/5/10/0（出荷時RAID6）",
     "warranty": "3年間(本体およびハードディスク)"
    },
-   "lastCheckedAt": "2026-10-14T06:41:49.923Z",
+   "lastCheckedAt": "2026-10-14T08:20:27.024Z",
    "fallbackFields": []
   },
   {
@@ -3819,7 +3819,7 @@
    "features": {
     "クラウドストレージ連携": {
      "value": "〇",
-     "supported": null
+     "supported": true
     },
     "Time Machine": {
      "value": "－",
@@ -3827,27 +3827,27 @@
     },
     "リモート監視（キキNavi）": {
      "value": "〇",
-     "supported": null
+     "supported": true
     },
     "クラウドバックアップ（キキNavi）": {
      "value": "〇",
-     "supported": null
+     "supported": true
     },
     "Active Directory連携": {
      "value": "〇",
-     "supported": null
+     "supported": true
     },
     "iSCSIターゲット": {
      "value": "〇",
-     "supported": null
+     "supported": true
     },
     "ドライブ暗号化": {
      "value": "〇",
-     "supported": null
+     "supported": true
     },
     "ホットスワップ": {
      "value": "〇",
-     "supported": null
+     "supported": true
     },
     "ホットスペア": {
      "value": "－",
@@ -3859,7 +3859,7 @@
     },
     "データ重複除去": {
      "value": "〇",
-     "supported": null
+     "supported": true
     },
     "レプリケーション": {
      "value": "○",
@@ -3875,7 +3875,7 @@
     },
     "ウイルスチェック": {
      "value": "・DiXiM Security Endpoint(ライセンスパック別売) ・Windows Defender ※対応確認済みソフトウェアは 対応情報ページ からご確認いただけます。",
-     "supported": true
+     "supported": null
     },
     "メタデータ二重化": {
      "value": "－",
@@ -3920,11 +3920,11 @@
     "bays": "6",
     "cpu": "Intel Atom C3338 ／ 1.50 GHz (ターボブースト:2.20 GHz)/2コア/2スレッド",
     "memory": "DDR4 ECC 8GB",
-    "lan": "インターフェース（LAN端子） LAN端子（10GBASE-T）：背面×1 ／ インターフェース（LAN端子） LAN端子（2.5GBASE-T）：ー ／ インターフェース（LAN端子） LAN端子（1000BASE-T）：背面×2 ／ インターフェース（LAN端子） 準拠規格：IEEE 802.3an(10GBASE-T) IEEE 802.3bz(5GBASE-T/2.5GBASE-T) IEEE 802.3ab(1000BASE-T) IEEE 802.3u(100BASE-TX) IEEE 802.3i(10BASE-T) ／ インターフェース（LAN端子） 伝送速度：1000Mbps 全二重 100Mbps 半二重/全二重 10Gbps 全二重 10Mbps 全二重 2.5Gbps 全二重 5Gbps 全二重 ※1GbEポートは全二重のみ対応 ※10GbEポートは10Mbps非対応 ／ インターフェース（LAN端子） 端子形状：RJ-45型 8極 ／ インターフェース（LAN端子） 対応プロトコル：TCP/IP、UDP ／ インターフェース（LAN端子） 対応ネットワークファイル プロトコル：SMB ／ Wake on LAN：〇 ※LAN3(10GbE)はWake on LAN機能有効時、シャットダウン後のLAN3リンク速度は100Mbps固定になります。 Wake on LAN機能を使用するためには、ハブが100Mbpsをサポートしている必要があります。 100Mbpsをサポートしていないハブ等に接続している場合、Wake on LAN機能を使用できません。",
+    "lan": "10GBASE-T：背面×1 ／ 2.5GBASE-T：ー ／ 1000BASE-T：背面×2",
     "raid": "6/5/10/0（出荷時RAID6）",
     "warranty": "3年間(本体およびハードディスク)"
    },
-   "lastCheckedAt": "2026-10-14T06:41:51.891Z",
+   "lastCheckedAt": "2026-10-14T08:20:29.617Z",
    "fallbackFields": []
   },
   {
@@ -3956,7 +3956,7 @@
    "features": {
     "クラウドストレージ連携": {
      "value": "〇",
-     "supported": null
+     "supported": true
     },
     "Time Machine": {
      "value": "－",
@@ -3964,19 +3964,19 @@
     },
     "リモート監視（キキNavi）": {
      "value": "〇",
-     "supported": null
+     "supported": true
     },
     "クラウドバックアップ（キキNavi）": {
      "value": "〇",
-     "supported": null
+     "supported": true
     },
     "Active Directory連携": {
      "value": "〇",
-     "supported": null
+     "supported": true
     },
     "iSCSIターゲット": {
      "value": "〇",
-     "supported": null
+     "supported": true
     },
     "ドライブ暗号化": {
      "value": "〇 ※BitLocker使用(ベーシックディスクのみ対応)",
@@ -3984,7 +3984,7 @@
     },
     "ホットスワップ": {
      "value": "〇",
-     "supported": null
+     "supported": true
     },
     "ホットスペア": {
      "value": "〇 ※記憶域スペース利用時のみ対応",
@@ -4000,7 +4000,7 @@
     },
     "レプリケーション": {
      "value": "〇",
-     "supported": null
+     "supported": true
     },
     "フェイルオーバー": {
      "value": "－",
@@ -4012,7 +4012,7 @@
     },
     "ウイルスチェック": {
      "value": "・DiXiM Security Endpoint(ライセンスパック別売) ・Windows Defender ※対応確認済みソフトウェアは 対応情報ページ からご確認いただけます。",
-     "supported": true
+     "supported": null
     },
     "メタデータ二重化": {
      "value": "－",
@@ -4063,11 +4063,11 @@
     "bays": "4",
     "cpu": "Intel Atom x7211E ／ 1.00 GHz (ターボブースト:3.20 GHz)/2コア/2スレッド",
     "memory": "DDR5 8GB 最大16GB(16GB×1 slot)",
-    "lan": "インターフェース（LAN端子） LAN端子（10GBASE-T）：背面×2 ／ インターフェース（LAN端子） LAN端子（2.5GBASE-T）：－ ／ インターフェース（LAN端子） LAN端子（1000BASE-T）：－ ／ インターフェース（LAN端子） 準拠規格：IEEE 802.3an(10GBASE-T) IEEE 802.3bz(5GBASE-T/2.5GBASE-T) IEEE 802.3ab(1000BASE-T) IEEE 802.3u(100BASE-TX) ／ インターフェース（LAN端子） 伝送速度：1000Mbps 全二重 100Mbps 半二重/全二重 10Gbps 全二重 2.5Gbps 全二重 5Gbps 全二重 ／ インターフェース（LAN端子） 端子形状：RJ-45型 8極 ／ インターフェース（LAN端子） 対応プロトコル：TCP/IP、UDP ／ インターフェース（LAN端子） 対応ネットワークファイル プロトコル：SMB ／ Wake on LAN：〇 ※Wake on LAN機能有効時、シャットダウン後のリンク速度は100Mbps固定になります。 Wake on LAN機能を使用するためには、ハブが100Mbpsをサポートしている必要があります。 100Mbpsをサポートしていないハブ等に接続している場合、Wake on LAN機能を使用できません。",
+    "lan": "10GBASE-T：背面×2 ／ 2.5GBASE-T：－ ／ 1000BASE-T：－",
     "raid": "5/1/0（出荷時RAID5）",
     "warranty": "3年間(本体およびハードディスク)"
    },
-   "lastCheckedAt": "2026-10-14T06:41:54.929Z",
+   "lastCheckedAt": "2026-10-14T08:20:31.061Z",
    "fallbackFields": [
     "releaseDate"
    ]
@@ -4101,7 +4101,7 @@
    "features": {
     "クラウドストレージ連携": {
      "value": "〇",
-     "supported": null
+     "supported": true
     },
     "Time Machine": {
      "value": "－",
@@ -4109,19 +4109,19 @@
     },
     "リモート監視（キキNavi）": {
      "value": "〇",
-     "supported": null
+     "supported": true
     },
     "クラウドバックアップ（キキNavi）": {
      "value": "〇",
-     "supported": null
+     "supported": true
     },
     "Active Directory連携": {
      "value": "〇",
-     "supported": null
+     "supported": true
     },
     "iSCSIターゲット": {
      "value": "〇",
-     "supported": null
+     "supported": true
     },
     "ドライブ暗号化": {
      "value": "〇 ※BitLocker使用(ベーシックディスクのみ対応)",
@@ -4129,7 +4129,7 @@
     },
     "ホットスワップ": {
      "value": "〇",
-     "supported": null
+     "supported": true
     },
     "ホットスペア": {
      "value": "〇 ※記憶域スペース利用時のみ対応",
@@ -4141,11 +4141,11 @@
     },
     "データ重複除去": {
      "value": "〇",
-     "supported": null
+     "supported": true
     },
     "レプリケーション": {
      "value": "〇",
-     "supported": null
+     "supported": true
     },
     "フェイルオーバー": {
      "value": "－",
@@ -4157,7 +4157,7 @@
     },
     "ウイルスチェック": {
      "value": "・DiXiM Security Endpoint(ライセンスパック別売) ・Windows Defender ※対応確認済みソフトウェアは 対応情報ページ からご確認いただけます。",
-     "supported": true
+     "supported": null
     },
     "メタデータ二重化": {
      "value": "－",
@@ -4208,11 +4208,11 @@
     "bays": "4",
     "cpu": "Intel Atom x7211E ／ 1.00 GHz (ターボブースト:3.20 GHz)/2コア/2スレッド",
     "memory": "DDR5 8GB 最大16GB(16GB×1 slot)",
-    "lan": "インターフェース（LAN端子） LAN端子（10GBASE-T）：背面×2 ／ インターフェース（LAN端子） LAN端子（2.5GBASE-T）：－ ／ インターフェース（LAN端子） LAN端子（1000BASE-T）：－ ／ インターフェース（LAN端子） 準拠規格：IEEE 802.3an(10GBASE-T) IEEE 802.3bz(5GBASE-T/2.5GBASE-T) IEEE 802.3ab(1000BASE-T) IEEE 802.3u(100BASE-TX) ／ インターフェース（LAN端子） 伝送速度：1000Mbps 全二重 100Mbps 半二重/全二重 10Gbps 全二重 2.5Gbps 全二重 5Gbps 全二重 ／ インターフェース（LAN端子） 端子形状：RJ-45型 8極 ／ インターフェース（LAN端子） 対応プロトコル：TCP/IP、UDP ／ インターフェース（LAN端子） 対応ネットワークファイル プロトコル：SMB ／ Wake on LAN：〇 ※Wake on LAN機能有効時、シャットダウン後のリンク速度は100Mbps固定になります。 Wake on LAN機能を使用するためには、ハブが100Mbpsをサポートしている必要があります。 100Mbpsをサポートしていないハブ等に接続している場合、Wake on LAN機能を使用できません。",
+    "lan": "10GBASE-T：背面×2 ／ 2.5GBASE-T：－ ／ 1000BASE-T：－",
     "raid": "5/1/0（出荷時RAID5）",
     "warranty": "3年間(本体およびハードディスク)"
    },
-   "lastCheckedAt": "2026-10-14T06:41:56.744Z",
+   "lastCheckedAt": "2026-10-14T08:20:34.035Z",
    "fallbackFields": [
     "releaseDate"
    ]
@@ -4245,7 +4245,7 @@
    "features": {
     "クラウドストレージ連携": {
      "value": "〇",
-     "supported": null
+     "supported": true
     },
     "Time Machine": {
      "value": "－",
@@ -4253,19 +4253,19 @@
     },
     "リモート監視（キキNavi）": {
      "value": "〇",
-     "supported": null
+     "supported": true
     },
     "クラウドバックアップ（キキNavi）": {
      "value": "〇",
-     "supported": null
+     "supported": true
     },
     "Active Directory連携": {
      "value": "〇",
-     "supported": null
+     "supported": true
     },
     "iSCSIターゲット": {
      "value": "〇",
-     "supported": null
+     "supported": true
     },
     "ドライブ暗号化": {
      "value": "〇 ※BitLocker使用(ベーシックディスクのみ対応)",
@@ -4273,7 +4273,7 @@
     },
     "ホットスワップ": {
      "value": "〇",
-     "supported": null
+     "supported": true
     },
     "ホットスペア": {
      "value": "－",
@@ -4289,7 +4289,7 @@
     },
     "レプリケーション": {
      "value": "〇",
-     "supported": null
+     "supported": true
     },
     "フェイルオーバー": {
      "value": "－",
@@ -4301,7 +4301,7 @@
     },
     "ウイルスチェック": {
      "value": "・DiXiM Security Endpoint(ライセンスパック別売) ・Windows Defender ※対応確認済みソフトウェアは 対応情報ページ からご確認いただけます。",
-     "supported": true
+     "supported": null
     },
     "メタデータ二重化": {
      "value": "－",
@@ -4346,11 +4346,11 @@
     "bays": "2",
     "cpu": "Intel Atom x7211E ／ 1.00 GHz (ターボブースト:3.20 GHz)/2コア/2スレッド",
     "memory": "DDR5 8GB 最大16GB(16GB×1 slot)",
-    "lan": "インターフェース（LAN端子） LAN端子（10GBASE-T）：背面×2 ／ インターフェース（LAN端子） LAN端子（2.5GBASE-T）：－ ／ インターフェース（LAN端子） LAN端子（1000BASE-T）：－ ／ インターフェース（LAN端子） 準拠規格：IEEE 802.3an(10GBASE-T) IEEE 802.3bz(5GBASE-T/2.5GBASE-T) IEEE 802.3ab(1000BASE-T) IEEE 802.3u(100BASE-TX) ／ インターフェース（LAN端子） 伝送速度：1000Mbps 全二重 100Mbps 半二重/全二重 10Gbps 全二重 2.5Gbps 全二重 5Gbps 全二重 ／ インターフェース（LAN端子） 端子形状：RJ-45型 8極 ／ インターフェース（LAN端子） 対応プロトコル：TCP/IP、UDP ／ インターフェース（LAN端子） 対応ネットワークファイル プロトコル：SMB ／ Wake on LAN：〇 ※Wake on LAN機能有効時、シャットダウン後のリンク速度は100Mbps固定になります。 Wake on LAN機能を使用するためには、ハブが100Mbpsをサポートしている必要があります。 100Mbpsをサポートしていないハブ等に接続している場合、Wake on LAN機能を使用できません。",
+    "lan": "10GBASE-T：背面×2 ／ 2.5GBASE-T：－ ／ 1000BASE-T：－",
     "raid": "1/0（出荷時 RAID1）",
     "warranty": "3年間(本体およびハードディスク)"
    },
-   "lastCheckedAt": "2026-10-14T06:41:58.475Z",
+   "lastCheckedAt": "2026-10-14T08:20:35.384Z",
    "fallbackFields": [
     "releaseDate"
    ]
@@ -4383,7 +4383,7 @@
    "features": {
     "クラウドストレージ連携": {
      "value": "〇",
-     "supported": null
+     "supported": true
     },
     "Time Machine": {
      "value": "－",
@@ -4391,19 +4391,19 @@
     },
     "リモート監視（キキNavi）": {
      "value": "〇",
-     "supported": null
+     "supported": true
     },
     "クラウドバックアップ（キキNavi）": {
      "value": "〇",
-     "supported": null
+     "supported": true
     },
     "Active Directory連携": {
      "value": "〇",
-     "supported": null
+     "supported": true
     },
     "iSCSIターゲット": {
      "value": "〇",
-     "supported": null
+     "supported": true
     },
     "ドライブ暗号化": {
      "value": "〇 ※BitLocker使用(ベーシックディスクのみ対応)",
@@ -4411,7 +4411,7 @@
     },
     "ホットスワップ": {
      "value": "〇",
-     "supported": null
+     "supported": true
     },
     "ホットスペア": {
      "value": "－",
@@ -4423,11 +4423,11 @@
     },
     "データ重複除去": {
      "value": "〇",
-     "supported": null
+     "supported": true
     },
     "レプリケーション": {
      "value": "〇",
-     "supported": null
+     "supported": true
     },
     "フェイルオーバー": {
      "value": "－",
@@ -4439,7 +4439,7 @@
     },
     "ウイルスチェック": {
      "value": "・DiXiM Security Endpoint(ライセンスパック別売) ・Windows Defender ※対応確認済みソフトウェアは 対応情報ページ からご確認いただけます。",
-     "supported": true
+     "supported": null
     },
     "メタデータ二重化": {
      "value": "－",
@@ -4484,11 +4484,11 @@
     "bays": "2",
     "cpu": "Intel Atom x7211E ／ 1.00 GHz (ターボブースト:3.20 GHz)/2コア/2スレッド",
     "memory": "DDR5 8GB 最大16GB(16GB×1 slot)",
-    "lan": "インターフェース（LAN端子） LAN端子（10GBASE-T）：背面×2 ／ インターフェース（LAN端子） LAN端子（2.5GBASE-T）：－ ／ インターフェース（LAN端子） LAN端子（1000BASE-T）：－ ／ インターフェース（LAN端子） 準拠規格：IEEE 802.3an(10GBASE-T) IEEE 802.3bz(5GBASE-T/2.5GBASE-T) IEEE 802.3ab(1000BASE-T) IEEE 802.3u(100BASE-TX) ／ インターフェース（LAN端子） 伝送速度：1000Mbps 全二重 100Mbps 半二重/全二重 10Gbps 全二重 2.5Gbps 全二重 5Gbps 全二重 ／ インターフェース（LAN端子） 端子形状：RJ-45型 8極 ／ インターフェース（LAN端子） 対応プロトコル：TCP/IP、UDP ／ インターフェース（LAN端子） 対応ネットワークファイル プロトコル：SMB ／ Wake on LAN：〇 ※Wake on LAN機能有効時、シャットダウン後のリンク速度は100Mbps固定になります。 Wake on LAN機能を使用するためには、ハブが100Mbpsをサポートしている必要があります。 100Mbpsをサポートしていないハブ等に接続している場合、Wake on LAN機能を使用できません。",
+    "lan": "10GBASE-T：背面×2 ／ 2.5GBASE-T：－ ／ 1000BASE-T：－",
     "raid": "1/0（出荷時 RAID1）",
     "warranty": "3年間(本体およびハードディスク)"
    },
-   "lastCheckedAt": "2026-10-14T06:42:00.100Z",
+   "lastCheckedAt": "2026-10-14T08:20:37.191Z",
    "fallbackFields": [
     "releaseDate"
    ]
@@ -4537,7 +4537,7 @@
     },
     "Active Directory連携": {
      "value": "〇",
-     "supported": null
+     "supported": true
     },
     "iSCSIターゲット": {
      "value": "－",
@@ -4630,11 +4630,11 @@
     "bays": "2",
     "cpu": "Marvell Armada370 ／ 800MHz/1コア",
     "memory": "DDR3 256MB",
-    "lan": "インターフェース（LAN端子） LAN端子（10GBASE-T）：－ ／ インターフェース（LAN端子） LAN端子（2.5GBASE-T）：－ ／ インターフェース（LAN端子） LAN端子（1000BASE-T）：背面×1 ／ インターフェース（LAN端子） 準拠規格：1000BASE-T/100BASE-TX/10BASE-T(AUTO-MDIX対応) ／ インターフェース（LAN端子） 伝送速度：1000Mbps 全二重 100Mbps 半二重/全二重 10Mbps 半二重/全二重 ／ インターフェース（LAN端子） 端子形状：RJ-45型 8極 ／ インターフェース（LAN端子） 対応プロトコル：TCP/IP ／ インターフェース（LAN端子） 対応ネットワークファイル プロトコル：SMB/CIFS、AFP、FTP/FTPS ／ Wake on LAN：－",
+    "lan": "10GBASE-T：－ ／ 2.5GBASE-T：－ ／ 1000BASE-T：背面×1",
     "raid": "1/0（出荷時RAID1）",
     "warranty": "3年間"
    },
-   "lastCheckedAt": "2026-10-14T06:42:01.887Z",
+   "lastCheckedAt": "2026-10-14T08:20:39.891Z",
    "fallbackFields": []
   },
   {
@@ -4678,7 +4678,7 @@
     },
     "Active Directory連携": {
      "value": "〇",
-     "supported": null
+     "supported": true
     },
     "iSCSIターゲット": {
      "value": "－",
@@ -4771,11 +4771,11 @@
     "bays": "1",
     "cpu": "Marvell Armada370 ／ 800MHz/1コア",
     "memory": "DDR3 256MB",
-    "lan": "インターフェース（LAN端子） LAN端子（10GBASE-T）：－ ／ インターフェース（LAN端子） LAN端子（2.5GBASE-T）：－ ／ インターフェース（LAN端子） LAN端子（1000BASE-T）：背面×1 ／ インターフェース（LAN端子） 準拠規格：1000BASE-T/100BASE-TX/10BASE-T(AUTO-MDIX対応) ／ インターフェース（LAN端子） 伝送速度：1000Mbps 全二重 100Mbps 半二重/全二重 10Mbps 半二重/全二重 ／ インターフェース（LAN端子） 端子形状：RJ-45型 8極 ／ インターフェース（LAN端子） 対応プロトコル：TCP/IP ／ インターフェース（LAN端子） 対応ネットワークファイル プロトコル：SMB/CIFS、AFP、FTP/FTPS ／ Wake on LAN：－",
+    "lan": "10GBASE-T：－ ／ 2.5GBASE-T：－ ／ 1000BASE-T：背面×1",
     "raid": "－",
     "warranty": "3年"
    },
-   "lastCheckedAt": "2026-10-14T06:42:04.876Z",
+   "lastCheckedAt": "2026-10-14T08:20:41.489Z",
    "fallbackFields": [
     "raidModes"
    ]
