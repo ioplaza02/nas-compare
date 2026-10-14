@@ -230,6 +230,33 @@ async function scrapeSeries(seriesId, sampleSku) {
 // ---------------------------------------------------------------------
 // メイン
 // ---------------------------------------------------------------------
+// ---------------------------------------------------------------------
+// 価格・JAN（商品ページが裏で読み込んでいるデータ）
+//   商品ページは表示後に「…/n?item_code=型番」から価格・JAN・新価格表示などを読み込んでいる。
+//   返ってくるJSONの result_list[0] の例:
+//   { item_code: "TS6400DN2404", price: "587,400円(税抜534,000円)", jan: "4981254052099", status: "新価格", ... }
+// ---------------------------------------------------------------------
+const PRICE_API = `${BASE}/api/v1/product_item/n?item_code=`;
+// 法人向けNAS（small_category_id=305）の「新商品」一覧（直近60日）。新シリーズに気づくために使う
+const NEW_LIST_API = `${BASE}/api/v1/product-list/new?small_category_id=305&term=60`;
+
+export function parsePrice(text) {
+  const nums = [...String(text || "").matchAll(/([\d,]+)\s*円/g)].map(m => parseInt(m[1].replace(/,/g, ""), 10));
+  if (!nums.length) return { priceIncTax: null, priceExTax: null };
+  const ex = String(text).match(/税抜\s*([\d,]+)\s*円/);
+  return { priceIncTax: nums[0], priceExTax: ex ? parseInt(ex[1].replace(/,/g, ""), 10) : null };
+}
+
+async function fetchVariantPrice(sku) {
+  if (PRICE_API.includes("__")) return null; // 取得先が未設定の間は何もしない
+  const res = await getHtml(PRICE_API + encodeURIComponent(sku));
+  const item = JSON.parse(res)?.result_list?.find(x => (x.item_code || "").toUpperCase() === sku.toUpperCase());
+  if (!item) return null;
+  const notes = (item.information_list || []).map(x => x?.value).filter(Boolean); // 例：「受注生産」
+  return { ...parsePrice(item.price), priceText: item.price || null, jan: item.jan || null,
+    priceStatus: item.status || null, infoNotes: notes.length ? notes : null };
+}
+
 async function main() {
   const prev = JSON.parse(await readFile(OUT, "utf8"));
   const prevById = new Map(prev.products.map(p => [p.series, p]));
@@ -244,6 +271,16 @@ async function main() {
       for (const f of found) if (!targets.has(f.series)) { targets.set(f.series, f.sku); console.log(`新しいシリーズを発見: ${f.series}（${f.sku}）`); }
     } catch (e) { console.warn(`一覧ページの取得に失敗（スキップ）: ${e.message}`); break; }
   }
+
+  // 1-2) B社公式の「新商品」一覧（直近60日）。まだデータにないシリーズはログとJSONに残す
+  let newProducts = [];
+  try {
+    const j = JSON.parse(await getHtml(NEW_LIST_API));
+    newProducts = (j.result_list || []).map(x => ({
+      series: x.series_code, label: x.price || x.item_code, notes: (x.information_list || []).map(n => n?.value).filter(Boolean),
+    }));
+    for (const n of newProducts) if (!targets.has(n.series)) console.log(`新商品一覧に未登録のシリーズあり: ${n.series}（${n.label}）`);
+  } catch (e) { console.warn(`新商品一覧の取得に失敗（スキップ）: ${e.message}`); }
 
   // 2) 各シリーズを取得
   const products = [];
@@ -270,6 +307,15 @@ async function main() {
     }
     // JANは前回データにしかないので、型番が一致するものは引き継ぐ
     if (before) for (const v of merged.variants) v.jan = v.jan || before.variants.find(b => b.sku === v.sku)?.jan || null;
+    // 容量ごとの価格・JAN（取れなかった型番は前回の値を残す）
+    for (const v of merged.variants) {
+      try {
+        const pr = await fetchVariantPrice(v.sku);
+        if (pr) Object.assign(v, Object.fromEntries(Object.entries(pr).filter(([, x]) => x != null)));
+      } catch (e) { problems.push(`${v.sku}: 価格の取得に失敗（${e.message}）`); }
+      const old = before?.variants.find(b => b.sku === v.sku);
+      if (old) for (const k of ["priceIncTax", "priceExTax", "priceText", "priceStatus", "infoNotes"]) if (v[k] == null && old[k] != null) v[k] = old[k];
+    }
     const family = series.startsWith("LS") ? "LinkStation" : "TeraStation";
     Object.assign(merged, {
       id: series.toLowerCase(), maker: "BUFFALO", series, family,
@@ -286,7 +332,7 @@ async function main() {
   // 3) 健全性チェック
   const ok = products.filter(p => p.collectedBy === "scraper" && p.osType && p.bays && p.fallbackFields.length <= 3).length;
   const healthy = products.length >= prev.products.length * 0.9 && ok >= products.length * 0.8;
-  const out = { updatedAt: new Date().toISOString(), source: prev.source, products };
+  const out = { updatedAt: new Date().toISOString(), source: prev.source, newProducts, products };
   if (!healthy) {
     await writeFile(FAILED_OUT, JSON.stringify(out, null, 1));
     console.error(`\n健全性チェックNG：正常に読めたシリーズ ${ok}/${products.length}件（前回 ${prev.products.length}件）`);

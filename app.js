@@ -417,7 +417,9 @@ function priceHtml(p, v, withSku = true) {
   if (!v) return "—";
   const sku = withSku ? `<span class="price-sku">${esc(v.sku)}</span>` : "";
   if (v.priceIncTax) {
-    return `${sku}<span class="price">${yen(v.priceIncTax)}</span><span class="price__ex">（税抜 ${yen(Math.round(v.priceIncTax / 1.1))}）</span>`;
+    // 税抜：公式に書かれていればその値、なければ税込÷1.1
+    const ex = v.priceExTax ?? Math.round(v.priceIncTax / 1.1);
+    return `${sku}<span class="price">${yen(v.priceIncTax)}</span><span class="price__ex">（税抜 ${yen(ex)}）</span>`;
   }
   return `${sku}<span class="muted">公式サイトに価格の掲載なし</span>`;
 }
@@ -426,6 +428,8 @@ function statusText(p, v) {
   const parts = [];
   const st = (v && v.status) || "";
   if (st && st !== "現行") parts.push(st);
+  if (v && v.priceStatus) parts.push(v.priceStatus); // B社の「新価格」など、公式ページの表記
+  if (v && v.infoNotes) parts.push(...v.infoNotes);   // B社の「受注生産」など
   if (!v && p.status && p.status !== "現行") parts.push(p.status);
   if (!v && p.statusNote) parts.push(p.statusNote);
   return parts.map(esc).join("<br>");
@@ -510,7 +514,7 @@ function openPriceModal(p) {
         <tbody>${rows}</tbody></table></div>
       <p class="modal__note">${p.maker === "I-O DATA"
         ? "価格はI-O DATA公式サイト掲載のメーカー希望小売価格です。税抜価格は税込価格÷1.1で表示しています。"
-        : "B社公式サイトに価格が掲載されている場合のみ表示しています。実売価格は販売店でご確認ください。"}</p>
+        : "価格はB社公式サイトの商品ページに掲載されている価格です。実売価格は販売店でご確認ください。"}</p>
     </div>`;
   m.hidden = false;
 }
