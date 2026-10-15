@@ -7,7 +7,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=20261014-7">
+<link rel="stylesheet" href="style.css?v=20261015-1">
 </head>
 <body>
 
@@ -75,6 +75,19 @@
       <input type="text" id="io-input" class="text-input text-input--wide" list="io-datalist" placeholder="例：HDL4-Z25SI3B16B / HDL4-Z25SI3BB" autocomplete="off">
       <datalist id="io-datalist"></datalist>
 
+      <p class="query-box__label">探し方</p>
+      <div class="mode-group" role="radiogroup">
+        <label class="mode"><input type="radio" name="io2other-mode" value="spec" checked><span><strong>仕様が近い</strong><small>OS・ベイ数・設置形態・LAN速度などが近い順</small></span></label>
+        <label class="mode"><input type="radio" name="io2other-mode" value="price"><span><strong>価格が近い</strong><small>同じくらいの予算で買えるB社の機種（容量まで指定）</small></span></label>
+        <label class="mode"><input type="radio" name="io2other-mode" value="capacity"><span><strong>容量が近い</strong><small>同じくらいの容量のB社の機種（容量まで指定）</small></span></label>
+        <label class="mode"><input type="radio" name="io2other-mode" value="manual"><span><strong>自分で選ぶ</strong><small>比べたいB社の機種を最大3つ入力</small></span></label>
+      </div>
+      <div class="manual-box" id="io2other-manual" hidden>
+        <input type="text" class="text-input" data-manual="io2other" list="other-datalist" placeholder="B社の型番 1" autocomplete="off">
+        <input type="text" class="text-input" data-manual="io2other" list="other-datalist" placeholder="B社の型番 2（任意）" autocomplete="off">
+        <input type="text" class="text-input" data-manual="io2other" list="other-datalist" placeholder="B社の型番 3（任意）" autocomplete="off">
+      </div>
+
 
       <label class="check"><input type="checkbox" id="io2other-discontinued"> 在庫限り品も候補に含める</label>
 
@@ -92,6 +105,19 @@
       <datalist id="other-datalist"></datalist>
       <p class="query-box__hint">全角・ハイフン・スペースの違いは自動で吸収します。シリーズ名だけでも検索できます。</p>
 
+      <p class="query-box__label">探し方</p>
+      <div class="mode-group" role="radiogroup">
+        <label class="mode"><input type="radio" name="other2io-mode" value="spec" checked><span><strong>仕様が近い</strong><small>OS・ベイ数・設置形態・LAN速度などが近い順</small></span></label>
+        <label class="mode"><input type="radio" name="other2io-mode" value="price"><span><strong>価格が近い</strong><small>同じくらいの予算で買えるI-O DATAの機種（容量まで指定）</small></span></label>
+        <label class="mode"><input type="radio" name="other2io-mode" value="capacity"><span><strong>容量が近い</strong><small>同じくらいの容量のI-O DATAの機種（容量まで指定）</small></span></label>
+        <label class="mode"><input type="radio" name="other2io-mode" value="manual"><span><strong>自分で選ぶ</strong><small>比べたいI-O DATAの機種を最大3つ入力</small></span></label>
+      </div>
+      <div class="manual-box" id="other2io-manual" hidden>
+        <input type="text" class="text-input" data-manual="other2io" list="io-datalist" placeholder="I-O DATAの型番 1" autocomplete="off">
+        <input type="text" class="text-input" data-manual="other2io" list="io-datalist" placeholder="I-O DATAの型番 2（任意）" autocomplete="off">
+        <input type="text" class="text-input" data-manual="other2io" list="io-datalist" placeholder="I-O DATAの型番 3（任意）" autocomplete="off">
+      </div>
+
       <label class="check"><input type="checkbox" id="other2io-discontinued"> 在庫限り・生産終了品も候補に含める</label>
 
       <button type="button" class="run-btn" id="other2io-run">実行</button>
@@ -103,11 +129,11 @@
 </main>
 
 <footer class="footer">
-  <p>一致度は「OSの系統・ベイ数・設置形態・LAN速度・容量・販売状況」を点数化した目安です。最終判断は解説と出典ページをご確認ください。</p>
+  <p>仕様の一致度は「OSの系統・ベイ数・設置形態・LAN速度・容量・販売状況」を決まった計算式で点数化した目安です。最終判断は解説と出典ページをご確認ください。</p>
 </footer>
 
 </div>
 
-<script src="app.js?v=20261014-7"></script>
+<script src="app.js?v=20261015-1"></script>
 </body>
 </html>

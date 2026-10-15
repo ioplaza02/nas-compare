@@ -364,12 +364,13 @@ function explain(src, cand, capTB) {
 // ---------------------------------------------------------------------
 // 比較表と候補カード
 // ---------------------------------------------------------------------
-function variantsCell(p, capTB) {
+// 容量ラインナップ：今「容量を選ぶ」で選ばれている型番を緑で目立たせる
+function variantsCell(p, selected) {
   const list = [...p.variants].sort((a, b) => a.capacityTB - b.capacityTB);
   if (!list.length) return "—";
   return list.map(v => {
     const label = `${esc(v.sku)}（${fmtTB(v.capacityTB)}）`;
-    return capTB != null && v.capacityTB === capTB ? `<span class="hit">${label}</span>` : label;
+    return `<span class="lineup-item${selected && v.sku === selected.sku ? " hit" : ""}" data-vsku="${esc(v.sku)}">${label}</span>`;
   }).join("<br>");
 }
 
@@ -399,10 +400,39 @@ let TABLE_SEQ = 0;
 const TABLES = {};
 const yen = n => "¥" + Number(n).toLocaleString("ja-JP");
 
-// 最初に選ばれている容量：入力された容量（指定がなければ基準機種の一番小さい容量）に一番近いもの
-function defaultVariant(p, i, targetTB) {
+const TABLE_META = {}; // 表ごとの探し方（mode）と、各列で今選ばれている型番
+
+// 最初に選ばれている容量：探し方で決まった型番（picks）があればそれ、
+// なければ入力された容量（指定がなければ基準機種の一番小さい容量）に一番近いもの
+function defaultVariant(p, i, targetTB, picks) {
   if (!p.variants.length) return null;
-  return nearestVariant(p, targetTB) || p.variants[0];
+  return picks?.[i] || nearestVariant(p, targetTB) || p.variants[0];
+}
+
+// 価格が一番近い型番（価格の分からない型番は除く）
+function nearestByPrice(p, price) {
+  const priced = p.variants.filter(v => v.priceIncTax);
+  if (!priced.length || !price) return null;
+  return priced.reduce((a, b) => Math.abs(b.priceIncTax - price) < Math.abs(a.priceIncTax - price) ? b : a);
+}
+
+// 基準との価格差（ツールが計算した値）
+function priceDiffHtml(base, v) {
+  if (!base?.priceIncTax || !v?.priceIncTax) return `<span class="muted">—</span>`;
+  const d = v.priceIncTax - base.priceIncTax;
+  if (d === 0) return `<strong>同額</strong>`;
+  const pct = Math.round(Math.abs(d) / base.priceIncTax * 100);
+  return d > 0
+    ? `<strong class="diff-up">＋${yen(d)}</strong><small class="muted">（基準より${pct}%高い）</small>`
+    : `<strong class="diff-down">−${yen(-d)}</strong><small class="muted">（基準より${pct}%安い）</small>`;
+}
+function renderDiffs(tableId) {
+  const sel = TABLE_META[tableId].selected;
+  sel.forEach((v, i) => {
+    if (i === 0) return;
+    const el = document.querySelector(`[data-diff="${tableId}-${i}"]`);
+    if (el) el.innerHTML = priceDiffHtml(sel[0], v);
+  });
 }
 
 function capSelect(tableId, i, p, selected) {
@@ -452,23 +482,28 @@ document.addEventListener("change", e => {
   const v = p?.variants.find(x => x.sku === sel.value);
   if (!p || !v) return;
   updateBuyCells(sel.dataset.table, +sel.dataset.col, v);
-  // 基準（左端）の容量を変えたら、候補の容量もそれに一番近いものへ合わせる
+  // 基準（左端）の容量を変えたら、候補もそれに合わせる
+  // （「価格が近い」で探した表は価格が一番近い容量へ、それ以外は容量が一番近いものへ）
   if (+sel.dataset.col === 0) {
+    const byPrice = TABLE_META[sel.dataset.table]?.mode === "price";
     TABLES[sel.dataset.table].forEach((q, i) => {
       if (i === 0) return;
-      const nv = nearestVariant(q, v.capacityTB);
+      const nv = (byPrice && nearestByPrice(q, v.priceIncTax)) || nearestVariant(q, v.capacityTB);
       if (!nv) return;
       const s2 = document.querySelector(`.cap-select[data-table="${sel.dataset.table}"][data-col="${i}"]`);
       if (s2) s2.value = nv.sku;
       updateBuyCells(sel.dataset.table, i, nv);
     });
   }
+  renderDiffs(sel.dataset.table);
 });
 function updateBuyCells(tableId, col, v) {
   const p = TABLES[tableId][col];
   const key = `${tableId}-${col}`;
   document.querySelector(`[data-price="${key}"]`).innerHTML = priceHtml(p, v);
   document.querySelector(`[data-link="${key}"]`).innerHTML = linkHtml(p, v);
+  TABLE_META[tableId].selected[col] = v;
+  document.querySelectorAll(`[data-lineup="${key}"] .lineup-item`).forEach(el => el.classList.toggle("hit", el.dataset.vsku === v.sku));
 }
 
 // 「全容量の価格を見る」ポップアップ
@@ -534,12 +569,14 @@ const TOOL = `<span class="tool-mark" title="ツールが公式の値から判�
 
 // 比較表：左端が「比較の基準」、その右に候補を並べる。列幅はすべて等分。
 // 縦にスクロールしていくと項目ごとの違いが分かるよう、基準と値が違うセルを黄色にする。
-function compareTable(cols, capTB) {
+function compareTable(cols, capTB, opts = {}) {
   const base = cols[0];
   const tableId = "t" + (++TABLE_SEQ);
   TABLES[tableId] = cols;
   const baseCaps = base.variants.map(v => v.capacityTB).filter(c => c != null);
   const targetTB = capTB ?? (baseCaps.length ? Math.min(...baseCaps) : null);
+  const pick = (p, i) => defaultVariant(p, i, targetTB, opts.picks);
+  TABLE_META[tableId] = { mode: opts.mode || "spec", selected: cols.map(pick) };
   const row = (label, cellFn, keyFn, cls = "") => {
     const baseKey = keyFn ? keyFn(base) : undefined;
     const tds = cols.map((p, i) => {
@@ -553,20 +590,22 @@ function compareTable(cols, capTB) {
   const BASE_CELL = `<span class="muted">（比較の基準）</span>`;
 
   const rows = [
-    row(`一致度${TOOL}`, (p, i) => i === 0 ? BASE_CELL : (() => {
+    row(`仕様の一致度${TOOL}`, (p, i) => i === 0 ? BASE_CELL : (() => {
       const sc = scorePair(base, p, capTB);
       return `<div class="score__label">${sc}%</div><div class="score__bar"><div class="score__fill" style="width:${sc}%"></div></div>`;
     })(), null, "row-score"),
-    row("容量を選ぶ", (p, i) => capSelect(tableId, i, p, defaultVariant(p, i, targetTB)), null, "row-buy"),
-    row("型番・価格（税込）", (p, i) => `<div data-price="${tableId}-${i}">${priceHtml(p, defaultVariant(p, i, targetTB))}</div>`, null, "row-buy"),
-    row("商品ページ", (p, i) => `<div data-link="${tableId}-${i}">${linkHtml(p, defaultVariant(p, i, targetTB))}</div>
+    row("容量を選ぶ", (p, i) => capSelect(tableId, i, p, pick(p, i)), null, "row-buy"),
+    row("型番・価格（税込）", (p, i) => `<div data-price="${tableId}-${i}">${priceHtml(p, pick(p, i))}</div>`, null, "row-buy"),
+    row(`基準との価格差${TOOL}`, (p, i) => i === 0 ? `<span class="muted">（比較の基準）</span>`
+      : `<div data-diff="${tableId}-${i}">${priceDiffHtml(pick(base, 0), pick(p, i))}</div>`, null, "row-buy"),
+    row("商品ページ", (p, i) => `<div data-link="${tableId}-${i}">${linkHtml(p, pick(p, i))}</div>
       <button type="button" class="link-btn" data-allprices="${tableId}-${i}">全容量の価格を見る</button>`, null, "row-buy"),
     row(`要約${TOOL}`, (p, i) => i === 0 ? BASE_CELL : `<strong>${esc(exs[i].summary)}</strong>`, null, "row-summary"),
     row(`OS区分${TOOL}`, p => osLabel(p), p => p.osType + (p.osType === "Windows" ? p.windowsEdition : "")),
     row("搭載OS", p => rawOr(p, "os", p.osEdition)),
     row("設置形態", p => rawOr(p, "install", p.install), p => p.install),
-    row("ベイ数", p => p.raw?.bays ? esc(p.raw.bays) : (p.bays ? `${p.bays}ベイ` : "—"), p => p.bays),
-    row("容量ラインナップ", p => variantsCell(p, capTB)),
+    row("ベイ数", p => p.raw?.bays && !/^\d+$/.test(p.raw.bays.trim()) ? esc(p.raw.bays) : (p.bays ? `${p.bays}ベイ` : "—"), p => p.bays),
+    row("容量ラインナップ", (p, i) => `<div data-lineup="${tableId}-${i}">${variantsCell(p, pick(p, i))}</div>`),
     row(`LAN最大速度${TOOL}`, p => lanLabel(p), p => `${p.lanSpeedMax}/${p.lanMaxPorts}`),
     row("LAN", p => lanRaw(p)),
     row("CPU", p => rawOr(p, "cpu", p.cpu)),
@@ -697,55 +736,123 @@ function renderList() {
 }
 
 // ---------------------------------------------------------------------
-// ② I-O DATA → B社
+// ②・③ 共通：探し方を選んで比較する
+//   spec     … 仕様が近い順（一致度の点数）
+//   price    … 価格が近い順（基準の型番の税込価格に一番近い型番を、シリーズごとに1つ）
+//   capacity … 容量が近い順（同じ容量に近い型番。差が同じなら仕様が近い方を優先）
+//   manual   … 自分で選んだ機種と比較
 // ---------------------------------------------------------------------
-function runIo2Other() {
-  const inputEl = document.getElementById("io-input");
-  const errEl = document.getElementById("io2other-error");
-  const out = document.getElementById("io2other-result");
-  errEl.hidden = true;
-  const res = resolve(inputEl.value, state.io);
-  if (res.error) { out.innerHTML = ""; return showError(errEl, res, inputEl, runIo2Other); }
-  const includeOld = document.getElementById("io2other-discontinued").checked;
-  const src = res.product, capTB = res.variant?.capacityTB ?? null;
-  const pool = Object.values(state.others).flat().filter(p => includeOld || p.status === "現行");
-  const top = rankCandidates(src, pool, capTB, 3);
+const DIRS = {
+  io2other: {
+    input: "io-input", err: "io2other-error", out: "io2other-result", old: "io2other-discontinued",
+    srcPool: () => state.io, candPool: () => Object.values(state.others).flat(),
+    candLabel: "B社", headClass: "",
+  },
+  other2io: {
+    input: "other-input", err: "other2io-error", out: "other2io-result", old: "other2io-discontinued",
+    srcPool: () => Object.values(state.others).flat(), candPool: () => state.io,
+    candLabel: "I-O DATA", headClass: "source-head--bf",
+  },
+};
+const N_CANDS = 3;
 
-  out.innerHTML = `<div class="source-head">
-      <h2>${esc(src.name)}${res.variant ? `　<small>${esc(res.variant.sku)}（${fmtTB(capTB)}）</small>` : ""}</h2>
-      ${!res.variant ? `<p>※容量まで指定すると（例：${esc(src.variants[0]?.sku || "")}）、同じ容量の型番も探します。</p>` : ""}
-    </div>
-    <section class="maker-section"><h3>B社の近い機種 ${top.length}件と比較</h3>
-      ${top.length ? compareTable([src, ...top], capTB) : `<p class="empty">候補がありません。</p>`}
-    </section>`;
-  out.scrollIntoView({ behavior: "smooth", block: "start" });
+function modeOf(dir) {
+  return document.querySelector(`input[name="${dir}-mode"]:checked`)?.value || "spec";
 }
 
-// ---------------------------------------------------------------------
-// ③ B社 → I-O DATA
-// ---------------------------------------------------------------------
-function runOther2Io() {
-  const inputEl = document.getElementById("other-input");
-  const errEl = document.getElementById("other2io-error");
-  const out = document.getElementById("other2io-result");
+function runSearch(dir) {
+  const d = DIRS[dir];
+  const inputEl = document.getElementById(d.input);
+  const errEl = document.getElementById(d.err);
+  const out = document.getElementById(d.out);
+  const rerun = () => runSearch(dir);
   errEl.hidden = true;
-  const all = Object.values(state.others).flat();
-  const res = resolve(inputEl.value, all);
-  if (res.error) { out.innerHTML = ""; return showError(errEl, res, inputEl, runOther2Io); }
-  const includeOld = document.getElementById("other2io-discontinued").checked;
-  const src = res.product, capTB = res.variant?.capacityTB ?? null;
-  const pool = state.io.filter(p => includeOld || p.status === "現行");
-  const top = rankCandidates(src, pool, capTB, 3);
 
-  out.innerHTML = `<div class="source-head source-head--bf">
-      <h2>${esc(makerLabel(src))}　${esc(src.name)}${res.variant ? `　<small>${esc(res.variant.sku)}（${fmtTB(capTB)}）</small>` : ""}</h2>
+  const res = resolve(inputEl.value, d.srcPool());
+  if (res.error) { out.innerHTML = ""; return showError(errEl, res, inputEl, rerun); }
+  const src = res.product, baseV = res.variant;
+  const capTB = baseV?.capacityTB ?? null;
+  const includeOld = document.getElementById(d.old).checked;
+  const pool = d.candPool().filter(p => includeOld || p.status === "現行");
+  const mode = modeOf(dir);
+
+  // 価格・容量で探す時は、容量（型番）まで決まっている必要がある
+  if ((mode === "price" || mode === "capacity") && !baseV) {
+    out.innerHTML = "";
+    return showError(errEl, {
+      error: `「${mode === "price" ? "価格" : "容量"}が近い機種」で探すには、容量まで選んでください：`,
+      suggestions: [...src.variants].sort((a, b) => a.capacityTB - b.capacityTB).map(v => v.sku),
+    }, inputEl, rerun);
+  }
+  if (mode === "price" && !baseV.priceIncTax) {
+    out.innerHTML = "";
+    errEl.hidden = false;
+    errEl.textContent = `${baseV.sku} は公式サイトに価格の掲載がないため、価格で探せません。別の容量か、別の探し方を選んでください。`;
+    return;
+  }
+
+  let cands = [], picks = [baseV], title = "", note = "";
+  if (mode === "spec") {
+    cands = rankCandidates(src, pool, capTB, N_CANDS);
+    title = `${d.candLabel}の仕様が近い機種 ${cands.length}件と比較`;
+  } else if (mode === "price") {
+    const ranked = pool
+      .map(p => ({ p, v: nearestByPrice(p, baseV.priceIncTax) }))
+      .filter(x => x.v)
+      .sort((a, b) => Math.abs(a.v.priceIncTax - baseV.priceIncTax) - Math.abs(b.v.priceIncTax - baseV.priceIncTax))
+      .slice(0, N_CANDS);
+    cands = ranked.map(x => x.p);
+    picks = [baseV, ...ranked.map(x => x.v)];
+    title = `${d.candLabel}で価格が近い機種 ${cands.length}件と比較`;
+    note = `基準：${baseV.sku}（税込 ${yen(baseV.priceIncTax)}）に、税込価格が一番近い型番をシリーズごとに選んでいます。仕様は大きく違う場合があります。`;
+  } else if (mode === "capacity") {
+    const ranked = pool
+      .map(p => ({ p, v: nearestVariant(p, capTB), s: scorePair(src, p, capTB) }))
+      .filter(x => x.v)
+      .sort((a, b) => Math.abs(a.v.capacityTB - capTB) - Math.abs(b.v.capacityTB - capTB) || b.s - a.s)
+      .slice(0, N_CANDS);
+    cands = ranked.map(x => x.p);
+    picks = [baseV, ...ranked.map(x => x.v)];
+    title = `${d.candLabel}で容量が近い機種 ${cands.length}件と比較`;
+    note = `基準：${baseV.sku}（${fmtTB(capTB)}）に容量が一番近い型番を選んでいます。容量が同じ場合は仕様が近い機種を優先しています。`;
+  } else if (mode === "manual") {
+    const errs = [];
+    document.querySelectorAll(`[data-manual="${dir}"]`).forEach(inp => {
+      if (!inp.value.trim()) return;
+      const r = resolve(inp.value, d.candPool());
+      if (r.error) {
+        errs.push(r.error.startsWith("複数") && r.suggestions?.length
+          ? `${inp.value.trim()}（複数のシリーズに該当：${r.suggestions.join("・")}）`
+          : inp.value.trim());
+        return;
+      }
+      cands.push(r.product);
+      picks.push(r.variant || null);
+    });
+    if (errs.length || !cands.length) {
+      out.innerHTML = "";
+      errEl.hidden = false;
+      errEl.textContent = errs.length
+        ? `見つからない型番がありました：${errs.join("、")}（候補リストから選ぶと確実です）`
+        : `比べたい${d.candLabel}の機種を1つ以上入力してください`;
+      return;
+    }
+    title = `選んだ${d.candLabel}の機種 ${cands.length}件と比較`;
+  }
+
+  out.innerHTML = `<div class="source-head ${d.headClass}">
+      <h2>${esc(makerLabel(src))}　${esc(src.name)}${baseV ? `　<small>${esc(baseV.sku)}（${fmtTB(capTB)}）</small>` : ""}</h2>
+      ${!baseV && mode === "spec" ? `<p>※容量まで指定すると（例：${esc(src.variants[0]?.sku || "")}）、同じ容量の型番も探します。</p>` : ""}
       ${res.alternatives?.length ? `<p>※同じシリーズ名で別エディションもあります：${res.alternatives.map(a => esc(a.code)).join("、")}</p>` : ""}
     </div>
-    <section class="maker-section"><h3>I-O DATA の候補 ${top.length}件と比較</h3>
-      ${compareTable([src, ...top], capTB)}
+    <section class="maker-section"><h3>${esc(title)}</h3>
+      ${note ? `<p class="mode-note">${esc(note)}</p>` : ""}
+      ${cands.length ? compareTable([src, ...cands], capTB, { picks, mode }) : `<p class="empty">候補がありません。</p>`}
     </section>`;
   out.scrollIntoView({ behavior: "smooth", block: "start" });
 }
+const runIo2Other = () => runSearch("io2other");
+const runOther2Io = () => runSearch("other2io");
 
 // ---------------------------------------------------------------------
 // 画面の組み立て
@@ -775,6 +882,14 @@ function setupInputs() {
   document.querySelectorAll(".tabs__btn").forEach(b => b.addEventListener("click", () => switchTab(b.dataset.tab)));
   for (const id of ["list-search", "list-os", "list-install", "list-discontinued"])
     document.getElementById(id).addEventListener("input", renderList);
+  // 探し方の切り替え：「自分で選ぶ」の時だけ機種の入力欄を出す
+  for (const dir of Object.keys(DIRS)) {
+    const sync = () => { document.getElementById(`${dir}-manual`).hidden = modeOf(dir) !== "manual"; };
+    document.querySelectorAll(`input[name="${dir}-mode"]`).forEach(r => r.addEventListener("change", sync));
+    sync();
+    document.querySelectorAll(`[data-manual="${dir}"]`).forEach(inp =>
+      inp.addEventListener("keydown", e => { if (e.key === "Enter") runSearch(dir); }));
+  }
   document.getElementById("io2other-run").addEventListener("click", runIo2Other);
   document.getElementById("other2io-run").addEventListener("click", runOther2Io);
   document.getElementById("io-input").addEventListener("keydown", e => { if (e.key === "Enter") runIo2Other(); });

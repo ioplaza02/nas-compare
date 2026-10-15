@@ -270,3 +270,16 @@ body {
 .modal__head .buy-btn { margin-top: 6px; }
 .price-table .price { font-size: 18px; }
 .price-table .status-cell { min-width: 90px; color: #9c2b2b; font-weight: 700; font-size: 14px; }
+
+/* ---- 探し方の選択 ---- */
+.mode-group { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 8px; width: 100%; }
+.mode { display: flex; gap: 8px; align-items: flex-start; border: 1px solid var(--border-strong); border-radius: 8px; padding: 10px 12px; cursor: pointer; background: #fff; }
+.mode:has(input:checked) { border-color: #b3121f; background: #fff5f5; box-shadow: 0 0 0 1px #b3121f inset; }
+.mode input { margin-top: 4px; accent-color: #b3121f; }
+.mode strong { display: block; font-size: 16px; }
+.mode small { display: block; font-size: 13px; color: var(--text-secondary); line-height: 1.5; }
+.manual-box { display: flex; flex-wrap: wrap; gap: 8px; width: 100%; }
+.manual-box .text-input { flex: 1 1 220px; }
+.mode-note { font-size: 14px; color: var(--text-secondary); margin: -4px 0 10px; }
+.diff-up { color: #b3121f; font-size: 16px; display: block; }
+.diff-down { color: #0f6e56; font-size: 16px; display: block; }
