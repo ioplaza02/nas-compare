@@ -852,7 +852,7 @@ function runSearch(dir) {
     <section class="maker-section">
       <div class="result-head">
         <h3>${esc(title)}</h3>
-        <button type="button" class="pdf-btn" data-print>PDFで保存</button>
+        <button type="button" class="pdf-btn" data-print data-base="${esc(baseV?.sku || src.code)}">PDFで保存</button>
       </div>
       ${note ? `<p class="mode-note">${esc(note)}</p>` : ""}
       ${cands.length ? compareTable([src, ...cands], capTB, { picks, mode }) : `<p class="empty">候補がありません。</p>`}
@@ -906,16 +906,31 @@ function setupInputs() {
 
 // 比較結果をPDFで保存：ブラウザの印刷機能で「PDFに保存」を選んでもらう。
 // 印刷時は入力欄やボタンを隠し、「社内資料」の表示と出力日時を入れる（style.css の @media print）
+// 保存されるPDFのファイル名は、ブラウザがページのタイトル（document.title）から付ける。
+// 印刷の間だけタイトルを「B社NAS比較資料_社内資料_基準の型番_西暦年月日8桁」に差し替える。
+let ORIGINAL_TITLE = null;
 document.addEventListener("click", e => {
-  if (!e.target.closest("[data-print]")) return;
+  const btn = e.target.closest("[data-print]");
+  if (!btn) return;
   const d = new Date();
   const pad = n => String(n).padStart(2, "0");
   const el = document.getElementById("print-date");
   if (el) el.textContent = `出力日時：${d.getFullYear()}/${pad(d.getMonth() + 1)}/${pad(d.getDate())} ${pad(d.getHours())}:${pad(d.getMinutes())}`;
+
+  // 基準（左端）の型番：容量を選び直していれば、今選ばれている型番を使う
+  const baseSel = btn.closest(".maker-section")?.querySelector('.cap-select[data-col="0"]');
+  const model = (baseSel?.value || btn.dataset.base || "").replace(/[\\/:*?"<>|\s]+/g, "-");
+  const ymd = `${d.getFullYear()}${pad(d.getMonth() + 1)}${pad(d.getDate())}`;
+  ORIGINAL_TITLE = ORIGINAL_TITLE ?? document.title;
+  document.title = ["B社NAS比較資料", "社内資料", model, ymd].filter(Boolean).join("_");
+
   document.body.classList.add("is-printing");
   window.print();
 });
-window.addEventListener("afterprint", () => document.body.classList.remove("is-printing"));
+window.addEventListener("afterprint", () => {
+  document.body.classList.remove("is-printing");
+  if (ORIGINAL_TITLE) { document.title = ORIGINAL_TITLE; ORIGINAL_TITLE = null; }
+});
 
 // 右下の「上へ」ボタン：少しスクロールしたら表示
 function setupToTop() {
