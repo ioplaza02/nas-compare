@@ -7,7 +7,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=20261016-1">
+<link rel="stylesheet" href="style.css?v=20261016-2">
 </head>
 <body>
 
@@ -28,8 +28,18 @@
 
 <header class="brand-banner">
   <span class="brand-banner__badge">社内資料</span>
-  <span class="brand-banner__title">B社 NAS 比較ツール</span>
+  <div class="brand-banner__text">
+    <span class="brand-banner__title">B社 NAS 比較ツール</span>
+    <span class="brand-banner__sub">I-O DATA LAN DISK と B社 NAS を、仕様・価格・容量で比較</span>
+  </div>
 </header>
+
+<!-- PDF（印刷）にだけ出す見出し -->
+<div class="print-head" aria-hidden="true">
+  <div class="print-head__band"><span>社内資料</span>取扱注意：社内での検討用資料です。社外への配布・お客様への提示はしないでください。</div>
+  <div class="print-head__meta"><strong>B社 NAS 比較資料</strong><span id="print-date"></span></div>
+</div>
+<div class="print-watermark" aria-hidden="true">社内資料</div>
 
 <div class="disclaimer">
   <p>
@@ -42,8 +52,8 @@
 
 <nav class="tabs" role="tablist">
   <button type="button" class="tabs__btn is-active" data-tab="list" role="tab">① I-O DATA商品一覧</button>
-  <button type="button" class="tabs__btn" data-tab="io2other" role="tab">② I-O DATA → B社の近い機種</button>
-  <button type="button" class="tabs__btn" data-tab="other2io" role="tab">③ B社型番 → I-O DATAの候補</button>
+  <button type="button" class="tabs__btn" data-tab="io2other" role="tab">② I-O DATA → B社</button>
+  <button type="button" class="tabs__btn" data-tab="other2io" role="tab">③ B社 → I-O DATA</button>
 </nav>
 
 <main class="main">
@@ -71,9 +81,10 @@
   <!-- ② I-O DATA → B社 -->
   <section class="panel" id="panel-io2other" hidden>
     <div class="query-box">
-      <label class="query-box__label" for="io-input">I-O DATA の型番（容量違いの型番でも、シリーズでもOK）</label>
+      <label class="query-box__label" for="io-input">I-O DATAの型番</label>
       <input type="text" id="io-input" class="text-input text-input--wide" list="io-datalist" placeholder="例：HDL4-Z25SI3B16B / HDL4-Z25SI3BB" autocomplete="off">
       <datalist id="io-datalist"></datalist>
+      <p class="query-box__hint">全角・ハイフン・スペースの違いは自動で吸収します。シリーズ名だけでも、容量付きの型番でも検索できます。</p>
 
       <p class="query-box__label">探し方</p>
       <div class="mode-group" role="radiogroup">
@@ -100,10 +111,10 @@
   <!-- ③ B社 → I-O DATA -->
   <section class="panel" id="panel-other2io" hidden>
     <div class="query-box">
-      <label class="query-box__label" for="other-input">B社の型番（自由入力）</label>
+      <label class="query-box__label" for="other-input">B社の型番</label>
       <input type="text" id="other-input" class="text-input text-input--wide" list="other-datalist" placeholder="例：TS5420DN0804 / WS5420DN08W5 / TS3430RN" autocomplete="off">
       <datalist id="other-datalist"></datalist>
-      <p class="query-box__hint">全角・ハイフン・スペースの違いは自動で吸収します。シリーズ名だけでも検索できます。</p>
+      <p class="query-box__hint">全角・ハイフン・スペースの違いは自動で吸収します。シリーズ名だけでも、容量付きの型番でも検索できます。</p>
 
       <p class="query-box__label">探し方</p>
       <div class="mode-group" role="radiogroup">
@@ -136,6 +147,6 @@
 
 <button type="button" class="to-top" id="to-top" aria-label="ページの上に戻る" hidden>↑<span>上へ</span></button>
 
-<script src="app.js?v=20261016-1"></script>
+<script src="app.js?v=20261016-2"></script>
 </body>
 </html>

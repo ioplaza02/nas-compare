@@ -849,7 +849,11 @@ function runSearch(dir) {
       ${!baseV && mode === "spec" ? `<p>※容量まで指定すると（例：${esc(src.variants[0]?.sku || "")}）、同じ容量の型番も探します。</p>` : ""}
       ${res.alternatives?.length ? `<p>※同じシリーズ名で別エディションもあります：${res.alternatives.map(a => esc(a.code)).join("、")}</p>` : ""}
     </div>
-    <section class="maker-section"><h3>${esc(title)}</h3>
+    <section class="maker-section">
+      <div class="result-head">
+        <h3>${esc(title)}</h3>
+        <button type="button" class="pdf-btn" data-print>PDFで保存</button>
+      </div>
       ${note ? `<p class="mode-note">${esc(note)}</p>` : ""}
       ${cands.length ? compareTable([src, ...cands], capTB, { picks, mode }) : `<p class="empty">候補がありません。</p>`}
     </section>`;
@@ -899,6 +903,19 @@ function setupInputs() {
   document.getElementById("io-input").addEventListener("keydown", e => { if (e.key === "Enter") runIo2Other(); });
   document.getElementById("other-input").addEventListener("keydown", e => { if (e.key === "Enter") runOther2Io(); });
 }
+
+// 比較結果をPDFで保存：ブラウザの印刷機能で「PDFに保存」を選んでもらう。
+// 印刷時は入力欄やボタンを隠し、「社内資料」の表示と出力日時を入れる（style.css の @media print）
+document.addEventListener("click", e => {
+  if (!e.target.closest("[data-print]")) return;
+  const d = new Date();
+  const pad = n => String(n).padStart(2, "0");
+  const el = document.getElementById("print-date");
+  if (el) el.textContent = `出力日時：${d.getFullYear()}/${pad(d.getMonth() + 1)}/${pad(d.getDate())} ${pad(d.getHours())}:${pad(d.getMinutes())}`;
+  document.body.classList.add("is-printing");
+  window.print();
+});
+window.addEventListener("afterprint", () => document.body.classList.remove("is-printing"));
 
 // 右下の「上へ」ボタン：少しスクロールしたら表示
 function setupToTop() {
