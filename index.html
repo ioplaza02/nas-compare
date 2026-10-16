@@ -7,7 +7,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=20261015-1">
+<link rel="stylesheet" href="style.css?v=20261016-1">
 </head>
 <body>
 
@@ -27,7 +27,7 @@
 <div id="app-root" hidden>
 
 <header class="brand-banner">
-  <span class="brand-banner__badge">社内営業用</span>
+  <span class="brand-banner__badge">社内資料</span>
   <span class="brand-banner__title">B社 NAS 比較ツール</span>
 </header>
 
@@ -35,7 +35,7 @@
   <p>
     お客様へご提案する前の下調べ用ツールです。B社製品の情報はB社公式サイトの仕様表から取得しています。
     お客様へ提示する前に、必ず表の「出典」行のリンクから最新の仕様をご確認ください。
-    価格はB社が公式に掲載していないことが多いため、比較対象にしていません。
+    価格は各社公式サイトに掲載の税込価格です（I-O DATA：メーカー希望小売価格／B社：商品ページ掲載価格）。実売価格は販売店によって異なります。
   </p>
   <p class="disclaimer__updated" id="updated-at"></p>
 </div>
@@ -134,6 +134,8 @@
 
 </div>
 
-<script src="app.js?v=20261015-1"></script>
+<button type="button" class="to-top" id="to-top" aria-label="ページの上に戻る" hidden>↑<span>上へ</span></button>
+
+<script src="app.js?v=20261016-1"></script>
 </body>
 </html>

@@ -93,7 +93,7 @@ function normalizeIO(p) {
     warrantyYears: p.warrantyYears ?? null,
     officeSize: p.officeSize || null,
     featureList: p.features || [],
-    variants: (p.variants || []).map(v => ({ sku: v.sku, capacityTB: v.capacityTB, status: v.status, url: p.sourceUrl, priceIncTax: v.priceIncTax ?? null })),
+    variants: (p.variants || []).map(v => ({ sku: v.sku, capacityTB: v.capacityTB, status: v.status, url: p.sourceUrl, priceIncTax: v.priceIncTax ?? null, jan: v.jan || null })),
     status: p.status,
     imageUrl: p.imageUrl,
     sourceUrl: p.sourceUrl,
@@ -449,9 +449,12 @@ function priceHtml(p, v, withSku = true) {
   if (v.priceIncTax) {
     // 税抜：公式に書かれていればその値、なければ税込÷1.1
     const ex = v.priceExTax ?? Math.round(v.priceIncTax / 1.1);
-    return `${sku}<span class="price">${yen(v.priceIncTax)}</span><span class="price__ex">（税抜 ${yen(ex)}）</span>`;
+    return `${sku}<span class="price">${yen(v.priceIncTax)}</span><span class="price__ex">（税抜 ${yen(ex)}）</span>${withSku ? janHtml(v) : ""}`;
   }
-  return `${sku}<span class="muted">公式サイトに価格の掲載なし</span>`;
+  return `${sku}<span class="muted">公式サイトに価格の掲載なし</span>${withSku ? janHtml(v) : ""}`;
+}
+function janHtml(v) {
+  return `<span class="jan">JAN：${v?.jan ? esc(v.jan) : "—"}</span>`;
 }
 // 販売状況：公式に書かれている表記（在庫限り・受注生産など）だけを出す。通常販売品は空欄。
 function statusText(p, v) {
@@ -528,6 +531,7 @@ function openPriceModal(p) {
     <tr>
       <td><strong>${fmtTB(v.capacityTB)}</strong></td>
       <td>${esc(v.sku)}</td>
+      <td class="jan-cell">${v.jan ? esc(v.jan) : "—"}</td>
       <td class="price-cell">${priceHtml(p, v, false)}</td>
       <td class="status-cell">${statusText(p, v)}</td>
       ${singleLink ? "" : `<td><a class="buy-btn" href="${esc(variantUrl(p, v))}" target="_blank" rel="noopener">商品ページ ↗</a></td>`}
@@ -545,7 +549,7 @@ function openPriceModal(p) {
         </div>
       </div>
       <div class="modal__scroll"><table class="price-table">
-        <thead><tr><th>容量</th><th>型番</th><th>価格（税込）</th><th>備考</th>${singleLink ? "" : "<th></th>"}</tr></thead>
+        <thead><tr><th>容量</th><th>型番</th><th>JANコード</th><th>価格（税込）</th><th>備考</th>${singleLink ? "" : "<th></th>"}</tr></thead>
         <tbody>${rows}</tbody></table></div>
       <p class="modal__note">${p.maker === "I-O DATA"
         ? "価格はI-O DATA公式サイト掲載のメーカー希望小売価格です。税抜価格は税込価格÷1.1で表示しています。"
@@ -595,12 +599,12 @@ function compareTable(cols, capTB, opts = {}) {
       return `<div class="score__label">${sc}%</div><div class="score__bar"><div class="score__fill" style="width:${sc}%"></div></div>`;
     })(), null, "row-score"),
     row("容量を選ぶ", (p, i) => capSelect(tableId, i, p, pick(p, i)), null, "row-buy"),
-    row("型番・価格（税込）", (p, i) => `<div data-price="${tableId}-${i}">${priceHtml(p, pick(p, i))}</div>`, null, "row-buy"),
+    row("型番・価格（税込）<br><small>JANコード</small>", (p, i) => `<div data-price="${tableId}-${i}">${priceHtml(p, pick(p, i))}</div>`, null, "row-buy"),
     row(`基準との価格差${TOOL}`, (p, i) => i === 0 ? `<span class="muted">（比較の基準）</span>`
       : `<div data-diff="${tableId}-${i}">${priceDiffHtml(pick(base, 0), pick(p, i))}</div>`, null, "row-buy"),
     row("商品ページ", (p, i) => `<div data-link="${tableId}-${i}">${linkHtml(p, pick(p, i))}</div>
       <button type="button" class="link-btn" data-allprices="${tableId}-${i}">全容量の価格を見る</button>`, null, "row-buy"),
-    row(`要約${TOOL}`, (p, i) => i === 0 ? BASE_CELL : `<strong>${esc(exs[i].summary)}</strong>`, null, "row-summary"),
+    row(`要約${TOOL}`, (p, i) => i === 0 ? BASE_CELL : `<strong>${esc(exs[i].summary).replace(/(\d+点)/, '<span class="diff-count">$1</span>')}</strong>`, null, "row-summary"),
     row(`OS区分${TOOL}`, p => osLabel(p), p => p.osType + (p.osType === "Windows" ? p.windowsEdition : "")),
     row("搭載OS", p => rawOr(p, "os", p.osEdition)),
     row("設置形態", p => rawOr(p, "install", p.install), p => p.install),
@@ -896,7 +900,18 @@ function setupInputs() {
   document.getElementById("other-input").addEventListener("keydown", e => { if (e.key === "Enter") runOther2Io(); });
 }
 
+// 右下の「上へ」ボタン：少しスクロールしたら表示
+function setupToTop() {
+  const btn = document.getElementById("to-top");
+  if (!btn) return;
+  const sync = () => { btn.hidden = window.scrollY < 400; };
+  window.addEventListener("scroll", sync, { passive: true });
+  btn.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
+  sync();
+}
+
 async function init() {
+  setupToTop();
   try {
     await loadData();
   } catch (e) {

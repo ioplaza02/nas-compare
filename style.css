@@ -165,8 +165,8 @@ body {
 .badge--draft { display: inline-block !important; width: auto; background: #fff1cc; color: #8a5a00; margin-top: 4px; }
 .cmp th, .cmp td { border: 1px solid var(--border); padding: 6px 8px; vertical-align: top; text-align: left; }
 .cmp thead th { font-size: 14px; }
-.cmp thead th.io { background: var(--io-bg); color: var(--io); }
-.cmp thead th.bf { background: var(--bf-bg); color: var(--bf); }
+.cmp thead th.io { background: #fff; color: var(--io); border: 3px solid #1a56c4; }
+.cmp thead th.bf { background: #fff; color: #b3121f; border: 3px solid #d0313b; }
 .cmp tbody th { background: #f3f1ec; white-space: normal !important; font-weight: 600; color: var(--text-secondary); }
 .cmp tr.is-diff td { background: var(--diff-bg); }
 .cmp .muted { color: #666; }
@@ -283,3 +283,24 @@ body {
 .mode-note { font-size: 14px; color: var(--text-secondary); margin: -4px 0 10px; }
 .diff-up { color: #b3121f; font-size: 16px; display: block; }
 .diff-down { color: #0f6e56; font-size: 16px; display: block; }
+
+/* ---- 見出しセル：白背景＋メーカー色の枠 ---- */
+.cmp thead th.io, .cmp thead th.bf { border-bottom-width: 3px; }
+.cmp thead th.cmp__corner { background: #fff; }
+.cmp thead th .cmp__img { background: #fff; }
+
+.diff-count { color: #d0021b; font-size: 1.1em; }
+.jan { display: block; font-size: 12px; color: var(--text-secondary); margin-top: 2px; }
+.price-table .jan-cell { font-size: 13px; color: var(--text-secondary); white-space: nowrap; }
+
+/* ---- 右下の「上へ」ボタン ---- */
+.to-top {
+  position: fixed; right: 20px; bottom: 20px; z-index: 250;
+  width: 56px; height: 56px; border-radius: 50%; border: none; cursor: pointer;
+  background: #b3121f; color: #fff; font-size: 22px; font-weight: 700; line-height: 1;
+  box-shadow: 0 4px 12px rgba(0,0,0,.25); display: flex; flex-direction: column; align-items: center; justify-content: center;
+  font-family: inherit;
+}
+.to-top span { font-size: 11px; margin-top: 2px; }
+.to-top:hover { filter: brightness(1.1); }
+.to-top[hidden] { display: none; }
