@@ -155,26 +155,40 @@ function scorePair(src, cand, capTB) {
   const caps = cand.variants.map(v => v.capacityTB).filter(c => c != null);
   if (caps.length) {
     if (capTB != null) {
-      const nearest = caps.reduce((a, b) => Math.abs(b - capTB) < Math.abs(a - capTB) ? b : a);
-      const ratio = Math.min(nearest, capTB) / Math.max(nearest, capTB);
-      s += 10 * ratio;
+      // 容量を指定した時は「その容量を満たせるか」を重視する（20点）
+      //  ・指定容量以上の型番がある → 一番近い大きい容量ほど高得点（ぴったりなら満点）
+      //  ・指定容量に届かない      → 大きく減点
+      const cover = caps.filter(c => c >= capTB);
+      if (cover.length) s += 20 * (capTB / Math.min(...cover));
+      else s += 20 * (Math.max(...caps) / capTB) * 0.3;
     } else {
       const srcCaps = src.variants.map(v => v.capacityTB).filter(c => c != null);
       if (srcCaps.length) {
         const lo = Math.max(Math.min(...srcCaps), Math.min(...caps));
         const hi = Math.min(Math.max(...srcCaps), Math.max(...caps));
-        s += hi >= lo ? 10 : 3;
+        s += hi >= lo ? 20 : 6;
       }
     }
   }
   if (cand.status === "現行") s += 5;
-  return Math.round((s / 105) * 100);
+  return Math.round((s / 115) * 100);
 }
 
+// 一番近い容量の型番（差が同じなら大きい方）
 function nearestVariant(p, capTB) {
   if (capTB == null || !p.variants.length) return null;
-  return p.variants.reduce((a, b) => Math.abs(b.capacityTB - capTB) < Math.abs(a.capacityTB - capTB) ? b : a);
+  return p.variants.reduce((a, b) => {
+    const da = Math.abs(a.capacityTB - capTB), db = Math.abs(b.capacityTB - capTB);
+    return db < da || (db === da && b.capacityTB > a.capacityTB) ? b : a;
+  });
 }
+// 指定容量を満たす一番小さい型番。満たす型番がなければ最大容量の型番
+function coverVariant(p, capTB) {
+  if (capTB == null || !p.variants.length) return null;
+  const sorted = [...p.variants].sort((a, b) => a.capacityTB - b.capacityTB);
+  return sorted.find(v => v.capacityTB >= capTB) || sorted[sorted.length - 1];
+}
+const canCover = (p, capTB) => capTB == null || p.variants.some(v => v.capacityTB >= capTB);
 
 // ---------------------------------------------------------------------
 // 機能の対応状況を、両社で同じ物差しにそろえる
@@ -305,9 +319,13 @@ function explain(src, cand, capTB) {
   if (capTB != null) {
     const hit = cand.variants.find(v => v.capacityTB === capTB);
     if (hit) same.push(`同じ${fmtTB(capTB)}の型番がある（${hit.sku}）`);
-    else {
-      const nv = nearestVariant(cand, capTB);
-      if (nv) diff.push(`${fmtTB(capTB)}の型番はなし。近いのは ${nv.sku}（${fmtTB(nv.capacityTB)}）`);
+    else if (canCover(cand, capTB)) {
+      const cv = coverVariant(cand, capTB);
+      diff.push(`${fmtTB(capTB)}の型番はなし。${fmtTB(capTB)}以上で一番近いのは ${cv.sku}（${fmtTB(cv.capacityTB)}）`);
+    } else {
+      const mx = Math.max(...cand.variants.map(v => v.capacityTB));
+      diff.push(`${fmtTB(capTB)}以上の型番がない（最大${fmtTB(mx)}）`);
+      memo.push(`${B}の機種は最大${fmtTB(mx)}のため、${fmtTB(capTB)}の容量を満たせません`);
     }
   }
   const capS = src.variants.map(v => v.capacityTB), capC = cand.variants.map(v => v.capacityTB);
@@ -406,7 +424,7 @@ const TABLE_META = {}; // 表ごとの探し方（mode）と、各列で今選�
 // なければ入力された容量（指定がなければ基準機種の一番小さい容量）に一番近いもの
 function defaultVariant(p, i, targetTB, picks) {
   if (!p.variants.length) return null;
-  return picks?.[i] || nearestVariant(p, targetTB) || p.variants[0];
+  return picks?.[i] || coverVariant(p, targetTB) || p.variants[0];
 }
 
 // 価格が一番近い型番（価格の分からない型番は除く）
@@ -491,7 +509,7 @@ document.addEventListener("change", e => {
     const byPrice = TABLE_META[sel.dataset.table]?.mode === "price";
     TABLES[sel.dataset.table].forEach((q, i) => {
       if (i === 0) return;
-      const nv = (byPrice && nearestByPrice(q, v.priceIncTax)) || nearestVariant(q, v.capacityTB);
+      const nv = (byPrice && nearestByPrice(q, v.priceIncTax)) || coverVariant(q, v.capacityTB);
       if (!nv) return;
       const s2 = document.querySelector(`.cap-select[data-table="${sel.dataset.table}"][data-col="${i}"]`);
       if (s2) s2.value = nv.sku;
@@ -641,9 +659,10 @@ function compareTable(cols, capTB, opts = {}) {
 }
 
 function rankCandidates(src, pool, capTB, n) {
+  // 容量を指定した時は、その容量を満たせる機種を必ず先に並べる
   return pool
-    .map(c => ({ c, s: scorePair(src, c, capTB) }))
-    .sort((a, b) => b.s - a.s || (a.c.status === "現行" ? -1 : 1))
+    .map(c => ({ c, s: scorePair(src, c, capTB), ok: canCover(c, capTB) }))
+    .sort((a, b) => (b.ok - a.ok) || b.s - a.s || (a.c.status === "現行" ? -1 : 1))
     .slice(0, n)
     .map(x => x.c);
 }
@@ -811,14 +830,14 @@ function runSearch(dir) {
     note = `基準：${baseV.sku}（税込 ${yen(baseV.priceIncTax)}）に、税込価格が一番近い型番をシリーズごとに選んでいます。仕様は大きく違う場合があります。`;
   } else if (mode === "capacity") {
     const ranked = pool
-      .map(p => ({ p, v: nearestVariant(p, capTB), s: scorePair(src, p, capTB) }))
+      .map(p => ({ p, v: coverVariant(p, capTB), s: scorePair(src, p, capTB), ok: canCover(p, capTB) }))
       .filter(x => x.v)
-      .sort((a, b) => Math.abs(a.v.capacityTB - capTB) - Math.abs(b.v.capacityTB - capTB) || b.s - a.s)
+      .sort((a, b) => (b.ok - a.ok) || Math.abs(a.v.capacityTB - capTB) - Math.abs(b.v.capacityTB - capTB) || b.s - a.s)
       .slice(0, N_CANDS);
     cands = ranked.map(x => x.p);
     picks = [baseV, ...ranked.map(x => x.v)];
     title = `${d.candLabel}で容量が近い機種 ${cands.length}件と比較`;
-    note = `基準：${baseV.sku}（${fmtTB(capTB)}）に容量が一番近い型番を選んでいます。容量が同じ場合は仕様が近い機種を優先しています。`;
+    note = `基準：${baseV.sku}（${fmtTB(capTB)}）以上で一番近い容量の型番を選んでいます。容量が同じ場合は仕様が近い機種を優先しています。`;
   } else if (mode === "manual") {
     const errs = [];
     document.querySelectorAll(`[data-manual="${dir}"]`).forEach(inp => {
