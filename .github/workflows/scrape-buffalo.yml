@@ -1,7 +1,10 @@
 name: バッファローのデータ取得
 
 on:
-  # Actions画面の「Run workflow」ボタンで手動実行（動作確認ができたら定期実行を追加予定）
+  # 毎日 深夜3:30（日本時間）に自動実行。NASセレクター（3:00）と重ならないよう30分ずらしています
+  schedule:
+    - cron: "30 18 * * *"
+  # Actions画面の「Run workflow」ボタンから手動でも実行できます
   workflow_dispatch:
 
 permissions:
@@ -17,6 +20,8 @@ jobs:
         with:
           node-version: 20
 
+      # 取得に失敗した・読めたシリーズが少なすぎる場合は、本番データを上書きせずにここで失敗終了します
+      # （失敗するとGitHubから登録メールアドレスに通知が届きます）
       - name: バッファロー公式サイトから取得
         run: node scripts/scrape-buffalo.mjs --save-html
 
