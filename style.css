@@ -484,3 +484,13 @@ body { background: linear-gradient(180deg, #eef0f4 0%, #e6e9ee 100%); min-height
   .source-head, .cmp-wrap { box-shadow: none !important; }
   .tool-note::after { content: "　｜　社内資料：社外への配布・お客様への提示はしないでください。"; font-weight: 700; color: #b3121f; }
 }
+
+/* ---- 帯：【社内限定】と問い合わせ先 ---- */
+.brand-banner__limited { color: #ffd23f; margin-right: 10px; letter-spacing: .02em; }
+.brand-banner__contact {
+  margin-left: auto; position: relative; z-index: 1;
+  color: #fff; font-size: 15px; font-weight: 700; white-space: nowrap;
+  padding: 8px 18px; border-radius: 999px;
+  background: rgba(255,255,255,.14); border: 1px solid rgba(255,255,255,.5); backdrop-filter: blur(4px);
+}
+@media (max-width: 700px) { .brand-banner__contact { margin-left: 0; } }
