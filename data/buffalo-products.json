@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-14T22:46:35.464Z",
+ "updatedAt": "2026-11-15T23:10:25.948Z",
  "source": "バッファロー公式サイト（buffalo.jp）商品ページの仕様表",
  "newProducts": [
   {
@@ -166,7 +166,7 @@
     "raid": "1/0（出荷時 RAID1）",
     "warranty": "3年間(本体およびハードディスク)"
    },
-   "lastCheckedAt": "2026-11-14T22:40:07.912Z",
+   "lastCheckedAt": "2026-11-15T23:03:57.847Z",
    "fallbackFields": []
   },
   {
@@ -349,7 +349,7 @@
     "raid": "6/5/10/1/0（出荷時 RAID6）",
     "warranty": "3年間(本体およびハードディスク)"
    },
-   "lastCheckedAt": "2026-11-14T22:40:21.880Z",
+   "lastCheckedAt": "2026-11-15T23:04:11.876Z",
    "fallbackFields": []
   },
   {
@@ -532,7 +532,7 @@
     "raid": "6/5/10/1/0（出荷時 RAID6）",
     "warranty": "3年間(本体およびハードディスク)"
    },
-   "lastCheckedAt": "2026-11-14T22:40:35.350Z",
+   "lastCheckedAt": "2026-11-15T23:04:25.827Z",
    "fallbackFields": []
   },
   {
@@ -692,7 +692,7 @@
     "raid": "1/0（出荷時 RAID1）",
     "warranty": "3年間(本体およびハードディスク)"
    },
-   "lastCheckedAt": "2026-11-14T22:40:45.395Z",
+   "lastCheckedAt": "2026-11-15T23:04:35.826Z",
    "fallbackFields": []
   },
   {
@@ -831,7 +831,7 @@
     "raid": "1/0（出荷時 RAID1）",
     "warranty": "3年間(本体およびSSD) ※SSDが保証総書込み容量(TBW)に達した場合は、書き込み保証対象外となります"
    },
-   "lastCheckedAt": "2026-11-14T22:40:51.357Z",
+   "lastCheckedAt": "2026-11-15T23:04:41.952Z",
    "fallbackFields": []
   },
   {
@@ -1047,7 +1047,7 @@
     "raid": "6/5/10/1/0（出荷時 RAID6）",
     "warranty": "3年間(本体およびハードディスク)"
    },
-   "lastCheckedAt": "2026-11-14T22:41:11.499Z",
+   "lastCheckedAt": "2026-11-15T23:05:01.873Z",
    "fallbackFields": []
   },
   {
@@ -1262,7 +1262,7 @@
     "raid": "6/5/10/1/0（出荷時 RAID6）",
     "warranty": "3年間(本体およびハードディスク)"
    },
-   "lastCheckedAt": "2026-11-14T22:41:31.388Z",
+   "lastCheckedAt": "2026-11-15T23:05:21.837Z",
    "fallbackFields": []
   },
   {
@@ -1448,7 +1448,7 @@
     "raid": "6/5/10/1/0（出荷時 RAID6）",
     "warranty": "3年間(本体およびハードディスク)"
    },
-   "lastCheckedAt": "2026-11-14T22:41:45.454Z",
+   "lastCheckedAt": "2026-11-15T23:05:35.916Z",
    "fallbackFields": []
   },
   {
@@ -1634,7 +1634,7 @@
     "raid": "6/5/10/1/0（出荷時 RAID6）",
     "warranty": "3年間(本体およびハードディスク)"
    },
-   "lastCheckedAt": "2026-11-14T22:42:00.000Z",
+   "lastCheckedAt": "2026-11-15T23:05:49.919Z",
    "fallbackFields": []
   },
   {
@@ -1911,7 +1911,7 @@
     "raid": "6/5/10/1/0（出荷時 RAID6）",
     "warranty": "3年間(本体およびハードディスク)"
    },
-   "lastCheckedAt": "2026-11-14T22:42:29.440Z",
+   "lastCheckedAt": "2026-11-15T23:06:19.975Z",
    "fallbackFields": []
   },
   {
@@ -2172,7 +2172,7 @@
     "raid": "6/5/10/1/0（出荷時 RAID6）",
     "warranty": "3年間（本体およびハードディスク）"
    },
-   "lastCheckedAt": "2026-11-14T22:42:55.393Z",
+   "lastCheckedAt": "2026-11-15T23:06:45.909Z",
    "fallbackFields": []
   },
   {
@@ -2322,7 +2322,7 @@
     "raid": "1/0（出荷時 RAID1）",
     "warranty": "3年間(本体およびハードディスク)"
    },
-   "lastCheckedAt": "2026-11-14T22:43:03.486Z",
+   "lastCheckedAt": "2026-11-15T23:06:53.881Z",
    "fallbackFields": []
   },
   {
@@ -2494,7 +2494,7 @@
     "raid": "6/5/10/1/0（出荷時 RAID6）",
     "warranty": "3年間(本体およびハードディスク)"
    },
-   "lastCheckedAt": "2026-11-14T22:43:15.855Z",
+   "lastCheckedAt": "2026-11-15T23:07:05.881Z",
    "fallbackFields": []
   },
   {
@@ -2686,7 +2686,7 @@
     "raid": "6/5/10/1/0（出荷時 RAID6）",
     "warranty": "3年間(本体およびハードディスク)"
    },
-   "lastCheckedAt": "2026-11-14T22:43:31.546Z",
+   "lastCheckedAt": "2026-11-15T23:07:21.957Z",
    "fallbackFields": []
   },
   {
@@ -2859,7 +2859,7 @@
     "raid": "6/5/10/1/0（出荷時 RAID6）",
     "warranty": "3年間(本体およびハードディスク)"
    },
-   "lastCheckedAt": "2026-11-14T22:43:43.940Z",
+   "lastCheckedAt": "2026-11-15T23:07:33.885Z",
    "fallbackFields": []
   },
   {
@@ -3011,7 +3011,7 @@
     "raid": "1/0（出荷時 RAID1）",
     "warranty": "3年間(本体およびハードディスク)"
    },
-   "lastCheckedAt": "2026-11-14T22:43:53.409Z",
+   "lastCheckedAt": "2026-11-15T23:07:43.981Z",
    "fallbackFields": []
   },
   {
@@ -3163,7 +3163,7 @@
     "raid": "1/0（出荷時 RAID1）",
     "warranty": "3年間(本体およびハードディスク)"
    },
-   "lastCheckedAt": "2026-11-14T22:44:03.478Z",
+   "lastCheckedAt": "2026-11-15T23:07:53.897Z",
    "fallbackFields": []
   },
   {
@@ -3316,7 +3316,7 @@
     "raid": "5/1/0（出荷時RAID5）",
     "warranty": "3年間(本体およびハードディスク)"
    },
-   "lastCheckedAt": "2026-11-14T22:44:13.410Z",
+   "lastCheckedAt": "2026-11-15T23:08:04.028Z",
    "fallbackFields": []
   },
   {
@@ -3469,7 +3469,7 @@
     "raid": "5/1/0（出荷時RAID5）",
     "warranty": "3年間(本体およびハードディスク)"
    },
-   "lastCheckedAt": "2026-11-14T22:44:23.479Z",
+   "lastCheckedAt": "2026-11-15T23:08:13.918Z",
    "fallbackFields": []
   },
   {
@@ -3622,7 +3622,7 @@
     "raid": "5/1/0（出荷時RAID5）",
     "warranty": "3年間(本体およびハードディスク)"
    },
-   "lastCheckedAt": "2026-11-14T22:44:33.502Z",
+   "lastCheckedAt": "2026-11-15T23:08:24.360Z",
    "fallbackFields": []
   },
   {
@@ -3765,7 +3765,7 @@
     "raid": "5/1/0（出荷時RAID5）",
     "warranty": "3年間(本体およびハードディスク)"
    },
-   "lastCheckedAt": "2026-11-14T22:44:41.453Z",
+   "lastCheckedAt": "2026-11-15T23:08:31.919Z",
    "fallbackFields": []
   },
   {
@@ -3919,7 +3919,7 @@
     "raid": "6/5/10/0（出荷時RAID6）",
     "warranty": "3年間(本体およびハードディスク)"
    },
-   "lastCheckedAt": "2026-11-14T22:44:51.546Z",
+   "lastCheckedAt": "2026-11-15T23:08:42.011Z",
    "fallbackFields": []
   },
   {
@@ -4073,7 +4073,7 @@
     "raid": "6/5/10/0（出荷時RAID6）",
     "warranty": "3年間(本体およびハードディスク)"
    },
-   "lastCheckedAt": "2026-11-14T22:45:01.474Z",
+   "lastCheckedAt": "2026-11-15T23:08:52.219Z",
    "fallbackFields": []
   },
   {
@@ -4227,7 +4227,7 @@
     "raid": "6/5/10/0（出荷時RAID6）",
     "warranty": "3年間(本体およびハードディスク)"
    },
-   "lastCheckedAt": "2026-11-14T22:45:11.996Z",
+   "lastCheckedAt": "2026-11-15T23:09:01.935Z",
    "fallbackFields": []
   },
   {
@@ -4381,7 +4381,7 @@
     "raid": "6/5/10/0（出荷時RAID6）",
     "warranty": "3年間(本体およびハードディスク)"
    },
-   "lastCheckedAt": "2026-11-14T22:45:21.445Z",
+   "lastCheckedAt": "2026-11-15T23:09:12.067Z",
    "fallbackFields": []
   },
   {
@@ -4535,7 +4535,7 @@
     "raid": "6/5/10/0（出荷時RAID6）",
     "warranty": "3年間(本体およびハードディスク)"
    },
-   "lastCheckedAt": "2026-11-14T22:45:31.515Z",
+   "lastCheckedAt": "2026-11-15T23:09:22.003Z",
    "fallbackFields": []
   },
   {
@@ -4701,7 +4701,7 @@
     "raid": "5/1/0（出荷時RAID5）",
     "warranty": "3年間(本体およびハードディスク)"
    },
-   "lastCheckedAt": "2026-11-14T22:45:43.985Z",
+   "lastCheckedAt": "2026-11-15T23:09:33.967Z",
    "fallbackFields": [
     "releaseDate"
    ]
@@ -4869,7 +4869,7 @@
     "raid": "5/1/0（出荷時RAID5）",
     "warranty": "3年間(本体およびハードディスク)"
    },
-   "lastCheckedAt": "2026-11-14T22:45:55.452Z",
+   "lastCheckedAt": "2026-11-15T23:09:45.953Z",
    "fallbackFields": [
     "releaseDate"
    ]
@@ -5023,7 +5023,7 @@
     "raid": "1/0（出荷時 RAID1）",
     "warranty": "3年間(本体およびハードディスク)"
    },
-   "lastCheckedAt": "2026-11-14T22:46:05.539Z",
+   "lastCheckedAt": "2026-11-15T23:09:56.028Z",
    "fallbackFields": []
   },
   {
@@ -5175,7 +5175,7 @@
     "raid": "1/0（出荷時 RAID1）",
     "warranty": "3年間(本体およびハードディスク)"
    },
-   "lastCheckedAt": "2026-11-14T22:46:15.447Z",
+   "lastCheckedAt": "2026-11-15T23:10:05.954Z",
    "fallbackFields": [
     "releaseDate"
    ]
@@ -5337,7 +5337,7 @@
     "raid": "1/0（出荷時RAID1）",
     "warranty": "3年間"
    },
-   "lastCheckedAt": "2026-11-14T22:46:25.454Z",
+   "lastCheckedAt": "2026-11-15T23:10:16.049Z",
    "fallbackFields": []
   },
   {
@@ -5494,7 +5494,7 @@
     "raid": "－",
     "warranty": "3年"
    },
-   "lastCheckedAt": "2026-11-14T22:46:35.464Z",
+   "lastCheckedAt": "2026-11-15T23:10:25.948Z",
    "fallbackFields": [
     "raidModes"
    ]
