@@ -48,7 +48,7 @@ function lanLabel(p) {
   return p.lanMaxPorts ? `${speed} ×${p.lanMaxPorts}` : speed;
 }
 function osLabel(p) {
-  if (p.osType === "Windows") return `Windows系（${p.windowsEdition || "エディション不明"}）`;
+  if (p.osType === "Windows") return `Windows系（${[osVersion(p), p.windowsEdition || "エディション不明"].filter(Boolean).join("・")}）`;
   return "独自OS（Linux系）";
 }
 function makerLabel(p) { return p.maker === "I-O DATA" ? "I-O DATA" : (MAKERS.find(m => m.id === p.makerId)?.label || p.maker); }
@@ -138,11 +138,28 @@ function renderUpdatedAt() {
 //   OSの系統 30 / Windowsのエディション 5 / ベイ数 25 / 設置形態 15
 //   LAN速度 15 / 容量 10 / 販売状況 5   … 合計105点を100点満点に換算
 // ---------------------------------------------------------------------
+// WindowsのOSバージョン（搭載OSの表記に含まれる西暦。例：Windows Server IoT 2025 → 2025）
+function osVersion(p) {
+  if (p.osType !== "Windows") return null;
+  const m = String(p.osEdition || "").match(/(20\d\d)/);
+  return m ? +m[1] : null;
+}
+// 基準と比べたOSバージョンの順位：同じ=2、新しい=1、古い・不明=0（Windows以外は常に2）
+function versionRank(src, cand) {
+  const a = osVersion(src), b = osVersion(cand);
+  if (src.osType !== "Windows" || a == null) return 2;
+  if (b === a) return 2;
+  return b != null && b > a ? 1 : 0;
+}
+
 function scorePair(src, cand, capTB) {
   let s = 0;
   if (src.osType === cand.osType) {
     s += 30;
     if (src.osType === "Linux" || (src.windowsEdition && src.windowsEdition === cand.windowsEdition)) s += 5;
+    // Windows同士なら、OSのバージョン（2025／2022など）が同じ機種を高く評価（10点）
+    if (src.osType === "Windows") s += [0, 5, 10][versionRank(src, cand)];
+    else s += 10;
   }
   if (src.bays && cand.bays) {
     const d = Math.abs(src.bays - cand.bays);
@@ -171,7 +188,7 @@ function scorePair(src, cand, capTB) {
     }
   }
   if (cand.status === "現行") s += 5;
-  return Math.round((s / 115) * 100);
+  return Math.round((s / 125) * 100);
 }
 
 // 一番近い容量の型番（差が同じなら大きい方）
@@ -291,8 +308,17 @@ function explain(src, cand, capTB) {
   // OS
   if (src.osType === cand.osType) {
     if (src.osType === "Windows") {
-      if (src.windowsEdition && src.windowsEdition === cand.windowsEdition) same.push(`OSが同じ（Windows Server IoT ${src.windowsEdition}）`);
-      else { same.push("どちらもWindows系のOS"); diff.push(`Windowsのエディションが異なる（${A}：${src.windowsEdition || "不明"}／${B}：${cand.windowsEdition || "不明"}）`); }
+      const v1 = osVersion(src), v2 = osVersion(cand);
+      const sameVer = v1 != null && v1 === v2, sameEd = src.windowsEdition && src.windowsEdition === cand.windowsEdition;
+      if (sameVer && sameEd) same.push(`OSが同じ（Windows Server IoT ${v1} ${src.windowsEdition}）`);
+      else {
+        same.push("どちらもWindows系のOS");
+        if (!sameVer) {
+          diff.push(`WindowsのOSバージョンが異なる（${A}：${v1 ?? "不明"}／${B}：${v2 ?? "不明"}）`);
+          if (v1 && v2 && v2 < v1) memo.push(`${B}の機種は一世代前のOS（${v2}）です。新しいOS（${v1}）を希望されるお客様には向きません`);
+        }
+        if (!sameEd) diff.push(`Windowsのエディションが異なる（${A}：${src.windowsEdition || "不明"}／${B}：${cand.windowsEdition || "不明"}）`);
+      }
     } else same.push("どちらも独自OS（Linux系）");
   } else {
     diff.push(`OSの系統が異なる（${A}：${osLabel(src)}／${B}：${osLabel(cand)}）`);
@@ -623,7 +649,7 @@ function compareTable(cols, capTB, opts = {}) {
     row("商品ページ", (p, i) => `<div data-link="${tableId}-${i}">${linkHtml(p, pick(p, i))}</div>
       <button type="button" class="link-btn" data-allprices="${tableId}-${i}">全容量の価格を見る</button>`, null, "row-buy"),
     row(`要約${TOOL}`, (p, i) => i === 0 ? BASE_CELL : `<strong>${esc(exs[i].summary).replace(/(\d+点)/, '<span class="diff-count">$1</span>')}</strong>`, null, "row-summary"),
-    row(`OS区分${TOOL}`, p => osLabel(p), p => p.osType + (p.osType === "Windows" ? p.windowsEdition : "")),
+    row(`OS区分${TOOL}`, p => osLabel(p), p => p.osType + (p.osType === "Windows" ? `${osVersion(p)}${p.windowsEdition}` : "")),
     row("搭載OS", p => rawOr(p, "os", p.osEdition)),
     row("設置形態", p => rawOr(p, "install", p.install), p => p.install),
     row("ベイ数", p => p.raw?.bays && !/^\d+$/.test(p.raw.bays.trim()) ? esc(p.raw.bays) : (p.bays ? `${p.bays}ベイ` : "—"), p => p.bays),
@@ -661,8 +687,9 @@ function compareTable(cols, capTB, opts = {}) {
 function rankCandidates(src, pool, capTB, n) {
   // 容量を指定した時は、その容量を満たせる機種を必ず先に並べる
   return pool
-    .map(c => ({ c, s: scorePair(src, c, capTB), ok: canCover(c, capTB) }))
-    .sort((a, b) => (b.ok - a.ok) || b.s - a.s || (a.c.status === "現行" ? -1 : 1))
+    .map(c => ({ c, s: scorePair(src, c, capTB), ok: canCover(c, capTB), v: versionRank(src, c) }))
+    // 並び順：①容量を満たす ②WindowsのOSバージョンが同じ（なければ新しい方）③点数 ④現行品
+    .sort((a, b) => (b.ok - a.ok) || (b.v - a.v) || b.s - a.s || (a.c.status === "現行" ? -1 : 1))
     .slice(0, n)
     .map(x => x.c);
 }
